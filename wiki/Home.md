@@ -1,16 +1,19 @@
 # Nevoy Client v26.32 Wiki
 
-This wiki is a defensive reverse-engineering reference for the `Nevoy Client v26.32.dll` cheat DLL.
+Defensive reverse-engineering wiki for the `Nevoy Client v26.32.dll` cheat.
 
 ## Pages
 
-- [[Modules]] — per-cheat-module breakdown
-- [[Hooks]] — game structures the DLL hooks
-- [[IOCs]] — indicators of compromise / memory signatures
+- [[Architecture]] — inferred class layout and source structure
+- [[Modules]] — ~70 cheat modules and their decompiled functions
+- [[Hooks]] — `ClientInstance`, `LevelRenderer`, `GuiData`, packet hooks
+- [[IOCs]] — strings/class names to detect the client
 
-## Repository layout
+## Repo files
 
-- `decompiled_source.c` — full RetDec pseudo-C
-- `CHEATS_AND_MODULES.md` — module reference
-- `ANALYSIS.md` — high-level binary analysis and patching notes
-- `signature_scanner.py` — quick IOC scanner
+- `decompiled_source.c` — RetDec pseudo-C with readable function names
+- `CHEATS_AND_MODULES.md` — per-module breakdown
+- `ARCHITECTURE.md` — high-level architecture
+- `ANALYSIS.md` — PE metadata, APIs, patching recommendations
+- `signature_scanner.py` — IOC scanner
+- `function_labels.json` — address -> label mapping

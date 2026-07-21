@@ -1,144 +1,335 @@
 # Modules
 
-## ClickGUI sounds
+## Aimbot
+Automatically aims at nearby players/mobs. Likely hooks mouse/camera input.
 
-- `func_0x1800044b0_assets_clickgui` at `0x1800044b0` — UI on/off sound assets.
+- `func_0x1800c1050_Aimbot` (`0x1800c1050`)
 
-## Client branding / init
+## AirJump
+Allows jumping while in mid-air.
 
-- `func_0x1800153c0_Nevoy_Client` at `0x1800153c0` — Client name string and initialization routines.
-- `func_0x18001b880_Nevoy_Client` at `0x18001b880` — Client name string and initialization routines.
+- `func_0x1800c1470_AirJump` (`0x1800c1470`)
 
-## PacketV2 logger/patcher
+## AirPlace
+Places blocks in the air without support.
 
-- `func_0x18004ee60_PacketV2` at `0x18004ee60` — Packet send/receive hooking and logging.
-- `func_0x180152350_PacketV2` at `0x180152350` — Packet send/receive hooking and logging.
-- `func_0x180169750_PacketV2` at `0x180169750` — Packet send/receive hooking and logging.
+- `func_0x1800c1530_AirPlace` (`0x1800c1530`)
+
+## Animations
+Modifies player/item animations.
+
+- `func_0x1800c1870_Animations` (`0x1800c1870`)
+
+## AntiBot
+Ignores server/NPC bots in combat modules.
+
+- `func_0x1800c1a10_AntiBot` (`0x1800c1a10`)
+
+## AntiImmobile
+Allows movement when the server sets the player immobile.
+
+- `func_0x1800c1b80_AntiImmobile` (`0x1800c1b80`)
+
+## AntiKB
+Prevents or reduces knockback.
+
+- `func_0x1800c1c40_AntiKB` (`0x1800c1c40`)
+
+## ArrayList
+Cheat/hook component.
+
+- `func_0x1800c1e30_ArrayList` (`0x1800c1e30`)
+
+## AutoClicker
+Automates left/right clicks at high speed.
+
+- `func_0x1800c2290_AutoClicker` (`0x1800c2290`)
+
+## AutoFishing
+Automates fishing rod casting/reeling.
+
+- `func_0x1800c26a0_AutoFishing` (`0x1800c26a0`)
+
+## AutoTotem
+Automatically places a totem in the off-hand.
+
+- `func_0x1800c2c10_AutoTotem` (`0x1800c2c10`)
 
 ## Backtrack
+Rubber-bands/rewinds player positions for easier hits.
 
-- `func_0x18005ec20_Backtrack` at `0x18005ec20` — Network/rubber-band exploit; cancels/replays player positions.
-- `func_0x1800c2e90_Backtrack` at `0x1800c2e90` — Network/rubber-band exploit; cancels/replays player positions.
-- `func_0x18016b7c0_Backtrack` at `0x18016b7c0` — Network/rubber-band exploit; cancels/replays player positions.
+- `func_0x1800c2e90_Backtrack` (`0x1800c2e90`)
 
-## Baritone automation
+## Baritone
+Pathfinding/automation bot integration.
 
-- `func_0x180063f90_Baritone` at `0x180063f90` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x18006fb70_Baritone` at `0x18006fb70` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x1800c3600_Baritone` at `0x1800c3600` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x1800e02a0_Baritone` at `0x1800e02a0` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x1800ed1d0_Baritone` at `0x1800ed1d0` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x1800f0f50_Baritone` at `0x1800f0f50` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x1800f3f60_Baritone` at `0x1800f3f60` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x1800fc5e0_Baritone` at `0x1800fc5e0` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x1801019c0_Baritone` at `0x1801019c0` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x18010aa80_Baritone` at `0x18010aa80` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x180131ba0_Baritone` at `0x180131ba0` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x180134080_Baritone` at `0x180134080` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x180134e50_Baritone` at `0x180134e50` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x1801383e0_Baritone` at `0x1801383e0` — Pathfinding/automation bot; references task state and packet sending.
-- `func_0x18013a1c0_Baritone` at `0x18013a1c0` — Pathfinding/automation bot; references task state and packet sending.
+- `func_0x1800c3600_Baritone` (`0x1800c3600`)
 
-## GuiData hooks
+## BlockESP
+Highlights selected blocks through walls.
 
-- `func_0x18006f0d0_GuiData` at `0x18006f0d0` — HUD / screen / display-message hooks.
-- `func_0x18015df40_GuiData` at `0x18015df40` — HUD / screen / display-message hooks.
-- `func_0x18015dfd0_GuiData` at `0x18015dfd0` — HUD / screen / display-message hooks.
-- `func_0x18015e060_GuiData` at `0x18015e060` — HUD / screen / display-message hooks.
-- `func_0x180168870_GuiData` at `0x180168870` — HUD / screen / display-message hooks.
+- `func_0x1800c44a0_BlockESP` (`0x1800c44a0`)
 
-## ClientInstance hooks
+## Breaker
+Automatically breaks blocks.
 
-- `func_0x180070350_ClientInstance` at `0x180070350` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x180070630_ClientInstance` at `0x180070630` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x1800706c0_ClientInstance` at `0x1800706c0` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x180074b10_ClientInstance` at `0x180074b10` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x1800f9470_ClientInstance` at `0x1800f9470` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x18015d400_ClientInstance` at `0x18015d400` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x18015d490_ClientInstance` at `0x18015d490` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x18015d520_ClientInstance` at `0x18015d520` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x18015d5b0_ClientInstance` at `0x18015d5b0` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x18015d640_ClientInstance` at `0x18015d640` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x18015d6d0_ClientInstance` at `0x18015d6d0` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x18015d760_ClientInstance` at `0x18015d760` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x18015dd00_ClientInstance` at `0x18015dd00` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
-- `func_0x180167fb0_ClientInstance` at `0x180167fb0` — Core game-client structure hooks (local player, block source, guiData, level, viewMatrix, FOV).
+- `func_0x1800c4be0_Breaker` (`0x1800c4be0`)
 
-## ModuleManager
+## ChestStealer
+Auto-loots containers.
 
-- `func_0x18008dbb0_module` at `0x18008dbb0` — Cheat-module loader / config dumper.
-- `func_0x180246d40_module` at `0x180246d40` — Cheat-module loader / config dumper.
-- `func_0x18024b6f0_module` at `0x18024b6f0` — Cheat-module loader / config dumper.
-- `func_0x18024dcf0_module` at `0x18024dcf0` — Cheat-module loader / config dumper.
+- `func_0x1800c4fa0_ChestStealer` (`0x1800c4fa0`)
 
-## modules not initialized
+## Criticals
+Forces critical hits.
 
-- `func_0x18008f410_modules_not_initialized` at `0x18008f410` — Cheat-related function.
+- `func_0x1800c58e0_Criticals` (`0x1800c58e0`)
 
-## Anti Knockback / Velocity
+## CrystalAura
+Auto-places and detonates end crystals in PvP.
 
-- `func_0x1800c1c40_AntiKB` at `0x1800c1c40` — Removes/reduces knockback/velocity effects.
+- `func_0x1800c5ae0_CrystalAura` (`0x1800c5ae0`)
 
-## Block ESP
+## DestroyProgress
+Modifies block break progress/speed.
 
-- `func_0x1800c44a0_BlockESP` at `0x1800c44a0` — Highlights specific blocks (ores/chests) through the world.
-- `func_0x1801052e0_BlockESP` at `0x1801052e0` — Highlights specific blocks (ores/chests) through the world.
-- `func_0x180106f90_BlockESP` at `0x180106f90` — Highlights specific blocks (ores/chests) through the world.
+- `func_0x1800c5ea0_DestroyProgress` (`0x1800c5ea0`)
+
+## DeviceId
+Cheat/hook component.
+
+- `func_0x1800c6080_DeviceId` (`0x1800c6080`)
 
 ## Disabler
+Cancels/modifies outgoing packets to bypass anti-cheat.
 
-- `func_0x1800c61e0_Disabler` at `0x1800c61e0` — Cancels or modifies outgoing packets to bypass anti-cheat.
+- `func_0x1800c61e0_Disabler` (`0x1800c61e0`)
 
-## Flight / Air movement
+## ESP
+General entity/players extra-sensory perception overlay.
 
-- `func_0x1800c6d60_Flight` at `0x1800c6d60` — Allows the player to fly or move in air.
+- `func_0x1800c6740_ESP` (`0x1800c6740`)
+
+## FastEat
+Speeds up eating/consumable use.
+
+- `func_0x1800c6b30_FastEat` (`0x1800c6b30`)
+
+## FastPlace
+Removes block placement delay.
+
+- `func_0x1800c6ca0_FastPlace` (`0x1800c6ca0`)
+
+## Flight
+Allows the player to fly in survival/creative-like.
+
+- `func_0x1800c6d60_Flight` (`0x1800c6d60`)
+
+## FlySpoof
+Spoofs fly-related packets/flags.
+
+- `func_0x1800c7290_FlySpoof` (`0x1800c7290`)
 
 ## FreeCam
+Detaches the camera to fly around freely.
 
-- `func_0x1800c7580_FreeCam` at `0x1800c7580` — Detaches the camera from the player for free-roam viewing.
+- `func_0x1800c7580_FreeCam` (`0x1800c7580`)
 
-## Inventory Move
+## FreeLook
+Looks around without turning the player.
 
-- `func_0x1800c8790_InvMove` at `0x1800c8790` — Allows movement while in inventory screens.
-- `func_0x180105a50_InvMove` at `0x180105a50` — Allows movement while in inventory screens.
-- `func_0x1801076e0_InvMove` at `0x1801076e0` — Allows movement while in inventory screens.
-- `func_0x18010c470_InvMove` at `0x18010c470` — Allows movement while in inventory screens.
+- `func_0x1800c7840_FreeLook` (`0x1800c7840`)
 
-## Storage ESP
+## FullBright
+Maximum gamma / no darkness.
 
-- `func_0x1800ccb20_StorageESP` at `0x1800ccb20` — Highlights storage containers (chests, shulkers, etc.).
-- `func_0x180106480_StorageESP` at `0x180106480` — Highlights storage containers (chests, shulkers, etc.).
-- `func_0x180107cc0_StorageESP` at `0x180107cc0` — Highlights storage containers (chests, shulkers, etc.).
+- `func_0x1800c7900_FullBright` (`0x1800c7900`)
 
-## X-Ray / Ore ESP
+## HitBox
+Expands entity hitboxes.
 
-- `func_0x1800cdca0_lapis` at `0x1800cdca0` — References lapis_block and lapis_ore; part of BlockESP/ore highlighting.
-- `func_0x1801080f0_lapis` at `0x1801080f0` — References lapis_block and lapis_ore; part of BlockESP/ore highlighting.
+- `func_0x1800c7a70_HitBox` (`0x1800c7a70`)
 
-## Wallhack / ESP
+## Interface
+Cheat/hook component.
 
-- `func_0x1800ced70_Wallhack` at `0x1800ced70` — Renders entities or blocks through walls; references ClientInstance viewMatrix/Fov.
+- `func_0x1800c7d20_Interface` (`0x1800c7d20`)
 
-## projMatrix
+## InvManager
+Auto-sorts/throws inventory items.
 
-- `func_0x1800f9310_projMatrix` at `0x1800f9310` — Cheat-related function.
-- `func_0x18015dc70_projMatrix` at `0x18015dc70` — Cheat-related function.
-- `func_0x18015deb0_projMatrix` at `0x18015deb0` — Cheat-related function.
+- `func_0x1800c82d0_InvManager` (`0x1800c82d0`)
 
-## viewMatrix
+## InvMove
+Walk around while inventory screens are open.
 
-- `func_0x1800f93c0_viewMatrix` at `0x1800f93c0` — Cheat-related function.
-- `func_0x18015dbe0_viewMatrix` at `0x18015dbe0` — Cheat-related function.
-- `func_0x18015de20_viewMatrix` at `0x18015de20` — Cheat-related function.
+- `func_0x1800c8790_InvMove` (`0x1800c8790`)
 
-## getLevelRenderer
+## Jesus
+Walk on water.
 
-- `func_0x18015dac0_getLevelRenderer` at `0x18015dac0` — Cheat-related function.
+- `func_0x1800c8860_Jesus` (`0x1800c8860`)
 
-## cameraPos
+## KillAura
+Auto-attacks nearby players/mobs.
 
-- `func_0x18015db50_cameraPos` at `0x18015db50` — Cheat-related function.
+- `func_0x1800c8a50_KillAura` (`0x1800c8a50`)
 
-## renderLevel
+## MidClick
+Bind/activate module on middle mouse click.
 
-- `func_0x180168190_renderLevel` at `0x180168190` — Cheat-related function.
+- `func_0x1800c9180_MidClick` (`0x1800c9180`)
+
+## NameTags
+Renders larger/always-visible name tags.
+
+- `func_0x1800c9570_NameTags` (`0x1800c9570`)
+
+## NoFall
+Prevents fall damage.
+
+- `func_0x1800c9930_NoFall` (`0x1800c9930`)
+
+## NoJumpDelay
+Removes jump cooldown.
+
+- `func_0x1800c99f0_NoJumpDelay` (`0x1800c99f0`)
+
+## NoSlow
+Negates slowdown from blocking/soulsand/web.
+
+- `func_0x1800c9ab0_NoSlow` (`0x1800c9ab0`)
+
+## Notifications
+Shows on-screen module status popups.
+
+- `func_0x1800c9b70_Notifications` (`0x1800c9b70`)
+
+## Nuker
+Breaks a large area of blocks rapidly.
+
+- `func_0x1800c9ce0_Nuker` (`0x1800c9ce0`)
+
+## Phase
+Walks through blocks.
+
+- `func_0x1800ca3f0_Phase` (`0x1800ca3f0`)
+
+## Reach
+Extends attack/build reach distance.
+
+- `func_0x1800ca560_Reach` (`0x1800ca560`)
+
+## Regen
+Accelerates health regeneration.
+
+- `func_0x1800ca730_Regen` (`0x1800ca730`)
+
+## Scaffold
+Auto-places blocks under the player while walking.
+
+- `func_0x1800caba0_Scaffold` (`0x1800caba0`)
+
+## Sneak
+Auto-sneak or modified sneak behavior.
+
+- `func_0x1800cb950_Sneak` (`0x1800cb950`)
+
+## SoundLocation
+Cheat/hook component.
+
+- `func_0x1800cba10_SoundLocation` (`0x1800cba10`)
+
+## Speed
+Increases movement speed.
+
+- `func_0x1800cbd30_Speed` (`0x1800cbd30`)
+- `func_0x18012c9e0_Speed` (`0x18012c9e0`)
+- `func_0x18012f540_Speed` (`0x18012f540`)
+- `func_0x18012f5a0_Speed` (`0x18012f5a0`)
+- `func_0x18012fb10_Speed` (`0x18012fb10`)
+
+## SpeedMine
+Accelerates mining speed.
+
+- `func_0x1800cc170_SpeedMine` (`0x1800cc170`)
+
+## Spider
+Climbs walls like a spider.
+
+- `func_0x1800cc350_Spider` (`0x1800cc350`)
+
+## Sprint
+Forces sprinting.
+
+- `func_0x1800cc4c0_Sprint` (`0x1800cc4c0`)
+
+## Statistics
+Cheat/hook component.
+
+- `func_0x1800cc580_Statistics` (`0x1800cc580`)
+- `func_0x18012c540_Statistics` (`0x18012c540`)
+- `func_0x180130310_Statistics` (`0x180130310`)
+
+## Step
+Automatically steps up full blocks.
+
+- `func_0x1800cc9b0_Step` (`0x1800cc9b0`)
+
+## StorageESP
+Highlights chests/shulkers/barrels through walls.
+
+- `func_0x1800ccb20_StorageESP` (`0x1800ccb20`)
+
+## TargetHUD
+Displays info about the current target.
+
+- `func_0x1800cd0b0_TargetHUD` (`0x1800cd0b0`)
+
+## TargetStrafe
+Strafes around the current target automatically.
+
+- `func_0x1800cd4b0_TargetStrafe` (`0x1800cd4b0`)
+
+## ThirdPersonNametag
+Cheat/hook component.
+
+- `func_0x1800cda00_ThirdPersonNametag` (`0x1800cda00`)
+- `func_0x180107fa0_ThirdPersonNametag` (`0x180107fa0`)
+- `func_0x1801694f0_ThirdPersonNametag` (`0x1801694f0`)
+
+## Timer
+Speeds up/slows down client tick rate.
+
+- `func_0x1800cdaf0_Timer` (`0x1800cdaf0`)
+
+## TpMine
+Teleports to mined blocks or packet mining.
+
+- `func_0x1800cdca0_TpMine` (`0x1800cdca0`)
+
+## Tracers
+Draws lines to entities.
+
+- `func_0x1800ce4c0_Tracers` (`0x1800ce4c0`)
+
+## TriggerBot
+Auto-attacks when crosshair is on an entity.
+
+- `func_0x1800ce8e0_TriggerBot` (`0x1800ce8e0`)
+
+## Velocity
+Modifies incoming velocity/knockback.
+
+- `func_0x1800ceb10_Velocity` (`0x1800ceb10`)
+- `func_0x1800fa9e0_Velocity` (`0x1800fa9e0`)
+
+## Wallhack
+See entities/blocks through walls.
+
+- `func_0x1800ced70_Wallhack` (`0x1800ced70`)
+
+## Zoom
+Hold-to-zoom camera.
+
+- `func_0x1800cee30_Zoom` (`0x1800cee30`)

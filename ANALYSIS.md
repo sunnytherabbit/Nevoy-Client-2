@@ -8,8 +8,8 @@
 - Compiled with: Microsoft Visual C++ / MSVC linker
 - Sections: .text (code), .rdata (constants/pointers), .data (globals), .pdata (unwind)
 
-## High-level Behaviour
-This is a native x64 DLL injected into a Minecraft-based game process. It hooks game structures (ClientInstance, GuiData, LevelRenderer, LevelRendererPlayer) and loads cheat modules via a ModuleManager. It uses D3D11/DXGI for rendering overlays and WinMM/PlaySoundA for UI sounds.
+## High-level behaviour
+Native x64 DLL injected into a Minecraft-based process. Hooks `ClientInstance`, `GuiData`, `LevelRenderer`, `LevelRendererPlayer`, loads ~70 cheat modules through a `ModuleManager`, and renders with D3D11/DXGI.
 
 ## Imported APIs (attack surface / hook indicators)
 - `AcquireSRWLockExclusive`
@@ -234,94 +234,160 @@ This is a native x64 DLL injected into a Minecraft-based game process. It hooks 
 - `WriteConsoleW`
 - `WriteFile`
 
-## Identified Cheat Modules / Hook Functions
+## Renamed cheat / hook functions
 
-| Address | Renamed function | Original | Keywords |
-|---------|------------------|----------|----------|
-| `0x1800044b0` | `func_0x1800044b0_assets_clickgui` | `function_1800044b0` | assets/clickgui |
-| `0x1800153c0` | `func_0x1800153c0_Nevoy_Client` | `function_1800153c0` | Nevoy Client |
-| `0x18001b880` | `func_0x18001b880_Nevoy_Client` | `function_18001b880` | Nevoy Client |
-| `0x18004ee60` | `func_0x18004ee60_PacketV2` | `function_18004ee60` | PacketV2, [PacketV2] |
-| `0x18005ec20` | `func_0x18005ec20_Backtrack` | `function_18005ec20` | Backtrack |
-| `0x180063f90` | `func_0x180063f90_Baritone` | `function_180063f90` | Baritone |
-| `0x18006f0d0` | `func_0x18006f0d0_GuiData` | `function_18006f0d0` | GuiData, displayClientMessage |
-| `0x18006fb70` | `func_0x18006fb70_Baritone` | `function_18006fb70` | Baritone |
-| `0x180070350` | `func_0x180070350_ClientInstance` | `function_180070350` | ClientInstance, getBlockSource |
-| `0x180070630` | `func_0x180070630_ClientInstance` | `function_180070630` | ClientInstance |
-| `0x1800706c0` | `func_0x1800706c0_ClientInstance` | `function_1800706c0` | ClientInstance, getLocalPlayer |
-| `0x180074b10` | `func_0x180074b10_ClientInstance` | `function_180074b10` | ClientInstance, [Setup] |
-| `0x18008dbb0` | `func_0x18008dbb0_module` | `function_18008dbb0` | module, [ModuleManager] |
-| `0x18008f410` | `func_0x18008f410_modules_not_initialized` | `function_18008f410` | modules not initialized, module |
-| `0x1800c1c40` | `func_0x1800c1c40_AntiKB` | `function_1800c1c40` | AntiKB |
-| `0x1800c2e90` | `func_0x1800c2e90_Backtrack` | `function_1800c2e90` | Backtrack |
-| `0x1800c3600` | `func_0x1800c3600_Baritone` | `function_1800c3600` | Baritone |
-| `0x1800c44a0` | `func_0x1800c44a0_BlockESP` | `function_1800c44a0` | BlockESP |
-| `0x1800c61e0` | `func_0x1800c61e0_Disabler` | `function_1800c61e0` | Disabler |
-| `0x1800c6d60` | `func_0x1800c6d60_Flight` | `function_1800c6d60` | Flight |
-| `0x1800c7580` | `func_0x1800c7580_FreeCam` | `function_1800c7580` | FreeCam |
-| `0x1800c8790` | `func_0x1800c8790_InvMove` | `function_1800c8790` | InvMove |
-| `0x1800ccb20` | `func_0x1800ccb20_StorageESP` | `function_1800ccb20` | StorageESP |
-| `0x1800cdca0` | `func_0x1800cdca0_lapis` | `function_1800cdca0` | lapis |
-| `0x1800ced70` | `func_0x1800ced70_Wallhack` | `function_1800ced70` | Wallhack |
-| `0x1800e02a0` | `func_0x1800e02a0_Baritone` | `function_1800e02a0` | Baritone |
-| `0x1800ed1d0` | `func_0x1800ed1d0_Baritone` | `function_1800ed1d0` | Baritone |
-| `0x1800f0f50` | `func_0x1800f0f50_Baritone` | `function_1800f0f50` | Baritone |
-| `0x1800f3f60` | `func_0x1800f3f60_Baritone` | `function_1800f3f60` | Baritone |
-| `0x1800f9310` | `func_0x1800f9310_projMatrix` | `function_1800f9310` | projMatrix |
-| `0x1800f93c0` | `func_0x1800f93c0_viewMatrix` | `function_1800f93c0` | viewMatrix |
-| `0x1800f9470` | `func_0x1800f9470_ClientInstance` | `function_1800f9470` | ClientInstance |
-| `0x1800fc5e0` | `func_0x1800fc5e0_Baritone` | `function_1800fc5e0` | Baritone |
-| `0x1801019c0` | `func_0x1801019c0_Baritone` | `function_1801019c0` | Baritone |
-| `0x1801052e0` | `func_0x1801052e0_BlockESP` | `function_1801052e0` | BlockESP |
-| `0x180105a50` | `func_0x180105a50_InvMove` | `function_180105a50` | InvMove, [InvMove] |
-| `0x180106480` | `func_0x180106480_StorageESP` | `function_180106480` | StorageESP |
-| `0x180106f90` | `func_0x180106f90_BlockESP` | `function_180106f90` | BlockESP |
-| `0x1801076e0` | `func_0x1801076e0_InvMove` | `function_1801076e0` | InvMove, [InvMove] |
-| `0x180107cc0` | `func_0x180107cc0_StorageESP` | `function_180107cc0` | StorageESP |
-| `0x1801080f0` | `func_0x1801080f0_lapis` | `function_1801080f0` | lapis, lapis_ore, minecraft:lapis |
-| `0x18010aa80` | `func_0x18010aa80_Baritone` | `function_18010aa80` | Baritone |
-| `0x18010c470` | `func_0x18010c470_InvMove` | `function_18010c470` | InvMove, [InvMove] |
-| `0x180131ba0` | `func_0x180131ba0_Baritone` | `function_180131ba0` | Baritone |
-| `0x180134080` | `func_0x180134080_Baritone` | `function_180134080` | Baritone |
-| `0x180134e50` | `func_0x180134e50_Baritone` | `function_180134e50` | Baritone |
-| `0x1801383e0` | `func_0x1801383e0_Baritone` | `function_1801383e0` | Baritone |
-| `0x18013a1c0` | `func_0x18013a1c0_Baritone` | `function_18013a1c0` | Baritone |
-| `0x180152350` | `func_0x180152350_PacketV2` | `function_180152350` | PacketV2 |
-| `0x18015d400` | `func_0x18015d400_ClientInstance` | `function_18015d400` | ClientInstance |
-| `0x18015d490` | `func_0x18015d490_ClientInstance` | `function_18015d490` | ClientInstance |
-| `0x18015d520` | `func_0x18015d520_ClientInstance` | `function_18015d520` | ClientInstance, viewMatrix |
-| `0x18015d5b0` | `func_0x18015d5b0_ClientInstance` | `function_18015d5b0` | ClientInstance, getFovX |
-| `0x18015d640` | `func_0x18015d640_ClientInstance` | `function_18015d640` | ClientInstance, getFovY |
-| `0x18015d6d0` | `func_0x18015d6d0_ClientInstance` | `function_18015d6d0` | ClientInstance, getLevelRenderer |
-| `0x18015d760` | `func_0x18015d760_ClientInstance` | `function_18015d760` | ClientInstance, getBlockSource |
-| `0x18015dac0` | `func_0x18015dac0_getLevelRenderer` | `function_18015dac0` | getLevelRenderer |
-| `0x18015db50` | `func_0x18015db50_cameraPos` | `function_18015db50` | cameraPos |
-| `0x18015dbe0` | `func_0x18015dbe0_viewMatrix` | `function_18015dbe0` | viewMatrix |
-| `0x18015dc70` | `func_0x18015dc70_projMatrix` | `function_18015dc70` | projMatrix |
-| `0x18015dd00` | `func_0x18015dd00_ClientInstance` | `function_18015dd00` | ClientInstance |
-| `0x18015de20` | `func_0x18015de20_viewMatrix` | `function_18015de20` | viewMatrix |
-| `0x18015deb0` | `func_0x18015deb0_projMatrix` | `function_18015deb0` | projMatrix |
-| `0x18015df40` | `func_0x18015df40_GuiData` | `function_18015df40` | GuiData, ScreenSize |
-| `0x18015dfd0` | `func_0x18015dfd0_GuiData` | `function_18015dfd0` | GuiData, ScreenSize |
-| `0x18015e060` | `func_0x18015e060_GuiData` | `function_18015e060` | GuiData, GuiScale |
-| `0x180167fb0` | `func_0x180167fb0_ClientInstance` | `function_180167fb0` | ClientInstance, getLocalPlayer |
-| `0x180168190` | `func_0x180168190_renderLevel` | `function_180168190` | renderLevel |
-| `0x180168870` | `func_0x180168870_GuiData` | `function_180168870` | GuiData, displayClientMessage |
-| `0x180169750` | `func_0x180169750_PacketV2` | `function_180169750` | PacketV2, welcome, goodbye, assets/inject_on, assets/inject_off |
-| `0x18016b7c0` | `func_0x18016b7c0_Backtrack` | `function_18016b7c0` | Backtrack |
-| `0x180246d40` | `func_0x180246d40_module` | `function_180246d40` | module |
-| `0x18024b6f0` | `func_0x18024b6f0_module` | `function_18024b6f0` | module |
-| `0x18024dcf0` | `func_0x18024dcf0_module` | `function_18024dcf0` | module |
+| Address | Function | Label |
+|---------|----------|-------|
+| `0x1800044b0` | `func_0x1800044b0_assets_clickgui` | `assets_clickgui` |
+| `0x1800153c0` | `func_0x1800153c0_Nevoy_Client` | `Nevoy_Client` |
+| `0x18001b880` | `func_0x18001b880_Nevoy_Client` | `Nevoy_Client` |
+| `0x18004ee60` | `func_0x18004ee60_PacketV2` | `PacketV2` |
+| `0x18005ec20` | `func_0x18005ec20_Backtrack` | `Backtrack` |
+| `0x180063f90` | `func_0x180063f90_Baritone` | `Baritone` |
+| `0x18006f0d0` | `func_0x18006f0d0_GuiData` | `GuiData` |
+| `0x18006fb70` | `func_0x18006fb70_Baritone` | `Baritone` |
+| `0x180070350` | `func_0x180070350_ClientInstance` | `ClientInstance` |
+| `0x180070630` | `func_0x180070630_ClientInstance` | `ClientInstance` |
+| `0x1800706c0` | `func_0x1800706c0_ClientInstance` | `ClientInstance` |
+| `0x180074b10` | `func_0x180074b10_ClientInstance` | `ClientInstance` |
+| `0x18008dbb0` | `func_0x18008dbb0_module` | `module` |
+| `0x18008f410` | `func_0x18008f410_modules_not_initialized` | `modules_not_initialized` |
+| `0x1800c1050` | `func_0x1800c1050_Aimbot` | `Aimbot` |
+| `0x1800c1470` | `func_0x1800c1470_AirJump` | `AirJump` |
+| `0x1800c1530` | `func_0x1800c1530_AirPlace` | `AirPlace` |
+| `0x1800c1870` | `func_0x1800c1870_Animations` | `Animations` |
+| `0x1800c1a10` | `func_0x1800c1a10_AntiBot` | `AntiBot` |
+| `0x1800c1b80` | `func_0x1800c1b80_AntiImmobile` | `AntiImmobile` |
+| `0x1800c1c40` | `func_0x1800c1c40_AntiKB` | `AntiKB` |
+| `0x1800c1e30` | `func_0x1800c1e30_ArrayList` | `ArrayList` |
+| `0x1800c2290` | `func_0x1800c2290_AutoClicker` | `AutoClicker` |
+| `0x1800c26a0` | `func_0x1800c26a0_AutoFishing` | `AutoFishing` |
+| `0x1800c2c10` | `func_0x1800c2c10_AutoTotem` | `AutoTotem` |
+| `0x1800c2e90` | `func_0x1800c2e90_Backtrack` | `Backtrack` |
+| `0x1800c3600` | `func_0x1800c3600_Baritone` | `Baritone` |
+| `0x1800c44a0` | `func_0x1800c44a0_BlockESP` | `BlockESP` |
+| `0x1800c4be0` | `func_0x1800c4be0_Breaker` | `Breaker` |
+| `0x1800c4fa0` | `func_0x1800c4fa0_ChestStealer` | `ChestStealer` |
+| `0x1800c58e0` | `func_0x1800c58e0_Criticals` | `Criticals` |
+| `0x1800c5ae0` | `func_0x1800c5ae0_CrystalAura` | `CrystalAura` |
+| `0x1800c5ea0` | `func_0x1800c5ea0_DestroyProgress` | `DestroyProgress` |
+| `0x1800c6080` | `func_0x1800c6080_DeviceId` | `DeviceId` |
+| `0x1800c61e0` | `func_0x1800c61e0_Disabler` | `Disabler` |
+| `0x1800c6740` | `func_0x1800c6740_ESP` | `ESP` |
+| `0x1800c6b30` | `func_0x1800c6b30_FastEat` | `FastEat` |
+| `0x1800c6ca0` | `func_0x1800c6ca0_FastPlace` | `FastPlace` |
+| `0x1800c6d60` | `func_0x1800c6d60_Flight` | `Flight` |
+| `0x1800c7290` | `func_0x1800c7290_FlySpoof` | `FlySpoof` |
+| `0x1800c7580` | `func_0x1800c7580_FreeCam` | `FreeCam` |
+| `0x1800c7840` | `func_0x1800c7840_FreeLook` | `FreeLook` |
+| `0x1800c7900` | `func_0x1800c7900_FullBright` | `FullBright` |
+| `0x1800c7a70` | `func_0x1800c7a70_HitBox` | `HitBox` |
+| `0x1800c7d20` | `func_0x1800c7d20_Interface` | `Interface` |
+| `0x1800c82d0` | `func_0x1800c82d0_InvManager` | `InvManager` |
+| `0x1800c8790` | `func_0x1800c8790_InvMove` | `InvMove` |
+| `0x1800c8860` | `func_0x1800c8860_Jesus` | `Jesus` |
+| `0x1800c8a50` | `func_0x1800c8a50_KillAura` | `KillAura` |
+| `0x1800c9180` | `func_0x1800c9180_MidClick` | `MidClick` |
+| `0x1800c9570` | `func_0x1800c9570_NameTags` | `NameTags` |
+| `0x1800c9930` | `func_0x1800c9930_NoFall` | `NoFall` |
+| `0x1800c99f0` | `func_0x1800c99f0_NoJumpDelay` | `NoJumpDelay` |
+| `0x1800c9ab0` | `func_0x1800c9ab0_NoSlow` | `NoSlow` |
+| `0x1800c9b70` | `func_0x1800c9b70_Notifications` | `Notifications` |
+| `0x1800c9ce0` | `func_0x1800c9ce0_Nuker` | `Nuker` |
+| `0x1800ca3f0` | `func_0x1800ca3f0_Phase` | `Phase` |
+| `0x1800ca560` | `func_0x1800ca560_Reach` | `Reach` |
+| `0x1800ca730` | `func_0x1800ca730_Regen` | `Regen` |
+| `0x1800caba0` | `func_0x1800caba0_Scaffold` | `Scaffold` |
+| `0x1800cb950` | `func_0x1800cb950_Sneak` | `Sneak` |
+| `0x1800cba10` | `func_0x1800cba10_SoundLocation` | `SoundLocation` |
+| `0x1800cbd30` | `func_0x1800cbd30_Speed` | `Speed` |
+| `0x1800cc170` | `func_0x1800cc170_SpeedMine` | `SpeedMine` |
+| `0x1800cc350` | `func_0x1800cc350_Spider` | `Spider` |
+| `0x1800cc4c0` | `func_0x1800cc4c0_Sprint` | `Sprint` |
+| `0x1800cc580` | `func_0x1800cc580_Statistics` | `Statistics` |
+| `0x1800cc9b0` | `func_0x1800cc9b0_Step` | `Step` |
+| `0x1800ccb20` | `func_0x1800ccb20_StorageESP` | `StorageESP` |
+| `0x1800cd0b0` | `func_0x1800cd0b0_TargetHUD` | `TargetHUD` |
+| `0x1800cd4b0` | `func_0x1800cd4b0_TargetStrafe` | `TargetStrafe` |
+| `0x1800cda00` | `func_0x1800cda00_ThirdPersonNametag` | `ThirdPersonNametag` |
+| `0x1800cdaf0` | `func_0x1800cdaf0_Timer` | `Timer` |
+| `0x1800cdca0` | `func_0x1800cdca0_TpMine` | `TpMine` |
+| `0x1800ce4c0` | `func_0x1800ce4c0_Tracers` | `Tracers` |
+| `0x1800ce8e0` | `func_0x1800ce8e0_TriggerBot` | `TriggerBot` |
+| `0x1800ceb10` | `func_0x1800ceb10_Velocity` | `Velocity` |
+| `0x1800ced70` | `func_0x1800ced70_Wallhack` | `Wallhack` |
+| `0x1800cee30` | `func_0x1800cee30_Zoom` | `Zoom` |
+| `0x1800e02a0` | `func_0x1800e02a0_Baritone` | `Baritone` |
+| `0x1800ed1d0` | `func_0x1800ed1d0_Baritone` | `Baritone` |
+| `0x1800f0f50` | `func_0x1800f0f50_Baritone` | `Baritone` |
+| `0x1800f3f60` | `func_0x1800f3f60_Baritone` | `Baritone` |
+| `0x1800f9310` | `func_0x1800f9310_projMatrix` | `projMatrix` |
+| `0x1800f93c0` | `func_0x1800f93c0_viewMatrix` | `viewMatrix` |
+| `0x1800f9470` | `func_0x1800f9470_ClientInstance` | `ClientInstance` |
+| `0x1800fa9e0` | `func_0x1800fa9e0_Velocity` | `Velocity` |
+| `0x1800fc5e0` | `func_0x1800fc5e0_Baritone` | `Baritone` |
+| `0x1801019c0` | `func_0x1801019c0_Baritone` | `Baritone` |
+| `0x1801052e0` | `func_0x1801052e0_BlockESP` | `BlockESP` |
+| `0x180105a50` | `func_0x180105a50_InvMove` | `InvMove` |
+| `0x180106480` | `func_0x180106480_StorageESP` | `StorageESP` |
+| `0x180106f90` | `func_0x180106f90_BlockESP` | `BlockESP` |
+| `0x1801076e0` | `func_0x1801076e0_InvMove` | `InvMove` |
+| `0x180107cc0` | `func_0x180107cc0_StorageESP` | `StorageESP` |
+| `0x180107fa0` | `func_0x180107fa0_ThirdPersonNametag` | `ThirdPersonNametag` |
+| `0x1801080f0` | `func_0x1801080f0_lapis` | `lapis` |
+| `0x18010aa80` | `func_0x18010aa80_Baritone` | `Baritone` |
+| `0x18010c470` | `func_0x18010c470_InvMove` | `InvMove` |
+| `0x18012c540` | `func_0x18012c540_Statistics` | `Statistics` |
+| `0x18012c9e0` | `func_0x18012c9e0_Speed` | `Speed` |
+| `0x18012f540` | `func_0x18012f540_Speed` | `Speed` |
+| `0x18012f5a0` | `func_0x18012f5a0_Speed` | `Speed` |
+| `0x18012fb10` | `func_0x18012fb10_Speed` | `Speed` |
+| `0x180130310` | `func_0x180130310_Statistics` | `Statistics` |
+| `0x180131ba0` | `func_0x180131ba0_Baritone` | `Baritone` |
+| `0x180134080` | `func_0x180134080_Baritone` | `Baritone` |
+| `0x180134e50` | `func_0x180134e50_Baritone` | `Baritone` |
+| `0x1801383e0` | `func_0x1801383e0_Baritone` | `Baritone` |
+| `0x18013a1c0` | `func_0x18013a1c0_Baritone` | `Baritone` |
+| `0x180152350` | `func_0x180152350_PacketV2` | `PacketV2` |
+| `0x18015d400` | `func_0x18015d400_ClientInstance` | `ClientInstance` |
+| `0x18015d490` | `func_0x18015d490_ClientInstance` | `ClientInstance` |
+| `0x18015d520` | `func_0x18015d520_ClientInstance` | `ClientInstance` |
+| `0x18015d5b0` | `func_0x18015d5b0_ClientInstance` | `ClientInstance` |
+| `0x18015d640` | `func_0x18015d640_ClientInstance` | `ClientInstance` |
+| `0x18015d6d0` | `func_0x18015d6d0_ClientInstance` | `ClientInstance` |
+| `0x18015d760` | `func_0x18015d760_ClientInstance` | `ClientInstance` |
+| `0x18015dac0` | `func_0x18015dac0_getLevelRenderer` | `getLevelRenderer` |
+| `0x18015db50` | `func_0x18015db50_cameraPos` | `cameraPos` |
+| `0x18015dbe0` | `func_0x18015dbe0_viewMatrix` | `viewMatrix` |
+| `0x18015dc70` | `func_0x18015dc70_projMatrix` | `projMatrix` |
+| `0x18015dd00` | `func_0x18015dd00_ClientInstance` | `ClientInstance` |
+| `0x18015de20` | `func_0x18015de20_viewMatrix` | `viewMatrix` |
+| `0x18015deb0` | `func_0x18015deb0_projMatrix` | `projMatrix` |
+| `0x18015df40` | `func_0x18015df40_GuiData` | `GuiData` |
+| `0x18015dfd0` | `func_0x18015dfd0_GuiData` | `GuiData` |
+| `0x18015e060` | `func_0x18015e060_GuiData` | `GuiData` |
+| `0x180167fb0` | `func_0x180167fb0_ClientInstance` | `ClientInstance` |
+| `0x180168190` | `func_0x180168190_renderLevel` | `renderLevel` |
+| `0x180168870` | `func_0x180168870_GuiData` | `GuiData` |
+| `0x1801694f0` | `func_0x1801694f0_ThirdPersonNametag` | `ThirdPersonNametag` |
+| `0x180169750` | `func_0x180169750_PacketV2` | `PacketV2` |
+| `0x18016b7c0` | `func_0x18016b7c0_Backtrack` | `Backtrack` |
+| `0x180246d40` | `func_0x180246d40_module` | `module` |
+| `0x18024b6f0` | `func_0x18024b6f0_module` | `module` |
+| `0x18024dcf0` | `func_0x18024dcf0_module` | `module` |
 
-## Detailed Module Reference
-See `CHEATS_AND_MODULES.md` and `wiki/` for a per-module breakdown with strings and inferred purposes.
+## Detailed references
+- `CHEATS_AND_MODULES.md` — per-module breakdown
+- `ARCHITECTURE.md` / `wiki/Architecture.md` — inferred class layout
+- `function_labels.json` — address -> readable label
+- `signature_scanner.py` — IOC scanner
 
-## Patching Recommendations
-1. Integrity-check the game's `ClientInstance`, `LevelRenderer`, `GuiData` vtables for modifications.
-2. Scan process memory for the module-name strings / pointer table (`.rdata`) as IOCs.
-3. Verify D3D11/DXGI swap-chain and present function pointers; this client likely hooks `Present` for rendering.
-4. Monitor `ModuleManager` string references (`[ModuleManager]`, `modules not initialized yet`) and the `PacketV2` logger.
-5. Detect injected DLLs via `K32EnumProcessModules` / `GetModuleHandle` checks; the loader searches for local `d3d12.dll` fallbacks.
+## Patching recommendations
+1. Integrity-check `ClientInstance`, `LevelRenderer`, `GuiData` vtables.
+2. Scan memory for module-name strings and pointer table in `.rdata`.
+3. Verify D3D11/DXGI `Present` and swap-chain pointers for overlay hooks.
+4. Monitor `ModuleManager` strings and `PacketV2` logger output.
+5. Detect injected DLLs via `K32EnumProcessModules` / `GetModuleHandle`.
 
-## Decompiled Source
-The full retdec-generated C source is in `decompiled_source.c`. Functions that reference known cheat/hook strings have been renamed to `func_<addr>_<keyword>`. It is approximate pseudo-C and will not compile as-is, but it exposes the function-level logic for patching.
+## Decompiled source
+`decompiled_source.c` is RetDec-generated x64 pseudo-C. Functions with known labels are renamed `func_<addr>_<module>`. It is not compilable and will not reproduce the original DLL.
