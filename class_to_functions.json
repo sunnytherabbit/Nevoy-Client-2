@@ -1,0 +1,428 @@
+{
+  "Aimbot": [
+    {
+      "function": "function_1800c1050",
+      "address": "0x1800c1050"
+    }
+  ],
+  "AirJump": [
+    {
+      "function": "function_1800c1470",
+      "address": "0x1800c1470"
+    }
+  ],
+  "AirPlace": [
+    {
+      "function": "function_1800c1530",
+      "address": "0x1800c1530"
+    }
+  ],
+  "Animations": [
+    {
+      "function": "function_1800c1870",
+      "address": "0x1800c1870"
+    }
+  ],
+  "AntiBot": [
+    {
+      "function": "function_1800c1a10",
+      "address": "0x1800c1a10"
+    }
+  ],
+  "AntiImmobile": [
+    {
+      "function": "function_1800c1b80",
+      "address": "0x1800c1b80"
+    }
+  ],
+  "AntiKB": [
+    {
+      "function": "func_0x1800c1c40_AntiKB",
+      "address": "0x1800c1c40"
+    }
+  ],
+  "ArrayList": [
+    {
+      "function": "function_1800c1e30",
+      "address": "0x1800c1e30"
+    }
+  ],
+  "AutoClicker": [
+    {
+      "function": "function_1800c2290",
+      "address": "0x1800c2290"
+    }
+  ],
+  "AutoFishing": [
+    {
+      "function": "function_1800c26a0",
+      "address": "0x1800c26a0"
+    }
+  ],
+  "AutoTotem": [
+    {
+      "function": "function_1800c2c10",
+      "address": "0x1800c2c10"
+    }
+  ],
+  "Backtrack": [
+    {
+      "function": "func_0x1800c2e90_Backtrack",
+      "address": "0x1800c2e90"
+    }
+  ],
+  "Baritone": [
+    {
+      "function": "func_0x1800c3600_Baritone",
+      "address": "0x1800c3600"
+    }
+  ],
+  "BlockESP": [
+    {
+      "function": "func_0x1800c44a0_BlockESP",
+      "address": "0x1800c44a0"
+    }
+  ],
+  "Breaker": [
+    {
+      "function": "function_1800c4be0",
+      "address": "0x1800c4be0"
+    }
+  ],
+  "ChestStealer": [
+    {
+      "function": "function_1800c4fa0",
+      "address": "0x1800c4fa0"
+    }
+  ],
+  "Criticals": [
+    {
+      "function": "function_1800c58e0",
+      "address": "0x1800c58e0"
+    }
+  ],
+  "CrystalAura": [
+    {
+      "function": "function_1800c5ae0",
+      "address": "0x1800c5ae0"
+    }
+  ],
+  "DestroyProgress": [
+    {
+      "function": "function_1800c5ea0",
+      "address": "0x1800c5ea0"
+    }
+  ],
+  "DeviceId": [
+    {
+      "function": "function_1800c6080",
+      "address": "0x1800c6080"
+    }
+  ],
+  "Disabler": [
+    {
+      "function": "func_0x1800c61e0_Disabler",
+      "address": "0x1800c61e0"
+    }
+  ],
+  "ESP": [
+    {
+      "function": "function_1800c6740",
+      "address": "0x1800c6740"
+    }
+  ],
+  "FastEat": [
+    {
+      "function": "function_1800c6b30",
+      "address": "0x1800c6b30"
+    }
+  ],
+  "FastPlace": [
+    {
+      "function": "function_1800c6ca0",
+      "address": "0x1800c6ca0"
+    }
+  ],
+  "Flight": [
+    {
+      "function": "func_0x1800c6d60_Flight",
+      "address": "0x1800c6d60"
+    }
+  ],
+  "FlySpoof": [
+    {
+      "function": "function_1800c7290",
+      "address": "0x1800c7290"
+    }
+  ],
+  "FreeCam": [
+    {
+      "function": "func_0x1800c7580_FreeCam",
+      "address": "0x1800c7580"
+    }
+  ],
+  "FreeLook": [
+    {
+      "function": "function_1800c7840",
+      "address": "0x1800c7840"
+    }
+  ],
+  "FullBright": [
+    {
+      "function": "function_1800c7900",
+      "address": "0x1800c7900"
+    }
+  ],
+  "HitBox": [
+    {
+      "function": "function_1800c7a70",
+      "address": "0x1800c7a70"
+    }
+  ],
+  "Interface": [
+    {
+      "function": "function_1800c7d20",
+      "address": "0x1800c7d20"
+    }
+  ],
+  "InvManager": [
+    {
+      "function": "function_1800c82d0",
+      "address": "0x1800c82d0"
+    }
+  ],
+  "InvMove": [
+    {
+      "function": "func_0x1800c8790_InvMove",
+      "address": "0x1800c8790"
+    }
+  ],
+  "Jesus": [
+    {
+      "function": "function_1800c8860",
+      "address": "0x1800c8860"
+    }
+  ],
+  "KillAura": [
+    {
+      "function": "function_1800c8a50",
+      "address": "0x1800c8a50"
+    }
+  ],
+  "MidClick": [
+    {
+      "function": "function_1800c9180",
+      "address": "0x1800c9180"
+    }
+  ],
+  "NameTags": [
+    {
+      "function": "function_1800c9570",
+      "address": "0x1800c9570"
+    }
+  ],
+  "NoFall": [
+    {
+      "function": "function_1800c9930",
+      "address": "0x1800c9930"
+    }
+  ],
+  "NoJumpDelay": [
+    {
+      "function": "function_1800c99f0",
+      "address": "0x1800c99f0"
+    }
+  ],
+  "NoSlow": [
+    {
+      "function": "function_1800c9ab0",
+      "address": "0x1800c9ab0"
+    }
+  ],
+  "Notifications": [
+    {
+      "function": "function_1800c9b70",
+      "address": "0x1800c9b70"
+    }
+  ],
+  "Nuker": [
+    {
+      "function": "function_1800c9ce0",
+      "address": "0x1800c9ce0"
+    }
+  ],
+  "Phase": [
+    {
+      "function": "function_1800ca3f0",
+      "address": "0x1800ca3f0"
+    }
+  ],
+  "Reach": [
+    {
+      "function": "function_1800ca560",
+      "address": "0x1800ca560"
+    }
+  ],
+  "Regen": [
+    {
+      "function": "function_1800ca730",
+      "address": "0x1800ca730"
+    }
+  ],
+  "Scaffold": [
+    {
+      "function": "function_1800caba0",
+      "address": "0x1800caba0"
+    }
+  ],
+  "Sneak": [
+    {
+      "function": "function_1800cb950",
+      "address": "0x1800cb950"
+    }
+  ],
+  "SoundLocation": [
+    {
+      "function": "function_1800cba10",
+      "address": "0x1800cba10"
+    }
+  ],
+  "Speed": [
+    {
+      "function": "function_1800cbd30",
+      "address": "0x1800cbd30"
+    },
+    {
+      "function": "function_18012c9e0",
+      "address": "0x18012c9e0"
+    },
+    {
+      "function": "function_18012f540",
+      "address": "0x18012f540"
+    },
+    {
+      "function": "function_18012f5a0",
+      "address": "0x18012f5a0"
+    },
+    {
+      "function": "function_18012fb10",
+      "address": "0x18012fb10"
+    }
+  ],
+  "SpeedMine": [
+    {
+      "function": "function_1800cc170",
+      "address": "0x1800cc170"
+    }
+  ],
+  "Spider": [
+    {
+      "function": "function_1800cc350",
+      "address": "0x1800cc350"
+    }
+  ],
+  "Sprint": [
+    {
+      "function": "function_1800cc4c0",
+      "address": "0x1800cc4c0"
+    }
+  ],
+  "Statistics": [
+    {
+      "function": "function_1800cc580",
+      "address": "0x1800cc580"
+    },
+    {
+      "function": "function_18012c540",
+      "address": "0x18012c540"
+    },
+    {
+      "function": "function_180130310",
+      "address": "0x180130310"
+    }
+  ],
+  "Step": [
+    {
+      "function": "function_1800cc9b0",
+      "address": "0x1800cc9b0"
+    }
+  ],
+  "StorageESP": [
+    {
+      "function": "func_0x1800ccb20_StorageESP",
+      "address": "0x1800ccb20"
+    }
+  ],
+  "TargetHUD": [
+    {
+      "function": "function_1800cd0b0",
+      "address": "0x1800cd0b0"
+    }
+  ],
+  "TargetStrafe": [
+    {
+      "function": "function_1800cd4b0",
+      "address": "0x1800cd4b0"
+    }
+  ],
+  "ThirdPersonNametag": [
+    {
+      "function": "function_1800cda00",
+      "address": "0x1800cda00"
+    },
+    {
+      "function": "function_180107fa0",
+      "address": "0x180107fa0"
+    },
+    {
+      "function": "function_1801694f0",
+      "address": "0x1801694f0"
+    }
+  ],
+  "Timer": [
+    {
+      "function": "function_1800cdaf0",
+      "address": "0x1800cdaf0"
+    }
+  ],
+  "TpMine": [
+    {
+      "function": "func_0x1800cdca0_lapis",
+      "address": "0x1800cdca0"
+    }
+  ],
+  "Tracers": [
+    {
+      "function": "function_1800ce4c0",
+      "address": "0x1800ce4c0"
+    }
+  ],
+  "TriggerBot": [
+    {
+      "function": "function_1800ce8e0",
+      "address": "0x1800ce8e0"
+    }
+  ],
+  "Velocity": [
+    {
+      "function": "function_1800ceb10",
+      "address": "0x1800ceb10"
+    },
+    {
+      "function": "function_1800fa9e0",
+      "address": "0x1800fa9e0"
+    }
+  ],
+  "Wallhack": [
+    {
+      "function": "func_0x1800ced70_Wallhack",
+      "address": "0x1800ced70"
+    }
+  ],
+  "Zoom": [
+    {
+      "function": "function_1800cee30",
+      "address": "0x1800cee30"
+    }
+  ]
+}
