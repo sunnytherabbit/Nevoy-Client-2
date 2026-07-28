@@ -1,23 +1,40 @@
 #include "ModuleManager.h"
 
 // === Oderso generated includes START ===
+#include "Oderso/Module/Modules/Module_1801fbc20.h"
 #include "Oderso/Module/Modules/Module_1803238c0.h"
+#include "Oderso/Module/Modules/Module_1801d2430.h"
+#include "Oderso/Module/Modules/Module_18020ca00.h"
 #include "Oderso/Module/Modules/Module_180178c80.h"
+#include "Oderso/Module/Modules/Module_1802fb570.h"
 #include "Oderso/Module/Modules/Module_180331ad0.h"
+#include "Oderso/Module/Modules/Module_180218db0.h"
 #include "Oderso/Module/Modules/Module_180247570.h"
 #include "Oderso/Module/Modules/Module_180417c20.h"
+#include "Oderso/Module/Modules/Module_18033b770.h"
+#include "Oderso/Module/Modules/Module_1802501f0.h"
+#include "Oderso/Module/Modules/Module_1801e6000.h"
 #include "Oderso/Module/Modules/Module_180130570.h"
 #include "Oderso/Module/Modules/Module_180156800.h"
+#include "Oderso/Module/Modules/Module_1801afdc0.h"
 #include "Oderso/Module/Modules/Module_18021f300.h"
+#include "Oderso/Module/Modules/Module_180241f60.h"
 #include "Oderso/Module/Modules/Module_180248800.h"
+#include "Oderso/Module/Modules/Module_1801c2930.h"
 #include "Oderso/Module/Modules/Module_1801edba0.h"
 #include "Oderso/Module/Modules/Module_180420050.h"
+#include "Oderso/Module/Modules/Module_180424ef0.h"
 #include "Oderso/Module/Modules/Module_1802f7580.h"
 #include "Oderso/Module/Modules/Module_18031b4d0.h"
+#include "Oderso/Module/Modules/Module_1802ac240.h"
 #include "Oderso/Module/Modules/Module_1802cfa50.h"
 #include "Oderso/Module/Modules/Make.h"
 #include "Oderso/Module/Modules/Module_1801914f0.h"
+#include "Oderso/Module/Modules/Module_1804168f0.h"
+#include "Oderso/Module/Modules/Module_1802fc040.h"
+#include "Oderso/Module/Modules/Module_180347d80.h"
 #include "Oderso/Module/Modules/Module_1802c1ee0.h"
+#include "Oderso/Module/Modules/Module_18020a2d0.h"
 #include "Oderso/Module/Modules/SkinStealer.h"
 #include "Oderso/Module/Modules/Module_18018d820.h"
 #include "Oderso/Module/Modules/Module_18018f510.h"
@@ -25,42 +42,90 @@
 #include "Oderso/Module/Modules/Limits.h"
 #include "Oderso/Module/Modules/Module_1803455d0.h"
 #include "Oderso/Module/Modules/Module_180360610.h"
+#include "Oderso/Module/Modules/Module_180240430.h"
+#include "Oderso/Module/Modules/Module_1802452c0.h"
 #include "Oderso/Module/Modules/Module_180245d30.h"
 #include "Oderso/Module/Modules/Module_1801380b0.h"
 #include "Oderso/Module/Modules/HideUI.h"
 #include "Oderso/Module/Modules/Module_1801749e0.h"
+#include "Oderso/Module/Modules/Module_1801899c0.h"
+#include "Oderso/Module/Modules/Module_180193330.h"
+#include "Oderso/Module/Modules/Module_18040d7d0.h"
+#include "Oderso/Module/Modules/Module_1803404a0.h"
 #include "Oderso/Module/Modules/Module_1802bea40.h"
+#include "Oderso/Module/Modules/Module_1801e52f0.h"
 #include "Oderso/Module/Modules/Subtitles.h"
 #include "Oderso/Module/Modules/Module_18017c4a0.h"
 #include "Oderso/Module/Modules/Module_180195270.h"
 #include "Oderso/Module/Modules/Module_1801a2840.h"
+#include "Oderso/Module/Modules/Module_180404050.h"
+#include "Oderso/Module/Modules/Module_180415150.h"
 #include "Oderso/Module/Modules/Module_180242db0.h"
 #include "Oderso/Module/Modules/Module_180243e70.h"
+#include "Oderso/Module/Modules/Module_1801e7090.h"
 #include "Oderso/Module/Modules/Module_1801e7620.h"
+#include "Oderso/Module/Modules/Module_180177eb0.h"
+#include "Oderso/Module/Modules/Module_180188f20.h"
 #include "Oderso/Module/Modules/Module_1802c0340.h"
 #include "Oderso/Module/Modules/NoFire.h"
 #include "Oderso/Module/Modules/Module_1801dd4b0.h"
+#include "Oderso/Module/Modules/Module_180136cd0.h"
 #include "Oderso/Module/Modules/Module_18024b340.h"
+#include "Oderso/Module/Modules/Module_1802d3fd0.h"
 #include "Oderso/Module/Modules/Module_1801fc680.h"
 #include "Oderso/Module/Modules/Module_180223cc0.h"
 #include "Oderso/Module/Modules/Module_180185460.h"
 #include "Oderso/Module/Modules/CrouchSpam.h"
+#include "Oderso/Module/Modules/Module_1801e20d0.h"
 #include "Oderso/Module/Modules/SmoothCamera.h"
 #include "Oderso/Module/Modules/Module_180219990.h"
+#include "Oderso/Module/Modules/Module_18014f210.h"
+#include "Oderso/Module/Modules/Module_18031e130.h"
+#include "Oderso/Module/Modules/Module_18020d4c0.h"
+#include "Oderso/Module/Modules/Module_180412630.h"
 #include "Oderso/Module/Modules/Module_18032ce60.h"
 #include "Oderso/Module/Modules/Module_1801f2430.h"
 #include "Oderso/Module/Modules/Module_1802c5a20.h"
 #include "Oderso/Module/Modules/Module_180149a30.h"
 #include "Oderso/Module/Modules/Module_1801f8fc0.h"
+#include "Oderso/Module/Modules/Module_1801a0e40.h"
+#include "Oderso/Module/Modules/Module_180404ac0.h"
+#include "Oderso/Module/Modules/Module_18041e380.h"
+#include "Oderso/Module/Modules/Module_1802ce320.h"
 #include "Oderso/Module/Modules/Module_1802079f0.h"
+#include "Oderso/Module/Modules/Module_180429900.h"
 #include "Oderso/Module/Modules/OdersoCompass.h"
+#include "Oderso/Module/Modules/Module_180341050.h"
 #include "Oderso/Module/Modules/ChunkBorders.h"
 #include "Oderso/Module/Modules/Module_1803138e0.h"
 #include "Oderso/Module/Modules/Module_18019a5d0.h"
 #include "Oderso/Module/Modules/Module_1802f4ea0.h"
 #include "Oderso/Module/Modules/Module_1802039a0.h"
+#include "Oderso/Module/Modules/Module_180415790.h"
 #include "Oderso/Module/Modules/CPS.h"
 #include "Oderso/Module/Modules/FPS.h"
+#include "Oderso/Module/Modules/Module_180371f00.h"
+#include "Oderso/Module/Modules/Module_1804e5480.h"
+#include "Oderso/Module/Modules/Module_1804e7c10.h"
+#include "Oderso/Module/Modules/Module_18037bc90.h"
+#include "Oderso/Module/Modules/Module_180380fc0.h"
+#include "Oderso/Module/Modules/Module_1804ce890.h"
+#include "Oderso/Module/Modules/Module_1804df4a0.h"
+#include "Oderso/Module/Modules/Module_180380410.h"
+#include "Oderso/Module/Modules/Module_1804e44c0.h"
+#include "Oderso/Module/Modules/Module_18038bc60.h"
+#include "Oderso/Module/Modules/Module_1804cf410.h"
+#include "Oderso/Module/Modules/Module_1804d6b70.h"
+#include "Oderso/Module/Modules/Module_180376860.h"
+#include "Oderso/Module/Modules/Module_1804f3ae0.h"
+#include "Oderso/Module/Modules/Module_180388cf0.h"
+#include "Oderso/Module/Modules/Module_1804d8520.h"
+#include "Oderso/Module/Modules/Module_1804dd020.h"
+#include "Oderso/Module/Modules/Module_1804de3f0.h"
+#include "Oderso/Module/Modules/Module_1804c9320.h"
+#include "Oderso/Module/Modules/Module_1804f24e0.h"
+#include "Oderso/Module/Modules/Module_1804e2da0.h"
+#include "Oderso/Module/Modules/Module_1804e6e10.h"
 // === Oderso generated includes END ===
 #include "../../Utils/Logger.h"
 #include "../../Utils/Json.hpp"
@@ -174,23 +239,40 @@ void ModuleManager::initModules() {
 #endif
 
 		// === Oderso generated modules START ===
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801fbc20()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1803238c0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801d2430()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18020ca00()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180178c80()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802fb570()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180331ad0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180218db0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180247570()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180417c20()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18033b770()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802501f0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801e6000()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180130570()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180156800()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801afdc0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18021f300()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180241f60()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180248800()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801c2930()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801edba0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180420050()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180424ef0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802f7580()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18031b4d0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802ac240()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802cfa50()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Make()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801914f0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804168f0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802fc040()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180347d80()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802c1ee0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18020a2d0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new SkinStealer()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18018d820()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18018f510()));
@@ -198,42 +280,90 @@ void ModuleManager::initModules() {
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Limits()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1803455d0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180360610()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180240430()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802452c0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180245d30()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801380b0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new HideUI()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801749e0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801899c0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180193330()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18040d7d0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1803404a0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802bea40()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801e52f0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Subtitles()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18017c4a0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180195270()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801a2840()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180404050()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180415150()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180242db0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180243e70()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801e7090()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801e7620()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180177eb0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180188f20()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802c0340()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new NoFire()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801dd4b0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180136cd0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18024b340()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802d3fd0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801fc680()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180223cc0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180185460()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new CrouchSpam()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801e20d0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new SmoothCamera()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180219990()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18014f210()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18031e130()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18020d4c0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180412630()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18032ce60()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801f2430()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802c5a20()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180149a30()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801f8fc0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801a0e40()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180404ac0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18041e380()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802ce320()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802079f0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180429900()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new OdersoCompass()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180341050()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new ChunkBorders()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1803138e0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18019a5d0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802f4ea0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802039a0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180415790()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new CPS()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new FPS()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180371f00()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804e5480()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804e7c10()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18037bc90()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180380fc0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804ce890()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804df4a0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180380410()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804e44c0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18038bc60()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804cf410()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804d6b70()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180376860()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804f3ae0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_180388cf0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804d8520()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804dd020()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804de3f0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804c9320()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804f24e0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804e2da0()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804e6e10()));
 		// === Oderso generated modules END ===
 		// Sort modules alphabetically
 		std::sort(moduleList.begin(), moduleList.end(), [](auto lhs, auto rhs) {

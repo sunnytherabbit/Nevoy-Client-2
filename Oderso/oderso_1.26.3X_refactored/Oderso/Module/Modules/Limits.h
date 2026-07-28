@@ -1,4 +1,5 @@
 #pragma once
+#ifndef ODERSO_MODULE_LIMITS_H
 #define ODERSO_MODULE_LIMITS_H
 
 #include "../../../Horion/Module/Modules/Module.h"

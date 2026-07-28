@@ -7,6 +7,10 @@
 #include <Windows.h>
 #include <Wininet.h>
 
+#ifndef HTTP_STATUS_TOO_MANY_REQUESTS
+#define HTTP_STATUS_TOO_MANY_REQUESTS 429
+#endif
+
 #include <cstdint>
 #include <cstdlib>
 #include <string>

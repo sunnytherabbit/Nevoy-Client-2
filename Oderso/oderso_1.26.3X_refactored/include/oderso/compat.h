@@ -42,8 +42,10 @@ using undefined8 = uint64_t;
 
 // Common Windows/CRT opaque handles and structures used in the decompilation.
 // Treated as void*/void for compilation; real definitions are in <windows.h>.
+#ifndef _FILE_DEFINED
 using FILE = void;
 using _iobuf = void;
+#endif
 using LPCVOID = const void*;
 using LPINIT_ONCE = void*;
 using PTP_WORK = void*;

@@ -1,4 +1,5 @@
 #pragma once
+#ifndef ODERSO_MODULE_MODULE_180243E70_H
 #define ODERSO_MODULE_MODULE_180243E70_H
 
 #include "../../../Horion/Module/Modules/Module.h"

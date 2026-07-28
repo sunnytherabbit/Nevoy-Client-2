@@ -43,12 +43,12 @@ struct Edge {
 
 	Edge(const NodeRef& startNode, const NodeRef& endNode, float cost, JoeSegmentType type) : startNode(startNode), endNode(endNode), cost(cost), type(type) {}
 };
-__forceinline unsigned __int64 rotBy(int in, unsigned int by){
+static __forceinline unsigned __int64 rotBy(int in, unsigned int by){
 	auto mut = static_cast<unsigned __int64>(in);
 	return ((mut & 0x7FFFFFui64) | ((static_cast<unsigned int>(in) >> 8u) & 0x800000u)/*copy sign bit*/) << by;
 }
 
-__forceinline unsigned __int64 posToHash(const vec3_ti& pos){
+static __forceinline unsigned __int64 posToHash(const vec3_ti& pos){
 	return rotBy(pos.x, 0) | rotBy(pos.z, 24) | (static_cast<unsigned __int64>(pos.y) << 48u);
 }
 

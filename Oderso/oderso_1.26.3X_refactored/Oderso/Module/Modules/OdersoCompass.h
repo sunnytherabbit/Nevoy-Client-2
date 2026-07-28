@@ -1,5 +1,6 @@
 // MANUAL
 #pragma once
+#ifndef ODERSO_MODULE_ODERSOCOMPASS_H
 #define ODERSO_MODULE_ODERSOCOMPASS_H
 
 #include "../../../Horion/Module/Modules/Module.h"

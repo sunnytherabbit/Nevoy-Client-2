@@ -70,6 +70,7 @@ def gen_header(mod):
             members.append(f'\tSettingEnum {n};')
     member_block = '\n'.join(members) if members else '\t// No settings extracted yet'
     return f'''#pragma once
+#ifndef {guard}
 #define {guard}
 
 #include "../../../Horion/Module/Modules/Module.h"
@@ -233,9 +234,10 @@ def main():
         if cn in existing:
             continue
 
-        # Skip placeholder-only modules with no metadata and no settings
-        if cn.startswith('Module_') and not mod.get('settings') and not mod.get('name'):
-            continue
+        # Keep placeholder modules too; empty modules get a minimal stub so the
+        # source tree matches the full DLL manifest.
+        # (Previously skipped; now included for completeness.)
+
 
         cn = unique_class_name(cn, ctor, seen)
         seen.add(cn)

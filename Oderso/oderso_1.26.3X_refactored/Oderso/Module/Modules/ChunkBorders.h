@@ -1,5 +1,6 @@
 // MANUAL
 #pragma once
+#ifndef ODERSO_MODULE_CHUNKBORDERS_H
 #define ODERSO_MODULE_CHUNKBORDERS_H
 
 #include "../../../Horion/Module/Modules/Module.h"

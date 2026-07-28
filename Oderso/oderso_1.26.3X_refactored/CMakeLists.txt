@@ -346,6 +346,43 @@ add_library(Oderso SHARED
         Utils/VulkanUtil.h Utils/VulkanUtil.cpp
         Utils/VersionUtil.h Utils/VersionUtil.cpp
         SDK/TextHolder_oderso.cpp
+        Horion/Command/Commands/TopCommand.cpp
+        Horion/Command/Commands/TopCommand.h
+        Horion/Command/Commands/WaypointCommand.cpp
+        Horion/Command/Commands/WaypointCommand.h
+        Horion/Command/Commands/XpCommand.cpp
+        Horion/Command/Commands/XpCommand.h
+        Horion/Module/Modules/Compass.cpp
+        Horion/Module/Modules/Compass.h
+        Horion/Module/Modules/InfiniteAura.cpp
+        Horion/Module/Modules/InfiniteAura.h
+        Horion/Module/Modules/Radar.cpp
+        Horion/Module/Modules/Radar.h
+        Horion/Module/Modules/Spider.cpp
+        Horion/Module/Modules/Spider.h
+        Horion/Module/Modules/StorageESP.cpp
+        Horion/Module/Modules/StorageESP.h
+        Horion/Module/Modules/TimeChanger.cpp
+        Horion/Module/Modules/TimeChanger.h
+        Horion/Module/Modules/VanillaPlus.cpp
+        Horion/Module/Modules/VanillaPlus.h
+        Horion/Module/Modules/ViewModel.cpp
+        Horion/Module/Modules/ViewModel.h
+        Horion/Module/Modules/Waypoints.cpp
+        Horion/Module/Modules/Waypoints.h
+        Horion/Scripting/Functions/InventoryFunctions.cpp
+        Horion/Scripting/Functions/InventoryFunctions.h
+        Horion/Scripting/Functions/Vector2Functions.cpp
+        Horion/Scripting/Functions/Vector2Functions.h
+        SDK/CGameMode.cpp
+        SDK/CGameMode.h
+        SDK/MatrixStack.cpp
+        SDK/MatrixStack.h
+        SDK/Tessellator.cpp
+        SDK/Tessellator.h
+        Utils/VoxelIntersector.cpp
+        Utils/VoxelIntersector.h
+        Utils/compat.cpp
 )
 
 set_target_properties(Oderso PROPERTIES

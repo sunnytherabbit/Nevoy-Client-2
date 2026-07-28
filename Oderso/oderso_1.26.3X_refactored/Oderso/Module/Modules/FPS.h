@@ -1,5 +1,6 @@
 // MANUAL
 #pragma once
+#ifndef ODERSO_MODULE_FPS_H
 #define ODERSO_MODULE_FPS_H
 
 #include "../../../Horion/Module/Modules/Module.h"

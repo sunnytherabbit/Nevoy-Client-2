@@ -1,5 +1,6 @@
 // MANUAL
 #pragma once
+#ifndef ODERSO_MODULE_SMOOTHCAMERA_H
 #define ODERSO_MODULE_SMOOTHCAMERA_H
 
 #include "../../../Horion/Module/Modules/Module.h"
