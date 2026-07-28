@@ -1,0 +1,2148 @@
+[
+  {
+    "constructor": "func_0x1801fbc20",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801fbc20"
+  },
+  {
+    "constructor": "func_0x1803238c0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Shadow",
+        "type": "bool"
+      },
+      {
+        "name": "Size",
+        "type": "float"
+      },
+      {
+        "name": "Smoothne6B=",
+        "type": "float"
+      },
+      {
+        "name": "Radius",
+        "type": "float"
+      },
+      {
+        "name": "Animation",
+        "type": "bool"
+      },
+      {
+        "name": "Button layout",
+        "type": "enum"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1803238c0"
+  },
+  {
+    "constructor": "func_0x1801d2430",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801d2430"
+  },
+  {
+    "constructor": "func_0x18020ca00",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_18020ca00"
+  },
+  {
+    "constructor": "func_0x180178c80",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "uUM",
+        "type": "float"
+      },
+      {
+        "name": "sE",
+        "type": "float"
+      },
+      {
+        "name": "Multiplier LS X",
+        "type": "float"
+      },
+      {
+        "name": "Multiplier LS Y",
+        "type": "float"
+      },
+      {
+        "name": "Multiplier RS X",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180178c80"
+  },
+  {
+    "constructor": "func_0x1802fb570",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802fb570"
+  },
+  {
+    "constructor": "func_0x180331ad0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "crosshair.png",
+        "type": "bool"
+      },
+      {
+        "name": "Custom crosshair",
+        "type": "bool"
+      },
+      {
+        "name": "Custom color",
+        "type": "bool"
+      },
+      {
+        "name": "Hit help",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180331ad0"
+  },
+  {
+    "constructor": "func_0x180218db0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180218db0"
+  },
+  {
+    "constructor": "func_0x180247570",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Scale",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180247570"
+  },
+  {
+    "constructor": "func_0x180417c20",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Hotbar tooltips",
+        "type": "enum"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180417c20"
+  },
+  {
+    "constructor": "func_0x18033b770",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_18033b770"
+  },
+  {
+    "constructor": "func_0x1802501f0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802501f0"
+  },
+  {
+    "constructor": "func_0x1801e6000",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801e6000"
+  },
+  {
+    "constructor": "func_0x180130570",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Change amount",
+        "type": "int"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180130570"
+  },
+  {
+    "constructor": "func_0x180156800",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Color",
+        "type": "bool"
+      },
+      {
+        "name": "Color slots",
+        "type": "bool"
+      },
+      {
+        "name": "Background color",
+        "type": "enum"
+      },
+      {
+        "name": "Slot col",
+        "type": "enum"
+      },
+      {
+        "name": "Hold key",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180156800"
+  },
+  {
+    "constructor": "func_0x1801afdc0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801afdc0"
+  },
+  {
+    "constructor": "func_0x18021f300",
+    "name": "&!\"",
+    "category": null,
+    "key": null,
+    "tooltip": "&!\"",
+    "settings": [
+      {
+        "name": "players",
+        "type": "bool"
+      },
+      {
+        "name": "Check fe",
+        "type": "bool"
+      },
+      {
+        "name": "Check he",
+        "type": "float"
+      },
+      {
+        "name": "Max hitbox width",
+        "type": "float"
+      },
+      {
+        "name": "&!\"",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_18021f300"
+  },
+  {
+    "constructor": "func_0x180241f60",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180241f60"
+  },
+  {
+    "constructor": "func_0x180248800",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Health",
+        "type": "int"
+      },
+      {
+        "name": "Fade col",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180248800"
+  },
+  {
+    "constructor": "func_0x1801c2930",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801c2930"
+  },
+  {
+    "constructor": "func_0x1801edba0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Shadow",
+        "type": "bool"
+      },
+      {
+        "name": "Rainbow text",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801edba0"
+  },
+  {
+    "constructor": "func_0x180420050",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Outline opacity",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180420050"
+  },
+  {
+    "constructor": "func_0x180424ef0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180424ef0"
+  },
+  {
+    "constructor": "func_0x1802f7580",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Show grid",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802f7580"
+  },
+  {
+    "constructor": "func_0x18031b4d0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Disable",
+        "type": "bool"
+      },
+      {
+        "name": "Color",
+        "type": "float"
+      },
+      {
+        "name": "Change height",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_18031b4d0"
+  },
+  {
+    "constructor": "func_0x1802ac240",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802ac240"
+  },
+  {
+    "constructor": "func_0x1802cfa50",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Radius",
+        "type": "int"
+      },
+      {
+        "name": "Lit color",
+        "type": "bool"
+      },
+      {
+        "name": "Show light level",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802cfa50"
+  },
+  {
+    "constructor": "func_0x1801f0cc0",
+    "name": "Make",
+    "category": null,
+    "key": null,
+    "tooltip": "Make",
+    "settings": [
+      {
+        "name": "Ignore second",
+        "type": "bool"
+      },
+      {
+        "name": "Forward/Backward",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Make"
+  },
+  {
+    "constructor": "func_0x1801914f0",
+    "name": "",
+    "category": 1,
+    "key": 0,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Always sprint",
+        "type": "bool"
+      }
+    ],
+    "category_name": "VISUAL",
+    "class_name": "Module_1801914f0"
+  },
+  {
+    "constructor": "func_0x1804168f0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804168f0"
+  },
+  {
+    "constructor": "func_0x1802fc040",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802fc040"
+  },
+  {
+    "constructor": "func_0x180347d80",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180347d80"
+  },
+  {
+    "constructor": "func_0x1802c1ee0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Speed",
+        "type": "float"
+      },
+      {
+        "name": "Y mul",
+        "type": "float"
+      },
+      {
+        "name": "Z mul",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802c1ee0"
+  },
+  {
+    "constructor": "func_0x18020a2d0",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "COMBAT",
+    "class_name": "Module_18020a2d0"
+  },
+  {
+    "constructor": "func_0x180165110",
+    "name": "Skin Stealer",
+    "category": null,
+    "key": null,
+    "tooltip": "Steals and copies player skins, capes, and geometry.",
+    "settings": [
+      {
+        "name": "Self steT",
+        "type": "bool"
+      },
+      {
+        "name": "Skin",
+        "type": "bool"
+      },
+      {
+        "name": "Cape",
+        "type": "bool"
+      },
+      {
+        "name": "Geometry",
+        "type": "bool"
+      },
+      {
+        "name": "Copy path",
+        "type": "bool"
+      },
+      {
+        "name": "Clone",
+        "type": "bool"
+      }
+    ],
+    "class_name": "SkinStealer",
+    "category_name": "VISUAL"
+  },
+  {
+    "constructor": "func_0x18018d820",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "sE",
+        "type": "int"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_18018d820"
+  },
+  {
+    "constructor": "func_0x18018f510",
+    "name": "",
+    "category": 1,
+    "key": 0,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Always sneak",
+        "type": "bool"
+      }
+    ],
+    "category_name": "VISUAL",
+    "class_name": "Module_18018f510"
+  },
+  {
+    "constructor": "func_0x1802e5290",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Scale",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802e5290"
+  },
+  {
+    "constructor": "func_0x1802f3390",
+    "name": "Limits C",
+    "category": null,
+    "key": null,
+    "tooltip": "Limits C",
+    "settings": [
+      {
+        "name": "Limit le",
+        "type": "int"
+      },
+      {
+        "name": "Limit right",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Limits"
+  },
+  {
+    "constructor": "func_0x1803455d0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Disable",
+        "type": "bool"
+      },
+      {
+        "name": "No background",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1803455d0"
+  },
+  {
+    "constructor": "func_0x180360610",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Block radius",
+        "type": "int"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180360610"
+  },
+  {
+    "constructor": "func_0x180240430",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180240430"
+  },
+  {
+    "constructor": "func_0x1802452c0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802452c0"
+  },
+  {
+    "constructor": "func_0x180245d30",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Rainbow",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180245d30"
+  },
+  {
+    "constructor": "func_0x1801380b0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Opacity",
+        "type": "int"
+      },
+      {
+        "name": "Air",
+        "type": "bool"
+      },
+      {
+        "name": "Wrong",
+        "type": "bool"
+      },
+      {
+        "name": "Ignore a",
+        "type": "bool"
+      },
+      {
+        "name": "Offset X",
+        "type": "int"
+      },
+      {
+        "name": "Offset Y",
+        "type": "int"
+      },
+      {
+        "name": "Reset on load",
+        "type": "int"
+      },
+      {
+        "name": "Max heigY7",
+        "type": "int"
+      },
+      {
+        "name": "Max leng",
+        "type": "int"
+      },
+      {
+        "name": "Rot",
+        "type": "int"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801380b0"
+  },
+  {
+    "constructor": "func_0x18014d640",
+    "name": "Hide UI",
+    "category": null,
+    "key": null,
+    "tooltip": "Hides the UI and can save screenshots.",
+    "settings": [
+      {
+        "name": "Hide UI",
+        "type": "bool"
+      },
+      {
+        "name": "Print saved",
+        "type": "bool"
+      },
+      {
+        "name": "Print folder",
+        "type": "bool"
+      }
+    ],
+    "class_name": "HideUI",
+    "category_name": "VISUAL"
+  },
+  {
+    "constructor": "func_0x1801749e0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Radius",
+        "type": "int"
+      },
+      {
+        "name": "Fixed height",
+        "type": "bool"
+      },
+      {
+        "name": "Y positib",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801749e0"
+  },
+  {
+    "constructor": "func_0x1801899c0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801899c0"
+  },
+  {
+    "constructor": "func_0x180193330",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "COMBAT",
+    "class_name": "Module_180193330"
+  },
+  {
+    "constructor": "func_0x18040d7d0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_18040d7d0"
+  },
+  {
+    "constructor": "func_0x1803404a0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1803404a0"
+  },
+  {
+    "constructor": "func_0x1802bea40",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Rainbow",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802bea40"
+  },
+  {
+    "constructor": "func_0x1801e52f0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801e52f0"
+  },
+  {
+    "constructor": "func_0x180181170",
+    "name": "Subtitles",
+    "category": null,
+    "key": null,
+    "tooltip": "Displays subtitles for sounds, like in Minecraft: Java Edition.",
+    "settings": [
+      {
+        "name": "Size",
+        "type": "float"
+      }
+    ],
+    "class_name": "Subtitles",
+    "category_name": "VISUAL"
+  },
+  {
+    "constructor": "func_0x18017c4a0",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Stop on event",
+        "type": "bool"
+      }
+    ],
+    "category_name": "COMBAT",
+    "class_name": "Module_18017c4a0"
+  },
+  {
+    "constructor": "func_0x180195270",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Swap han",
+        "type": "bool"
+      },
+      {
+        "name": "Translate",
+        "type": "bool"
+      },
+      {
+        "name": "Scale",
+        "type": "bool"
+      },
+      {
+        "name": "Rotation",
+        "type": "bool"
+      },
+      {
+        "name": "Rotate",
+        "type": "float"
+      },
+      {
+        "name": "Translat",
+        "type": "float"
+      },
+      {
+        "name": "ScaleX",
+        "type": "float"
+      },
+      {
+        "name": "ScaleY",
+        "type": "float"
+      },
+      {
+        "name": "ScaleZ",
+        "type": "float"
+      },
+      {
+        "name": "AxisX",
+        "type": "float"
+      },
+      {
+        "name": "AxisY",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180195270"
+  },
+  {
+    "constructor": "func_0x1801a2840",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Size",
+        "type": "float"
+      },
+      {
+        "name": "Interdimensional",
+        "type": "bool"
+      },
+      {
+        "name": "Show Coordinates",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801a2840"
+  },
+  {
+    "constructor": "func_0x180404050",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180404050"
+  },
+  {
+    "constructor": "func_0x180415150",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180415150"
+  },
+  {
+    "constructor": "func_0x180242db0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Rainbow",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180242db0"
+  },
+  {
+    "constructor": "func_0x180243e70",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Hold",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180243e70"
+  },
+  {
+    "constructor": "func_0x1801e7090",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801e7090"
+  },
+  {
+    "constructor": "func_0x1801e7620",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Entities",
+        "type": "bool"
+      },
+      {
+        "name": "Items",
+        "type": "bool"
+      },
+      {
+        "name": "uUM",
+        "type": "bool"
+      },
+      {
+        "name": "HUD",
+        "type": "bool"
+      },
+      {
+        "name": "Particles",
+        "type": "bool"
+      },
+      {
+        "name": "Sky",
+        "type": "bool"
+      },
+      {
+        "name": "Weather",
+        "type": "bool"
+      },
+      {
+        "name": "PortalOverlay",
+        "type": "bool"
+      },
+      {
+        "name": "Fire",
+        "type": "bool"
+      },
+      {
+        "name": "Lightning",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801e7620"
+  },
+  {
+    "constructor": "func_0x180177eb0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180177eb0"
+  },
+  {
+    "constructor": "func_0x180188f20",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180188f20"
+  },
+  {
+    "constructor": "func_0x1802c0340",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Disable",
+        "type": "bool"
+      },
+      {
+        "name": "Multipli",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802c0340"
+  },
+  {
+    "constructor": "func_0x1802d4da0",
+    "name": "NoFire",
+    "category": null,
+    "key": null,
+    "tooltip": "Disables the fire overlay.",
+    "settings": [
+      {
+        "name": "NoFire",
+        "type": "bool"
+      }
+    ],
+    "class_name": "NoFire",
+    "category_name": "VISUAL"
+  },
+  {
+    "constructor": "func_0x1801dd4b0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Third person",
+        "type": "bool"
+      },
+      {
+        "name": "sE",
+        "type": "bool"
+      },
+      {
+        "name": "Adjust Y offset",
+        "type": "float"
+      },
+      {
+        "name": "No background",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801dd4b0"
+  },
+  {
+    "constructor": "func_0x180136cd0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180136cd0"
+  },
+  {
+    "constructor": "func_0x1803d65c0",
+    "name": "NameTags",
+    "category": null,
+    "key": null,
+    "tooltip": "Displays the name of every user on the server.",
+    "settings": [
+      {
+        "name": "Font",
+        "type": "enum"
+      },
+      {
+        "name": "Shadow",
+        "type": "bool"
+      },
+      {
+        "name": "Rainbow text",
+        "type": "bool"
+      },
+      {
+        "name": "BackgrouC",
+        "type": "bool"
+      },
+      {
+        "name": "Outline",
+        "type": "bool"
+      },
+      {
+        "name": "Outline size",
+        "type": "float"
+      },
+      {
+        "name": "Round corners",
+        "type": "bool"
+      },
+      {
+        "name": "Roundness",
+        "type": "float"
+      },
+      {
+        "name": "Radius",
+        "type": "float"
+      },
+      {
+        "name": "Max columns",
+        "type": "int"
+      },
+      {
+        "name": "Max rows",
+        "type": "int"
+      },
+      {
+        "name": "Text size",
+        "type": "float"
+      },
+      {
+        "name": "Display heads",
+        "type": "bool"
+      }
+    ],
+    "class_name": "NameTags",
+    "category_name": "VISUAL"
+  },
+  {
+    "constructor": "func_0x18024b340",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Mobs",
+        "type": "bool"
+      },
+      {
+        "name": "Projectiles",
+        "type": "bool"
+      },
+      {
+        "name": "Items",
+        "type": "bool"
+      },
+      {
+        "name": "View dir",
+        "type": "float"
+      },
+      {
+        "name": "Eye",
+        "type": "bool"
+      },
+      {
+        "name": "Rainbow",
+        "type": "bool"
+      },
+      {
+        "name": "Hit helpPgg",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_18024b340"
+  },
+  {
+    "constructor": "func_0x1802d3fd0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802d3fd0"
+  },
+  {
+    "constructor": "func_0x1801fc680",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Size",
+        "type": "float"
+      },
+      {
+        "name": "Shadow",
+        "type": "bool"
+      },
+      {
+        "name": "Rainbow text",
+        "type": "bool"
+      },
+      {
+        "name": "Simple names",
+        "type": "bool"
+      },
+      {
+        "name": "Show item",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801fc680"
+  },
+  {
+    "constructor": "func_0x180223cc0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Visible",
+        "type": "bool"
+      },
+      {
+        "name": "Crosshair",
+        "type": "bool"
+      },
+      {
+        "name": "Sky, BloT",
+        "type": "enum"
+      },
+      {
+        "name": "Backgrou",
+        "type": "bool"
+      },
+      {
+        "name": "Font",
+        "type": "enum"
+      },
+      {
+        "name": "Shadow",
+        "type": "bool"
+      },
+      {
+        "name": "Rainbow text",
+        "type": "bool"
+      },
+      {
+        "name": "Version",
+        "type": "bool"
+      },
+      {
+        "name": "FPS",
+        "type": "bool"
+      },
+      {
+        "name": "World",
+        "type": "bool"
+      },
+      {
+        "name": "Server",
+        "type": "bool"
+      },
+      {
+        "name": "Ping",
+        "type": "bool"
+      },
+      {
+        "name": "Player",
+        "type": "bool"
+      },
+      {
+        "name": "Item",
+        "type": "bool"
+      },
+      {
+        "name": "Hardware",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180223cc0"
+  },
+  {
+    "constructor": "func_0x180185460",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Swing speed",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180185460"
+  },
+  {
+    "constructor": "func_0x180194640",
+    "name": "CrouchSpam",
+    "category": null,
+    "key": null,
+    "tooltip": "Spams crouch.",
+    "settings": [],
+    "class_name": "CrouchSpam",
+    "category_name": "MOVEMENT"
+  },
+  {
+    "constructor": "func_0x1801e20d0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801e20d0"
+  },
+  {
+    "constructor": "func_0x18011dba0",
+    "name": "Smooth Camera",
+    "category": null,
+    "key": null,
+    "tooltip": "Makes the camera smooth, or not.",
+    "settings": [
+      {
+        "name": "Strength",
+        "type": "float"
+      },
+      {
+        "name": "Animation",
+        "type": "bool"
+      },
+      {
+        "name": "Animation speed",
+        "type": "float"
+      },
+      {
+        "name": "Scroll",
+        "type": "bool"
+      },
+      {
+        "name": "Smooth camera",
+        "type": "bool"
+      }
+    ],
+    "class_name": "SmoothCamera",
+    "category_name": "VISUAL"
+  },
+  {
+    "constructor": "func_0x180219990",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Size",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180219990"
+  },
+  {
+    "constructor": "func_0x18014f210",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "COMBAT",
+    "class_name": "Module_18014f210"
+  },
+  {
+    "constructor": "func_0x18031e130",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "COMBAT",
+    "class_name": "Module_18031e130"
+  },
+  {
+    "constructor": "func_0x18020d4c0",
+    "name": "",
+    "category": 2,
+    "key": 0,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "MOVEMENT",
+    "class_name": "Module_18020d4c0"
+  },
+  {
+    "constructor": "func_0x180412630",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "COMBAT",
+    "class_name": "Module_180412630"
+  },
+  {
+    "constructor": "func_0x18032ce60",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Show X",
+        "type": "bool"
+      },
+      {
+        "name": "Show Y",
+        "type": "bool"
+      },
+      {
+        "name": "Show Z",
+        "type": "bool"
+      },
+      {
+        "name": "Separator",
+        "type": "enum"
+      },
+      {
+        "name": "Decimal",
+        "type": "bool"
+      }
+    ],
+    "category_name": "COMBAT",
+    "class_name": "Module_18032ce60"
+  },
+  {
+    "constructor": "func_0x1801f2430",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "No background",
+        "type": "float"
+      },
+      {
+        "name": "Switch pack",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801f2430"
+  },
+  {
+    "constructor": "func_0x1802c5a20",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Shadow",
+        "type": "bool"
+      },
+      {
+        "name": "Rainbow text",
+        "type": "bool"
+      },
+      {
+        "name": "Size",
+        "type": "float"
+      },
+      {
+        "name": "Size of the mod",
+        "type": "float"
+      },
+      {
+        "name": "Vertical padding",
+        "type": "float"
+      },
+      {
+        "name": "Smoothnen",
+        "type": "float"
+      },
+      {
+        "name": "Radius",
+        "type": "float"
+      },
+      {
+        "name": "Animation speed",
+        "type": "float"
+      },
+      {
+        "name": "Jump",
+        "type": "bool"
+      },
+      {
+        "name": "Jump widC",
+        "type": "float"
+      },
+      {
+        "name": "Jump height",
+        "type": "float"
+      },
+      {
+        "name": "Sneak",
+        "type": "bool"
+      },
+      {
+        "name": "Mouse",
+        "type": "bool"
+      },
+      {
+        "name": "Left CPS",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802c5a20"
+  },
+  {
+    "constructor": "func_0x180149a30",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Disable",
+        "type": "bool"
+      },
+      {
+        "name": "No background",
+        "type": "bool"
+      },
+      {
+        "name": "No numbe",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180149a30"
+  },
+  {
+    "constructor": "func_0x1801f8fc0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Disable",
+        "type": "bool"
+      },
+      {
+        "name": "Always show",
+        "type": "bool"
+      },
+      {
+        "name": "Scale",
+        "type": "float"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801f8fc0"
+  },
+  {
+    "constructor": "func_0x1801a0e40",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1801a0e40"
+  },
+  {
+    "constructor": "func_0x180404ac0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180404ac0"
+  },
+  {
+    "constructor": "func_0x18041e380",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "COMBAT",
+    "class_name": "Module_18041e380"
+  },
+  {
+    "constructor": "func_0x1802ce320",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "COMBAT",
+    "class_name": "Module_1802ce320"
+  },
+  {
+    "constructor": "func_0x1802079f0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Disable",
+        "type": "bool"
+      },
+      {
+        "name": "No background",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802079f0"
+  },
+  {
+    "constructor": "func_0x180429900",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180429900"
+  },
+  {
+    "constructor": "func_0x18031f290",
+    "name": "Compass",
+    "category": null,
+    "key": null,
+    "tooltip": "Displays a compass.",
+    "settings": [
+      {
+        "name": "Size",
+        "type": "float"
+      }
+    ],
+    "class_name": "OdersoCompass",
+    "category_name": "VISUAL"
+  },
+  {
+    "constructor": "func_0x180341050",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "COMBAT",
+    "class_name": "Module_180341050"
+  },
+  {
+    "constructor": "func_0x1801c4e80",
+    "name": "Chunk Borders",
+    "category": null,
+    "key": null,
+    "tooltip": "Shows chunk borders and slime chunks.",
+    "settings": [
+      {
+        "name": "Check generated",
+        "type": "bool"
+      },
+      {
+        "name": "E1=",
+        "type": "bool"
+      },
+      {
+        "name": "Update delay",
+        "type": "int"
+      },
+      {
+        "name": "Radius",
+        "type": "int"
+      },
+      {
+        "name": "Size",
+        "type": "float"
+      },
+      {
+        "name": "Chunk borders",
+        "type": "bool"
+      },
+      {
+        "name": "Slime chunks",
+        "type": "bool"
+      },
+      {
+        "name": "sS",
+        "type": "bool"
+      }
+    ],
+    "class_name": "ChunkBorders",
+    "category_name": "VISUAL"
+  },
+  {
+    "constructor": "func_0x1803138e0",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Seconds",
+        "type": "bool"
+      },
+      {
+        "name": "Date",
+        "type": "bool"
+      },
+      {
+        "name": "Full year",
+        "type": "bool"
+      }
+    ],
+    "category_name": "COMBAT",
+    "class_name": "Module_1803138e0"
+  },
+  {
+    "constructor": "func_0x18019a5d0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Size",
+        "type": "float"
+      },
+      {
+        "name": "Simple names",
+        "type": "bool"
+      },
+      {
+        "name": "Show nametag",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_18019a5d0"
+  },
+  {
+    "constructor": "func_0x1802f4ea0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Disable",
+        "type": "bool"
+      },
+      {
+        "name": "No background",
+        "type": "bool"
+      }
+    ],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1802f4ea0"
+  },
+  {
+    "constructor": "func_0x1802039a0",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [
+      {
+        "name": "Dynamic color",
+        "type": "bool"
+      }
+    ],
+    "category_name": "COMBAT",
+    "class_name": "Module_1802039a0"
+  },
+  {
+    "constructor": "func_0x180415790",
+    "name": "",
+    "category": 0,
+    "key": 0,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "COMBAT",
+    "class_name": "Module_180415790"
+  },
+  {
+    "constructor": "func_0x1802f1630",
+    "name": "CPS",
+    "category": 0,
+    "key": 0,
+    "tooltip": "Displays your clicks per second.",
+    "settings": [],
+    "class_name": "CPS",
+    "category_name": "VISUAL"
+  },
+  {
+    "constructor": "func_0x180241380",
+    "name": "FPS",
+    "category": 0,
+    "key": 0,
+    "tooltip": "Displays your current FPS.",
+    "settings": [],
+    "class_name": "FPS",
+    "category_name": "VISUAL"
+  },
+  {
+    "constructor": "func_0x180371f00",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180371f00"
+  },
+  {
+    "constructor": "func_0x1804e5480",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804e5480"
+  },
+  {
+    "constructor": "func_0x1804e7c10",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804e7c10"
+  },
+  {
+    "constructor": "func_0x18037bc90",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_18037bc90"
+  },
+  {
+    "constructor": "func_0x180380fc0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180380fc0"
+  },
+  {
+    "constructor": "func_0x1804ce890",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804ce890"
+  },
+  {
+    "constructor": "func_0x1804df4a0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804df4a0"
+  },
+  {
+    "constructor": "func_0x180380410",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180380410"
+  },
+  {
+    "constructor": "func_0x1804e44c0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804e44c0"
+  },
+  {
+    "constructor": "func_0x18038bc60",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_18038bc60"
+  },
+  {
+    "constructor": "func_0x1804cf410",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804cf410"
+  },
+  {
+    "constructor": "func_0x1804d6b70",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804d6b70"
+  },
+  {
+    "constructor": "func_0x180376860",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180376860"
+  },
+  {
+    "constructor": "func_0x1804f3ae0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804f3ae0"
+  },
+  {
+    "constructor": "func_0x180388cf0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_180388cf0"
+  },
+  {
+    "constructor": "func_0x1804d8520",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804d8520"
+  },
+  {
+    "constructor": "func_0x1804dd020",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804dd020"
+  },
+  {
+    "constructor": "func_0x1804de3f0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804de3f0"
+  },
+  {
+    "constructor": "func_0x1804c9320",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804c9320"
+  },
+  {
+    "constructor": "func_0x1804f24e0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804f24e0"
+  },
+  {
+    "constructor": "func_0x1804e2da0",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804e2da0"
+  },
+  {
+    "constructor": "func_0x1804e6e10",
+    "name": "",
+    "category": null,
+    "key": null,
+    "tooltip": "",
+    "settings": [],
+    "category_name": "CUSTOM",
+    "class_name": "Module_1804e6e10"
+  }
+]

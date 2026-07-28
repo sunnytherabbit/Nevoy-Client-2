@@ -1,0 +1,1201 @@
+# Top 200 Oderso-specific candidates
+
+func_0x18003c680  score=316.5 tls=192 xor=108
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083e600', 'DAT_18083e608', 'DAT_18083e610', 'DAT_18083e618', 'DAT_18083e620', 'DAT_18083e638', '_DAT_1806ae110', '_DAT_1806ae4e0', '_DAT_1806ae4f0', '_DAT_1806ae500', '_DAT_1806ae510', '_DAT_1806ae520', '_DAT_1806ae530', '_DAT_1806ae540', '_DAT_1806ae550', '_DAT_1806ae560', '_DAT_1806ae570', '_DAT_1806ae580', '_DAT_1806ae590', '_DAT_1806ae5a0', '_DAT_1806ae5b0', '_DAT_1806ae5c0', '_DAT_1806ae5d0', '_DAT_1806ae5e0', '_DAT_1806ae5f0', '_DAT_1806ae600', '_DAT_1806ae610', '_DAT_1806aff20', '_DAT_1806aff30', '_DAT_1806aff40']
+  calls: ['func_0x18003c680', 'func_0x1800490d0', 'func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cb80', 'func_0x18007d150', 'func_0x1800821d0', 'func_0x180085a50', 'func_0x1800a5740', 'func_0x1800a5de0', 'func_0x1800a5e00', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801380b0  score=259.0 tls=171 xor=63
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', 'DAT_18083f800', '_DAT_1806ae110', '_DAT_1806af240', '_DAT_1806b26e0', '_DAT_1806b2770', '_DAT_1806b2cb0', '_DAT_1806b2d80', '_DAT_1806b4eb0', '_DAT_1806b54e0', '_DAT_1806b5600', '_DAT_1806b5b20', '_DAT_1806b5b30', '_DAT_1806b5b40', '_DAT_1806b5b50', '_DAT_1806b5b60', '_DAT_1806b5b70', '_DAT_1806b5b80', '_DAT_1806b5b90', '_DAT_1806b5ba0', '_DAT_1806b5bb0', '_DAT_1806b5bc0', '_DAT_1806b8efa', '_DAT_1806b8f0a', '_DAT_1806b8f1a', '_DAT_1806b8f23', '_DAT_1806b8f33', '_DAT_1806b8f43', '_DAT_1806b8f53', '_DAT_1806b8f63']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007c9b0', 'func_0x18007cc40', 'func_0x180086ce0', 'func_0x18008f8e0', 'func_0x18008fba0', 'func_0x1800904a0', 'func_0x1800f15f0', 'func_0x18011d780', 'func_0x1801380b0', 'func_0x1801b1d60', 'func_0x1801b2030', 'func_0x1801b2300', 'func_0x1801b24b0', 'func_0x1801b2720', 'func_0x1801bd780', 'func_0x1801bd7b0', 'func_0x1801bd7e0', 'func_0x1801bd840']
+
+func_0x180156800  score=248.0 tls=153 xor=70
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806ae3b0', '_DAT_1806ae860', '_DAT_1806ae870', '_DAT_1806aed00', '_DAT_1806aed80', '_DAT_1806b2800', '_DAT_1806b2810', '_DAT_1806b2880', '_DAT_1806b2e70', '_DAT_1806b2ea0', '_DAT_1806b5010', '_DAT_1806b5b00', '_DAT_1806b5d30', '_DAT_1806b5d40', '_DAT_1806b5d50', '_DAT_1806b5d60', '_DAT_1806b5d70', '_DAT_1806b5d80', '_DAT_1806b5d90', '_DAT_1806b5da0', '_DAT_1806b5db0', '_DAT_1806b5dc0', '_DAT_1806b5dd0', '_DAT_1806b5de0', '_DAT_1806b5df0', '_DAT_1806b5e00', '_DAT_1806b5e10', '_DAT_1806b5e20', '_DAT_1806b5e30']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007c9b0', 'func_0x18007cab0', 'func_0x18007d150', 'func_0x18007d2b0', 'func_0x18007f260', 'func_0x18008f8e0', 'func_0x1800fc820', 'func_0x180118820', 'func_0x18012b270', 'func_0x18012b460', 'func_0x180156800', 'func_0x18015fe10', 'func_0x1801b4680', 'func_0x1801b4920', 'func_0x1801be820', 'func_0x1801beb70', 'func_0x1801beb90', 'func_0x1801bebf0']
+
+func_0x1800c6d40  score=238.0 tls=151 xor=62
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083adc0', 'DAT_18083add8', 'DAT_18083ade0', 'DAT_18083adf8', 'DAT_18083ae00', 'DAT_18083ae18', 'DAT_18083ae20', 'DAT_18083ae38', 'DAT_18083ae40', 'DAT_18083ae58', 'DAT_18083ae60', 'DAT_18083ae78', 'DAT_18083ae80', 'DAT_18083ae98', 'DAT_18083aea0', 'DAT_18083aeb8', 'DAT_18083aec0', 'DAT_18083aed8', 'DAT_18083aee0', 'DAT_18083aef8', 'DAT_18083af00', 'DAT_18083af18', 'DAT_18083af20', 'DAT_18083af38', 'DAT_18083af40', 'DAT_18083af58', 'DAT_18083af60', 'DAT_18083af78', 'DAT_18083af80', 'DAT_18083af98']
+  calls: ['func_0x18007ba70', 'func_0x1800c6d40', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806731d0', 'func_0x1806aa960']
+
+func_0x180223cc0  score=233.0 tls=138 xor=70
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fb50', '_DAT_1806ae110', '_DAT_1806ae6e0', '_DAT_1806ae6f0', '_DAT_1806ae830', '_DAT_1806aeaf0', '_DAT_1806af240', '_DAT_1806af250', '_DAT_1806b2660', '_DAT_1806b2720', '_DAT_1806b2730', '_DAT_1806b2da0', '_DAT_1806b2db0', '_DAT_1806b2dc0', '_DAT_1806b2e20', '_DAT_1806b4eb0', '_DAT_1806b55b0', '_DAT_1806b5b70', '_DAT_1806b5b80', '_DAT_1806b6160', '_DAT_1806b6670', '_DAT_1806b6690', '_DAT_1806bb120', '_DAT_1806bb1e0', '_DAT_1806be380', '_DAT_1806be390', '_DAT_1806be3a0', '_DAT_1806be3b0', '_DAT_1806be3c0', '_DAT_1806be3d0']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cb80', 'func_0x18007cc40', 'func_0x18007cfc0', 'func_0x18007d150', 'func_0x18007d2b0', 'func_0x180086e20', 'func_0x1800f15f0', 'func_0x1800f22c0', 'func_0x18012b7b0', 'func_0x1801b1390', 'func_0x1801b2300', 'func_0x1801b30c0', 'func_0x1801b4360', 'func_0x1801b7c70', 'func_0x1801ba020', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd600']
+
+func_0x1803d65c0  score=195.0 tls=114 xor=58
+  s_symbols: ['s_Displays_the_name_of_every_user_o_180760cd8', 's_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_1806b5cd0', 'DAT_180840048', '_DAT_1806ae7c0', '_DAT_1806b26d0', '_DAT_1806b2880', '_DAT_1806b2920', '_DAT_1806b5600', '_DAT_1806b6880', '_DAT_1806b68b0', '_DAT_1806c8f00', '_DAT_1806c8f10', '_DAT_1806c8f20', '_DAT_1806c8f30', '_DAT_1806cbde7', '_DAT_1806cbdf7', '_DAT_1806cbe09', '_DAT_1806cbe1a', '_DAT_1806cbe2a', '_DAT_1806cbe34', '_DAT_1806cbe44', '_DAT_1806cbe5a', '_DAT_1806cbe66', '_DAT_1806cbe76', '_DAT_1806cbe86', '_DAT_1806cbe9e']
+  calls: ['func_0x18007ba70', 'func_0x18007cab0', 'func_0x18007d150', 'func_0x18007d2b0', 'func_0x18008fba0', 'func_0x1800f15f0', 'func_0x18012b7b0', 'func_0x1801b39d0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801ccff0', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x1803d65c0', 'func_0x180441640', 'func_0x180441750', 'func_0x180441780', 'func_0x180672de0']
+
+func_0x1802c5a20  score=177.0 tls=117 xor=35
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_1806beca0', 'DAT_1806becb0', 'DAT_1806c273e', 'DAT_18083fb50', '_DAT_1806ae240', '_DAT_1806ae4d0', '_DAT_1806af240', '_DAT_1806b26d0', '_DAT_1806b2720', '_DAT_1806b2880', '_DAT_1806b5600', '_DAT_1806b5b60', '_DAT_1806b5ce0', '_DAT_1806b5cf0', '_DAT_1806b6490', '_DAT_1806b6690', '_DAT_1806ba1df', '_DAT_1806ba1ef', '_DAT_1806bec90', '_DAT_1806c26b0', '_DAT_1806c26c4', '_DAT_1806c26d9', '_DAT_1806c26eb', '_DAT_1806c26fb', '_DAT_1806c270b', '_DAT_1806c271c', '_DAT_1806c272f', '_DAT_1806c273e', '_DAT_1806c274e']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cab0', 'func_0x18007cb80', 'func_0x18007cd50', 'func_0x18007ce20', 'func_0x18007cfc0', 'func_0x18007d150', 'func_0x18007d2b0', 'func_0x18007d3c0', 'func_0x18007d9e0', 'func_0x180086790', 'func_0x180086ce0', 'func_0x18008f8e0', 'func_0x18008fa60', 'func_0x18008fba0', 'func_0x1800f15f0', 'func_0x1800f36d0', 'func_0x18018c570', 'func_0x1801b1390']
+
+func_0x1801c4e80  score=161.0 tls=90 xor=46
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806bcf89', 'DAT_18083f940', '_DAT_1806ae110', '_DAT_1806ae220', '_DAT_1806ae240', '_DAT_1806ae4d0', '_DAT_1806aeb30', '_DAT_1806b2cb0', '_DAT_1806b2cc0', '_DAT_1806b2d10', '_DAT_1806b2db0', '_DAT_1806b4eb0', '_DAT_1806b54d0', '_DAT_1806b5b20', '_DAT_1806b5b70', '_DAT_1806b5c30', '_DAT_1806b6490', '_DAT_1806b6890', '_DAT_1806bafc0', '_DAT_1806bafd0', '_DAT_1806bafe0', '_DAT_1806baff0', '_DAT_1806bb000', '_DAT_1806bb010', '_DAT_1806bb020', '_DAT_1806bb030', '_DAT_1806bb040', '_DAT_1806bb050', '_DAT_1806bb060', '_DAT_1806bb070']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cb80', 'func_0x18007cfc0', 'func_0x18007d150', 'func_0x18007d3c0', 'func_0x18007d9e0', 'func_0x180086e20', 'func_0x1800904a0', 'func_0x1800b6960', 'func_0x18012b7b0', 'func_0x18012b940', 'func_0x180132ee0', 'func_0x1801b6ff0', 'func_0x1801ba020', 'func_0x1801c17d0', 'func_0x1801c4e80', 'func_0x1801ccb00', 'func_0x1801ccd70', 'func_0x1801ccff0']
+
+func_0x18014fe60  score=148.5 tls=93 xor=45
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_1806b5cd0', 'DAT_18083f7c0', '_DAT_1806ae220', '_DAT_1806b2cb0', '_DAT_1806b2d80', '_DAT_1806b54e0', '_DAT_1806b5ca0', '_DAT_1806b5cb0', '_DAT_1806b5cc0', '_DAT_1806b5ce0', '_DAT_1806b5cf0', '_DAT_1806b5d00', '_DAT_1806ba1df', '_DAT_1806ba1ef', '_DAT_1806ba201', '_DAT_1806ba211', '_DAT_1806ba221', '_DAT_1806ba23c', '_DAT_1806ba24d', '_DAT_1806ba257']
+  calls: ['func_0x18007ba70', 'func_0x18007d2b0', 'func_0x1800d9840', 'func_0x1800f15f0', 'func_0x18014fe60', 'func_0x18018c570', 'func_0x1801b2720', 'func_0x1801c09f0', 'func_0x1801c0ad0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803238c0  score=147.0 tls=93 xor=30
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806c3830', 'DAT_18083fd98', '_DAT_1806af240', '_DAT_1806b2880', '_DAT_1806b2910', '_DAT_1806b2cb0', '_DAT_1806b2d80', '_DAT_1806b2d90', '_DAT_1806b2da0', '_DAT_1806b5b30', '_DAT_1806b5b50', '_DAT_1806b5ca0', '_DAT_1806b63d0', '_DAT_1806b6690', '_DAT_1806b6890', '_DAT_1806bb120', '_DAT_1806bb3a0', '_DAT_1806be670', '_DAT_1806c3840', '_DAT_1806c3850', '_DAT_1806c3860', '_DAT_1806c6c5f', '_DAT_1806c6c69', '_DAT_1806c6c79', '_DAT_1806c6c89', '_DAT_1806c6c9b', '_DAT_1806c6cb0', '_DAT_1806c6cc2', '_DAT_1806c6cd2', '_DAT_1806c6ce0']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007c9b0', 'func_0x18007cd50', 'func_0x18007d150', 'func_0x18007d3c0', 'func_0x18007d9e0', 'func_0x18008fa60', 'func_0x1800d9840', 'func_0x1800f15f0', 'func_0x18018c570', 'func_0x1801b1b20', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x180217800', 'func_0x180218820', 'func_0x1802d71a0']
+
+func_0x180195270  score=137.5 tls=90 xor=40
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b28f0', 'DAT_18083f7c0', '_DAT_1806b2700', '_DAT_1806b2730', '_DAT_1806b5590', '_DAT_1806b6630', '_DAT_1806b6640', '_DAT_1806b6650', '_DAT_1806b6660', '_DAT_1806b6670', '_DAT_1806b6680', '_DAT_1806ba4fb', '_DAT_1806ba513', '_DAT_1806ba523', '_DAT_1806ba537']
+  calls: ['func_0x18007ba70', 'func_0x18007cd50', 'func_0x18007d9e0', 'func_0x180086790', 'func_0x180195270', 'func_0x1801c0df0', 'func_0x1801c0e20', 'func_0x1801c0e50', 'func_0x1801c2ba0', 'func_0x1801ccb00', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1802e5290  score=128.0 tls=66 xor=40
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806af240', '_DAT_1806b26e0', '_DAT_1806b2910', '_DAT_1806b4eb0', '_DAT_1806b54c0', '_DAT_1806b5600', '_DAT_1806b5b00', '_DAT_1806b5b10', '_DAT_1806b5b60', '_DAT_1806b5b70', '_DAT_1806b6980', '_DAT_1806be380', '_DAT_1806c3460', '_DAT_1806c3470', '_DAT_1806c3fc0', '_DAT_1806c3fd0', '_DAT_1806c5b70', '_DAT_1806c5b80', '_DAT_1806c5b90', '_DAT_1806c5b9a', '_DAT_1806c5baa', '_DAT_1806c5bba', '_DAT_1806c5bd0', '_DAT_1806c5be6', '_DAT_1806c5bf0', '_DAT_1806c5c00', '_DAT_1806c5c16', '_DAT_1806c5c20', '_DAT_1806c5c30']
+  calls: ['func_0x18007ba70', 'func_0x18007c9b0', 'func_0x18007cab0', 'func_0x180086e20', 'func_0x1800d9840', 'func_0x180132ee0', 'func_0x1801b1b20', 'func_0x1801b3830', 'func_0x1801ba020', 'func_0x1801bd840', 'func_0x1801cd2e0', 'func_0x1801d3800', 'func_0x1801d4c30', 'func_0x1802d9b30', 'func_0x1802e31c0', 'func_0x1802e5290', 'func_0x18036e8c0', 'func_0x18036e8f0', 'func_0x18036e920', 'func_0x180672de0']
+
+func_0x1803c8d40  score=121.0 tls=70 xor=26
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_1806ae7b0', 'DAT_1806aeae4', 'DAT_1806b26b4', 'DAT_1806b2870', 'DAT_1806b28a0', 'DAT_1806b28f0', 'DAT_1806b55e0', 'DAT_1806b5c70', 'DAT_1806b5ef4', 'DAT_1806b6550', 'DAT_1806b66b0', 'DAT_1806b67d0', 'DAT_1806b67e0', 'DAT_1806be594', 'DAT_1806beca0', 'DAT_1806c3800', 'DAT_1806c8980', 'DAT_1806c8d20', 'DAT_1806c8dc0', 'DAT_18083a048', 'DAT_18083a068', 'DAT_18083a088', 'DAT_18083a0a8', 'DAT_18083a298', 'DAT_18083a2f8', 'DAT_18083a318', 'DAT_18083ca16', 'DAT_18083ca18', 'DAT_18083ca28']
+  calls: ['func_0x180001060', 'func_0x180001e70', 'func_0x18001deb0', 'func_0x180034df0', 'func_0x180071c30', 'func_0x1800752a0', 'func_0x180076360', 'func_0x180076840', 'func_0x180076960', 'func_0x180077340', 'func_0x180077350', 'func_0x18007ba70', 'func_0x18007c0d0', 'func_0x18007c170', 'func_0x18007cb80', 'func_0x18007cd50', 'func_0x18007d150', 'func_0x18007d2b0', 'func_0x18007d3c0', 'func_0x18007fe80']
+
+func_0x180165110  score=119.5 tls=63 xor=39
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806ae4d0', '_DAT_1806b26c0', '_DAT_1806b2d10', '_DAT_1806b2da0', '_DAT_1806b4eb0', '_DAT_1806b5600', '_DAT_1806b5c30', '_DAT_1806b6160', '_DAT_1806b6170', '_DAT_1806b9728', '_DAT_1806b9738', '_DAT_1806b9748', '_DAT_1806b9758', '_DAT_1806b9766', '_DAT_1806b9776', '_DAT_1806b9786', '_DAT_1806b9797', '_DAT_1806b97a7', '_DAT_1806b97b7', '_DAT_1806b97ca', '_DAT_1806b97df', '_DAT_1806b97ef', '_DAT_1806b97ff', '_DAT_1806b980f', '_DAT_1806b9825', '_DAT_1806b9835', '_DAT_1806b984a', '_DAT_1806b985a', '_DAT_1806b986a']
+  calls: ['func_0x18007ba70', 'func_0x18007cab0', 'func_0x18007cd50', 'func_0x18007d150', 'func_0x180086ce0', 'func_0x18012bde0', 'func_0x180165110', 'func_0x1801b1390', 'func_0x1801b1b20', 'func_0x1801b4360', 'func_0x1801b4680', 'func_0x1801b5990', 'func_0x1801bed10', 'func_0x1801bed40', 'func_0x1801bed80', 'func_0x1801bede0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801d3800', 'func_0x180672de0']
+
+func_0x18024b340  score=117.5 tls=69 xor=30
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fb50', '_DAT_1806af240', '_DAT_1806b2cb0', '_DAT_1806b2d70', '_DAT_1806b2da0', '_DAT_1806b4eb0', '_DAT_1806b54e0', '_DAT_1806b5600', '_DAT_1806b5c20', '_DAT_1806b6690', '_DAT_1806b6980', '_DAT_1806be690', '_DAT_1806c1cc2', '_DAT_1806c1cd2', '_DAT_1806c1cea', '_DAT_1806c1cf7', '_DAT_1806c1d07', '_DAT_1806c1d17', '_DAT_1806c1d2b', '_DAT_1806c1d38', '_DAT_1806c1d48', '_DAT_1806c1d58', '_DAT_1806c1d68', '_DAT_1806c1d72', '_DAT_1806c1d82', '_DAT_1806c1d92', '_DAT_1806c1da4', '_DAT_1806c1db4', '_DAT_1806c1dc4', '_DAT_1806c1dd4']
+  calls: ['func_0x18007ba70', 'func_0x18007cc40', 'func_0x18007cfc0', 'func_0x18007d2b0', 'func_0x180086790', 'func_0x180086e20', 'func_0x1800f15f0', 'func_0x1801b39d0', 'func_0x1801b4680', 'func_0x1801bb8d0', 'func_0x1801be7d0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x18024b340', 'func_0x1802d9b30', 'func_0x1802e3b10', 'func_0x1802e3b50', 'func_0x1802e3b80']
+
+func_0x180417c20  score=117.5 tls=72 xor=28
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180840048', '_DAT_1806ae110', '_DAT_1806b2c90', '_DAT_1806b2cb0', '_DAT_1806b2d60', '_DAT_1806b2d70', '_DAT_1806b2d80', '_DAT_1806b5230', '_DAT_1806b5b50', '_DAT_1806b6870', '_DAT_1806bb3a0', '_DAT_1806c9140', '_DAT_1806ccd10', '_DAT_1806ccd20', '_DAT_1806ccd30', '_DAT_1806ccd44', '_DAT_1806ccd54', '_DAT_1806ccd6b', '_DAT_1806ccd7b', '_DAT_1806ccd8b', '_DAT_1806ccd9e', '_DAT_1806ccdb0', '_DAT_1806ccdc0', '_DAT_1806ccdd0', '_DAT_1806ccde1', '_DAT_1806ccdeb', '_DAT_1806ccdfb', '_DAT_1806cce0f', '_DAT_1806cce23', '_DAT_1806cce33']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cab0', 'func_0x18007cd50', 'func_0x18007cfc0', 'func_0x18007d150', 'func_0x180086e20', 'func_0x1800d9840', 'func_0x1800f2c80', 'func_0x18012b270', 'func_0x1801b30c0', 'func_0x1801b3830', 'func_0x1801b72f0', 'func_0x1801be7b0', 'func_0x1801bf490', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x1802148a0']
+
+func_0x180331ad0  score=115.5 tls=63 xor=30
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806ae110', '_DAT_1806ae4d0', '_DAT_1806aeb30', '_DAT_1806b2880', '_DAT_1806b2920', '_DAT_1806b2cb0', '_DAT_1806b2d70', '_DAT_1806b54d0', '_DAT_1806b5c20', '_DAT_1806b6620', '_DAT_1806b6660', '_DAT_1806b6890', '_DAT_1806bafe0', '_DAT_1806baff0', '_DAT_1806bb000', '_DAT_1806bb010', '_DAT_1806bb020', '_DAT_1806bb030', '_DAT_1806be660', '_DAT_1806c3a10', '_DAT_1806c3a20', '_DAT_1806c6f47', '_DAT_1806c6f57', '_DAT_1806c6f67', '_DAT_1806c6f7f', '_DAT_1806c6f8f', '_DAT_1806c6f9b', '_DAT_1806c6fab', '_DAT_1806c6fc2']
+  calls: ['func_0x180076320', 'func_0x18007ba70', 'func_0x18007cab0', 'func_0x18007d2b0', 'func_0x18007d3c0', 'func_0x1800904a0', 'func_0x18012b940', 'func_0x1801b1390', 'func_0x1801b1b20', 'func_0x1801bf0d0', 'func_0x1801c2ba0', 'func_0x1801ccb00', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x180331ad0', 'func_0x18036e8f0', 'func_0x18036ffb0', 'func_0x180370020', 'func_0x1803700f0']
+
+func_0x1801e7620  score=114.5 tls=69 xor=30
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f940', '_DAT_1806ae110', '_DAT_1806b2d60', '_DAT_1806b2da0', '_DAT_1806b6410', '_DAT_1806bb100', '_DAT_1806bb110', '_DAT_1806bb120', '_DAT_1806bd647', '_DAT_1806bd657', '_DAT_1806bd663', '_DAT_1806bd673', '_DAT_1806bd67f', '_DAT_1806bd68f', '_DAT_1806bd698', '_DAT_1806bd6a8', '_DAT_1806bd6b8', '_DAT_1806bd6ca', '_DAT_1806bd6e1', '_DAT_1806bd6ee', '_DAT_1806bd6fe', '_DAT_1806bd715', '_DAT_1806bd720', '_DAT_1806bd730', '_DAT_1806bd740', '_DAT_1806bd752', '_DAT_1806bd762', '_DAT_1806bd772', '_DAT_1806bd782', '_DAT_1806bd792']
+  calls: ['func_0x18007ba70', 'func_0x18007c9b0', 'func_0x18007cc40', 'func_0x18007d3c0', 'func_0x18008f8e0', 'func_0x18008fba0', 'func_0x1800904a0', 'func_0x1800f15f0', 'func_0x1801b1b20', 'func_0x1801b4920', 'func_0x1801bdd90', 'func_0x1801bf0d0', 'func_0x1801bf1c0', 'func_0x1801c09f0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801e7620', 'func_0x1802175e0', 'func_0x180217610', 'func_0x180217640']
+
+func_0x1800c4670  score=112.0 tls=76 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083aaa0', 'DAT_18083aab8', 'DAT_18083aac0', 'DAT_18083aad8', 'DAT_18083aae0', 'DAT_18083aaf8', 'DAT_18083ab00', 'DAT_18083ab18', 'DAT_18083ab20', 'DAT_18083ab38', 'DAT_18083ab40', 'DAT_18083ab58', 'DAT_18083ab60', 'DAT_18083ab78', 'DAT_18083ab80', 'DAT_18083ab98', 'DAT_18083aba0', 'DAT_18083abb8', 'DAT_18083abc0', 'DAT_18083abd8', 'DAT_18083abe0', 'DAT_18083abf8', 'DAT_18083ac00', 'DAT_18083ac18', 'DAT_18083ac20', 'DAT_18083ac38', 'DAT_18083ac40', 'DAT_18083ac58', 'DAT_18083ac60', 'DAT_18083ac78']
+  calls: ['func_0x18007ba70', 'func_0x1800c4670', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806731d0', 'func_0x1806aa960']
+
+func_0x180178c80  score=110.0 tls=51 xor=34
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806ae110', '_DAT_1806ae4d0', '_DAT_1806b2880', '_DAT_1806b2c90', '_DAT_1806b2ca0', '_DAT_1806b2d10', '_DAT_1806b2d60', '_DAT_1806b2d70', '_DAT_1806b4e80', '_DAT_1806b5220', '_DAT_1806b54c0', '_DAT_1806b54d0', '_DAT_1806b5b00', '_DAT_1806b5b10', '_DAT_1806b5c10', '_DAT_1806b5c20', '_DAT_1806b5c30', '_DAT_1806b63f0', '_DAT_1806b6400', '_DAT_1806b6410', '_DAT_1806b6420', '_DAT_1806b6430', '_DAT_1806b6440', '_DAT_1806b6450', '_DAT_1806b6460', '_DAT_1806b6470', '_DAT_1806b6480', '_DAT_1806b9c27', '_DAT_1806b9c37']
+  calls: ['func_0x18007ba70', 'func_0x18007d150', 'func_0x180178c80', 'func_0x1801b1b20', 'func_0x1801b2300', 'func_0x1801b3830', 'func_0x1801b72f0', 'func_0x1801c2ba0', 'func_0x1801cd2e0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180404ac0  score=108.5 tls=72 xor=25
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_1806c9060', 'DAT_180840048', '_DAT_1806ae110', '_DAT_1806af240', '_DAT_1806b26e0', '_DAT_1806b26f0', '_DAT_1806b2700', '_DAT_1806b2d10', '_DAT_1806b5cf0', '_DAT_1806b6870', '_DAT_1806c9070', '_DAT_1806cc932', '_DAT_1806cc946', '_DAT_1806cc956', '_DAT_1806cc966', '_DAT_1806cc976', '_DAT_1806cc989', '_DAT_1806cc9a0', '_DAT_1806cc9b5', '_DAT_1806cc9c5', '_DAT_1806cc9d5', '_DAT_1806cc9e9']
+  calls: ['func_0x18007ba70', 'func_0x18007cb80', 'func_0x18007cd50', 'func_0x18007cfc0', 'func_0x18007d3c0', 'func_0x18012b270', 'func_0x18018c570', 'func_0x1801b4680', 'func_0x1801bf490', 'func_0x1801c17d0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801d2eb0', 'func_0x1801d30b0', 'func_0x1801d3a80', 'func_0x18036f8b0', 'func_0x180404ac0', 'func_0x18044a770', 'func_0x18044a7b0', 'func_0x180672de0']
+
+func_0x1802a7f80  score=108.0 tls=69 xor=30
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083aa58', 'DAT_18083aa68', 'DAT_18083aa70', 'DAT_18083aa78', 'DAT_18083aa88', 'DAT_18083aa90', 'DAT_180840a58', '_DAT_1806b6f30', '_DAT_1806b75a0', '_DAT_1806be570', '_DAT_1806be7e0', '_DAT_1806be860', '_DAT_1806beb50', '_DAT_1806beb60', '_DAT_1806c2315', '_DAT_1806c2325', '_DAT_1806c2338', '_DAT_1806c2345']
+  calls: ['func_0x18007ba70', 'func_0x18007cc40', 'func_0x180082950', 'func_0x18008c4e0', 'func_0x180143b90', 'func_0x1801b30c0', 'func_0x1801d3090', 'func_0x1801d37a0', 'func_0x1802a7f80', 'func_0x1802b8b70', 'func_0x1802b8f30', 'func_0x1802e45c0', 'func_0x1802e4610', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18011dba0  score=105.5 tls=69 xor=17
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806aeae4', 'DAT_18083f540', '_DAT_1806ae220', '_DAT_1806ae4d0', '_DAT_1806b2c90', '_DAT_1806b2cb0', '_DAT_1806b2d60', '_DAT_1806b4e80', '_DAT_1806b54c0', '_DAT_1806b54d0', '_DAT_1806b54e0', '_DAT_1806b5740', '_DAT_1806b5750', '_DAT_1806b5760', '_DAT_1806b5770', '_DAT_1806b5784', '_DAT_1806b5794', '_DAT_1806b57a4', '_DAT_1806b57b4', '_DAT_1806b57c6', '_DAT_1806b57db', '_DAT_1806b57f0', '_DAT_1806b5800', '_DAT_1806b5811', '_DAT_1806b5826', '_DAT_1806b5836', '_DAT_1806b5846', '_DAT_1806b5850', '_DAT_1806b5860', '_DAT_1806b5870']
+  calls: ['func_0x18007ba70', 'func_0x18007cb80', 'func_0x18007cd50', 'func_0x18007d150', 'func_0x180086ce0', 'func_0x18008fa60', 'func_0x1800904a0', 'func_0x1800d9840', 'func_0x1800f3650', 'func_0x18011dba0', 'func_0x18012b270', 'func_0x18012b460', 'func_0x18012b7b0', 'func_0x18012b940', 'func_0x18012bd20', 'func_0x18012bd50', 'func_0x18012bd80', 'func_0x18012bde0', 'func_0x18012be40', 'func_0x18012be80']
+
+func_0x18017c4a0  score=105.5 tls=66 xor=26
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806ae110', '_DAT_1806b2d80', '_DAT_1806b5250', '_DAT_1806b6490', '_DAT_1806b64a0', '_DAT_1806b64b0', '_DAT_1806b64c0', '_DAT_1806b64d0', '_DAT_1806b9e1a', '_DAT_1806b9e2d', '_DAT_1806b9e3a', '_DAT_1806b9e4a', '_DAT_1806b9e55', '_DAT_1806b9e65', '_DAT_1806b9e7a', '_DAT_1806b9e8a', '_DAT_1806b9ea2', '_DAT_1806b9eb2', '_DAT_1806b9ec8', '_DAT_1806b9edd', '_DAT_1806b9eed', '_DAT_1806b9efd', '_DAT_1806b9f0f', '_DAT_1806b9f1f', '_DAT_1806b9f2f', '_DAT_1806b9f3a']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007c9b0', 'func_0x18007cb80', 'func_0x18007cc40', 'func_0x18007cd50', 'func_0x180086e20', 'func_0x18008f8e0', 'func_0x18012bde0', 'func_0x18014fe60', 'func_0x18017c4a0', 'func_0x1801b39d0', 'func_0x1801be770', 'func_0x1801bf2b0', 'func_0x1801bf370', 'func_0x1801bf490', 'func_0x1801bf4f0', 'func_0x1801bf520', 'func_0x1801bf540', 'func_0x1801bf570']
+
+func_0x1801dd4b0  score=103.0 tls=63 xor=22
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f940', '_DAT_1806b2880', '_DAT_1806b2ca0', '_DAT_1806b2cb0', '_DAT_1806b4e80', '_DAT_1806b5b00', '_DAT_1806b5cf0', '_DAT_1806b63f0', '_DAT_1806b6490', '_DAT_1806ba5f1', '_DAT_1806bd2d0', '_DAT_1806bd2e2', '_DAT_1806bd2f2', '_DAT_1806bd2fc', '_DAT_1806bd30c', '_DAT_1806bd318', '_DAT_1806bd328', '_DAT_1806bd338', '_DAT_1806bd348', '_DAT_1806bd358', '_DAT_1806bd36c', '_DAT_1806bd383', '_DAT_1806bd393', '_DAT_1806bd3a3', '_DAT_1806bd3b3', '_DAT_1806bd3c3', '_DAT_1806bd3d3', '_DAT_1806bd3e3', '_DAT_1806bd3f6', '_DAT_1806bd406']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007d150', 'func_0x18007d2b0', 'func_0x18007d3c0', 'func_0x18007d9e0', 'func_0x180086e20', 'func_0x18008f8e0', 'func_0x18008fba0', 'func_0x18012b7b0', 'func_0x1801b30c0', 'func_0x1801b4030', 'func_0x1801c0d20', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x1801dd4b0', 'func_0x180211710', 'func_0x180214ec0']
+
+func_0x1803138e0  score=99.5 tls=66 xor=27
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806ae110', '_DAT_1806b2d70', '_DAT_1806b5af0', '_DAT_1806bb160', '_DAT_1806c3780', '_DAT_1806c3790', '_DAT_1806c37a0', '_DAT_1806c6a37', '_DAT_1806c6a42', '_DAT_1806c6e65', '_DAT_1806c6e75', '_DAT_1806c6e85']
+  calls: ['func_0x18007ba70', 'func_0x18007c9b0', 'func_0x18014fe60', 'func_0x1801b4360', 'func_0x1801c0c70', 'func_0x1801ccd70', 'func_0x1801cf6b0', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x1803138e0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803b55b0  score=95.0 tls=48 xor=22
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_1806ae7b0', 'DAT_1806ae7b4', 'DAT_1806aeae4', 'DAT_1806b26b4', 'DAT_1806b2860', 'DAT_1806b286c', 'DAT_1806b2870', 'DAT_1806b28a0', 'DAT_1806b28b8', 'DAT_1806b28c0', 'DAT_1806b5c70', 'DAT_1806b6550', 'DAT_1806b676c', 'DAT_1806b6794', 'DAT_1806b67e0', 'DAT_1806be590', 'DAT_1806be594', 'DAT_1806c3800', 'DAT_1806c3930', 'DAT_1806c3c18', 'DAT_1806c8750', 'DAT_1806c8810', 'DAT_1806c8830', 'DAT_1806c8840', 'DAT_1806c8864', 'DAT_1806c8868', 'DAT_1806c886c', 'DAT_1806c8960', 'DAT_18083ca18']
+  calls: ['func_0x18007ba70', 'func_0x18007bba0', 'func_0x18007c0d0', 'func_0x18007c170', 'func_0x18007f260', 'func_0x18007fe80', 'func_0x180082950', 'func_0x1800871a0', 'func_0x18008c4e0', 'func_0x180094870', 'func_0x1800cd3b0', 'func_0x1800cf900', 'func_0x1800cf950', 'func_0x1800cf960', 'func_0x1800cf970', 'func_0x1800cfa00', 'func_0x1800cfa30', 'func_0x1800cfe40', 'func_0x1800d0090', 'func_0x1800d00e0']
+
+func_0x1803c4440  score=95.0 tls=38 xor=32
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae7b0', 'DAT_1806aeae4', 'DAT_1806b26b0', 'DAT_1806b26b4', 'DAT_1806b28a0', 'DAT_1806b6144', 'DAT_1806b6550', 'DAT_1806b66b0', 'DAT_1806b67d0', 'DAT_1806be4a8', 'DAT_1806beca0', 'DAT_1806c3800', 'DAT_1806c3828', 'DAT_1806c3930', 'DAT_1806c8868', 'DAT_1806c8a04', 'DAT_1806c8a08', 'DAT_1806c8a10', 'DAT_1806c8a88', 'DAT_1806c8a90', 'DAT_1806c8aa0', 'DAT_1806c8ab0', 'DAT_1806c8ac0', 'DAT_1806c8ac4', 'DAT_1806c8b00', 'DAT_1806c8b10', 'DAT_1806c8b30', 'DAT_1806c8b34', 'DAT_1806c8b38', 'DAT_1806c8b3c']
+  calls: ['func_0x18007ba70', 'func_0x18007d150', 'func_0x1800cd3b0', 'func_0x1800cfa00', 'func_0x1800d00e0', 'func_0x1800d25d0', 'func_0x1800d27b0', 'func_0x1800d2a00', 'func_0x1800d36e0', 'func_0x1800d48c0', 'func_0x1800d49a0', 'func_0x1800d4a80', 'func_0x18012b7b0', 'func_0x180134bf0', 'func_0x1801ba020', 'func_0x1802d6be0', 'func_0x1803380d0', 'func_0x1803396c0', 'func_0x180375110', 'func_0x1803c4440']
+
+func_0x180443750  score=94.5 tls=50 xor=27
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806c94e0', 'DAT_18076021e', 'DAT_180768740', 'DAT_1808408b2', 'DAT_180840a58', '_DAT_1806b6f30', '_DAT_1806b75a0', '_DAT_1806c34b0', '_DAT_1806c9490', '_DAT_1806c94a0', '_DAT_1806c94c0', '_DAT_1806c94d0', '_DAT_1806cde1e', '_DAT_1806cde39', '_DAT_1806cde49', '_DAT_1806cde59', '_DAT_1806cde69', '_DAT_1806cde7f', '_DAT_1806cde8f', '_DAT_1806cde9f', '_DAT_1806cdebe', '_DAT_1806cdece', '_DAT_1806cdedf', '_DAT_1806cdef5', '_DAT_1806cdf3a', '_DAT_1806cdf59', '_DAT_1806cdf69', '_DAT_1806cdf7f', '_DAT_1806cdf92', '_DAT_1806cdf9e']
+  calls: ['func_0x180001060', 'func_0x180001e70', 'func_0x180034ae0', 'func_0x180056840', 'func_0x180056aa0', 'func_0x18007ba70', 'func_0x18007c9b0', 'func_0x18007cab0', 'func_0x18007cb80', 'func_0x18007ce20', 'func_0x18007d3c0', 'func_0x180083d00', 'func_0x180083e30', 'func_0x180084c70', 'func_0x180086960', 'func_0x180086ce0', 'func_0x180086e20', 'func_0x1800871a0', 'func_0x18008b1c0', 'func_0x18008fba0']
+
+func_0x18021f300  score=92.0 tls=45 xor=22
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fb50', '_DAT_1806ae110', '_DAT_1806ae4d0', '_DAT_1806aeb30', '_DAT_1806b2ca0', '_DAT_1806b2cb0', '_DAT_1806b2d10', '_DAT_1806b2d60', '_DAT_1806b2d70', '_DAT_1806b54c0', '_DAT_1806b5b00', '_DAT_1806b5c30', '_DAT_1806b6450', '_DAT_1806b6500', '_DAT_1806bafe0', '_DAT_1806baff0', '_DAT_1806bb000', '_DAT_1806bb010', '_DAT_1806bb020', '_DAT_1806bb030', '_DAT_1806be350', '_DAT_1806be360', '_DAT_1806be370', '_DAT_1806c0ede', '_DAT_1806c0eee', '_DAT_1806c0efe', '_DAT_1806c0f0e', '_DAT_1806c0f1e', '_DAT_1806c0f27', '_DAT_1806c0f37']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007d150', 'func_0x18007d2b0', 'func_0x180086e20', 'func_0x18012b460', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1802159f0', 'func_0x18021f300', 'func_0x1802d6be0', 'func_0x1802d6e80', 'func_0x1802e3290', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801fc680  score=89.0 tls=57 xor=21
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_18083f940', '_DAT_1806ae220', '_DAT_1806b54c0', '_DAT_1806b5600', '_DAT_1806b5b00', '_DAT_1806b5b10', '_DAT_1806b5b60', '_DAT_1806b5c40', '_DAT_1806b5ca0', '_DAT_1806b5cb0', '_DAT_1806bb1e0', '_DAT_1806bdb50', '_DAT_1806bdb60', '_DAT_1806bdb78', '_DAT_1806bdb88', '_DAT_1806bdb9d', '_DAT_1806bdbae', '_DAT_1806bdbbe', '_DAT_1806bdbd0', '_DAT_1806bdbe0', '_DAT_1806bdbf8']
+  calls: ['func_0x18007ba70', 'func_0x18007d2b0', 'func_0x1800f15f0', 'func_0x18018c570', 'func_0x1801b1390', 'func_0x1801b39d0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x1801fc680', 'func_0x180218720', 'func_0x180218760', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1802cfa50  score=89.0 tls=45 xor=23
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fb50', '_DAT_1806ae4d0', '_DAT_1806b2ca0', '_DAT_1806b2cb0', '_DAT_1806b2d10', '_DAT_1806b2d70', '_DAT_1806b5230', '_DAT_1806b54c0', '_DAT_1806b54d0', '_DAT_1806b6490', '_DAT_1806bed30', '_DAT_1806bed40', '_DAT_1806bed50', '_DAT_1806bed60', '_DAT_1806c2934', '_DAT_1806c2944', '_DAT_1806c2954', '_DAT_1806c2964', '_DAT_1806c297a', '_DAT_1806c298a', '_DAT_1806c299b', '_DAT_1806c29ab', '_DAT_1806c29bb', '_DAT_1806c29cb', '_DAT_1806c29db', '_DAT_1806c29eb', '_DAT_1806c29fb', '_DAT_1806c2a12', '_DAT_1806c2a22', '_DAT_1806c2a32']
+  calls: ['func_0x18007ba70', 'func_0x18007cb80', 'func_0x18007d2b0', 'func_0x180086ce0', 'func_0x1801b2030', 'func_0x1801b24b0', 'func_0x1801b4360', 'func_0x1801b4680', 'func_0x1801b72f0', 'func_0x1801bf040', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801ccff0', 'func_0x1801cd600', 'func_0x180210ce0', 'func_0x1802cfa50', 'func_0x1802d74e0', 'func_0x1802e4d50', 'func_0x180672de0', 'func_0x180673140']
+
+func_0x18032ce60  score=88.5 tls=60 xor=19
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806ae110', '_DAT_1806ae210', '_DAT_1806ae220', '_DAT_1806ae7c0', '_DAT_1806b2d70', '_DAT_1806b5ca0', '_DAT_1806bed00', '_DAT_1806c39e0', '_DAT_1806c6e4b', '_DAT_1806c6e55', '_DAT_1806c6e65', '_DAT_1806c6e75', '_DAT_1806c6e85', '_DAT_1806c6e98', '_DAT_1806c6eb0', '_DAT_1806c6ec8', '_DAT_1806c6ee0', '_DAT_1806c6eea']
+  calls: ['func_0x18007ba70', 'func_0x18007d9e0', 'func_0x1800d9840', 'func_0x18014fe60', 'func_0x1801b4360', 'func_0x1801c0b50', 'func_0x1801ccd70', 'func_0x1801cf6b0', 'func_0x1801d3650', 'func_0x1801d3800', 'func_0x1801d3a80', 'func_0x180214ec0', 'func_0x18032ce60', 'func_0x18036fea0', 'func_0x18036fed0', 'func_0x18036ff00', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180420050  score=84.5 tls=57 xor=21
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_180840048', '_DAT_1806ae110', '_DAT_1806ae4d0', '_DAT_1806b2da0', '_DAT_1806b6690', '_DAT_1806bb110', '_DAT_1806c9190', '_DAT_1806ccf31', '_DAT_1806ccf41', '_DAT_1806ccf52', '_DAT_1806ccf66', '_DAT_1806ccf76']
+  calls: ['func_0x18007ba70', 'func_0x18007cfc0', 'func_0x18007d150', 'func_0x180086ce0', 'func_0x1800f3620', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x1802e4a50', 'func_0x180420050', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960', 'func_0x1806ab010']
+
+func_0x180185460  score=79.0 tls=45 xor=18
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806ae110', '_DAT_1806ae4d0', '_DAT_1806b2d10', '_DAT_1806b4e80', '_DAT_1806b5b00', '_DAT_1806b5b10', '_DAT_1806b6430', '_DAT_1806b6490', '_DAT_1806b6520', '_DAT_1806b9fc3', '_DAT_1806b9fd2', '_DAT_1806b9fe2', '_DAT_1806b9ff2', '_DAT_1806ba009', '_DAT_1806ba013', '_DAT_1806ba023', '_DAT_1806ba033', '_DAT_1806ba048', '_DAT_1806ba058', '_DAT_1806ba068', '_DAT_1806ba080', '_DAT_1806ba091', '_DAT_1806ba0a2', '_DAT_1806ba0b2', '_DAT_1806ba0c9', '_DAT_1806ba0d9', '_DAT_1806ba0e9', '_DAT_1806ba0f9', '_DAT_1806ba109']
+  calls: ['func_0x18007ba70', 'func_0x18007ce20', 'func_0x18007d2b0', 'func_0x1800d9840', 'func_0x18012b940', 'func_0x180185460', 'func_0x1801b1390', 'func_0x1801b72f0', 'func_0x1801bf770', 'func_0x1801bf7d0', 'func_0x1801bf800', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801d2eb0', 'func_0x1801d30b0', 'func_0x1801d3a80', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801edba0  score=79.0 tls=51 xor=20
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f940', '_DAT_1806ae110', '_DAT_1806ae200', '_DAT_1806b2880', '_DAT_1806b2d10', '_DAT_1806b6500', '_DAT_1806b6690', '_DAT_1806b9f9f', '_DAT_1806bb130', '_DAT_1806bb140', '_DAT_1806bb150', '_DAT_1806bb160', '_DAT_1806bd7f9', '_DAT_1806bd809', '_DAT_1806bd81b', '_DAT_1806bd82b']
+  calls: ['func_0x18007ba70', 'func_0x18007d2b0', 'func_0x1800f15f0', 'func_0x1800f35f0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x1801edba0', 'func_0x1802177a0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1800cd610  score=77.5 tls=45 xor=21
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083ef20', 'DAT_18083ef28', 'DAT_18083ef30', 'DAT_18083ef38', 'DAT_18083ef40', 'DAT_18083ef48', 'DAT_18083ef50', 'DAT_18083ef58', 'DAT_18083ef60', 'DAT_18083ef68', 'DAT_18083ef70', 'DAT_18083ef78', 'DAT_18083ef80', 'DAT_18083ef88', 'DAT_18083ef90', '_DAT_1806b2850', '_DAT_1806b3fa0', '_DAT_1806b3fb8', '_DAT_1806b3fca', '_DAT_1806b3fd8', '_DAT_1806b3fe8', '_DAT_1806b3ff8', '_DAT_1806b400e']
+  calls: ['func_0x180034bf0', 'func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cab0', 'func_0x18007d150', 'func_0x18007d3c0', 'func_0x18007d9e0', 'func_0x18008fa60', 'func_0x1800cd610', 'func_0x1800f2340', 'func_0x1800f2ff0', 'func_0x1800f3020', 'func_0x1800f3060', 'func_0x1800f3090', 'func_0x1800fe8d0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18010d2d0  score=76.5 tls=47 xor=25
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b5270', 'DAT_180768740', '_DAT_1806ae110', '_DAT_1806b5200', '_DAT_1806b5210', '_DAT_1806b5220', '_DAT_1806b5230', '_DAT_1806b5240', '_DAT_1806b5250']
+  calls: ['func_0x180001060', 'func_0x180056c60', 'func_0x18007ba70', 'func_0x18007bba0', 'func_0x180083d00', 'func_0x180083e30', 'func_0x180086960', 'func_0x18008a760', 'func_0x1800a5e70', 'func_0x18010d2d0', 'func_0x18010ffb0', 'func_0x180110070', 'func_0x180112c00', 'func_0x180113110', 'func_0x180113650', 'func_0x1801139b0', 'func_0x180672de0', 'func_0x180673140', 'func_0x18067a120', 'func_0x1806aa960']
+
+func_0x1806229e0  score=76.5 tls=33 xor=20
+  s_symbols: ['s_daily_login_streak_1806dca12', 's_index', 's_longest_daily_login_streak_1806dca25']
+  win_apis: []
+  dat_refs: ['DAT_1806b5270', 'DAT_1807602cc', 'DAT_1807610d3', 'DAT_180840a78', 'DAT_180840a90', '_DAT_1806b2ff8', '_DAT_1806dca40']
+  calls: ['func_0x18004d550', 'func_0x180071ae0', 'func_0x18007ba70', 'func_0x18007c170', 'func_0x180084770', 'func_0x180086960', 'func_0x1800a5e70', 'func_0x1800d5e00', 'func_0x180112c00', 'func_0x1804955d0', 'func_0x1804957c0', 'func_0x1806224a0', 'func_0x1806229e0', 'func_0x180626210', 'func_0x180626340', 'func_0x1806263c0', 'func_0x180672de0', 'func_0x180673140', 'func_0x18067b6bc', 'func_0x1806aa960']
+
+func_0x1802c1ee0  score=75.0 tls=39 xor=23
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b55e4', 'DAT_18083fb50', '_DAT_1806ae110', '_DAT_1806b2cb0', '_DAT_1806b2d60', '_DAT_1806b54c0', '_DAT_1806b6410', '_DAT_1806b6450', '_DAT_1806bec30', '_DAT_1806bec40', '_DAT_1806c251f', '_DAT_1806c252f', '_DAT_1806c254a', '_DAT_1806c255a', '_DAT_1806c256d', '_DAT_1806c257d', '_DAT_1806c2590', '_DAT_1806c25a0', '_DAT_1806c25b3', '_DAT_1806c25c3', '_DAT_1806c25d3', '_DAT_1806c25e9', '_DAT_1806c25fb', '_DAT_1806c260b', '_DAT_1806c261b', '_DAT_1806c2632']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007d2b0', 'func_0x1801b30c0', 'func_0x1801b3830', 'func_0x1801b5990', 'func_0x1801bb8d0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1802171f0', 'func_0x1802c1ee0', 'func_0x1802e4930', 'func_0x1802e4980', 'func_0x1802e49d0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18031b4d0  score=71.5 tls=45 xor=19
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806b2cb0', '_DAT_1806b54c0', '_DAT_1806b6690', '_DAT_1806c6b0c', '_DAT_1806c6b1f', '_DAT_1806c6b33', '_DAT_1806c6b43', '_DAT_1806c6b58', '_DAT_1806c6b6f', '_DAT_1806c6b7f', '_DAT_1806c6b8f', '_DAT_1806c6ba2', '_DAT_1806c6bb2', '_DAT_1806c6bc7']
+  calls: ['func_0x18007ba70', 'func_0x18007cb80', 'func_0x18007cfc0', 'func_0x18007d150', 'func_0x18007d3c0', 'func_0x1801b1390', 'func_0x1801b4360', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x18031b4d0', 'func_0x18036eb90', 'func_0x18036f870', 'func_0x18036f8b0', 'func_0x18036f8d0', 'func_0x18036f9d0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18040d7d0  score=69.0 tls=45 xor=13
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b28f0', 'DAT_1806b5c70', 'DAT_180840048', '_DAT_1806b2cb0', '_DAT_1806b2d70', '_DAT_1806b2d80', '_DAT_1806b54e0', '_DAT_1806b5c20', '_DAT_1806b5cf0', '_DAT_1806ba23c', '_DAT_1806be670', '_DAT_1806c90d0', '_DAT_1806ccaaa', '_DAT_1806ccaba', '_DAT_1806ccad3', '_DAT_1806ccae6', '_DAT_1806ccafe', '_DAT_1806ccb0e', '_DAT_1806ccb23', '_DAT_1806ccb33', '_DAT_1806ccb4b', '_DAT_1806ccb61']
+  calls: ['func_0x18007ba70', 'func_0x18007cab0', 'func_0x18007cb80', 'func_0x18007d2b0', 'func_0x18007d9e0', 'func_0x180086af0', 'func_0x1801b1390', 'func_0x1801b39d0', 'func_0x1801bf220', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x18036e8f0', 'func_0x18036f9d0', 'func_0x18036fea0', 'func_0x18040d7d0', 'func_0x18044a770', 'func_0x180672de0', 'func_0x180673140']
+
+func_0x180001ed0  score=67.5 tls=36 xor=30
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae030', 'DAT_1806ae040', '_DAT_1806afc19']
+  calls: ['func_0x180001060', 'func_0x180001e70', 'func_0x180001ed0', 'func_0x18001deb0', 'func_0x180034ae0', 'func_0x180037b60', 'func_0x180037eb0', 'func_0x1800381d0', 'func_0x180038250', 'func_0x180038270', 'func_0x1800382f0', 'func_0x180038310', 'func_0x180038390', 'func_0x1800383b0', 'func_0x180038450', 'func_0x180038480', 'func_0x180038520', 'func_0x180038550', 'func_0x180038610', 'func_0x180038660']
+
+func_0x1801749e0  score=67.0 tls=45 xor=14
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b63c0', 'DAT_18083f7c0', '_DAT_1806b5ce0', '_DAT_1806b5cf0', '_DAT_1806b63a0', '_DAT_1806b63b0', '_DAT_1806b9b13', '_DAT_1806b9b23', '_DAT_1806b9b34', '_DAT_1806b9b4a', '_DAT_1806b9b61', '_DAT_1806b9b75', '_DAT_1806b9b81', '_DAT_1806b9b91', '_DAT_1806b9ba1', '_DAT_1806b9bb1']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cab0', 'func_0x18007cfc0', 'func_0x18007d3c0', 'func_0x180086ce0', 'func_0x18008f8e0', 'func_0x18008fba0', 'func_0x1801749e0', 'func_0x1801bf040', 'func_0x1801bf070', 'func_0x1801bf0d0', 'func_0x1801bf150', 'func_0x1801bf170', 'func_0x1801bf1a0', 'func_0x1801bf1c0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801ccff0', 'func_0x1801cd2e0']
+
+func_0x1802039a0  score=66.5 tls=33 xor=15
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f940', '_DAT_1806ae110', '_DAT_1806b2ca0', '_DAT_1806b2d10', '_DAT_1806b2d60', '_DAT_1806b2d70', '_DAT_1806b54c0', '_DAT_1806b5b00', '_DAT_1806b5b10', '_DAT_1806b5c10', '_DAT_1806b5c20', '_DAT_1806b5c30', '_DAT_1806b6410', '_DAT_1806b6470', '_DAT_1806bb270', '_DAT_1806bb280', '_DAT_1806bb290', '_DAT_1806bb2a0', '_DAT_1806bb2b0', '_DAT_1806bdc1a', '_DAT_1806bdc2a', '_DAT_1806bdc45', '_DAT_1806bdc55', '_DAT_1806bdc5f', '_DAT_1806bdc6f', '_DAT_1806bdc7f', '_DAT_1806bdc97', '_DAT_1806bdca7', '_DAT_1806bdcb3', '_DAT_1806bdcc3']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cd50', 'func_0x18007d150', 'func_0x18012b7b0', 'func_0x18014fe60', 'func_0x1801b1b20', 'func_0x1801b3830', 'func_0x1801b39d0', 'func_0x1801b4680', 'func_0x1801ccd70', 'func_0x1801cd600', 'func_0x1802039a0', 'func_0x180218800', 'func_0x180218820', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18004d770  score=66.0 tls=38 xor=14
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_1806ae670', 'DAT_1806ae6c0', 'DAT_180768700', 'DAT_180768740', 'DAT_18083a188', 'DAT_18083e610', 'DAT_18083e658', 'DAT_1808400a0', 'DAT_180840a48', 'DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68', '_DAT_1806ae110', '_DAT_1806ae130', '_DAT_1806ae660', '_DAT_1806ae680', '_DAT_1806ae690', '_DAT_1806ae6a0', '_DAT_1806ae6b0', '_DAT_1806b0041', '_DAT_1806b0051', '_DAT_1806b0067', '_DAT_1806b007a', '_DAT_1806b008d', '_DAT_1806b009d', '_DAT_1806b00b6', '_DAT_1806b00c6']
+  calls: ['func_0x180001060', 'func_0x18003c230', 'func_0x18004d550', 'func_0x18004d690', 'func_0x18004d770', 'func_0x180052940', 'func_0x180052a50', 'func_0x18007ba70', 'func_0x18007bba0', 'func_0x18007cb80', 'func_0x180082f00', 'func_0x180083260', 'func_0x1800833d0', 'func_0x180083d00', 'func_0x180083e30', 'func_0x180084770', 'func_0x180084c70', 'func_0x180086960', 'func_0x180086af0', 'func_0x180086ce0']
+
+func_0x180130570  score=64.5 tls=39 xor=18
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', 'DAT_180840a58', '_DAT_1806b2660', '_DAT_1806b2d80', '_DAT_1806b55f0', '_DAT_1806b8de0', '_DAT_1806b8df0', '_DAT_1806b8e05', '_DAT_1806b8e15', '_DAT_1806b8e28', '_DAT_1806b8e3c', '_DAT_1806b8e4c', '_DAT_1806b8e5c', '_DAT_1806b8e6c', '_DAT_1806b8e7c']
+  calls: ['func_0x18007ba70', 'func_0x18007cb80', 'func_0x18007cfc0', 'func_0x18007d150', 'func_0x18010ce00', 'func_0x18010ce60', 'func_0x180129e40', 'func_0x180130570', 'func_0x1801b1390', 'func_0x1801bc7e0', 'func_0x1801bc860', 'func_0x1801bc8e0', 'func_0x1801c2ba0', 'func_0x1801ccff0', 'func_0x1801d3800', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801a2840  score=64.5 tls=33 xor=20
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_18083f7c0', '_DAT_1806ae4d0', '_DAT_1806b2cb0', '_DAT_1806b54c0', '_DAT_1806b5b00', '_DAT_1806b5b10', '_DAT_1806b5c40', '_DAT_1806b6480', '_DAT_1806ba6fe', '_DAT_1806ba70e', '_DAT_1806ba71c', '_DAT_1806ba72c', '_DAT_1806ba73c', '_DAT_1806ba750', '_DAT_1806ba760', '_DAT_1806ba76c', '_DAT_1806ba77c', '_DAT_1806ba78d', '_DAT_1806ba79e', '_DAT_1806ba7ae', '_DAT_1806ba7be', '_DAT_1806ba7d5']
+  calls: ['func_0x18007ba70', 'func_0x18007cb80', 'func_0x18007d2b0', 'func_0x180086790', 'func_0x1801a2840', 'func_0x1801b1b20', 'func_0x1801ba020', 'func_0x1801bb8d0', 'func_0x1801c1810', 'func_0x1801c1840', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960', 'func_0x1806ab010']
+
+func_0x18061edb0  score=63.0 tls=36 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180760896', 'DAT_18083cd98', 'DAT_18083cda8', 'DAT_18083cdb0', 'DAT_18083cdb8', 'DAT_18083cdc8', 'DAT_18083cdd0', 'DAT_18083cdd8', 'DAT_18083cde8', 'DAT_18083cdf0', 'DAT_180840a78', 'DAT_180840a90', '_DAT_1806aeee0', '_DAT_1806b2ff8', '_DAT_1806b38c0', '_DAT_1806b6f30', '_DAT_1806bedf0', '_DAT_1806cfaf0', '_DAT_1806dc931', '_DAT_1806dc941', '_DAT_1806dc951', '_DAT_1806dc961', '_DAT_1806dc978', '_DAT_1806dc988', '_DAT_1806dc998', '_DAT_1806dc9dd', '_DAT_1806dc9f8', '_DAT_1806dca02', '_DAT_1806dca52', '_DAT_1806dca6d']
+  calls: ['func_0x18003c230', 'func_0x18004d550', 'func_0x18007ba70', 'func_0x18007c9b0', 'func_0x18007d9e0', 'func_0x180084770', 'func_0x180084c70', 'func_0x18009ff70', 'func_0x1800a5e70', 'func_0x1800c07a0', 'func_0x1800c0c70', 'func_0x1800d9840', 'func_0x1801b24b0', 'func_0x1802d71a0', 'func_0x1802e3640', 'func_0x180369750', 'func_0x1804fd160', 'func_0x18061edb0', 'func_0x1806221b0', 'func_0x1806222c0']
+
+func_0x180181170  score=61.0 tls=33 xor=22
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae7b0', 'DAT_1806b26b4', 'DAT_18083f7c0', '_DAT_1806b2880', '_DAT_1806b2ca0', '_DAT_1806b2d10', '_DAT_1806b5c10', '_DAT_1806b6500', '_DAT_1806b9f60', '_DAT_1806b9f70', '_DAT_1806b9f80', '_DAT_1806b9f9f']
+  calls: ['func_0x18007ba70', 'func_0x18007d2b0', 'func_0x180181170', 'func_0x1801b7c70', 'func_0x1801c2ba0', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180397850  score=61.0 tls=34 xor=12
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083ca10', 'DAT_1808400a0', 'DAT_1808400b0', 'DAT_1808400b8', 'DAT_1808401a0', 'DAT_1808401a8', 'DAT_1808401ac', 'DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68', 'DAT_180840fd0', '_DAT_1806ae290', '_DAT_1806b6f30', '_DAT_1806b75a0', '_DAT_1806bb170', '_DAT_1806c8610', '_DAT_1806c8620', '_DAT_1806c8630', '_DAT_1806c8640', '_DAT_1806c97c8', '_DAT_1806c9858', '_DAT_1806c9878', '_DAT_1806cb3e3', '_DAT_1806cb3f5', '_DAT_1806cb405', '_DAT_1806cb416', '_DAT_1806cb426', '_DAT_1806cb436', '_DAT_1806cb453', '_DAT_1806cb463']
+  calls: ['func_0x180056840', 'func_0x180056aa0', 'func_0x18007ba70', 'func_0x18007bba0', 'func_0x18007c170', 'func_0x1800801d0', 'func_0x180084c70', 'func_0x180086960', 'func_0x180086ce0', 'func_0x1800871a0', 'func_0x18008a340', 'func_0x18008b1c0', 'func_0x18008f8e0', 'func_0x1800a5e70', 'func_0x1800a6340', 'func_0x1800a64e0', 'func_0x1800a6a30', 'func_0x1800a6c00', 'func_0x1800a7830', 'func_0x1800becb0']
+
+func_0x1802f7580  score=60.5 tls=39 xor=13
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806ae4d0', '_DAT_1806b54d0', '_DAT_1806b5b20', '_DAT_1806b5cf0', '_DAT_1806b5f60', '_DAT_1806b6490', '_DAT_1806be660', '_DAT_1806c3530', '_DAT_1806c5f03', '_DAT_1806c5f1a', '_DAT_1806c5f2a', '_DAT_1806c5f36', '_DAT_1806c5f46', '_DAT_1806c5f58', '_DAT_1806c5f6a', '_DAT_1806c5f7a']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cb80', 'func_0x18007d150', 'func_0x18007d3c0', 'func_0x18012be40', 'func_0x1801b1b20', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd600', 'func_0x1802159f0', 'func_0x1802e3290', 'func_0x1802f7580', 'func_0x18036eb90', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960', 'func_0x1806ab010']
+
+func_0x180049770  score=60.0 tls=34 xor=14
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae630', 'DAT_1806ae640', 'DAT_1806ae650', 'DAT_180768700', 'DAT_180768740', 'DAT_18083a188', 'DAT_18083e610', 'DAT_18083e640', 'DAT_1808400a0', 'DAT_180840a48', 'DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68', '_DAT_1806ae620', '_DAT_1806aff85', '_DAT_1806aff95', '_DAT_1806affa9', '_DAT_1806affbd', '_DAT_1806affd1', '_DAT_1806affe1', '_DAT_1806afffa', '_DAT_1806b000d', '_DAT_1806b0020', '_DAT_1806b0030']
+  calls: ['func_0x180001060', 'func_0x18003c230', 'func_0x1800493f0', 'func_0x180049770', 'func_0x18004d550', 'func_0x18004d690', 'func_0x180052940', 'func_0x180052a50', 'func_0x18007ba70', 'func_0x18007cb80', 'func_0x18007cfc0', 'func_0x180082f00', 'func_0x180083260', 'func_0x1800833d0', 'func_0x180083d00', 'func_0x180083e30', 'func_0x180084770', 'func_0x180084c70', 'func_0x180086790', 'func_0x180086960']
+
+func_0x18019a5d0  score=57.0 tls=33 xor=15
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_18083f7c0', '_DAT_1806ae4d0', '_DAT_1806b26c0', '_DAT_1806b2d70', '_DAT_1806b5c20', '_DAT_1806b5cc0', '_DAT_1806b6490', '_DAT_1806b6690', '_DAT_1806ba560', '_DAT_1806ba570', '_DAT_1806ba580', '_DAT_1806ba59b', '_DAT_1806ba5b1', '_DAT_1806ba5c1', '_DAT_1806ba5d1', '_DAT_1806ba5e1', '_DAT_1806ba5f1']
+  calls: ['func_0x18007ba70', 'func_0x18007cab0', 'func_0x18007d2b0', 'func_0x18018c570', 'func_0x18019a5d0', 'func_0x1801b2720', 'func_0x1801b4030', 'func_0x1801c0f80', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801c2ba0  score=57.0 tls=33 xor=16
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f940', 'DAT_18083f980', '_DAT_1806ae110', '_DAT_1806b2d30', '_DAT_1806b2f00', '_DAT_1806bafa0', '_DAT_1806bafb0', '_DAT_1806bd201', '_DAT_1806bd211', '_DAT_1806bd224', '_DAT_1806bd234', '_DAT_1806bd244', '_DAT_1806bd25a', '_DAT_1806bd26a', '_DAT_1806bd27a', '_DAT_1806bd28a']
+  calls: ['func_0x18007ba70', 'func_0x18007bba0', 'func_0x1801b30c0', 'func_0x1801b5990', 'func_0x1801c2ba0', 'func_0x1801ccb00', 'func_0x1801ccd70', 'func_0x1801d3800', 'func_0x180210ce0', 'func_0x180215a50', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180248800  score=54.0 tls=27 xor=15
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fb50', '_DAT_1806ae4d0', '_DAT_1806b2d10', '_DAT_1806b2d70', '_DAT_1806b54d0', '_DAT_1806b5b00', '_DAT_1806b5c20', '_DAT_1806b5c30', '_DAT_1806b5c40', '_DAT_1806b5ce0', '_DAT_1806be660', '_DAT_1806be670', '_DAT_1806c1b9c', '_DAT_1806c1bac', '_DAT_1806c1bbc', '_DAT_1806c1bcc', '_DAT_1806c1bdf', '_DAT_1806c1bef', '_DAT_1806c1c0a', '_DAT_1806c1c1a', '_DAT_1806c1c33', '_DAT_1806c1c47', '_DAT_1806c1c57', '_DAT_1806c1c67']
+  calls: ['func_0x18007ba70', 'func_0x18007cfc0', 'func_0x180086af0', 'func_0x1801b3830', 'func_0x1801b4920', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801ccff0', 'func_0x1801cd600', 'func_0x180248800', 'func_0x1802d6e80', 'func_0x1802e3a90', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18018d820  score=53.5 tls=27 xor=15
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806ae110', '_DAT_1806b2ca0', '_DAT_1806b2d60', '_DAT_1806b4e80', '_DAT_1806b5220', '_DAT_1806b5c10', '_DAT_1806b63f0', '_DAT_1806b6410', '_DAT_1806b6560', '_DAT_1806ba267', '_DAT_1806ba27e', '_DAT_1806ba28e', '_DAT_1806ba298', '_DAT_1806ba2a8', '_DAT_1806ba2b8', '_DAT_1806ba2c6', '_DAT_1806ba2d6', '_DAT_1806ba2e0', '_DAT_1806ba2f0', '_DAT_1806ba300', '_DAT_1806ba30c', '_DAT_1806ba31c']
+  calls: ['func_0x18007ba70', 'func_0x18007cb80', 'func_0x18007d3c0', 'func_0x1800d9840', 'func_0x18012b7b0', 'func_0x18018d820', 'func_0x1801b1b20', 'func_0x1801ba020', 'func_0x1801c0b00', 'func_0x1801c0b50', 'func_0x1801c0b80', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801ccff0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803be470  score=53.5 tls=21 xor=8
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_1806aeae4', 'DAT_1806b28a0', 'DAT_1806b55e0', 'DAT_1806b5ef4', 'DAT_1806b6134', 'DAT_1806b6550', 'DAT_1806b66b0', 'DAT_1806b6794', 'DAT_1806c3800', 'DAT_1806c8980', 'DAT_1806c8988', 'DAT_18083ca18', 'DAT_18083ca28', 'DAT_18083ca30', 'DAT_18083cbc0', 'DAT_18083cbd0', 'DAT_18083cbdc', 'DAT_18083cbe0', 'DAT_18083cbe8', 'DAT_18083cbec', 'DAT_18083ef17', 'DAT_1808400a0', 'DAT_1808401b0', 'DAT_1808401e0', 'DAT_1808401f0', 'DAT_1808401f8', 'DAT_1808402b8', 'DAT_1808402bc', 'DAT_1808402c0']
+  calls: ['func_0x180057460', 'func_0x18007ba70', 'func_0x18007bba0', 'func_0x18007cb80', 'func_0x1800871a0', 'func_0x180087380', 'func_0x180087670', 'func_0x18008a490', 'func_0x1800a6340', 'func_0x1800becb0', 'func_0x1800cfa00', 'func_0x1800d05c0', 'func_0x1800d2e40', 'func_0x1800d36e0', 'func_0x180134bf0', 'func_0x1801b1390', 'func_0x180397850', 'func_0x18039bd20', 'func_0x1803be470', 'func_0x1803c1680']
+
+func_0x180149a30  score=50.0 tls=27 xor=13
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b2890', 'DAT_18083f7c0', '_DAT_1806b2ca0', '_DAT_1806b2d10', '_DAT_1806b2d70', '_DAT_1806b5c00', '_DAT_1806b5c10', '_DAT_1806b5c20', '_DAT_1806b5c30', '_DAT_1806b5c40', '_DAT_1806b9318', '_DAT_1806b9330', '_DAT_1806b9340', '_DAT_1806b934c', '_DAT_1806b935c', '_DAT_1806b936c', '_DAT_1806b9387', '_DAT_1806b9397', '_DAT_1806b93af', '_DAT_1806b93bc']
+  calls: ['func_0x18007ba70', 'func_0x18007cc40', 'func_0x18007d9e0', 'func_0x180132ee0', 'func_0x180149a30', 'func_0x1801b1b20', 'func_0x1801b3830', 'func_0x1801b39d0', 'func_0x1801bdd30', 'func_0x1801bdd90', 'func_0x1801ccd70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18041bfa0  score=50.0 tls=27 xor=15
+  s_symbols: ['s_Common_1806c15a0', 's_index']
+  win_apis: []
+  dat_refs: ['DAT_1806aeae4', 'DAT_1806c15a8', 'DAT_1807607b3', 'DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68', '_DAT_1806ae110', '_DAT_1806aed60', '_DAT_1806b2930', '_DAT_1806becc0', '_DAT_1806bf530', '_DAT_1806c9160', '_DAT_1806c9878', '_DAT_1806ca430', '_DAT_1806ccecd', '_DAT_1806ccedd']
+  calls: ['func_0x180001060', 'func_0x180001e70', 'func_0x18007ba70', 'func_0x18007cfc0', 'func_0x18007d150', 'func_0x180082950', 'func_0x180106950', 'func_0x1801074b0', 'func_0x180117d70', 'func_0x180118160', 'func_0x1801181d0', 'func_0x1801195b0', 'func_0x18011ae60', 'func_0x1801221f0', 'func_0x1801270c0', 'func_0x180127fe0', 'func_0x18012b1f0', 'func_0x18012b210', 'func_0x18041bfa0', 'func_0x18041e140']
+
+func_0x180132ee0  score=49.5 tls=33 xor=14
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b2890', 'DAT_18083f800', '_DAT_1806b5af0', '_DAT_1806b8e93', '_DAT_1806b8ea9']
+  calls: ['func_0x18007ba70', 'func_0x18007cab0', 'func_0x18007cfc0', 'func_0x180132ee0', 'func_0x1801bc940', 'func_0x1801bc970', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x1801d4c30', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801f0cc0  score=49.5 tls=21 xor=18
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f940', '_DAT_1806b2c90', '_DAT_1806b2ca0', '_DAT_1806b2d60', '_DAT_1806b4e80', '_DAT_1806b5c10', '_DAT_1806b63f0', '_DAT_1806b69b0', '_DAT_1806bd854', '_DAT_1806bd864', '_DAT_1806bd874', '_DAT_1806bd884', '_DAT_1806bd894', '_DAT_1806bd8a9', '_DAT_1806bd8b9', '_DAT_1806bd8d4', '_DAT_1806bd8e4', '_DAT_1806bd8f4', '_DAT_1806bd909', '_DAT_1806bd91a', '_DAT_1806bd92a']
+  calls: ['func_0x18007ba70', 'func_0x18007d2b0', 'func_0x1801b3830', 'func_0x1801b94b0', 'func_0x1801bb2b0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801f0cc0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180052dc0  score=49.0 tls=20 xor=13
+  s_symbols: ['s___________________1806ae720', 's_index']
+  win_apis: []
+  dat_refs: ['DAT_180840a50', '_DAT_1806ae110', '_DAT_1806ae6d0', '_DAT_1806ae6e0', '_DAT_1806ae6f0', '_DAT_1806ae700', '_DAT_1806ae710', '_DAT_1806ae740', '_DAT_1806ae780', '_DAT_1806ae790', '_DAT_1806ae7a0', '_DAT_1806b0160']
+  calls: ['func_0x18004d690', 'func_0x180052dc0', 'func_0x180056630', 'func_0x180056840', 'func_0x1800569a0', 'func_0x180056aa0', 'func_0x180056c60', 'func_0x1800570b0', 'func_0x180057460', 'func_0x18007ba70', 'func_0x18007d2b0', 'func_0x180084c70', 'func_0x180086960', 'func_0x1800871a0', 'func_0x180087380', 'func_0x180087670', 'func_0x18008a030', 'func_0x18008a340', 'func_0x18008a490', 'func_0x18008a760']
+
+func_0x1801f2430  score=48.5 tls=27 xor=14
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f940', '_DAT_1806ae4d0', '_DAT_1806b54d0', '_DAT_1806b6490', '_DAT_1806bd960', '_DAT_1806bd97f', '_DAT_1806bd997', '_DAT_1806bd9a7', '_DAT_1806bd9b1', '_DAT_1806bd9c1', '_DAT_1806bd9d1', '_DAT_1806bd9e1', '_DAT_1806bd9f1', '_DAT_1806bda01', '_DAT_1806bda11']
+  calls: ['func_0x18007ba70', 'func_0x18007ce20', 'func_0x18007d9e0', 'func_0x1800959b0', 'func_0x18012b7b0', 'func_0x18018c570', 'func_0x1801ccd70', 'func_0x1801ccff0', 'func_0x1801cd2e0', 'func_0x1801f2430', 'func_0x180217850', 'func_0x1802178b0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803b1b40  score=48.0 tls=19 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae7b0', 'DAT_1806aeae4', 'DAT_1806b26b4', 'DAT_1806b2860', 'DAT_1806b28c0', 'DAT_1806b5ef4', 'DAT_1806b66b0', 'DAT_1806c3800', 'DAT_1806c87b0', 'DAT_1806c87c0', 'DAT_18083ca18', 'DAT_18083ca28', 'DAT_18083ca30', 'DAT_18083ca60', 'DAT_18083ca70', 'DAT_18083ca80', 'DAT_18083ca90', 'DAT_18083caa0', 'DAT_18083cab0', 'DAT_18083cac0', 'DAT_18083cad0', 'DAT_18083cae0', 'DAT_18083ef17', 'DAT_1808400a0', 'DAT_1808402bc', 'DAT_1808402c4', 'DAT_1808402c8', 'DAT_1808402cc', 'DAT_1808402f8', 'DAT_180840548']
+  calls: ['func_0x180001e70', 'func_0x180052940', 'func_0x180052a50', 'func_0x18007ba70', 'func_0x18007bba0', 'func_0x18007cb80', 'func_0x18007cd50', 'func_0x1800cd3b0', 'func_0x1800cfa00', 'func_0x1800d00e0', 'func_0x1800d02c0', 'func_0x1800d2e40', 'func_0x1800d36e0', 'func_0x1800d4bf0', 'func_0x180134bf0', 'func_0x18014cd50', 'func_0x1801dbc50', 'func_0x1801dc420', 'func_0x1801dc7a0', 'func_0x1803b1b40']
+
+func_0x1803455d0  score=47.0 tls=21 xor=18
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b2890', 'DAT_18083fd98', '_DAT_1806b2ca0', '_DAT_1806b2d70', '_DAT_1806b5c00', '_DAT_1806b5c10', '_DAT_1806b5c20', '_DAT_1806bdd70', '_DAT_1806bdd80', '_DAT_1806bdd9f', '_DAT_1806bddaf', '_DAT_1806bddbd', '_DAT_1806c74a9', '_DAT_1806c74b7', '_DAT_1806c74c7', '_DAT_1806c74d7']
+  calls: ['func_0x18007ba70', 'func_0x18008fa60', 'func_0x180132ee0', 'func_0x1801b30c0', 'func_0x1801ba020', 'func_0x1801bb2b0', 'func_0x1801ccd70', 'func_0x1802e4980', 'func_0x1803455d0', 'func_0x180370380', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18014d640  score=46.5 tls=27 xor=12
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806b2ca0', '_DAT_1806b2d60', '_DAT_1806b5b00', '_DAT_1806b5b10', '_DAT_1806b943a', '_DAT_1806b944d', '_DAT_1806b945d', '_DAT_1806b9473', '_DAT_1806b9483', '_DAT_1806b9493', '_DAT_1806b94a3', '_DAT_1806b94b3', '_DAT_1806b94c3', '_DAT_1806b94db']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cb80', 'func_0x180086e20', 'func_0x18014d640', 'func_0x1801b39d0', 'func_0x1801b4030', 'func_0x1801be770', 'func_0x1801be7b0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1802079f0  score=46.5 tls=21 xor=18
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b2890', 'DAT_18083f940', '_DAT_1806b2ca0', '_DAT_1806b2d70', '_DAT_1806b5c00', '_DAT_1806b5c10', '_DAT_1806b5c20', '_DAT_1806bdd55', '_DAT_1806bdd70', '_DAT_1806bdd80', '_DAT_1806bdd9f', '_DAT_1806bddaf', '_DAT_1806bddbd', '_DAT_1806bddcd', '_DAT_1806bdddd']
+  calls: ['func_0x18007ba70', 'func_0x18007c9b0', 'func_0x18008f8e0', 'func_0x180132ee0', 'func_0x1801ba020', 'func_0x1801bb2b0', 'func_0x1801c0c70', 'func_0x1801ccd70', 'func_0x1802079f0', 'func_0x180217260', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18031f290  score=45.0 tls=27 xor=13
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_18083fd98', '_DAT_1806ae110', '_DAT_1806ae4d0', '_DAT_1806b2880', '_DAT_1806b6870', '_DAT_1806c37e0', '_DAT_1806c6c19', '_DAT_1806c6c2a', '_DAT_1806c6c3a']
+  calls: ['func_0x18007ba70', 'func_0x18007d2b0', 'func_0x180086790', 'func_0x180132ee0', 'func_0x1801ccd70', 'func_0x1801ccff0', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x18031f290', 'func_0x18036faa0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180626790  score=44.0 tls=25 xor=10
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b5270', 'DAT_1806b613c', 'DAT_1806dcaa8', 'DAT_1807602cc', 'DAT_1807610d3', 'DAT_18083cde0', 'DAT_18083cdf0', 'DAT_18083cdf8', 'DAT_180840a58', 'DAT_180840a78', 'DAT_180840a90', 'DAT_18084195c', '_DAT_1806b2ff8', '_DAT_1806dcaa0', '_DAT_1806dcf89', '_DAT_1806dcf9b', '_DAT_1806dcfad', '_DAT_1806dcfc1']
+  calls: ['func_0x18004d550', 'func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cb80', 'func_0x18007cfc0', 'func_0x180084770', 'func_0x1800a5e70', 'func_0x1800ac860', 'func_0x180112c00', 'func_0x1804955d0', 'func_0x1804957c0', 'func_0x1806224a0', 'func_0x180626210', 'func_0x1806263c0', 'func_0x180626790', 'func_0x180628cd0', 'func_0x180628d80', 'func_0x180628e30', 'func_0x18063ff10', 'func_0x180672de0']
+
+func_0x1802f3390  score=43.0 tls=27 xor=10
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806b2ca0', '_DAT_1806b2d10', '_DAT_1806b6630', '_DAT_1806b68f0', '_DAT_1806b69b0', '_DAT_1806c5e14', '_DAT_1806c5e24', '_DAT_1806c5e34', '_DAT_1806c5e44', '_DAT_1806c5e54', '_DAT_1806c5e64']
+  calls: ['func_0x18007ba70', 'func_0x1801b4680', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801ccff0', 'func_0x1802148a0', 'func_0x1802f3390', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180341050  score=42.5 tls=24 xor=13
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806ae110', '_DAT_1806ae4d0', '_DAT_1806b2ca0', '_DAT_1806b9527', '_DAT_1806b9537', '_DAT_1806b9547', '_DAT_1806c3aa0', '_DAT_1806c3ab0', '_DAT_1806c7473', '_DAT_1806c7487']
+  calls: ['func_0x18007ba70', 'func_0x18007cfc0', 'func_0x18007d150', 'func_0x18014fe60', 'func_0x1801b4360', 'func_0x1801c21d0', 'func_0x1801cf6b0', 'func_0x1801d2eb0', 'func_0x1801d30b0', 'func_0x1801d3a80', 'func_0x180341050', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180219990  score=40.5 tls=24 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_18083fb50', '_DAT_1806ae110', '_DAT_1806b2d10', '_DAT_1806be300', '_DAT_1806be310', '_DAT_1806c0e5b', '_DAT_1806c0e69', '_DAT_1806c0e79', '_DAT_1806c0e89', '_DAT_1806c0e99']
+  calls: ['func_0x18007ba70', 'func_0x18008fa60', 'func_0x18012b270', 'func_0x18018c570', 'func_0x1801cd2e0', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x180219990', 'func_0x1802e31f0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180424ef0  score=40.5 tls=24 xor=10
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180840048', '_DAT_1806b2880', '_DAT_1806b2d70', '_DAT_1806b5ca0', '_DAT_1806b6490', '_DAT_1806ccf9d', '_DAT_1806ccfad', '_DAT_1806ccfbd', '_DAT_1806ccfce', '_DAT_1806ccfe2', '_DAT_1806ccff2', '_DAT_1806cd002', '_DAT_1806cd012']
+  calls: ['func_0x180076320', 'func_0x18007ba70', 'func_0x18007cfc0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd600', 'func_0x1802148a0', 'func_0x180424ef0', 'func_0x180431560', 'func_0x18044a9e0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801607c0  score=40.0 tls=9 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_1806ae7b0', 'DAT_1806ae7b4', 'DAT_1806b26b4', 'DAT_1806b286c', 'DAT_1806b28a0', 'DAT_1806b55e0', 'DAT_1806b55e4', 'DAT_1806b5c70', 'DAT_1806b5ef4', 'DAT_1806b5ef8', 'DAT_1806b5f00', 'DAT_1806b5f10', 'DAT_1806b5f30', 'DAT_1806b5f70', 'DAT_1806b5f80', 'DAT_1806b5fa0', 'DAT_1806b5fb0', 'DAT_1806b5fc0', 'DAT_1806b5fd0', 'DAT_1806b5fe0', 'DAT_1806b5ff0', 'DAT_1806b6000', 'DAT_1806b6010', 'DAT_1806b6020', 'DAT_1806b6130', 'DAT_1806b6134', 'DAT_1806b6138', 'DAT_1806b613c', 'DAT_1806b6140']
+  calls: ['func_0x18007ba70', 'func_0x18007d2b0', 'func_0x18007f460', 'func_0x1800cd3b0', 'func_0x1800cf900', 'func_0x1800cf950', 'func_0x1800cf960', 'func_0x1800cf970', 'func_0x1800cf990', 'func_0x1800cf9c0', 'func_0x1800cfa00', 'func_0x1800cfa30', 'func_0x1800d00e0', 'func_0x1800d0e40', 'func_0x1800d0f50', 'func_0x1800d2ad0', 'func_0x1800d7280', 'func_0x1800f0d80', 'func_0x1800ff0e0', 'func_0x1800ff650']
+
+func_0x1803c1d90  score=40.0 tls=13 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae7b0', 'DAT_1806ae7b4', 'DAT_1806aeae4', 'DAT_1806b26b4', 'DAT_1806b28a0', 'DAT_1806b5f00', 'DAT_1806b6134', 'DAT_1806b613c', 'DAT_1806b6144', 'DAT_1806b6514', 'DAT_1806b6550', 'DAT_1806b66b0', 'DAT_1806b67d0', 'DAT_1806b67d4', 'DAT_1806be4a8', 'DAT_1806beca0', 'DAT_1806c3800', 'DAT_1806c3890', 'DAT_1806c3930', 'DAT_1806c8a04', 'DAT_1806c8a08', 'DAT_1806c8a0c', 'DAT_1806c8a10', 'DAT_1806c8a30', 'DAT_1806c8a50', 'DAT_1806ce6d0', 'DAT_1806ce6e4', 'DAT_1806ce6f8', 'DAT_1806ce70c', 'DAT_1806ce720']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007c9b0', 'func_0x180082950', 'func_0x1800cd3b0', 'func_0x1800cfa00', 'func_0x1800d00e0', 'func_0x1800d25d0', 'func_0x1800d27b0', 'func_0x1800d2a00', 'func_0x1800d36e0', 'func_0x1800d48c0', 'func_0x1800d4a80', 'func_0x180134bf0', 'func_0x1803c1d90', 'func_0x180441410', 'func_0x180441460', 'func_0x18063ff10', 'func_0x180672de0', 'func_0x180672ec0']
+
+func_0x1801f8fc0  score=39.5 tls=27 xor=8
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b2890', 'DAT_18083f940', '_DAT_1806b5c00', '_DAT_1806bda5b', '_DAT_1806bda73', '_DAT_1806bda8b', '_DAT_1806bda97', '_DAT_1806bdaa7', '_DAT_1806bdabd']
+  calls: ['func_0x18007ba70', 'func_0x18007cab0', 'func_0x18007cc40', 'func_0x18007d9e0', 'func_0x18008fba0', 'func_0x180132ee0', 'func_0x1801bdd90', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801f8fc0', 'func_0x180218550', 'func_0x180218580', 'func_0x1802185b0', 'func_0x180218610', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180245d30  score=39.0 tls=21 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fb50', '_DAT_1806b2880', '_DAT_1806b2ca0', '_DAT_1806b2d60', '_DAT_1806b5b00', '_DAT_1806be650', '_DAT_1806c1a8f', '_DAT_1806c1a9f', '_DAT_1806c1aaf', '_DAT_1806c1abf', '_DAT_1806c1ad3', '_DAT_1806c1ae3', '_DAT_1806c1af3', '_DAT_1806c1b0a']
+  calls: ['func_0x18007ba70', 'func_0x18007d150', 'func_0x1801bb8d0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x180211710', 'func_0x180245d30', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1802f4ea0  score=38.5 tls=21 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b2890', 'DAT_18083fd98', '_DAT_1806b2ca0', '_DAT_1806b2d70', '_DAT_1806b5c00', '_DAT_1806b5c20', '_DAT_1806c5e8a', '_DAT_1806c5e9c', '_DAT_1806c5eac', '_DAT_1806c5ec2', '_DAT_1806c5ed2', '_DAT_1806c5edc', '_DAT_1806c5eec']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007d3c0', 'func_0x180086e20', 'func_0x18012b7b0', 'func_0x180132ee0', 'func_0x1801ccd70', 'func_0x180217640', 'func_0x1802f4ea0', 'func_0x18036eb70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803a13f0  score=37.5 tls=24 xor=7
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68', '_DAT_1806b6f30', '_DAT_1806b75a0', '_DAT_1806cb54d', '_DAT_1806cb559', '_DAT_1806cb569', '_DAT_1806cb575', '_DAT_1806cb585', '_DAT_1806cb593', '_DAT_1806cb5a3', '_DAT_1806cb5b6']
+  calls: ['func_0x1800576d0', 'func_0x18007ba70', 'func_0x18007ba90', 'func_0x18007cb80', 'func_0x18007cd50', 'func_0x180082950', 'func_0x1800871a0', 'func_0x18008fa60', 'func_0x18008fba0', 'func_0x1800a6340', 'func_0x1800becb0', 'func_0x1800bef00', 'func_0x180143b90', 'func_0x18039d880', 'func_0x1803a13f0', 'func_0x18042ea10', 'func_0x18043c920', 'func_0x18043c950', 'func_0x18043c980', 'func_0x18043c9c0']
+
+func_0x1801afdc0  score=37.0 tls=24 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806ba82d', '_DAT_1806ba841', '_DAT_1806ba851']
+  calls: ['func_0x18007ba70', 'func_0x18007cfc0', 'func_0x18008f8e0', 'func_0x1801afdc0', 'func_0x1801c21d0', 'func_0x1801c21f0', 'func_0x1801c2ba0', 'func_0x1801cd2e0', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180243e70  score=35.5 tls=21 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fb50', '_DAT_1806b2c90', '_DAT_1806c19ff', '_DAT_1806c1a0f', '_DAT_1806c1a1f', '_DAT_1806c1a30', '_DAT_1806c1a40']
+  calls: ['func_0x18007ba70', 'func_0x180086ce0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x1802148a0', 'func_0x180243e70', 'func_0x1802e39e0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18001def0  score=34.0 tls=24 xor=8
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806ae200', '_DAT_1806ae210', '_DAT_1806ae220', '_DAT_1806ae230']
+  calls: ['func_0x18001def0', 'func_0x18007ba70', 'func_0x18007f260', 'func_0x1800d5480', 'func_0x1800d73d0', 'func_0x1800d74e0', 'func_0x1800d7570', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18003b540  score=33.5 tls=6 xor=2
+  s_symbols: ['s_index']
+  win_apis: ['HttpQueryInfoA', 'InternetCloseHandle', 'InternetOpenA', 'InternetOpenUrlA', 'InternetReadFile']
+  dat_refs: ['_DAT_1806b0818']
+  calls: ['func_0x18003b540', 'func_0x18007ba70', 'func_0x1800801d0', 'func_0x180082950', 'func_0x1800904a0', 'func_0x180093c60', 'func_0x1800adb20', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806892a4', 'func_0x1806aa960', 'func_0x1806ab010']
+
+func_0x18032a170  score=32.0 tls=12 xor=8
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806aeae4', 'DAT_1806b26b4', 'DAT_1806b2860', 'DAT_1806b28a0', 'DAT_1806b28c0', 'DAT_1806b55d0', 'DAT_1806be344', 'DAT_1806be594', 'DAT_1806beca0', 'DAT_1806c38b0', 'DAT_1806c38b4', 'DAT_1806c38b8', 'DAT_1806c38bc', 'DAT_1806c38c0', 'DAT_1806c38f0', 'DAT_1806c3930', '_DAT_1806af1a0', '_DAT_1806c38a0', '_DAT_1806c38d0', '_DAT_1806c38e0', '_DAT_1806c3900', '_DAT_1806c3910', '_DAT_1806c3920', '_DAT_1806c3940']
+  calls: ['func_0x18007ba70', 'func_0x1800cd3b0', 'func_0x1800cf950', 'func_0x1800cf960', 'func_0x1800cf970', 'func_0x1800cfa00', 'func_0x1800d0090', 'func_0x1800d00e0', 'func_0x1800d25d0', 'func_0x1800d27b0', 'func_0x1800d2a00', 'func_0x180107830', 'func_0x180107cc0', 'func_0x180108220', 'func_0x18011b260', 'func_0x18018ce30', 'func_0x180329560', 'func_0x18032a170', 'func_0x18045fcc0', 'func_0x180672de0']
+
+func_0x1801dc7a0  score=31.5 tls=14 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_18083cd08', 'DAT_18083cd18', 'DAT_18083cd20', 'DAT_18083f998', 'DAT_18083f9a0', 'DAT_18083f9a8', 'DAT_18083f9b0', 'DAT_1808400a0', 'DAT_180840a48', 'DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68']
+  calls: ['func_0x18007ba70', 'func_0x180082950', 'func_0x180094870', 'func_0x1800cc7c0', 'func_0x180134bf0', 'func_0x1801dc7a0', 'func_0x1801dd3e0', 'func_0x180460b20', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18014f210  score=31.0 tls=15 xor=12
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806b2c90', '_DAT_1806b2ca0', '_DAT_1806b9501', '_DAT_1806b9511', '_DAT_1806b9527', '_DAT_1806b9537', '_DAT_1806b9547']
+  calls: ['func_0x18007ba70', 'func_0x180086e20', 'func_0x18014f210', 'func_0x18014fe60', 'func_0x1801b4360', 'func_0x1801ccd70', 'func_0x1801cf6b0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1802bea40  score=31.0 tls=21 xor=8
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fb50', '_DAT_1806b5540', '_DAT_1806be690', '_DAT_1806c247c']
+  calls: ['func_0x18007ba70', 'func_0x18007cab0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801cd600', 'func_0x1802bea40', 'func_0x1802e4820', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180036180  score=30.5 tls=18 xor=12
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806ae3b0']
+  calls: ['func_0x180036180', 'func_0x18007ba70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1802c0340  score=30.0 tls=21 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806bec20', 'DAT_1806c24d9', 'DAT_18083fb50', '_DAT_1806b2d10', '_DAT_1806b6500', '_DAT_1806bb3a0', '_DAT_1806c24a6', '_DAT_1806c24b6', '_DAT_1806c24ca', '_DAT_1806c24d9', '_DAT_1806c24e9', '_DAT_1806c24fd']
+  calls: ['func_0x18007ba70', 'func_0x18007ce20', 'func_0x18007cfc0', 'func_0x18007d2b0', 'func_0x180086790', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1802c0340', 'func_0x1802e4880', 'func_0x1802e48b0', 'func_0x1802e4910', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180409950  score=30.0 tls=9 xor=5
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_1806ae7b0', 'DAT_1806b26b4', 'DAT_1806b2860', 'DAT_1806b55e4', 'DAT_1806b613c', 'DAT_1806b6144', 'DAT_1806b6758', 'DAT_1806bb220', 'DAT_1806c9090', 'DAT_1806c9098', 'DAT_1806ce824', 'DAT_180760cd6', 'DAT_180761114', 'DAT_180840a50', 'DAT_180840a58', '_DAT_1806b6050', '_DAT_1806b6060', '_DAT_1806b6070', '_DAT_1806b6080', '_DAT_1806b6090', '_DAT_1806b60a0', '_DAT_1806b60b0', '_DAT_1806b60c0', '_DAT_1806b60d0', '_DAT_1806b60e0', '_DAT_1806b6100', '_DAT_1806b6110', '_DAT_1806b6120', '_DAT_1806bb2d0']
+  calls: ['func_0x180001e70', 'func_0x180034b40', 'func_0x180038c30', 'func_0x18007ba70', 'func_0x180082950', 'func_0x180094870', 'func_0x1800cd3b0', 'func_0x1800cf950', 'func_0x1800cf960', 'func_0x1800cf970', 'func_0x1800cf980', 'func_0x1800cf9c0', 'func_0x1800cfa30', 'func_0x1800d00e0', 'func_0x1800d0f50', 'func_0x1800d8d40', 'func_0x1800f0d80', 'func_0x180101570', 'func_0x180107830', 'func_0x1801079e0']
+
+func_0x1804dd020  score=30.0 tls=12 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806aeb30', '_DAT_1806b2c90', '_DAT_1806bafe0', '_DAT_1806baff0', '_DAT_1806bb000', '_DAT_1806bb010', '_DAT_1806bb020', '_DAT_1806bb030', '_DAT_1806d54b0', '_DAT_1806d54c0', '_DAT_1806d54d0', '_DAT_1806d54e0', '_DAT_1806d54f0', '_DAT_1806d54fd']
+  calls: ['func_0x18007ba70', 'func_0x180084770', 'func_0x1804c9aa0', 'func_0x1804dd020', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18039a510  score=29.5 tls=16 xor=9
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b5270', 'DAT_180768700', 'DAT_18083e6f0', 'DAT_18083e6f8', 'DAT_1808400a0', 'DAT_1808408c8', 'DAT_1808408d0', '_DAT_1806b64e0', '_DAT_1806be7a0']
+  calls: ['func_0x18004d550', 'func_0x18007ba70', 'func_0x180082f00', 'func_0x180083260', 'func_0x1800833d0', 'func_0x180084c70', 'func_0x180086960', 'func_0x18009ff70', 'func_0x1800a5e70', 'func_0x180112c00', 'func_0x180134bf0', 'func_0x1801b1910', 'func_0x1801bc990', 'func_0x1801d8910', 'func_0x180211160', 'func_0x180211250', 'func_0x18039a510', 'func_0x1803f17e0', 'func_0x180672de0', 'func_0x180672ec0']
+
+func_0x18039dad0  score=29.5 tls=18 xor=9
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083e6f0', 'DAT_18083e6f8', '_DAT_1806c8650', '_DAT_1806c8660', '_DAT_1806c8670']
+  calls: ['func_0x18007ba70', 'func_0x180084c70', 'func_0x1800a5e70', 'func_0x180136960', 'func_0x180136b00', 'func_0x18018c230', 'func_0x18018c3d0', 'func_0x1801bce30', 'func_0x1801d9bd0', 'func_0x1801d9d70', 'func_0x1801d9f10', 'func_0x1801da0b0', 'func_0x1801da250', 'func_0x18039dad0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18045dc40  score=29.5 tls=18 xor=7
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b55e4', 'DAT_1806b5ef4', 'DAT_1806b6550', 'DAT_1806c3800', '_DAT_1806cec50', '_DAT_1806cfce0', '_DAT_1806cfcf0', '_DAT_1806cfd00', '_DAT_1806cfd10']
+  calls: ['func_0x18007ba70', 'func_0x1800cd3b0', 'func_0x1800cf950', 'func_0x1800cfa00', 'func_0x1800ff0e0', 'func_0x180107830', 'func_0x180107cc0', 'func_0x180108350', 'func_0x18045bf10', 'func_0x18045dc40', 'func_0x1804f6020', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801914f0  score=29.0 tls=15 xor=9
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806ae110', '_DAT_1806b2c90', '_DAT_1806b5220', '_DAT_1806b65c0', '_DAT_1806ba3e1', '_DAT_1806ba3f1', '_DAT_1806ba401', '_DAT_1806ba417', '_DAT_1806ba423']
+  calls: ['func_0x18007ba70', 'func_0x18008fba0', 'func_0x18014fe60', 'func_0x1801914f0', 'func_0x1801b5990', 'func_0x1801c0d20', 'func_0x1801ccd70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180247570  score=29.0 tls=15 xor=10
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_18083fb50', '_DAT_1806b2d60', '_DAT_1806b6410', '_DAT_1806c1b2f', '_DAT_1806c1b45', '_DAT_1806c1b55', '_DAT_1806c1b61']
+  calls: ['func_0x18007ba70', 'func_0x18007cab0', 'func_0x1801b1b20', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x180247570', 'func_0x1802e3a60', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803d21f0  score=29.0 tls=6 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180761155', 'DAT_18083ca10', 'DAT_18083ca38', 'DAT_18083ca48', 'DAT_18083ca50', 'DAT_1808400a0', 'DAT_18084028c', 'DAT_180840290', 'DAT_1808402d0', 'DAT_1808402d8', 'DAT_180840560', 'DAT_180840568', 'DAT_180840590', 'DAT_1808405a0', 'DAT_1808405d4', 'DAT_1808405fc', 'DAT_18084060f', 'DAT_180840660', 'DAT_180840668', 'DAT_180840670', 'DAT_180840678', 'DAT_180840680', 'DAT_180840688', 'DAT_180840728', 'DAT_180840760', 'DAT_180840780', 'DAT_180840a48', 'DAT_180840a58', '_DAT_1806b6f30', '_DAT_1806c8e30']
+  calls: ['func_0x180001060', 'func_0x180001e70', 'func_0x180034b40', 'func_0x180037b60', 'func_0x180052940', 'func_0x180052a50', 'func_0x1800576d0', 'func_0x1800d5fe0', 'func_0x180116770', 'func_0x180134bf0', 'func_0x180137fa0', 'func_0x180143aa0', 'func_0x18014cd50', 'func_0x18014ce50', 'func_0x1801cf6b0', 'func_0x1801dbc50', 'func_0x1801dc7a0', 'func_0x1803d1200', 'func_0x1803d21f0', 'func_0x1803d3b60']
+
+func_0x180177eb0  score=28.5 tls=15 xor=10
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806b2c90', '_DAT_1806b63e0', '_DAT_1806b9bd8', '_DAT_1806b9be8', '_DAT_1806b9bf8', '_DAT_1806b9c04']
+  calls: ['func_0x18007ba70', 'func_0x180177eb0', 'func_0x1801b6ff0', 'func_0x1801c2ba0', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804168f0  score=28.5 tls=15 xor=7
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180840048', '_DAT_1806b2c90', '_DAT_1806b2d60', '_DAT_1806ccc59', '_DAT_1806ccc69', '_DAT_1806ccc79', '_DAT_1806ccc89', '_DAT_1806ccc99', '_DAT_1806ccca9', '_DAT_1806cccb9', '_DAT_1806cccc9', '_DAT_1806cccd9', '_DAT_1806ccce9']
+  calls: ['func_0x18007ba70', 'func_0x1801b4030', 'func_0x1801c2ba0', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x1804168f0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18018f510  score=28.0 tls=15 xor=10
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806b2c90', '_DAT_1806ba345', '_DAT_1806ba355', '_DAT_1806ba365', '_DAT_1806ba379']
+  calls: ['func_0x18007ba70', 'func_0x18007c9b0', 'func_0x18012b270', 'func_0x18014fe60', 'func_0x18018f510', 'func_0x1801c0c70', 'func_0x1801ccd70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801e25c0  score=27.5 tls=15 xor=9
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083cd08', 'DAT_18083cd18', 'DAT_18083cd20', 'DAT_18083cd28', 'DAT_18083cd38', 'DAT_18083cd40', 'DAT_180840a58']
+  calls: ['func_0x18007ba70', 'func_0x18007bba0', 'func_0x180082950', 'func_0x180094870', 'func_0x1800d5e00', 'func_0x1800f81c0', 'func_0x180109920', 'func_0x180129ea0', 'func_0x1801e25c0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803380d0  score=27.5 tls=18 xor=5
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180840a58', '_DAT_1806b65f0', '_DAT_1806b6f30', '_DAT_1806b75a0', '_DAT_1806c71b6', '_DAT_1806c71c7', '_DAT_1806c71d9', '_DAT_1806c71e9', '_DAT_1806c71fa']
+  calls: ['func_0x18007ba70', 'func_0x18007bba0', 'func_0x18007c170', 'func_0x18007ce20', 'func_0x18007d2b0', 'func_0x180082950', 'func_0x180086ce0', 'func_0x1800871a0', 'func_0x1800becb0', 'func_0x18011d820', 'func_0x180143b90', 'func_0x1801714c0', 'func_0x1803380d0', 'func_0x180370180', 'func_0x1803701b0', 'func_0x18063ff10', 'func_0x180672de0', 'func_0x180673140', 'func_0x18068a0e8', 'func_0x18068a690']
+
+func_0x1801d5d90  score=27.0 tls=13 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae7b0', 'DAT_1806b5270', 'DAT_180768700', 'DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68']
+  calls: ['func_0x18004d550', 'func_0x180052940', 'func_0x180052a50', 'func_0x18007ba70', 'func_0x18007bba0', 'func_0x180082f00', 'func_0x180083260', 'func_0x180084c70', 'func_0x180086960', 'func_0x18009ff70', 'func_0x1800a5e70', 'func_0x180112c00', 'func_0x18011cb80', 'func_0x180135b10', 'func_0x1801b1910', 'func_0x1801bc990', 'func_0x1801d5d90', 'func_0x1801d8910', 'func_0x1801dbc50', 'func_0x1801dc7a0']
+
+func_0x180360610  score=27.0 tls=15 xor=7
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806b5600', '_DAT_1806c3d50', '_DAT_1806c7aa2', '_DAT_1806c7ab0', '_DAT_1806c7ac0', '_DAT_1806c7ad0', '_DAT_1806c7ae0', '_DAT_1806c7af2', '_DAT_1806c7afe']
+  calls: ['func_0x18007ba70', 'func_0x1800822d0', 'func_0x18008fa60', 'func_0x18008fba0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801ccff0', 'func_0x1802d74e0', 'func_0x180348770', 'func_0x18034c080', 'func_0x18034ddc0', 'func_0x18034fc00', 'func_0x180354f40', 'func_0x180357af0', 'func_0x18035e190', 'func_0x180360610', 'func_0x18036e1d0', 'func_0x18036e5e0', 'func_0x1803717d0', 'func_0x180371810']
+
+func_0x18041e380  score=27.0 tls=15 xor=8
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180840048', '_DAT_1806b2d70', '_DAT_1806c6e65', '_DAT_1806c6e75', '_DAT_1806c6e85', '_DAT_1806ccef1', '_DAT_1806ccf0c', '_DAT_1806ccf1c']
+  calls: ['func_0x18007ba70', 'func_0x18007c9b0', 'func_0x18014fe60', 'func_0x1801b1390', 'func_0x1801b4360', 'func_0x1801c0c70', 'func_0x1801ccd70', 'func_0x1801cf6b0', 'func_0x18041e380', 'func_0x18044aab0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1802f1630  score=26.5 tls=15 xor=10
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806c5df6', '_DAT_1806c5e04']
+  calls: ['func_0x18007ba70', 'func_0x18008fa60', 'func_0x18014fe60', 'func_0x1801ccd70', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x1802188e0', 'func_0x1802f1630', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801e6000  score=26.0 tls=15 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f940', '_DAT_1806b2c90', '_DAT_1806b4e80', '_DAT_1806bd574', '_DAT_1806bd584', '_DAT_1806bd59b', '_DAT_1806bd5ab', '_DAT_1806bd5bb', '_DAT_1806bd5cb', '_DAT_1806bd5dc']
+  calls: ['func_0x18007ba70', 'func_0x18007cb80', 'func_0x18007d2b0', 'func_0x1801b4680', 'func_0x1801b72f0', 'func_0x1801c0b80', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801ccff0', 'func_0x1801e6000', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18049ef60  score=26.0 tls=9 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083ca10', 'DAT_18083cc18', 'DAT_18083cd08', 'DAT_18083cd18', 'DAT_18083cd20', 'DAT_18083e7f0', 'DAT_1808400a0', 'DAT_1808408b0', 'DAT_1808408b8', 'DAT_180840a48', 'DAT_180840a50', 'DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68', 'DAT_180840a70', 'DAT_180840d34', 'DAT_180840e34', 'DAT_180841608', 'DAT_180841610', 'DAT_180841618', 'DAT_180841620', 'DAT_180841628', 'DAT_180841630', 'DAT_180841638', 'DAT_180841640', '_DAT_180840ae8']
+  calls: ['func_0x180001e70', 'func_0x180052940', 'func_0x180052a50', 'func_0x18007ba70', 'func_0x180116750', 'func_0x180116790', 'func_0x180116dc0', 'func_0x18011b6e0', 'func_0x18014cd50', 'func_0x1801dbc50', 'func_0x1801dc420', 'func_0x1801dc7a0', 'func_0x1803d21f0', 'func_0x180401b50', 'func_0x180401c50', 'func_0x1804980c0', 'func_0x18049ef60', 'func_0x1804a0070', 'func_0x180672de0', 'func_0x180672ec0']
+
+func_0x18039bd20  score=25.5 tls=15 xor=1
+  s_symbols: ['s_base', 's_index']
+  win_apis: []
+  dat_refs: ['DAT_180768ca8', 'DAT_1808400a0', 'DAT_1808400b0', 'DAT_1808400b8', 'DAT_1808401e0', 'DAT_1808401f0', 'DAT_1808401f8', 'DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68', 'DAT_180840fd0', '_DAT_1806ae070', '_DAT_1806b75a0', '_DAT_1806c3690', '_DAT_1806c97c8', '_DAT_1806cb473', '_DAT_1806cb484', '_DAT_1806cb496', '_DAT_1806cb4a6']
+  calls: ['func_0x180056840', 'func_0x180056aa0', 'func_0x18007ba70', 'func_0x18007c170', 'func_0x18007d2b0', 'func_0x180084c70', 'func_0x180086790', 'func_0x1800871a0', 'func_0x18008b1c0', 'func_0x18008b2b0', 'func_0x1800968f0', 'func_0x180097080', 'func_0x1800a0a50', 'func_0x1800a5e40', 'func_0x1800becb0', 'func_0x1800bef00', 'func_0x1800f2cb0', 'func_0x180103810', 'func_0x18039bd20', 'func_0x18039d6f0']
+
+func_0x1803bd2c0  score=25.5 tls=8 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_1806aeae4', 'DAT_1806b286c', 'DAT_1806b28b4', 'DAT_1806b5c70', 'DAT_1806b5ef4', 'DAT_1806c897c', 'DAT_18083ca38', 'DAT_18083cb70', 'DAT_18083cb80', 'DAT_18083cba0', 'DAT_18083cba4', 'DAT_18083ef17', 'DAT_1808400a0', 'DAT_1808402b8', 'DAT_1808402bc', 'DAT_1808402c8', 'DAT_1808402cc', 'DAT_1808402d0', 'DAT_1808402f8', 'DAT_180840554', 'DAT_180840588', 'DAT_18084058c', 'DAT_1808405a8', 'DAT_1808405b0', 'DAT_1808405b8', 'DAT_1808405c0', '_DAT_1806b2880', '_DAT_1806cb860']
+  calls: ['func_0x1800576d0', 'func_0x180057f30', 'func_0x18007ba70', 'func_0x18007d3c0', 'func_0x1800cd3b0', 'func_0x1800cfa00', 'func_0x1800d00e0', 'func_0x1800d36e0', 'func_0x1800d4bf0', 'func_0x180134bf0', 'func_0x1803bd2c0', 'func_0x180441340', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803dcbf0  score=25.5 tls=7 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae7b0', 'DAT_1806aeae4', 'DAT_1806b26b4', 'DAT_1806b2860', 'DAT_1806b28c0', 'DAT_1806b55e0', 'DAT_1806b55e4', 'DAT_1806b5c70', 'DAT_1806b6144', 'DAT_1806b6510', 'DAT_1806b6550', 'DAT_1806b676c', 'DAT_1806be594', 'DAT_1806beca0', 'DAT_1806ce7c4', 'DAT_1806ce7d8', 'DAT_1806ce7ec', 'DAT_18083cbf0', 'DAT_1808407e8', 'DAT_180840808', 'DAT_180840a50', 'DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68', '_DAT_1806b6060', '_DAT_1806b60c0', '_DAT_1806b6100', '_DAT_1806b6110', '_DAT_1806b6120', '_DAT_1806be7b0']
+  calls: ['func_0x180001060', 'func_0x18007ba70', 'func_0x18007f460', 'func_0x180082950', 'func_0x1800cd2a0', 'func_0x1800cd3b0', 'func_0x1800cf950', 'func_0x1800cf960', 'func_0x1800cf970', 'func_0x1800cf980', 'func_0x1800cfa00', 'func_0x1800d00e0', 'func_0x1800d2a00', 'func_0x1800d2d50', 'func_0x1800d35b0', 'func_0x1800f0d80', 'func_0x1800fd7c0', 'func_0x1800fe4f0', 'func_0x1800ff650', 'func_0x1801008d0']
+
+func_0x1802ce320  score=25.0 tls=9 xor=12
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2c90', '_DAT_1806b2ca0', '_DAT_1806b63e0', '_DAT_1806b9527', '_DAT_1806b9537', '_DAT_1806b9547', '_DAT_1806c28d6', '_DAT_1806c28e6']
+  calls: ['func_0x18007ba70', 'func_0x18014fe60', 'func_0x1801b4360', 'func_0x1801bb2b0', 'func_0x1801cf6b0', 'func_0x1802ce320', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18032b280  score=25.0 tls=18 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_1806ae7b4', 'DAT_1806aeae4', 'DAT_1806b2860', '_DAT_1806af260', '_DAT_1806bea80']
+  calls: ['func_0x18007ba70', 'func_0x1800cd3b0', 'func_0x1800cfa00', 'func_0x1800d00e0', 'func_0x1800d2d50', 'func_0x18018ce30', 'func_0x180329560', 'func_0x18032b280', 'func_0x18045fcc0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803d1270  score=25.0 tls=1 xor=0
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_1806b28f0', 'DAT_18083ca80', 'DAT_18083ca88', 'DAT_18083cb0c', 'DAT_18083cb20', 'DAT_18083cb28', 'DAT_18083cb2c', 'DAT_18083cb5c', 'DAT_18083cb70', 'DAT_18083cb80', 'DAT_18083cb88', 'DAT_18083cbdc', 'DAT_18083cbe0', 'DAT_18083cbe8', 'DAT_18083cbec', 'DAT_1808400a0', 'DAT_180840640', 'DAT_180840648', '_DAT_1806af1a0', '_DAT_18083ca60', '_DAT_18083ca70', '_DAT_18083ca78', '_DAT_18083ca7c', '_DAT_18083ca90', '_DAT_18083ca98', '_DAT_18083ca9c', '_DAT_18083caa0', '_DAT_18083caa8', '_DAT_18083caac']
+  calls: ['func_0x180134bf0', 'func_0x1803d1270', 'func_0x180672ec0']
+
+func_0x1804e7c10  score=25.0 tls=12 xor=8
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b5b00', '_DAT_1806b5b10', '_DAT_1806be370', '_DAT_1806d5860', '_DAT_1806d5870', '_DAT_1806d5880', '_DAT_1806d5890', '_DAT_1806d58a2', '_DAT_1806d58b2', '_DAT_1806d58c2']
+  calls: ['func_0x18007ba70', 'func_0x180084770', 'func_0x18012b460', 'func_0x1801b2720', 'func_0x1804c9aa0', 'func_0x1804e7c10', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180074780  score=24.5 tls=9 xor=3
+  s_symbols: ['s_index']
+  win_apis: ['GetProcAddress', 'LoadLibraryA']
+  dat_refs: ['DAT_18083ead0', 'DAT_18083ead8', 'DAT_18083eae0', '_DAT_1806b090e', '_DAT_1806b0922']
+  calls: ['func_0x180074780', 'func_0x18007ba70', 'func_0x18007c170', 'func_0x18007cfc0', 'func_0x1800b6940', 'func_0x1800b6960', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801d8b10  score=24.5 tls=13 xor=11
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae7b0']
+  calls: ['func_0x18007ba70', 'func_0x180084c70', 'func_0x18011cb80', 'func_0x180136960', 'func_0x180136b00', 'func_0x18018c230', 'func_0x1801bc990', 'func_0x1801bca90', 'func_0x1801d8b10', 'func_0x1801d9bd0', 'func_0x1801d9d70', 'func_0x1801d9f10', 'func_0x1801da0b0', 'func_0x1801da250', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180242db0  score=24.5 tls=15 xor=7
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fb50', '_DAT_1806b5b00', '_DAT_1806be630', '_DAT_1806c19c5', '_DAT_1806c19db']
+  calls: ['func_0x18007ba70', 'func_0x18007cab0', 'func_0x18007d2b0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x1801cd600', 'func_0x180242db0', 'func_0x1802e3940', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180329730  score=24.5 tls=18 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b2860', 'DAT_1806b67d0', 'DAT_1806c3890', '_DAT_1806c3870', '_DAT_1806c3880']
+  calls: ['func_0x18007ba70', 'func_0x1800cd3b0', 'func_0x1800cf950', 'func_0x1800cf960', 'func_0x1800cf970', 'func_0x1800cfa00', 'func_0x1800d00e0', 'func_0x1800d27b0', 'func_0x180107830', 'func_0x18011b260', 'func_0x18018ce30', 'func_0x180329560', 'func_0x180329730', 'func_0x18045fcc0', 'func_0x18045fd00', 'func_0x18045fd10', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804cf410  score=23.5 tls=15 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806ae200', '_DAT_1806b2ca0', '_DAT_1806d5257', '_DAT_1806d5267', '_DAT_1806d5277']
+  calls: ['func_0x18007ba70', 'func_0x180084770', 'func_0x1802d74e0', 'func_0x1804c9aa0', 'func_0x1804cf410', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18038bc60  score=22.5 tls=12 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2ca0', '_DAT_1806b5c10', '_DAT_1806be370', '_DAT_1806cb072', '_DAT_1806cb082', '_DAT_1806cb092', '_DAT_1806cb0a2', '_DAT_1806cb0ae', '_DAT_1806cb0be']
+  calls: ['func_0x18007ba70', 'func_0x18007d2b0', 'func_0x18038bc60', 'func_0x1804c9aa0', 'func_0x1804c9cb0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804e5480  score=22.5 tls=12 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806d56a0', '_DAT_1806b2c90', '_DAT_1806b63e0', '_DAT_1806b6630', '_DAT_1806b68f0', '_DAT_1806d5665', '_DAT_1806d5675', '_DAT_1806d5685', '_DAT_1806d5695']
+  calls: ['func_0x18007ba70', 'func_0x180084770', 'func_0x1804c9aa0', 'func_0x1804e5480', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1800351b0  score=22.0 tls=12 xor=10
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: []
+  calls: ['func_0x1800351b0', 'func_0x18007ba70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180035920  score=22.0 tls=12 xor=10
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: []
+  calls: ['func_0x180035920', 'func_0x18007ba70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180036e50  score=22.0 tls=12 xor=10
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: []
+  calls: ['func_0x180036e50', 'func_0x18007ba70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18033b770  score=22.0 tls=12 xor=7
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806b2d60', '_DAT_1806b5ce0', '_DAT_1806b6410', '_DAT_1806c7288', '_DAT_1806c7298']
+  calls: ['func_0x18007ba70', 'func_0x1801b2300', 'func_0x1801c2ba0', 'func_0x1801cd2e0', 'func_0x18033b770', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180380fc0  score=22.0 tls=12 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2ca0', '_DAT_1806b5c10', '_DAT_1806b69b0', '_DAT_1806cadd7', '_DAT_1806cade7', '_DAT_1806cadff', '_DAT_1806cae0f', '_DAT_1806cae1f']
+  calls: ['func_0x18007ba70', 'func_0x1801b39d0', 'func_0x1801bb8d0', 'func_0x180380fc0', 'func_0x1804c9aa0', 'func_0x1804c9cb0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18039fa00  score=22.0 tls=15 xor=1
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68', '_DAT_1806b6f30', '_DAT_1806b75a0', '_DAT_1806c97c8', '_DAT_1806cb4de', '_DAT_1806cb4f0', '_DAT_1806cb500', '_DAT_1806cb512', '_DAT_1806cb52b', '_DAT_1806cb53b']
+  calls: ['func_0x180056840', 'func_0x18007ba70', 'func_0x18007c170', 'func_0x1800871a0', 'func_0x180087670', 'func_0x18008a340', 'func_0x1800904a0', 'func_0x1800a6340', 'func_0x1800becb0', 'func_0x1800bef00', 'func_0x1800f15f0', 'func_0x18039d6f0', 'func_0x18039fa00', 'func_0x18043c870', 'func_0x18043c890', 'func_0x18043c8c0', 'func_0x18043c8f0', 'func_0x180672de0', 'func_0x180673140', 'func_0x180677ed0']
+
+func_0x1803af1f0  score=22.0 tls=18 xor=1
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180768700', '_DAT_1806be750', '_DAT_1806c8700', '_DAT_1806cc89a', '_DAT_1806cc8af', '_DAT_1806cc8c5']
+  calls: ['func_0x18004d550', 'func_0x18007ba70', 'func_0x18007cab0', 'func_0x18007cd50', 'func_0x180082f00', 'func_0x180083260', 'func_0x1800833d0', 'func_0x180084c70', 'func_0x1800871a0', 'func_0x18008a340', 'func_0x18008b1c0', 'func_0x1800a5e70', 'func_0x1800a6340', 'func_0x1800a64e0', 'func_0x1800a6a30', 'func_0x1800a6c00', 'func_0x1800a7830', 'func_0x1800becb0', 'func_0x1800bef00', 'func_0x1803af1f0']
+
+func_0x18018c570  score=21.5 tls=12 xor=9
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0']
+  calls: ['func_0x18007ba70', 'func_0x180132ee0', 'func_0x18018c570', 'func_0x1801d3650', 'func_0x1801d3a80', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803396c0  score=21.5 tls=15 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180840a58', '_DAT_1806b6f30', '_DAT_1806c7219', '_DAT_1806c7227', '_DAT_1806c7237', '_DAT_1806c7249', '_DAT_1806c7253', '_DAT_1806c7263', '_DAT_1806c7273']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x180082950', 'func_0x1800871a0', 'func_0x18008fa60', 'func_0x1800be560', 'func_0x1800becb0', 'func_0x1800d9840', 'func_0x180143aa0', 'func_0x180143b90', 'func_0x1801b1390', 'func_0x1803396c0', 'func_0x180370210', 'func_0x180370250', 'func_0x180370270', 'func_0x1803702a0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960', 'func_0x1806ab010']
+
+func_0x1803b0ad0  score=21.0 tls=8 xor=4
+  s_symbols: ['s_base', 's_index']
+  win_apis: ['CreateThread']
+  dat_refs: ['DAT_1803a61c0', 'DAT_180768ca8', 'DAT_180840240', 'DAT_180840258', 'DAT_180840260', 'DAT_180840268', 'DAT_180840280', 'DAT_180840288']
+  calls: ['func_0x180001060', 'func_0x180001e70', 'func_0x18007ba70', 'func_0x18008b1c0', 'func_0x18008b2b0', 'func_0x1800968f0', 'func_0x1800bebb0', 'func_0x1800becb0', 'func_0x1800f2cb0', 'func_0x180103810', 'func_0x1801038e0', 'func_0x1803b0ad0', 'func_0x1803b1490', 'func_0x1803b1520', 'func_0x1803b15d0', 'func_0x1803b1660', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806731d0']
+
+func_0x1803d3ff0  score=21.0 tls=6 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083ca10', 'DAT_1808400a0', 'DAT_18084028c', 'DAT_1808402d8', 'DAT_180840560', 'DAT_1808405a0', 'DAT_180840690', 'DAT_180840698', 'DAT_1808406a0', 'DAT_1808406a8', 'DAT_1808406b0', 'DAT_1808406b8', 'DAT_180840a58', '_DAT_1806b6f30', '_DAT_1806c8e60', '_DAT_1806c8e70', '_DAT_1806c8e80', '_DAT_1806cbc0d', '_DAT_1806cbc1d', '_DAT_1806cbc2d', '_DAT_1806cbc3d', '_DAT_1806cbc4d']
+  calls: ['func_0x180001060', 'func_0x180001e70', 'func_0x18007ba70', 'func_0x180134bf0', 'func_0x180143aa0', 'func_0x1801cf6b0', 'func_0x1803d3be0', 'func_0x1803d3ff0', 'func_0x1803d46f0', 'func_0x1803d4770', 'func_0x1803d4800', 'func_0x1803d4820', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803d4920  score=21.0 tls=6 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083ca10', 'DAT_1808400a0', 'DAT_18084028c', 'DAT_1808402d8', 'DAT_180840560', 'DAT_1808405a0', 'DAT_1808406c0', 'DAT_1808406c8', 'DAT_1808406d0', 'DAT_1808406d8', 'DAT_1808406e0', 'DAT_1808406e8', 'DAT_180840a58', '_DAT_1806b6f30', '_DAT_1806c8e90', '_DAT_1806c8ea0', '_DAT_1806c8eb0', '_DAT_1806cbcab', '_DAT_1806cbcbb', '_DAT_1806cbccb', '_DAT_1806cbcdb', '_DAT_1806cbceb']
+  calls: ['func_0x180001060', 'func_0x180001e70', 'func_0x18007ba70', 'func_0x180134bf0', 'func_0x180143aa0', 'func_0x1801cf6b0', 'func_0x1803d3be0', 'func_0x1803d4920', 'func_0x1803d4fd0', 'func_0x1803d5050', 'func_0x1803d50e0', 'func_0x1803d5100', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803d5200  score=21.0 tls=6 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083ca10', 'DAT_1808400a0', 'DAT_18084028c', 'DAT_1808402d8', 'DAT_180840560', 'DAT_1808405a0', 'DAT_1808406f0', 'DAT_1808406f8', 'DAT_180840700', 'DAT_180840708', 'DAT_180840710', 'DAT_180840718', 'DAT_180840a58', '_DAT_1806b6f30', '_DAT_1806c8ec0', '_DAT_1806c8ed0', '_DAT_1806c8ee0', '_DAT_1806cbd49', '_DAT_1806cbd59', '_DAT_1806cbd69', '_DAT_1806cbd79', '_DAT_1806cbd89']
+  calls: ['func_0x180001060', 'func_0x180001e70', 'func_0x18007ba70', 'func_0x180134bf0', 'func_0x180143aa0', 'func_0x1801cf6b0', 'func_0x1803d3be0', 'func_0x1803d5200', 'func_0x1803d58b0', 'func_0x1803d5930', 'func_0x1803d59c0', 'func_0x1803d59e0', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180429900  score=21.0 tls=15 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b2890', 'DAT_180840048', '_DAT_1806b5c00', '_DAT_1806cd0f8', '_DAT_1806cd10e', '_DAT_1806cd124']
+  calls: ['func_0x18007ba70', 'func_0x18007c9b0', 'func_0x18007cab0', 'func_0x180132ee0', 'func_0x1801ccd70', 'func_0x1802e3940', 'func_0x1802e4820', 'func_0x180429900', 'func_0x18044abc0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180001110  score=20.0 tls=12 xor=7
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806ae010', '_DAT_1806ae020']
+  calls: ['func_0x180001060', 'func_0x180001110', 'func_0x180001e70', 'func_0x180001ed0', 'func_0x180004a90', 'func_0x18001def0', 'func_0x18001eef0', 'func_0x18001ef80', 'func_0x18001efb0', 'func_0x18007ba70', 'func_0x18007bba0', 'func_0x1800bf640', 'func_0x1800d60c0', 'func_0x1800d73d0', 'func_0x180101c70', 'func_0x18010c9b0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803a3520  score=20.0 tls=13 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806aecb0', 'DAT_180760d19']
+  calls: ['func_0x1800569a0', 'func_0x180057460', 'func_0x18007ba70', 'func_0x180082950', 'func_0x1800871a0', 'func_0x180087380', 'func_0x180087670', 'func_0x18008a030', 'func_0x18008a490', 'func_0x180094870', 'func_0x1800a6340', 'func_0x1800becb0', 'func_0x1800bef00', 'func_0x180397850', 'func_0x1803a3520', 'func_0x18042e5d0', 'func_0x180672de0', 'func_0x180673140', 'func_0x180676ba0', 'func_0x180677a20']
+
+func_0x180188f20  score=19.5 tls=9 xor=7
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0', '_DAT_1806b2c90', '_DAT_1806b63e0', '_DAT_1806ba13b', '_DAT_1806ba14b', '_DAT_1806ba168', '_DAT_1806ba172']
+  calls: ['func_0x18007ba70', 'func_0x1800d9840', 'func_0x180188f20', 'func_0x1801b2300', 'func_0x1801bf7d0', 'func_0x1801c2ba0', 'func_0x1801ccd70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180371f00  score=19.5 tls=9 xor=8
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2d70', '_DAT_1806b5c20', '_DAT_1806ca970', '_DAT_1806ca980', '_DAT_1806ca990']
+  calls: ['func_0x18007ba70', 'func_0x1801b4920', 'func_0x180371f00', 'func_0x1804c9aa0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18049e7d0  score=19.5 tls=7 xor=1
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083ca10', 'DAT_18083cd08', 'DAT_18083cd18', 'DAT_18083cd20', 'DAT_1808400a0', 'DAT_1808408b3', 'DAT_180840c88', 'DAT_180840c90', 'DAT_180840c98', 'DAT_180840ca0', 'DAT_180840ca8', 'DAT_180840cb0', 'DAT_180840f34', 'DAT_180840f68', 'DAT_180840f6c', 'DAT_1808415c8', 'DAT_1808415d0', 'DAT_1808415d8', 'DAT_1808415e0', 'DAT_1808415e8', 'DAT_1808415f0', '_DAT_1806cf180', '_DAT_180840ae8']
+  calls: ['func_0x1800576d0', 'func_0x18007ba70', 'func_0x18007f260', 'func_0x1800d4b90', 'func_0x180134bf0', 'func_0x1802f4de0', 'func_0x1802f4e40', 'func_0x180340f90', 'func_0x180340ff0', 'func_0x1803d3b20', 'func_0x1803d3ff0', 'func_0x1803d5ae0', 'func_0x1803d5b00', 'func_0x1803d5fb0', 'func_0x1803d5fe0', 'func_0x1804025d0', 'func_0x180402680', 'func_0x18049e7d0', 'func_0x18049ee60', 'func_0x18049eee0']
+
+func_0x1800c1380  score=18.5 tls=9 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083ec60', 'DAT_18083ec70', 'DAT_18083ec78', 'DAT_18083ed00', 'DAT_18083ed08', '_DAT_1806b3a2a', '_DAT_1806b3a34']
+  calls: ['func_0x18007ba70', 'func_0x1800871a0', 'func_0x1800becb0', 'func_0x1800c1380', 'func_0x1800d9840', 'func_0x1800f2360', 'func_0x1800f2c80', 'func_0x180654470', 'func_0x180654b80', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18011bc80  score=18.5 tls=4 xor=1
+  s_symbols: ['s_MinecraftTenEmoticon_1806b5378', 's_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b5380', 'DAT_18083f490', 'DAT_18083f498', 'DAT_18083f4a8', 'DAT_18083f4d0', '_DAT_1806b54a0', '_DAT_18083f4c0']
+  calls: ['func_0x18007ba70', 'func_0x18007cfc0', 'func_0x18011bc80', 'func_0x18011c4c0', 'func_0x18011cf90', 'func_0x18011d140', 'func_0x18011d840', 'func_0x18011db00', 'func_0x18012abd0', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806731d0', 'func_0x1806aa960']
+
+func_0x180380410  score=18.5 tls=12 xor=5
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806ae200', '_DAT_1806cad9f', '_DAT_1806cadaf']
+  calls: ['func_0x18007ba70', 'func_0x1801b30c0', 'func_0x180380410', 'func_0x180439d40', 'func_0x1804c9aa0', 'func_0x1804c9cb0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804f3ae0  score=18.0 tls=12 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2c90', '_DAT_1806b6630', '_DAT_1806b69a0', '_DAT_1806d5a99', '_DAT_1806d5aa9', '_DAT_1806d5ab9']
+  calls: ['func_0x18007ba70', 'func_0x180084770', 'func_0x1801b94b0', 'func_0x1804c9aa0', 'func_0x1804f3ae0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+log10  score=18.0 tls=0 xor=0
+  s_symbols: []
+  win_apis: []
+  dat_refs: ['DAT_1806e8e10', 'DAT_1806eb420', 'DAT_1806eb430', 'DAT_1806eb4b0', 'DAT_1806eb4c0', 'DAT_1806eb4d0', 'DAT_1806eb4e0', 'DAT_1806eb4f0', 'DAT_1806eb500', 'DAT_1806eb510', 'DAT_1806eb560', 'DAT_1806eb570', 'DAT_1806eb580', 'DAT_1806eb590', 'DAT_1806eb5a0', 'DAT_1806eb5c0', 'DAT_1806eb610', 'DAT_1806eb620', 'DAT_1806eb630', 'DAT_1806eb640', 'DAT_1806eb660', 'DAT_1806eb664', 'DAT_1806eb668', 'DAT_1806eb6b0', 'DAT_1806ebec0', 'DAT_180843124', '_DAT_1806eb450', '_DAT_1806eb460', '_DAT_1806eb480', '_DAT_1806eb490']
+  calls: []
+
+func_0x180376860  score=17.5 tls=9 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b5230', '_DAT_1806b5b00', '_DAT_1806caa9c', '_DAT_1806caaac', '_DAT_1806caabc']
+  calls: ['func_0x18007ba70', 'func_0x1801b5990', 'func_0x180376860', 'func_0x1804c9aa0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804ce890  score=17.5 tls=12 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806be370', '_DAT_1806d5235', '_DAT_1806d5245']
+  calls: ['func_0x18007ba70', 'func_0x180084770', 'func_0x1800f15f0', 'func_0x1802177a0', 'func_0x1804c9aa0', 'func_0x1804ce890', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804de3f0  score=17.5 tls=12 xor=5
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806d550d']
+  calls: ['func_0x18007ba70', 'func_0x18007cb80', 'func_0x180084770', 'func_0x18036f870', 'func_0x1804c9aa0', 'func_0x1804de3f0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804df4a0  score=17.5 tls=12 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b69b0', '_DAT_1806d5520', '_DAT_1806d552c', '_DAT_1806d553c', '_DAT_1806d5548']
+  calls: ['func_0x18007ba70', 'func_0x180084770', 'func_0x18008fba0', 'func_0x1801c0d20', 'func_0x1804c9aa0', 'func_0x1804df4a0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804e44c0  score=17.5 tls=9 xor=5
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806ae110', '_DAT_1806b2d60', '_DAT_1806b6410', '_DAT_1806b6430', '_DAT_1806cf240', '_DAT_1806d5616', '_DAT_1806d5626']
+  calls: ['func_0x18007ba70', 'func_0x1801b3830', 'func_0x1804c9aa0', 'func_0x1804e44c0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18034fc00  score=17.0 tls=6 xor=7
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2880', '_DAT_1806b2c90', '_DAT_1806b63e0', '_DAT_1806bafd0', '_DAT_1806be660', '_DAT_1806c3c00', '_DAT_1806c76fa', '_DAT_1806c770a']
+  calls: ['func_0x18007ba70', 'func_0x1801bb2b0', 'func_0x180348cd0', 'func_0x18034fc00', 'func_0x180369820', 'func_0x18036b7c0', 'func_0x18036bde0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803d1880  score=17.0 tls=2 xor=0
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806aeae4', 'DAT_1806b26b4', 'DAT_1806b28a0', 'DAT_1806b5bf0', 'DAT_1806b676c', 'DAT_1806c3cd0', 'DAT_1806c8e00', 'DAT_1808400a0', 'DAT_180840568', 'DAT_1808405fc', 'DAT_18084060f', 'DAT_180840728', 'DAT_18084075c', 'DAT_18084075d', 'DAT_18084075e', 'DAT_180840760', 'DAT_180840768', 'DAT_180840770', 'DAT_180840778', 'DAT_180840780', 'DAT_180840788', 'DAT_180840790', 'DAT_180840798', 'DAT_1808407b0', 'DAT_1808407b8', 'DAT_1808407c0', 'DAT_1808407e0', 'DAT_180840a58', 'DAT_180840f68', 'DAT_180840f6c']
+  calls: ['func_0x180001060', 'func_0x1800576d0', 'func_0x180057f70', 'func_0x1800cd3b0', 'func_0x1800cf950', 'func_0x1800cf960', 'func_0x1800cf970', 'func_0x1800cfa00', 'func_0x1800cfa30', 'func_0x1800d00e0', 'func_0x1800d2a00', 'func_0x1800d2e40', 'func_0x180107830', 'func_0x180107cc0', 'func_0x1801081a0', 'func_0x180108220', 'func_0x18011b260', 'func_0x180134880', 'func_0x180134bf0', 'func_0x1803d1880']
+
+func_0x180074e10  score=16.5 tls=7 xor=5
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083eafc', 'DAT_18083eb00', 'DAT_18083eb04', 'DAT_18083eb08', 'DAT_18083eb0c', '_DAT_18083ec10', '_DAT_18083ec14', '_DAT_18083ec18', '_DAT_18083ec1c']
+  calls: ['func_0x180038c30', 'func_0x180074e10', 'func_0x18007ba70', 'func_0x18063ff10', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18020a2d0  score=16.5 tls=9 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f940', '_DAT_1806b2d60', '_DAT_1806bde27', '_DAT_1806bde37', '_DAT_1806bde47', '_DAT_1806bde58', '_DAT_1806bde68']
+  calls: ['func_0x18007ba70', 'func_0x18008f8e0', 'func_0x18014fe60', 'func_0x1801c21f0', 'func_0x1801ccd70', 'func_0x18020a2d0', 'func_0x1802148a0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1800d0f50  score=16.0 tls=7 xor=5
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083ee58', 'DAT_18083ee68', 'DAT_18083efa8', 'DAT_18083efb0', 'DAT_180840a50', 'DAT_180840a58', 'DAT_180840f80', '_DAT_1806b2880']
+  calls: ['func_0x18007ba70', 'func_0x18007bba0', 'func_0x1800d0f50', 'func_0x1800d1af0', 'func_0x1800f0c40', 'func_0x18010c610', 'func_0x18010c620', 'func_0x18010c630', 'func_0x1801179c0', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804c9320  score=16.0 tls=12 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806d4fa9', '_DAT_1806d4fbd']
+  calls: ['func_0x18007ba70', 'func_0x18007ce20', 'func_0x18007cfc0', 'func_0x180084770', 'func_0x1802e4a50', 'func_0x1804c9320', 'func_0x1804c9aa0', 'func_0x18061e8e0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804e2da0  score=16.0 tls=9 xor=5
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806ae200', '_DAT_1806b2ca0', '_DAT_1806d55a3', '_DAT_1806d55b3']
+  calls: ['func_0x18007ba70', 'func_0x180086e20', 'func_0x1804c9aa0', 'func_0x1804e2da0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1806974fc  score=16.0 tls=0 xor=0
+  s_symbols: ['s_win_core_datetime_l1_1_1_1806e7630']
+  win_apis: ['GetProcAddress', 'LoadLibraryExW', 'VirtualProtect']
+  dat_refs: ['DAT_180842ad0', 'DAT_180877000']
+  calls: ['func_0x1806974fc']
+
+func_0x180194640  score=15.5 tls=9 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f7c0']
+  calls: ['func_0x18007ba70', 'func_0x180194640', 'func_0x1801c2ba0', 'func_0x1801ccff0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803404a0  score=15.5 tls=9 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083fd98', '_DAT_1806b2c90', '_DAT_1806c7408', '_DAT_1806c7418', '_DAT_1806c7428', '_DAT_1806c743a', '_DAT_1806c744a']
+  calls: ['func_0x18007ba70', 'func_0x1801b1390', 'func_0x1801c2ba0', 'func_0x1801ccff0', 'func_0x1802d74e0', 'func_0x1803404a0', 'func_0x180370340', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18034ddc0  score=15.5 tls=6 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2c90', '_DAT_1806b63e0', '_DAT_1806c3ba0', '_DAT_1806c3bb0', '_DAT_1806c7679', '_DAT_1806c7689', '_DAT_1806c7699']
+  calls: ['func_0x18007ba70', 'func_0x1801b2720', 'func_0x180348cd0', 'func_0x18034ddc0', 'func_0x18036b7c0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180412630  score=15.5 tls=9 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180840048', '_DAT_1806b2d60', '_DAT_1806ccb87', '_DAT_1806ccb97', '_DAT_1806ccba7', '_DAT_1806ccbb7', '_DAT_1806ccbc7']
+  calls: ['func_0x18007ba70', 'func_0x18008f8e0', 'func_0x18014fe60', 'func_0x1801b4680', 'func_0x1801c21f0', 'func_0x1801ccd70', 'func_0x180412630', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801dbc50  score=15.0 tls=9 xor=6
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: []
+  calls: ['func_0x18007ba70', 'func_0x1801dbc50', 'func_0x1801dc140', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180240430  score=15.0 tls=9 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806be5d0', 'DAT_1806be5e0', 'DAT_18083fb50', '_DAT_1806b2c90', '_DAT_1806c1938', '_DAT_1806c1948', '_DAT_1806c1958', '_DAT_1806c1968']
+  calls: ['func_0x18007ba70', 'func_0x1801b4030', 'func_0x1801c2ba0', 'func_0x1801cd2e0', 'func_0x180240430', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803c1960  score=15.0 tls=1 xor=0
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae7b4', 'DAT_1806aeae4', 'DAT_1806b5ef4', 'DAT_1806c3930', 'DAT_1806c8868', 'DAT_18083caf0', 'DAT_18083cb00', 'DAT_18083cb0c', 'DAT_18083cb10', 'DAT_18083cb20', 'DAT_18083cb28', 'DAT_18083cb2c', 'DAT_18083ef17', 'DAT_1808400a0', 'DAT_1808402b8', 'DAT_1808402bc', 'DAT_1808402c8', 'DAT_1808402cc', 'DAT_180840560', 'DAT_180840568', 'DAT_180840580', 'DAT_180840588', 'DAT_1808405d4', 'DAT_1808405f0', 'DAT_1808405f8', 'DAT_1808405fc', 'DAT_18084060f', '_DAT_1806b2880', '_DAT_1806c8994', '_DAT_1806c89d0']
+  calls: ['func_0x1800d05c0', 'func_0x1800d36e0', 'func_0x180134bf0', 'func_0x1801b3250', 'func_0x1803c1960', 'func_0x180672ec0']
+
+func_0x1802452c0  score=14.0 tls=9 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806be640', 'DAT_18083fb50', '_DAT_1806b6630', '_DAT_1806c1a63']
+  calls: ['func_0x18007ba70', 'func_0x18007d9e0', 'func_0x1801c0df0', 'func_0x1801c2ba0', 'func_0x1801cd2e0', 'func_0x1802452c0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18037bc90  score=14.0 tls=9 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2d70', '_DAT_1806b5c20', '_DAT_1806b6500', '_DAT_1806cac2b', '_DAT_1806cac3b', '_DAT_1806cac4b']
+  calls: ['func_0x18007ba70', 'func_0x18012b940', 'func_0x18037bc90', 'func_0x1804c9aa0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180388cf0  score=14.0 tls=9 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806ae110', '_DAT_1806ae200', '_DAT_1806b6450', '_DAT_1806c8540']
+  calls: ['func_0x18007ba70', 'func_0x180388cf0', 'func_0x1804c9aa0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804d6b70  score=14.0 tls=12 xor=1
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b69a0', '_DAT_1806d5386']
+  calls: ['func_0x18007ba70', 'func_0x18007d9e0', 'func_0x180084770', 'func_0x1801c0df0', 'func_0x1804c9aa0', 'func_0x1804d6b70', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180671a80  score=14.0 tls=0 xor=0
+  s_symbols: ['s_____AI____LB________ODS___DWC____18083d3cc']
+  win_apis: []
+  dat_refs: ['DAT_18083d290', 'DAT_18083d2da', 'DAT_18083d38d', 'DAT_18083d43e', 'DAT_18083d456', 'DAT_18083d468', 'DAT_18083d477', 'DAT_18083d4a1']
+  calls: ['func_0x180671a80']
+
+func_0x18068c0d0  score=14.0 tls=0 xor=0
+  s_symbols: ['s_avx']
+  win_apis: []
+  dat_refs: ['DAT_1806e5784', 'DAT_1806e5788', 'DAT_1806e578c', 'DAT_1806e5790', 'DAT_1806e5794', 'DAT_1806e5798', 'DAT_1806e57a0', 'DAT_1806e57a4', 'DAT_1806e57ac', 'DAT_1806e57b4', 'DAT_1806e57bc', 'DAT_1806e57c4', 'DAT_1806e57cc', 'DAT_1806e57d4', 'DAT_1806e57dc', 'DAT_1806e57e4', 'DAT_1806e57ec', 'DAT_1806e5840', 'DAT_1806e5870', 'DAT_1806e8c10', 'DAT_1806e8e10', 'DAT_18083d260', 'DAT_180843124', '_DAT_1806e5800', '_DAT_1806e5810', '_DAT_1806e5830', '_DAT_1806e5850', '_DAT_1806e5860']
+  calls: ['func_0x18068c0d0', 'func_0x1806a4970']
+
+func_0x1801a0e40  score=13.5 tls=9 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b676c', 'DAT_18083f7c0', '_DAT_1806ba6d4']
+  calls: ['func_0x18007ba70', 'func_0x18007d3c0', 'func_0x18018c570', 'func_0x1801a0e40', 'func_0x1801c1780', 'func_0x1801cd2e0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960', 'func_0x1806ab010']
+
+func_0x18020ca00  score=13.5 tls=9 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_18083f940', '_DAT_1806bde9f', '_DAT_1806bdeb4', '_DAT_1806bdec2']
+  calls: ['func_0x18007ba70', 'func_0x18007cd50', 'func_0x18008fa60', 'func_0x1801c2ba0', 'func_0x1801cd2e0', 'func_0x18020ca00', 'func_0x1802188b0', 'func_0x1802188e0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180357af0  score=13.5 tls=6 xor=5
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2880', '_DAT_1806b5b00', '_DAT_1806b5b10', '_DAT_1806c7876', '_DAT_1806c7886']
+  calls: ['func_0x18007ba70', 'func_0x1801b3830', 'func_0x180348cd0', 'func_0x180357af0', 'func_0x18036bde0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804d8520  score=13.5 tls=9 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806d53f6', '_DAT_1806d5406', '_DAT_1806d5417']
+  calls: ['func_0x18007ba70', 'func_0x18007ce20', 'func_0x180086ce0', 'func_0x1800f3620', 'func_0x1802e48b0', 'func_0x1804c9aa0', 'func_0x1804d8520', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804e6e10  score=13.5 tls=9 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806d584b']
+  calls: ['func_0x18007ba70', 'func_0x18007cd50', 'func_0x1802188b0', 'func_0x1804c9aa0', 'func_0x1804e6e10', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801d4240  score=13.0 tls=9 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: []
+  calls: ['func_0x18007ba70', 'func_0x18007bba0', 'func_0x18011cb80', 'func_0x1801d4240', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801fbc20  score=13.0 tls=9 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083f940', '_DAT_1806b6630', '_DAT_1806bdb06', '_DAT_1806bdb10']
+  calls: ['func_0x18007ba70', 'func_0x1800d9840', 'func_0x1801c2ba0', 'func_0x1801ccff0', 'func_0x1801fbc20', 'func_0x180218670', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1800dfe80  score=12.5 tls=7 xor=4
+  s_symbols: ['s_32_bit_rle_rgbe_1806b2970', 's_FORMAT_32_bit_rl_1806b2980', 's_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_1806b2878', 'DAT_18083cf40']
+  calls: ['func_0x1800dfe80', 'func_0x1800e2360', 'func_0x1800ef180', 'func_0x1800ef200', 'func_0x1800ef5b0', 'func_0x1800ef830', 'func_0x180673080', 'func_0x18068bd40', 'func_0x180691c9c', 'func_0x1806aa960']
+
+func_0x1802d3fd0  score=12.5 tls=3 xor=7
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2d60', '_DAT_1806b6410', '_DAT_1806c2b32', '_DAT_1806c2b42', '_DAT_1806c2b52']
+  calls: ['func_0x18007ba70', 'func_0x1801b7c70', 'func_0x1801c2ba0', 'func_0x1802d3fd0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803af090  score=12.5 tls=0 xor=0
+  s_symbols: []
+  win_apis: ['GetFileVersionInfoA', 'GetFileVersionInfoSizeA']
+  dat_refs: ['DAT_18084097c', '_DAT_18083ec10', '_DAT_18083ec14', '_DAT_18083ec18', '_DAT_18083ec1c']
+  calls: ['func_0x1803af090', 'func_0x180672de0', 'func_0x1806ab010']
+
+func_0x18048e060  score=12.5 tls=6 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180840a58', 'DAT_180840fd0', '_DAT_1806b2fe8', '_DAT_1806b6f30', '_DAT_1806c9868', '_DAT_1806cf050', '_DAT_1806cf060', '_DAT_1806d4f86', '_DAT_1806d4f96']
+  calls: ['func_0x18007ba70', 'func_0x1800801d0', 'func_0x180084390', 'func_0x180085a50', 'func_0x180143b90', 'func_0x1801b30c0', 'func_0x18048e060', 'func_0x1804c8fc0', 'func_0x18061e890', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1804f24e0  score=12.5 tls=9 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b69a0', '_DAT_1806d5a5d', '_DAT_1806d5a6d']
+  calls: ['func_0x18007ba70', 'func_0x18008f8e0', 'func_0x1802e3910', 'func_0x1804c9aa0', 'func_0x1804f24e0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x18068dd00  score=12.5 tls=0 xor=0
+  s_symbols: ['s_avx']
+  win_apis: []
+  dat_refs: ['DAT_1806e60a0', 'DAT_1806e60c0', 'DAT_1806e60d0', 'DAT_1806e60e0', 'DAT_1806e60f0', 'DAT_1806e6100', 'DAT_1806e6110', 'DAT_1806e6120', 'DAT_1806e6150', 'DAT_1806e61a0', 'DAT_1806e61a8', 'DAT_1806e89d0', 'DAT_1806e89d8', 'DAT_1806e89e0', 'DAT_1806e89e8', 'DAT_1806e89f0', 'DAT_1806e8a00', 'DAT_1806e8a08', 'DAT_1806e8a10', 'DAT_1806e8a18', 'DAT_1806e9650', 'DAT_180843124', '_DAT_1806e6080', '_DAT_1806e60b0', '_DAT_1806e6140']
+  calls: ['func_0x18068dd00', 'func_0x1806a3070']
+
+func_0x180118c60  score=12.0 tls=9 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b5349', '_DAT_1806b5360']
+  calls: ['func_0x18007ba70', 'func_0x18007c170', 'func_0x18007d3c0', 'func_0x1801073b0', 'func_0x180118c60', 'func_0x18011d7d0', 'func_0x18011d820', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1801e20d0  score=12.0 tls=6 xor=3
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806ae200', '_DAT_1806b2d60', '_DAT_1806bd497', '_DAT_1806bd4a7', '_DAT_1806bd4b7', '_DAT_1806bd4c7']
+  calls: ['func_0x18007ba70', 'func_0x1801c2ba0', 'func_0x1801e20d0', 'func_0x180210ce0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1802fb570  score=12.0 tls=9 xor=1
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b4', 'DAT_18083fd98', '_DAT_1806c5fa4', '_DAT_1806c5fbc']
+  calls: ['func_0x18007ba70', 'func_0x18007d3c0', 'func_0x18007d9e0', 'func_0x1801c0df0', 'func_0x1801c2ba0', 'func_0x1801cd2e0', 'func_0x1802fb570', 'func_0x18036ec30', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180698150  score=12.0 tls=0 xor=0
+  s_symbols: ['s_leap_year']
+  win_apis: []
+  dat_refs: ['DAT_1806e7864', 'DAT_18083d9c0', 'DAT_18083d9c4', 'DAT_18083d9c8', 'DAT_18083d9d0', 'DAT_18083d9d4', 'DAT_18083d9d8', 'DAT_180842bb0', 'DAT_180842c04', 'DAT_180842c06', 'DAT_180842c08', 'DAT_180842c0a', 'DAT_180842c0c', 'DAT_180842c0e', 'DAT_180842c10', 'DAT_180842c12', 'DAT_180842c58', 'DAT_180842c5a', 'DAT_180842c5c', 'DAT_180842c5e', 'DAT_180842c60', 'DAT_180842c62', 'DAT_180842c64', 'DAT_180842c66']
+  calls: ['func_0x180698150']
+
+func_0x1802cd120  score=11.5 tls=6 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae650', 'DAT_1806aeae4', 'DAT_1806b2860', 'DAT_180840c88', 'DAT_180840c90', 'DAT_180840ca0', 'DAT_180840ca8']
+  calls: ['func_0x18007ba70', 'func_0x180094590', 'func_0x1800cd3b0', 'func_0x1800cfa00', 'func_0x1800d00e0', 'func_0x1800d2e40', 'func_0x18018ce30', 'func_0x1802ccb10', 'func_0x1802cd120', 'func_0x18045fca0', 'func_0x18045fcb0', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x180697310  score=11.5 tls=0 xor=0
+  s_symbols: []
+  win_apis: []
+  dat_refs: ['DAT_1806e76e8', 'DAT_1806e76ec', 'DAT_1806e76f8', 'DAT_1806e7700', 'DAT_1806e7708', 'DAT_1806e7710', 'DAT_1806e7718', 'DAT_1806e7720', 'DAT_1806e7728', 'DAT_1806e7730', 'DAT_1806e7738', 'DAT_1806e7740', 'DAT_1806e7748', 'DAT_180877000', 'DAT_180877010', 'DAT_180877028', 'DAT_180877050', 'DAT_180877068', 'DAT_180877070', 'DAT_180877088', 'DAT_180877090', 'DAT_180877098', 'DAT_1808770a0']
+  calls: ['func_0x180697310', 'func_0x1806974fc', 'func_0x1806976b0']
+
+func_0x18003a730  score=11.0 tls=4 xor=2
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_180768740', 'DAT_18083e708', 'DAT_18083e728', 'DAT_1808400a0', '_DAT_1806ae4d0', '_DAT_1806afeb4', '_DAT_1806afec4', '_DAT_1806afed4', '_DAT_1806afee4', '_DAT_1806afef4']
+  calls: ['func_0x180001060', 'func_0x18003a730', 'func_0x18003b540', 'func_0x18003c230', 'func_0x18007ba70', 'func_0x180082e50', 'func_0x180083d00', 'func_0x180083e30', 'func_0x180084860', 'func_0x180084c70', 'func_0x1800a5630', 'func_0x18038b040', 'func_0x180672de0', 'func_0x180672ec0', 'func_0x180673140', 'func_0x1806731d0', 'func_0x18067a120', 'func_0x1806aa960']
+
+func_0x1800913f0  score=11.0 tls=0 xor=0
+  s_symbols: []
+  win_apis: ['GetProcAddress', 'LoadLibraryExW']
+  dat_refs: ['DAT_1807614ee', 'DAT_18083e5a8']
+  calls: ['func_0x1800885f0', 'func_0x180091220', 'func_0x1800913f0', 'func_0x1800918c0', 'func_0x180672de0', 'func_0x1806aa960', 'func_0x1806ab010']
+
+func_0x180091e10  score=11.0 tls=0 xor=0
+  s_symbols: []
+  win_apis: ['GetProcAddress', 'LoadLibraryExW']
+  dat_refs: ['DAT_1807614ee', 'DAT_18083e5a8']
+  calls: ['func_0x1800885f0', 'func_0x180091220', 'func_0x1800918c0', 'func_0x180091e10', 'func_0x180672de0', 'func_0x1806aa960', 'func_0x1806ab010']
+
+func_0x1800d54d0  score=11.0 tls=3 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_18083e5c0', 'DAT_18083e5c8', 'DAT_18083e5d8', 'DAT_18083e5e0', 'DAT_18083e5e8', 'DAT_180840a58', 'DAT_180840a60', 'DAT_180840a68']
+  calls: ['func_0x180034bf0', 'func_0x18007ba70', 'func_0x18007bba0', 'func_0x18007bf80', 'func_0x18007f460', 'func_0x1800d54d0', 'func_0x1800f0fa0', 'func_0x1800f1540', 'func_0x1800f30e0', 'func_0x180119350', 'func_0x1801221f0', 'func_0x180127fe0', 'func_0x180129830', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960', 'func_0x1806ab010']
+
+func_0x1800d9b80  score=11.0 tls=3 xor=5
+  s_symbols: ['s_index', 's_per_channel']
+  win_apis: []
+  dat_refs: ['DAT_1806b26b0', 'DAT_1806b26b4', 'DAT_1806b2940', 'DAT_1806b3b10', 'DAT_1806b3b40', 'DAT_18083cf40']
+  calls: ['func_0x1800c2ea0', 'func_0x1800d9b80', 'func_0x1800dc4c0', 'func_0x1800dc760', 'func_0x1800dc830', 'func_0x1800dd450', 'func_0x1800dd5b0', 'func_0x1800dfab0', 'func_0x1800dfbf0', 'func_0x1800dfe80', 'func_0x1800e0a90', 'func_0x1800e0e40', 'func_0x1800e1240', 'func_0x1800e23c0', 'func_0x1800e3d70', 'func_0x1800e4b40', 'func_0x1800e58f0', 'func_0x1800e5950', 'func_0x1800e5980', 'func_0x1800e82c0']
+
+func_0x1800dd5b0  score=11.0 tls=4 xor=4
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806b2960', 'DAT_1806b3b70', 'DAT_1806b3bd0', 'DAT_1806b3c20', 'DAT_18083cf40', '_DAT_1806b2950']
+  calls: ['func_0x1800dd5b0', 'func_0x1800e2360', 'func_0x1800e5980', 'func_0x1800eaad0', 'func_0x1800eb4e0', 'func_0x1800ebcf0', 'func_0x1800ec2f0', 'func_0x1800ec450', 'func_0x1800ee3c0', 'func_0x1800ee8e0', 'func_0x1800eeaf0', 'func_0x180673080']
+
+func_0x18035e190  score=11.0 tls=6 xor=1
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['_DAT_1806b2880', '_DAT_1806b2c90', '_DAT_1806b6070', '_DAT_1806b68f0', '_DAT_1806c3d20', '_DAT_1806c7a14', '_DAT_1806c7a24', '_DAT_1806c7a34']
+  calls: ['func_0x18007ba70', 'func_0x1801b4680', 'func_0x180348cd0', 'func_0x18035e190', 'func_0x180369820', 'func_0x180672de0', 'func_0x180673140', 'func_0x1806aa960']
+
+func_0x1803be1d0  score=11.0 tls=1 xor=0
+  s_symbols: ['s_index']
+  win_apis: []
+  dat_refs: ['DAT_1806ae7b0', 'DAT_1806b5c70', 'DAT_1806be594', 'DAT_1806c886c', 'DAT_18083cb80', 'DAT_18083cba4', 'DAT_18083ef14', 'DAT_18083ef17', 'DAT_1808400a0', 'DAT_1808402bc', 'DAT_1808402c4', 'DAT_1808402c8', 'DAT_1808402cc', 'DAT_180840554', 'DAT_180840558', 'DAT_180840588', 'DAT_18084058c', 'DAT_1808405c8', 'DAT_1808405d0', 'DAT_1808405d4', 'DAT_1808405d8', '_DAT_18083cbb4']
+  calls: ['func_0x1800d2e40', 'func_0x180134bf0', 'func_0x1803be1d0', 'func_0x180672ec0']

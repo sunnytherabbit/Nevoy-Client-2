@@ -1,0 +1,22 @@
+# Build outputs
+build/
+out/
+*.o
+*.obj
+*.exe
+*.dll
+*.lib
+!minhook/MinHook.x64.lib
+*.pdb
+
+# IDE / tooling
+.vs/
+.vscode/
+.idea/
+CMakeSettings.json
+CppProperties.json
+
+# Temporary / cache
+*.tmp
+*.cache
+*.log
