@@ -46,7 +46,7 @@ Target DLL for parity: `Oderso/1.26.3X.dll`.
   - Indexed the entire refactored tree (`INDEX.md` / `INDEX.json`, 1197 files, 949 source files).
   - Verified the tree (`VERIFICATION.md`): 5 legacy TODOs (none in module sources), 0 stray `func_0x` calls, 0 broken braces in project source.
   - Verified/corrected module naming (`NAMING_REPORT.md`): 0 critical naming issues; fixed `Module_18021f300` non-printable module/setting names.
-- **Remaining work:** detailed in `REMAINING_WORK.md`. High level: 0 `// TODO` and 0 `// Binary function:` markers remain in module sources, the MinGW build reaches 100% and produces `build-mingw/lib1.26.3X.dll`. `Module_180156800` is still flagged as invalid vtable in `tools/misaligned_modules.txt` (likely false positive). Next priorities are runtime parity validation, MSVC-specific build verification, and optional cleanup of untracked `__pycache__`/`temp_bin`.
+- **Remaining work:** detailed in `REMAINING_WORK.md`. High level: 0 `// TODO` and 0 `// Binary function:` markers remain in module sources, the MinGW build reaches 100% and produces `build-mingw/lib1.26.3X.dll`. `Module_180156800` is still flagged as invalid vtable in `tools/misaligned_modules.txt` (likely false positive). Next priorities are runtime parity validation, MSVC-specific build verification, and build/decomp artifact cleanup. The tracked `tools/__pycache__/*.pyc` have been removed and ignored.
 
 ## Agent execution rules
 
