@@ -1,6 +1,6 @@
 # Verification Report
 
-Generated: Mon Aug 17 13:23:52 2026
+Generated: Tue Aug 18 09:06:26 2026 AEST
 
 ## Summary
 
@@ -14,6 +14,8 @@ Generated: Mon Aug 17 13:23:52 2026
 - `Module_1801380b0` constructor fixed to use valid header fields
 - `Module_180130570` extra int settings registered
 - `Make` module registered in `ModuleManager.cpp`
+- 0 `// Binary function:` comments remain in `Oderso/Module/Modules/*.cpp`
+- `tools/misaligned_modules.txt` is empty after regenerating `tools/module_vtables_full.txt`
 
 ## Notes
 
