@@ -48,6 +48,41 @@ Target DLL for parity: `Oderso/1.26.3X.dll`.
   - Verified/corrected module naming (`NAMING_REPORT.md`): 0 critical naming issues; fixed `Module_18021f300` non-printable module/setting names.
 - **Remaining work:** detailed in `REMAINING_WORK.md`. High level: 0 `// TODO` and 0 `// Binary function:` markers remain in module sources, the MinGW build reaches 100% and produces `build-mingw/lib1.26.3X.dll`. The `tools/misaligned_modules.txt` false positive was resolved by updating `extract_module_vtable.py` to use the correct decomp dump and regenerating the vtable index. Next priorities are runtime parity validation, MSVC-specific build verification, and build/decomp artifact cleanup. The tracked `tools/__pycache__/*.pyc` have been removed and ignored.
 
+## Build and verify
+
+To build the Oderso DLL from this repo on macOS with the MinGW cross toolchain:
+
+```bash
+cd Oderso/oderso_1.26.3X_refactored
+cmake -B build-mingw -S . -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/x86_64-w64-mingw32-g++ -DCMAKE_C_COMPILER=/opt/homebrew/bin/x86_64-w64-mingw32-gcc
+# or for Debug:
+# cmake -B build-mingw -S . -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/x86_64-w64-mingw32-g++ -DCMAKE_C_COMPILER=/opt/homebrew/bin/x86_64-w64-mingw32-gcc
+
+cmake --build build-mingw --target Oderso -j4
+```
+
+The build output is `build-mingw/lib1.26.3X.dll`. Expected non-fatal warnings:
+- `__declspec(align(8))` ignored (MinGW)
+- `corrupt .drectve at end of def file` (linker)
+- `offsetof` within non-standard-layout type on some module `static_assert`s
+
+If you want to start from a completely clean build:
+
+```bash
+cmake --build build-mingw --target Oderso --clean-first -j4
+```
+
+After building, the current verification checks are:
+
+```bash
+grep -R "// Binary function:" Oderso/Module/Modules/*.cpp
+grep -R "// TODO" Oderso/Module/Modules/*.cpp
+grep -R "func_0x[0-9a-fA-F]+\\(" --include="*.cpp" Oderso
+# (only prototypes in include/oderso/decls.h should match)
+```
+
+Detailed verification results are in `Oderso/oderso_1.26.3X_refactored/VERIFICATION.md`.
+
 ## Agent execution rules
 
 - Run at most **6 subagents in parallel** to avoid platform rate limits and give each agent enough context.

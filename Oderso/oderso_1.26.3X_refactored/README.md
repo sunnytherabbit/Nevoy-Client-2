@@ -35,19 +35,45 @@ The previous `Oderso/Raw/group_*.cpp` mechanical split and the `tools/refactor.p
 
 ## Building
 
-The cleaned SDK portion can be compiled standalone:
+### MinGW cross-compile (macOS / Linux)
+
+```bash
+cd Oderso/oderso_1.26.3X_refactored
+cmake -B build-mingw -S . -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=/opt/homebrew/bin/x86_64-w64-mingw32-g++ -DCMAKE_C_COMPILER=/opt/homebrew/bin/x86_64-w64-mingw32-gcc
+cmake --build build-mingw --target Oderso -j4
+```
+
+The output is `build-mingw/lib1.26.3X.dll`.
+
+Expected non-fatal warnings:
+- `__declspec(align(8))` ignored by MinGW
+- `corrupt .drectve at end of def file` from the linker
+- `offsetof` within non-standard-layout type on some module `static_assert`s
+
+For a completely clean rebuild:
+
+```bash
+cmake --build build-mingw --target Oderso --clean-first -j4
+```
+
+### MSVC (Windows)
+
+Configure with the Visual Studio generator and build the `Oderso` target. This is not tested in the current MinGW-only environment; it may expose ABI or layout differences.
+
+### Quick SDK test
+
+The cleaned SDK portion can also be compiled standalone:
 
 ```bash
 g++ -std=c++17 -c SDK/TextHolder.cpp -I. -o /tmp/TextHolder.o
 ```
 
-A full CMake build (for the hand-cleaned target `Oderso`) works on Windows with MSVC or with a MinGW/Clang cross setup. The raw mechanical files in `raw_decompiled_backup/` are **not** part of the default build.
-
 ## Next steps
 
-1. Specify which functions or modules you want fully hand-refactored; 19,539 functions is too large to do in one pass.
-2. Continue with `func_0x180001110` and the surrounding string / `TextHolder` helpers, or pick a module (Command, Module, Config, etc.) if you can identify address ranges.
-3. Work from `ghidra_decompiled_1.26.3X.c` (symlinked to `ghidra_decompiled_1.26.3X_new.c`) and move hand-cleaned files into `Oderso/Module/`, `Oderso/Command/`, `SDK/`, etc. as their purpose becomes clear.
+1. **Runtime parity validation** — load the built `build-mingw/lib1.26.3X.dll` into the game and compare behavior against the original `Oderso/1.26.3X.dll`.
+2. **MSVC build verification** — build the same tree with native Windows/MSVC to catch ABI or layout differences that MinGW may hide.
+3. **Legacy SDK stubs** — `SDK/CEntity.h` `isSneaking()` / `isSprinting()` return `false` with `// TODO`; `Horion/path/JoePathFinder.cpp` line 343 has a missing larger-parkour-jump path. These need the correct binary offsets or decomp logic.
+4. Continue targeted hand-refactoring from `Oderso/ghidra_decompiled_1.26.3X_new.c` as new modules or bug fixes are needed.
 
 ## Assumptions
 
