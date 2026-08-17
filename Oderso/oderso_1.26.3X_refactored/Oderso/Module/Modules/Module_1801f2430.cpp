@@ -7,10 +7,12 @@ Module_1801f2430::Module_1801f2430() : IModule(0, Category::CUSTOM, "Module_1801
 	registerIntSetting("Switch delay", &switchDelay, 100, 1, 1000);
 }
 
-std::string Module_1801f2430::getModuleName() { return "Module_1801f2430"; }
-std::string Module_1801f2430::getTooltip() { 
-	// Binary function: func_0x1801f4000
-	return "";
+std::string Module_1801f2430::getModuleName() {
+	return "NoBackground";
+}
+std::string Module_1801f2430::getTooltip() {
+	// Manifest tooltip
+	return "No background";
 }
 
 void Module_1801f2430::onPreRender(C_MinecraftUIRenderContext* renderCtx) {

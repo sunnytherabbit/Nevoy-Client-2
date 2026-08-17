@@ -6,7 +6,10 @@ Module_18018f510::Module_18018f510() : IModule(0, Category::VISUAL, "AlwaysSneak
 }
 
 std::string Module_18018f510::getModuleName() { return "AlwaysSneaks"; }
-std::string Module_18018f510::getTooltip() { return "Always sneaks"; }
+std::string Module_18018f510::getTooltip() {
+	// Manifest tooltip
+	return "Always sneaks";
+}
 
 void Module_18018f510::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 	auto client = g_Data.getClientInstance();

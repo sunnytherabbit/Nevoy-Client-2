@@ -15,10 +15,12 @@ Module_1801e7620::Module_1801e7620() : IModule(0, Category::CUSTOM, "Module_1801
 	registerBoolSetting("Lightning", &lightning, false);
 }
 
-std::string Module_1801e7620::getModuleName() { return "Module_1801e7620"; }
-std::string Module_1801e7620::getTooltip() { 
-	// Binary function: func_0x1801eb5b0
-	return "";
+std::string Module_1801e7620::getModuleName() {
+	return "PortalOverlay";
+}
+std::string Module_1801e7620::getTooltip() {
+	// Manifest tooltip
+	return "PortalOverlay";
 }
 
 void Module_1801e7620::onDisable() {

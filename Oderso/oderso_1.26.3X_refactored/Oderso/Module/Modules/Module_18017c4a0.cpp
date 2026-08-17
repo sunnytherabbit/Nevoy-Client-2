@@ -4,10 +4,12 @@ Module_18017c4a0::Module_18017c4a0() : IModule(0, Category::COMBAT, "Module_1801
 	registerBoolSetting("Stop on event", &stopOnEvent, false);
 }
 
-std::string Module_18017c4a0::getModuleName() { return "Module_18017c4a0"; }
-std::string Module_18017c4a0::getTooltip() { 
-	// Binary function: func_0x18017ff40
-	return "";
+std::string Module_18017c4a0::getModuleName() {
+	return "StopEvent";
+}
+std::string Module_18017c4a0::getTooltip() {
+	// Manifest tooltip
+	return "Stop on event";
 }
 
 void Module_18017c4a0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {

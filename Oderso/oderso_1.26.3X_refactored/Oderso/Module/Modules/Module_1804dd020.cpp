@@ -7,5 +7,6 @@ Module_1804dd020::Module_1804dd020() : IModule(0, Category::CUSTOM, "Ejects from
 std::string Module_1804dd020::getModuleName() { return "Eject"; }
 
 std::string Module_1804dd020::getTooltip() {
+	// Manifest tooltip
 	return "Ejects from the server";
 }

@@ -6,10 +6,12 @@ Module_1803138e0::Module_1803138e0() : IModule(0, Category::COMBAT, "Module_1803
 	registerBoolSetting("Full year", &fullYear, false);
 }
 
-std::string Module_1803138e0::getModuleName() { return "Module_1803138e0"; }
-std::string Module_1803138e0::getTooltip() { 
-	// Binary function: func_0x1803174d0
-	return "";
+std::string Module_1803138e0::getModuleName() {
+	return "ModTextType";
+}
+std::string Module_1803138e0::getTooltip() {
+	// Manifest tooltip
+	return "Mod text type";
 }
 
 void Module_1803138e0::onLoadConfig(void* conf) {

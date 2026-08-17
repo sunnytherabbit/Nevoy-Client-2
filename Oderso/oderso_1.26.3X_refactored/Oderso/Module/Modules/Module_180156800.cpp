@@ -44,4 +44,6 @@ Module_180156800::Module_180156800() : IModule(0, Category::CUSTOM, "Module_1801
 	registerBoolSetting("Hold key", &holdKey, false);
 }
 
-std::string Module_180156800::getModuleName() { return "Module_180156800"; }
+std::string Module_180156800::getModuleName() {
+	return "ColorSlots";
+}

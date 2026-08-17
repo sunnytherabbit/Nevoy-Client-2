@@ -6,10 +6,12 @@ Module_18019a5d0::Module_18019a5d0() : IModule(0, Category::CUSTOM, "Module_1801
 	registerBoolSetting("Show nametag", &showNametag, false);
 }
 
-std::string Module_18019a5d0::getModuleName() { return "Module_18019a5d0"; }
-std::string Module_18019a5d0::getTooltip() { 
-	// Binary function: func_0x18019c630
-	return "";
+std::string Module_18019a5d0::getModuleName() {
+	return "SimpleNames";
+}
+std::string Module_18019a5d0::getTooltip() {
+	// Manifest tooltip
+	return "Simple names";
 }
 
 void Module_18019a5d0::onLoadConfig(void* conf) {

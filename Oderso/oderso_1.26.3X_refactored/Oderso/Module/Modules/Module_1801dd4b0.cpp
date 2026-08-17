@@ -7,10 +7,12 @@ Module_1801dd4b0::Module_1801dd4b0() : IModule(0, Category::CUSTOM, "Module_1801
 	registerBoolSetting("No background", &noBackground, false);
 }
 
-std::string Module_1801dd4b0::getModuleName() { return "Module_1801dd4b0"; }
-std::string Module_1801dd4b0::getTooltip() { 
-	// Binary function: func_0x1801e1230
-	return "";
+std::string Module_1801dd4b0::getModuleName() {
+	return "NoBackground";
+}
+std::string Module_1801dd4b0::getTooltip() {
+	// Manifest tooltip
+	return "No background";
 }
 
 void Module_1801dd4b0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {

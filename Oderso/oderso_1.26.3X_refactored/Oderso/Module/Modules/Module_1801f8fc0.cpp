@@ -6,10 +6,12 @@ Module_1801f8fc0::Module_1801f8fc0() : IModule(0, Category::CUSTOM, "Module_1801
 	registerFloatSetting("Scale", &scale, 1.f, 0.1f, 5.f);
 }
 
-std::string Module_1801f8fc0::getModuleName() { return "Module_1801f8fc0"; }
-std::string Module_1801f8fc0::getTooltip() { 
-	// Binary function: func_0x1801fa950
-	return "";
+std::string Module_1801f8fc0::getModuleName() {
+	return "AlwaysShow";
+}
+std::string Module_1801f8fc0::getTooltip() {
+	// Manifest tooltip
+	return "Always show";
 }
 
 void Module_1801f8fc0::onDisable() {

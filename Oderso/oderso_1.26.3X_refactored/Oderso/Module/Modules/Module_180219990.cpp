@@ -4,10 +4,12 @@ Module_180219990::Module_180219990() : IModule(0, Category::CUSTOM, "Module_1802
 	registerFloatSetting("Size", &size, 1.f, 0.5f, 2.f);
 }
 
-std::string Module_180219990::getModuleName() { return "Module_180219990"; }
-std::string Module_180219990::getTooltip() { 
-	// Binary function: func_0x18021aee0
-	return "";
+std::string Module_180219990::getModuleName() {
+	return "NameLevel";
+}
+std::string Module_180219990::getTooltip() {
+	// Manifest tooltip
+	return "Name & Level";
 }
 
 void Module_180219990::onLoadConfig(void* conf) {

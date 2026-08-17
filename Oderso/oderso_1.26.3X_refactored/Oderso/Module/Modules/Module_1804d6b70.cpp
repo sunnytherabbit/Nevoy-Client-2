@@ -7,5 +7,6 @@ Module_1804d6b70::Module_1804d6b70() : IModule(0, Category::CUSTOM, "Prints your
 std::string Module_1804d6b70::getModuleName() { return "Coords"; }
 
 std::string Module_1804d6b70::getTooltip() {
+	// Manifest tooltip
 	return "Prints your coordinates";
 }

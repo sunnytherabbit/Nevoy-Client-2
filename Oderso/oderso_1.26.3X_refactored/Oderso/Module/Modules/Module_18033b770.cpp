@@ -5,8 +5,8 @@ Module_18033b770::Module_18033b770() : IModule(0, Category::CUSTOM, "Module_1803
 }
 
 std::string Module_18033b770::getModuleName() { return "Module_18033b770"; }
-std::string Module_18033b770::getTooltip() { 
-	// Binary function: func_0x18033c270
+std::string Module_18033b770::getTooltip() {
+	// No manifest description
 	return "";
 }
 

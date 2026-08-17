@@ -10,10 +10,12 @@ Module_18024b340::Module_18024b340() : IModule(0, Category::CUSTOM, "Module_1802
 	registerBoolSetting("Hit helpPgg", &hitHelppgg, false);
 }
 
-std::string Module_18024b340::getModuleName() { return "Module_18024b340"; }
-std::string Module_18024b340::getTooltip() { 
-	// Binary function: func_0x18024f600
-	return "";
+std::string Module_18024b340::getModuleName() {
+	return "Projectiles";
+}
+std::string Module_18024b340::getTooltip() {
+	// Manifest tooltip
+	return "Projectiles";
 }
 
 void Module_18024b340::slot_15() {

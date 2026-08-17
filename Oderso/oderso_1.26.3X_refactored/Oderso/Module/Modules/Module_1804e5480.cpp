@@ -7,5 +7,6 @@ Module_1804e5480::Module_1804e5480() : IModule(0, Category::CUSTOM, "Gives you b
 std::string Module_1804e5480::getModuleName() { return "PlayerInfo"; }
 
 std::string Module_1804e5480::getTooltip() {
+	// Manifest tooltip
 	return "Gives you basic information of each player on the server";
 }

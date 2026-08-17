@@ -7,5 +7,6 @@ Module_1804e6e10::Module_1804e6e10() : IModule(0, Category::CUSTOM, "Sends a cha
 std::string Module_1804e6e10::getModuleName() { return "Say"; }
 
 std::string Module_1804e6e10::getTooltip() {
+	// Manifest tooltip
 	return "Sends a chat message";
 }

@@ -13,8 +13,7 @@ std::string Module_1802ac240::getModuleName() {
 }
 
 std::string Module_1802ac240::getRawModuleName() {
-	// Binary function: func_0x1802b7cf0 -> "HiveUtils"
-	return "HiveUtils";
+	return getModuleName();
 }
 
 std::string Module_1802ac240::getTooltip() {

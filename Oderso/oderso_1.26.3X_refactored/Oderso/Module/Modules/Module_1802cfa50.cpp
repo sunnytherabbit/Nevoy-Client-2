@@ -6,10 +6,12 @@ Module_1802cfa50::Module_1802cfa50() : IModule(0, Category::CUSTOM, "Module_1802
 	registerBoolSetting("Show light level", &showLightLevel, false);
 }
 
-std::string Module_1802cfa50::getModuleName() { return "Module_1802cfa50"; }
-std::string Module_1802cfa50::getTooltip() { 
-	// Binary function: func_0x1802d2850
-	return "";
+std::string Module_1802cfa50::getModuleName() {
+	return "SpawnColor";
+}
+std::string Module_1802cfa50::getTooltip() {
+	// Manifest tooltip
+	return "Spawn color";
 }
 
 void Module_1802cfa50::onPreRender(C_MinecraftUIRenderContext* renderCtx) {

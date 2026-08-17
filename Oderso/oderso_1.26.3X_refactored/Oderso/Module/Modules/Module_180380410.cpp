@@ -7,5 +7,6 @@ Module_180380410::Module_180380410() : IModule(0, Category::CUSTOM, "Set the pre
 std::string Module_180380410::getModuleName() { return "SetPrefix"; }
 
 std::string Module_180380410::getTooltip() {
+	// Constructor tooltip fallback
 	return "Set the prefix for client commands";
 }

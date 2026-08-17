@@ -12,10 +12,12 @@ Module_18032ce60::Module_18032ce60() : IModule(0, Category::COMBAT, "Module_1803
 	registerBoolSetting("Decimal", &decimal, false);
 }
 
-std::string Module_18032ce60::getModuleName() { return "Module_18032ce60"; }
-std::string Module_18032ce60::getTooltip() { 
-	// Binary function: func_0x180330240
-	return "";
+std::string Module_18032ce60::getModuleName() {
+	return "ModTextType";
+}
+std::string Module_18032ce60::getTooltip() {
+	// Manifest tooltip
+	return "Mod text type";
 }
 
 void Module_18032ce60::onLoadConfig(void* conf) {

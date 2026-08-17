@@ -50,8 +50,8 @@ std::string Module_1801380b0::getModuleName() {
 }
 
 std::string Module_1801380b0::getTooltip() {
-	// Binary function: func_0x180142430 -> "mod.schematica.name"
-	return "mod.schematica.name";
+	// Manifest tooltip
+	return "Reset on load";
 }
 
 void Module_1801380b0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {

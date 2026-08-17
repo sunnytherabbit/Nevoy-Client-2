@@ -7,5 +7,6 @@ Module_180380fc0::Module_180380fc0() : IModule(0, Category::CUSTOM, "Set, list, 
 std::string Module_180380fc0::getModuleName() { return "TextHotkey"; }
 
 std::string Module_180380fc0::getTooltip() {
-	return "Set, list, remove or clear text hotkeys for TextHotkey";
+	// Manifest tooltip
+	return "<set|remove|list|clear> [key] [message]";
 }

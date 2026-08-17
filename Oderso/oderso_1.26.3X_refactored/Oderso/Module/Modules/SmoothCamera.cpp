@@ -13,8 +13,8 @@ SmoothCamera::SmoothCamera() : IModule(0, Category::VISUAL, "Makes the camera sm
 }
 
 std::string SmoothCamera::getModuleName() { return "Smooth Camera"; }
-std::string SmoothCamera::getTooltip() { 
-	// Binary function: func_0x180121e40
+std::string SmoothCamera::getTooltip() {
+	// Constructor tooltip fallback
 	return "Makes the camera smooth, or not.";
 }
 

@@ -6,10 +6,12 @@ Module_180149a30::Module_180149a30() : IModule(0, Category::CUSTOM, "Module_1801
 	registerBoolSetting("No numbe", &noNumbe, false);
 }
 
-std::string Module_180149a30::getModuleName() { return "Module_180149a30"; }
-std::string Module_180149a30::getTooltip() { 
-	// Binary function: func_0x18014b660
-	return "";
+std::string Module_180149a30::getModuleName() {
+	return "NoBackground";
+}
+std::string Module_180149a30::getTooltip() {
+	// Manifest tooltip
+	return "No background";
 }
 
 void Module_180149a30::onDisable() {

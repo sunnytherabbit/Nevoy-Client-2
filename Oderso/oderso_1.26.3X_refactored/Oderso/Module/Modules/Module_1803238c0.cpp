@@ -14,10 +14,12 @@ Module_1803238c0::Module_1803238c0() : IModule(0, Category::CUSTOM, "Module_1803
 	registerEnumSetting("Button layout", &buttonLayout, 0);
 }
 
-std::string Module_1803238c0::getModuleName() { return "Module_1803238c0"; }
-std::string Module_1803238c0::getTooltip() { 
-	// Binary function: func_0x180329120
-	return "";
+std::string Module_1803238c0::getModuleName() {
+	return "ButtonLayout";
+}
+std::string Module_1803238c0::getTooltip() {
+	// Manifest tooltip
+	return "Button layout";
 }
 
 void Module_1803238c0::onEnable() {

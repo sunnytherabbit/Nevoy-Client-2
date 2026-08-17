@@ -11,9 +11,8 @@ std::string Module_180241f60::getModuleName() {
 }
 
 std::string Module_180241f60::getTooltip() {
-	// Binary function: func_0x180242300 would return a TLS key, but module
-	// manifest has no tooltip/description, so return the manifest value.
-	return "";
+	// Constructor tooltip fallback
+	return "Opens the inventory client-side";
 }
 
 void Module_180241f60::onEnable() {

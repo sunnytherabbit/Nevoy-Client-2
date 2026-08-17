@@ -5,8 +5,8 @@ Module_18020d4c0::Module_18020d4c0() : IModule(0, Category::MOVEMENT, "Module_18
 }
 
 std::string Module_18020d4c0::getModuleName() { return "Module_18020d4c0"; }
-std::string Module_18020d4c0::getTooltip() { 
-	// Binary function: func_0x18020d850
+std::string Module_18020d4c0::getTooltip() {
+	// No manifest description
 	return "";
 }
 

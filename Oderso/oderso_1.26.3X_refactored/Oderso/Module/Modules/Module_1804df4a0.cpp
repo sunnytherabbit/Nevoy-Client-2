@@ -7,5 +7,6 @@ Module_1804df4a0::Module_1804df4a0() : IModule(0, Category::CUSTOM, "Show Hive g
 std::string Module_1804df4a0::getModuleName() { return "HiveStats"; }
 
 std::string Module_1804df4a0::getTooltip() {
+	// Constructor tooltip fallback
 	return "Show Hive game stats";
 }

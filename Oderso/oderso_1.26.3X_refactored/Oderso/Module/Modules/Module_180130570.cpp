@@ -10,7 +10,10 @@ Module_180130570::Module_180130570() : IModule(0, Category::WORLD, "Render dista
 }
 
 std::string Module_180130570::getModuleName() { return "Render distance"; }
-std::string Module_180130570::getTooltip() { return "Render distance"; }
+std::string Module_180130570::getTooltip() {
+	// Manifest tooltip
+	return "Change amount";
+}
 
 void Module_180130570::updateRenderDistanceSetting(const std::string& name, void* entity, bool useEntityMinMax) {
 	if (entity == nullptr) return;

@@ -4,10 +4,12 @@ Module_1802ce320::Module_1802ce320() : IModule(0, Category::COMBAT, "Module_1802
 	// No settings extracted yet
 }
 
-std::string Module_1802ce320::getModuleName() { return "Module_1802ce320"; }
-std::string Module_1802ce320::getTooltip() { 
-	// Binary function: func_0x1802cec70
-	return "";
+std::string Module_1802ce320::getModuleName() {
+	return "ModTextType";
+}
+std::string Module_1802ce320::getTooltip() {
+	// Manifest tooltip
+	return "Mod text type";
 }
 
 void Module_1802ce320::onLoadConfig(void* conf) {

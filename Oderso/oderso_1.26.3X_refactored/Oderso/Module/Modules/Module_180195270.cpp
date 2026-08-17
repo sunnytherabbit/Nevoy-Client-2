@@ -15,8 +15,8 @@ Module_180195270::Module_180195270() : IModule(0, Category::CUSTOM, "Module_1801
 }
 
 std::string Module_180195270::getModuleName() { return "Module_180195270"; }
-std::string Module_180195270::getTooltip() { 
-	// Binary function: func_0x180199f50 (TLS-encrypted string); manifest has no description.
+std::string Module_180195270::getTooltip() {
+	// No manifest description
 	return "";
 }
 

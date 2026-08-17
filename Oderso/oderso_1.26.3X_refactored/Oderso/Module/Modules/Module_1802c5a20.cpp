@@ -17,10 +17,12 @@ Module_1802c5a20::Module_1802c5a20() : IModule(0, Category::CUSTOM, "Module_1802
 	registerBoolSetting("Left CPS", &leftCps, false);
 }
 
-std::string Module_1802c5a20::getModuleName() { return "Module_1802c5a20"; }
-std::string Module_1802c5a20::getTooltip() { 
-	// Binary function: func_0x1802cc940
-	return "";
+std::string Module_1802c5a20::getModuleName() {
+	return "RainbowText";
+}
+std::string Module_1802c5a20::getTooltip() {
+	// Manifest tooltip
+	return "Rainbow text";
 }
 
 void Module_1802c5a20::onEnable() {

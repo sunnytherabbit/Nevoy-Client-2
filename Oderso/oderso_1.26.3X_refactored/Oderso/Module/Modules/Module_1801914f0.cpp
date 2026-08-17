@@ -6,7 +6,10 @@ Module_1801914f0::Module_1801914f0() : IModule(0, Category::VISUAL, "AlwaysSprin
 }
 
 std::string Module_1801914f0::getModuleName() { return "AlwaysSprint"; }
-std::string Module_1801914f0::getTooltip() { return "Always sprint"; }
+std::string Module_1801914f0::getTooltip() {
+	// Manifest tooltip
+	return "Always sprint";
+}
 
 void Module_1801914f0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 	auto client = g_Data.getClientInstance();

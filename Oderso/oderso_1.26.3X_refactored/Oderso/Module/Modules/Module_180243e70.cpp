@@ -4,10 +4,12 @@ Module_180243e70::Module_180243e70() : IModule(0, Category::CUSTOM, "Module_1802
 	registerBoolSetting("Hold", &hold, false);
 }
 
-std::string Module_180243e70::getModuleName() { return "Module_180243e70"; }
-std::string Module_180243e70::getTooltip() { 
-	// Binary function: func_0x180245010
-	return "";
+std::string Module_180243e70::getModuleName() {
+	return "Perspective";
+}
+std::string Module_180243e70::getTooltip() {
+	// Manifest tooltip
+	return "Perspective";
 }
 
 void Module_180243e70::onEnable() {

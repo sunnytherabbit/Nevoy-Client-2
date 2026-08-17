@@ -7,5 +7,6 @@ Module_180376860::Module_180376860() : IModule(0, Category::CUSTOM, "Sets the hi
 std::string Module_180376860::getModuleName() { return "CustomHitsound"; }
 
 std::string Module_180376860::getTooltip() {
-	return "Sets the hit sound audio file path for CustomHitsound";
+	// Manifest tooltip
+	return "Sets the hit sound audio file path for CustomHu";
 }

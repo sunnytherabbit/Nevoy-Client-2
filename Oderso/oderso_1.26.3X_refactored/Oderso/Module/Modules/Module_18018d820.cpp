@@ -4,10 +4,12 @@ Module_18018d820::Module_18018d820() : IModule(0, Category::CUSTOM, "Module_1801
 	registerIntSetting("sE", &sE, 16, 0, 100);
 }
 
-std::string Module_18018d820::getModuleName() { return "Module_18018d820"; }
-std::string Module_18018d820::getTooltip() { 
-	// Binary function: func_0x18018f210
-	return "";
+std::string Module_18018d820::getModuleName() {
+	return "TargetTime";
+}
+std::string Module_18018d820::getTooltip() {
+	// Manifest tooltip
+	return "Target time";
 }
 
 void Module_18018d820::onPreRender(C_MinecraftUIRenderContext* renderCtx) {

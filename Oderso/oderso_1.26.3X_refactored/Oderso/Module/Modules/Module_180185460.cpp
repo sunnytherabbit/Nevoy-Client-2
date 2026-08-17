@@ -4,10 +4,12 @@ Module_180185460::Module_180185460() : IModule(0, Category::CUSTOM, "Module_1801
 	registerFloatSetting("Swing speed", &swingSpeed, 0.f, 0.01f, 1.f);
 }
 
-std::string Module_180185460::getModuleName() { return "Module_180185460"; }
-std::string Module_180185460::getTooltip() { 
-	// Binary function: func_0x180188420
-	return "";
+std::string Module_180185460::getModuleName() {
+	return "SwingSpeed";
+}
+std::string Module_180185460::getTooltip() {
+	// Manifest tooltip
+	return "Swing speed";
 }
 
 void Module_180185460::onPreRender(C_MinecraftUIRenderContext* renderCtx) {

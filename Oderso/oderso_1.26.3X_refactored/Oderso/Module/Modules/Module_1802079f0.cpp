@@ -5,10 +5,12 @@ Module_1802079f0::Module_1802079f0() : IModule(0, Category::CUSTOM, "Module_1802
 	registerBoolSetting("No background", &noBackground, false);
 }
 
-std::string Module_1802079f0::getModuleName() { return "Module_1802079f0"; }
-std::string Module_1802079f0::getTooltip() { 
-	// Binary function: func_0x180208e10
-	return "";
+std::string Module_1802079f0::getModuleName() {
+	return "NoBackground";
+}
+std::string Module_1802079f0::getTooltip() {
+	// Manifest tooltip
+	return "No background";
 }
 
 void Module_1802079f0::onDisable() {

@@ -7,5 +7,6 @@ Module_1804cf410::Module_1804cf410() : IModule(0, Category::CUSTOM, "Manage clie
 std::string Module_1804cf410::getModuleName() { return "ConfigManager"; }
 
 std::string Module_1804cf410::getTooltip() {
-	return "Manage client configurations";
+	// Manifest tooltip
+	return "<load|new|save|delete|migrate|list|rename> [name]";
 }

@@ -4,10 +4,12 @@ Module_1802e5290::Module_1802e5290() : IModule(0, Category::CUSTOM, "Module_1802
 	registerFloatSetting("Scale", &scale, 2.f, 0.1f, 5.f);
 }
 
-std::string Module_1802e5290::getModuleName() { return "Module_1802e5290"; }
-std::string Module_1802e5290::getTooltip() { 
-	// Binary function: func_0x1802e9980
-	return "";
+std::string Module_1802e5290::getModuleName() {
+	return "PauseBaVG";
+}
+std::string Module_1802e5290::getTooltip() {
+	// Manifest tooltip
+	return "Pause/BaV~g";
 }
 
 void Module_1802e5290::onAttack(int attackButton, bool isDown, bool* cancel) {

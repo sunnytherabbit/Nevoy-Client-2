@@ -8,7 +8,10 @@ CrouchSpam::CrouchSpam() : IModule(0, Category::MOVEMENT, "Crouch Spam.") {
 }
 
 std::string CrouchSpam::getModuleName() { return "CrouchSpam"; }
-std::string CrouchSpam::getTooltip() { return "Spams crouch."; }
+std::string CrouchSpam::getTooltip() {
+	// Constructor tooltip fallback
+	return "Crouch Spam.";
+}
 
 void CrouchSpam::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 	// Binary function: func_0x180195140

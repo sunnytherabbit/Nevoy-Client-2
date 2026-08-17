@@ -8,10 +8,12 @@ Module_1801fc680::Module_1801fc680() : IModule(0, Category::CUSTOM, "Module_1801
 	registerBoolSetting("Show item", &showItem, true);
 }
 
-std::string Module_1801fc680::getModuleName() { return "Module_1801fc680"; }
-std::string Module_1801fc680::getTooltip() { 
-	// Binary function: func_0x1801ffda0
-	return "";
+std::string Module_1801fc680::getModuleName() {
+	return "RainbowText";
+}
+std::string Module_1801fc680::getTooltip() {
+	// Manifest tooltip
+	return "Rainbow text";
 }
 
 void Module_1801fc680::onLoadConfig(void* conf) {

@@ -24,9 +24,11 @@ Module_180223cc0::Module_180223cc0() : IModule(0, Category::CUSTOM, "Module_1802
 	registerBoolSetting("Hardware", &hardware, false);
 }
 
-std::string Module_180223cc0::getModuleName() { return "Module_180223cc0"; }
-std::string Module_180223cc0::getTooltip() { 
-	// Binary function: func_0x18022b570 (TLS-encrypted string); use manifest description.
+std::string Module_180223cc0::getModuleName() {
+	return "RainbowText";
+}
+std::string Module_180223cc0::getTooltip() {
+	// Manifest tooltip
 	return "Rainbow text";
 }
 

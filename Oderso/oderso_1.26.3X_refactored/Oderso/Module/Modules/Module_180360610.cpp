@@ -4,10 +4,12 @@ Module_180360610::Module_180360610() : IModule(0, Category::CUSTOM, "Module_1803
 	registerIntSetting("Block radius", &blockRadius, 16, 1, 20);
 }
 
-std::string Module_180360610::getModuleName() { return "Module_180360610"; }
-std::string Module_180360610::getTooltip() { 
-	// Binary function: func_0x180362160
-	return "";
+std::string Module_180360610::getModuleName() {
+	return "BlockRadius";
+}
+std::string Module_180360610::getTooltip() {
+	// Manifest tooltip
+	return "Block radius";
 }
 
 void Module_180360610::onPreRender(C_MinecraftUIRenderContext* renderCtx) {

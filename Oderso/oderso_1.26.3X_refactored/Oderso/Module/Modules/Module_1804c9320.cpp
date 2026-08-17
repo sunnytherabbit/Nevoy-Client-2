@@ -7,5 +7,6 @@ Module_1804c9320::Module_1804c9320() : IModule(0, Category::CUSTOM, "Bind a key 
 std::string Module_1804c9320::getModuleName() { return "Bind"; }
 
 std::string Module_1804c9320::getTooltip() {
+	// Manifest tooltip
 	return "Bind a key to a module";
 }

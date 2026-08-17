@@ -7,5 +7,6 @@ Module_180388cf0::Module_180388cf0() : IModule(0, Category::CUSTOM, "Unbinds a k
 std::string Module_180388cf0::getModuleName() { return "Unbind"; }
 
 std::string Module_180388cf0::getTooltip() {
+	// Manifest tooltip
 	return "Unbinds a key from a module";
 }

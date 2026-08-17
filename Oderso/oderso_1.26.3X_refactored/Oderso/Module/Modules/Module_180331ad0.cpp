@@ -7,10 +7,12 @@ Module_180331ad0::Module_180331ad0() : IModule(0, Category::CUSTOM, "Module_1803
 	registerBoolSetting("Hit help", &hitHelp, false);
 }
 
-std::string Module_180331ad0::getModuleName() { return "Module_180331ad0"; }
-std::string Module_180331ad0::getTooltip() { 
-	// Binary function: func_0x180337090
-	return "";
+std::string Module_180331ad0::getModuleName() {
+	return "CrosshairPng";
+}
+std::string Module_180331ad0::getTooltip() {
+	// Manifest tooltip
+	return "crosshair.png";
 }
 
 void Module_180331ad0::onEnable() {
