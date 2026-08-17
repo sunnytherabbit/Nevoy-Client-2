@@ -13,29 +13,15 @@ std::string Module_18017c4a0::getTooltip() {
 }
 
 void Module_18017c4a0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180180210
-	if (!this->flag_0x148 || !this->flag_0x154)
-		return;
-
+	// Kept as direct binary call: uses the unmapped render dispatcher / std::function-like vtable cleanup (func_0x180460100).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
-
-	struct BinaryFunction {
-		void* vtable;
-		void* module;
-	} func = {
-		reinterpret_cast<void*>(mod->ptrBase + 0x6baca0),
-		this
-	};
-
-	using RenderDispatcher = void(*)(void*, void*);
-	auto dispatcher = reinterpret_cast<RenderDispatcher>(mod->ptrBase + 0x460100);
-	dispatcher(reinterpret_cast<void*>(mod->ptrBase + 0x840a48), &func);
+	using PreRenderFunc = void(*)(void*);
+	reinterpret_cast<PreRenderFunc>(mod->ptrBase + 0x180210)(this);
 }
 
 void Module_18017c4a0::onAttack(int attackButton, bool isDown, bool* cancel) {
-	// Binary function: func_0x1801800d0
-	// The isDown parameter is actually a button mask; check the current attack state against it.
+	// Ported from func_0x1801800d0: toggles the timing state when the attack/other key is pressed.
 	if ((g_Data.getAttackButtonMask() & (isDown ? 1 : 0)) != 1)
 		return;
 
@@ -60,11 +46,10 @@ void Module_18017c4a0::onAttack(int attackButton, bool isDown, bool* cancel) {
 }
 
 void Module_18017c4a0::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180180160
+	// Ported from func_0x180180160; DAT_180840a68 clear side-effect omitted when no client.
 	if (g_Data.getClientInstance() != nullptr)
 		return;
 
-	// Unmapped global side-effect: DAT_180840a68 = 0;
 	if (this->flag_0x154) {
 		this->flag_0x154 = false;
 		this->accumulated_0x160 += g_Data.getTimeMs() - this->time_0x158;
@@ -82,7 +67,7 @@ void Module_18017c4a0::onSaveConfig(void* conf) {
 }
 
 void Module_18017c4a0::slot_30(int arg, char mask, bool* cancel) {
-	// Binary function: func_0x1801802b0
+	// Ported from func_0x1801802b0: maps the slot argument to attack/other key and toggles timing state.
 	if (cancel == nullptr)
 		return;
 

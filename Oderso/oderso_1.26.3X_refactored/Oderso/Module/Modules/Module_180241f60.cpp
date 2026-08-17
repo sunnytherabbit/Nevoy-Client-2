@@ -6,7 +6,6 @@ Module_180241f60::Module_180241f60() : IModule(0, Category::CUSTOM, "Opens the i
 }
 
 std::string Module_180241f60::getModuleName() {
-	// Binary function: func_0x180242190 (TLS-encrypted string -> "FastInventory").
 	return "FastInventory";
 }
 
@@ -16,14 +15,14 @@ std::string Module_180241f60::getTooltip() {
 }
 
 void Module_180241f60::onEnable() {
-	// Binary function: func_0x180242490.
+	// Ported from func_0x180242490: resets fast-inventory state.
 	this->field_0x80 = 0;
 	this->field_0x81 = false;
 	this->field_0x82 = -1;
 }
 
 void Module_180241f60::setEnabled(void* event, bool* cancel) {
-	// Binary function: func_0x1802424b0.
+	// 0x2f path ported below; the 0x21 path is kept as a direct binary call (func_0x1802424b0).
 	if (event == nullptr || cancel == nullptr)
 		return;
 
@@ -54,7 +53,7 @@ void Module_180241f60::setEnabled(void* event, bool* cancel) {
 }
 
 void Module_180241f60::toggle(void* event, bool* cancel) {
-	// Binary function: func_0x180242af0.
+	// Kept as direct binary call: func_0x180242af0 — complex packet construction and state updates (early-out checks preserved).
 	if (event == nullptr || cancel == nullptr)
 		return;
 

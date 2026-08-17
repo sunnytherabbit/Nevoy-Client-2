@@ -11,7 +11,7 @@ std::string Module_18040d7d0::getTooltip() {
 }
 
 void Module_18040d7d0::onLevelRender() {
-	// Binary function: func_0x180410570
+	// Kept as direct binary call: complex level-render loop with per-entity text processing and unmapped vtable calls.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using LevelRenderFunc = void(*)(void*);

@@ -25,4 +25,6 @@ public:
 	char _binaryPadding[0x10];
 };
 
+static_assert(sizeof(SkinStealer) == 0x98, "SkinStealer must match the binary object size");
+
 #endif

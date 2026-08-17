@@ -33,7 +33,7 @@ std::string Module_180223cc0::getTooltip() {
 }
 
 bool Module_180223cc0::isEnabled() {
-	// Binary function: func_0x180088ba0 (returns 0)
+	// Ported from func_0x180088ba0: always reports disabled.
 	return false;
 }
 

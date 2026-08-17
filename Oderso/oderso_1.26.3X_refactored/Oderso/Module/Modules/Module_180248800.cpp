@@ -12,7 +12,7 @@ std::string Module_180248800::getTooltip() {
 }
 
 void Module_180248800::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x18024a500
+	// Kept as direct binary call: health HUD rendering with TLS strings and unmapped draw helpers (func_0x18024a500).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);

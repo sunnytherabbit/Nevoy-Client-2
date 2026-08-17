@@ -11,7 +11,8 @@ std::string Module_180347d80::getTooltip() {
 }
 
 void Module_180347d80::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1803482b0
+	// Kept as direct binary call: onPreRender touches encrypted TLS strings,
+	// a ClientInstance vtable call, and an unmapped notification helper.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PreRenderFunc = void(*)(void*);
@@ -19,7 +20,7 @@ void Module_180347d80::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_180347d80::onEnable() {
-	// Binary function: func_0x1803482a0
-	*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x80) = 0;
+	// Ported from func_0x1803482a0: clear the one-shot state flag.
+	state = 0;
 }
 

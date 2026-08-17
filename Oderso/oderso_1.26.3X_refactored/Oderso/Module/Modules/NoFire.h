@@ -22,4 +22,6 @@ public:
 	float height = 1.5f;
 };
 
+static_assert(sizeof(NoFire) == 0x88, "NoFire must match the binary object size");
+
 #endif

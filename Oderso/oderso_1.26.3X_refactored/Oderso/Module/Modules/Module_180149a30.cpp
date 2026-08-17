@@ -15,7 +15,8 @@ std::string Module_180149a30::getTooltip() {
 }
 
 void Module_180149a30::onDisable() {
-	// Binary function: func_0x18014b7f0
+	// Kept as direct binary call: func_0x18014b7f0 performs UI resource cleanup and
+	// invokes unmapped helpers (func_0x180109090/func_0x1801092f0) tied to this+0xc8.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using DisableFunc = void(*)(void*);
@@ -23,7 +24,8 @@ void Module_180149a30::onDisable() {
 }
 
 void Module_180149a30::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x18014b970
+	// Kept as direct binary call: func_0x18014b970 decrypts TLS strings, creates UI resources,
+	// and manages several std::string/list objects with unmapped helper calls.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);

@@ -21,10 +21,14 @@ public:
 	float smoothne6B = 0.f;
 	float radius = 0.f;
 	bool animation = false;
-	SettingEnum buttonLayout;
+	SettingEnum buttonLayout;  // 0x98
 
 	// padding to match binary layout up to 0x248
-	char _binaryPadding[0x1c8];
+	// (actual SettingEnum size is compiler-dependent, so this is sized to bring
+	// the total class size to 0x248.)
+	char _binaryPadding[0x180];
 };
+
+static_assert(sizeof(Module_1803238c0) == 0x248, "Module_1803238c0 must match the binary object size");
 
 #endif

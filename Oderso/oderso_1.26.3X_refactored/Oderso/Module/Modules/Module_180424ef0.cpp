@@ -11,7 +11,7 @@ std::string Module_180424ef0::getTooltip() {
 }
 
 void Module_180424ef0::onEnable() {
-	// Binary function: func_0x180426730
+	// Kept as direct binary call: complex initialization with TLS and strings (func_0x180426730).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);
@@ -19,7 +19,7 @@ void Module_180424ef0::onEnable() {
 }
 
 void Module_180424ef0::slot_15() {
-	// Binary function: func_0x180427790
+	// Kept as direct binary call: complex slot logic with TLS and strings (func_0x180427790).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*);

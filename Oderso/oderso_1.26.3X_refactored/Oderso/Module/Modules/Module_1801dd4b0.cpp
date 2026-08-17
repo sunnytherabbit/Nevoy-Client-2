@@ -16,7 +16,8 @@ std::string Module_1801dd4b0::getTooltip() {
 }
 
 void Module_1801dd4b0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1801e1e40
+	// Ported from func_0x1801e1e40: applies code patches (nop/restore) according to the
+	// NoBackground/Third person/SE settings.  Uses one remaining direct call for level validity (0x10ce80).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	auto base = mod->ptrBase;
@@ -120,7 +121,8 @@ LAB_1801e1fd0:
 }
 
 void Module_1801dd4b0::onEnable() {
-	// Binary function: func_0x1801e13d0
+	// Ported from func_0x1801e13d0: reset the patch state flags and save original bytes
+	// for all six code patch targets using g_Data.patchFromCode.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	auto base = mod->ptrBase;
@@ -149,7 +151,8 @@ void Module_1801dd4b0::onEnable() {
 }
 
 void Module_1801dd4b0::onDisable() {
-	// Binary function: func_0x1801e2030
+	// Ported from func_0x1801e2030: restore the six code patches from the saved original bytes
+	// using g_Data.patchToCode.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	auto base = mod->ptrBase;

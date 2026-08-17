@@ -11,7 +11,7 @@ std::string Module_18033b770::getTooltip() {
 }
 
 void Module_18033b770::onEnable() {
-	// Binary function: func_0x18033dee0
+	// Kept as direct binary call: complex media/playback and TLS operations (func_0x18033dee0).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);
@@ -19,7 +19,7 @@ void Module_18033b770::onEnable() {
 }
 
 void Module_18033b770::onDisable() {
-	// Binary function: func_0x18033f400
+	// Kept as direct binary call: COM media playback teardown (func_0x18033f400).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using DisableFunc = void(*)(void*);

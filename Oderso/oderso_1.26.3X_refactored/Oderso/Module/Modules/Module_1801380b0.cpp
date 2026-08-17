@@ -45,7 +45,6 @@ Module_1801380b0::Module_1801380b0() : IModule(0, Category::COMBAT, "mod.schemat
 }
 
 std::string Module_1801380b0::getModuleName() {
-	// Binary function: func_0x1801422c0 -> "Schematica"
 	return "Schematica";
 }
 
@@ -55,6 +54,8 @@ std::string Module_1801380b0::getTooltip() {
 }
 
 void Module_1801380b0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
+	// Kept as direct binary call: onPreRender does a full schematic block scan
+	// using unmapped BlockSource / Level / Actor vtable helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PreRenderT = void(*)(void*);
@@ -62,6 +63,8 @@ void Module_1801380b0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_1801380b0::onAttack(int attackButton, bool isDown, bool* cancel) {
+	// Kept as direct binary call: onAttack uses unmapped attack-button and
+	// placement-rotation helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using AttackT = void(*)(void*, int, uint8_t, bool*);
@@ -69,6 +72,8 @@ void Module_1801380b0::onAttack(int attackButton, bool isDown, bool* cancel) {
 }
 
 void Module_1801380b0::onEnable() {
+	// Kept as direct binary call: onEnable sets up schematic state through
+	// unmapped file / structure loading helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using OnEnableT = void(*)(void*);
@@ -76,6 +81,8 @@ void Module_1801380b0::onEnable() {
 }
 
 void Module_1801380b0::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
+	// Kept as direct binary call: onPostRender renders 3D schematic boxes with
+	// unmapped tessellator / GL helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderT = void(*)(void*);
@@ -83,6 +90,8 @@ void Module_1801380b0::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_1801380b0::slot_15() {
+	// Kept as direct binary call: slot_15 reloads the target structure with
+	// unmapped IO helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using Slot15T = void(*)(void*);
@@ -90,6 +99,8 @@ void Module_1801380b0::slot_15() {
 }
 
 void Module_1801380b0::toggle(void* event, bool* cancel) {
+	// Kept as direct binary call: toggle places/removes schematic blocks through
+	// unmapped game-world interaction helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using ToggleT = void(*)(void*, void*);
@@ -97,6 +108,8 @@ void Module_1801380b0::toggle(void* event, bool* cancel) {
 }
 
 void Module_1801380b0::slot_30(int arg, char mask, bool* cancel) {
+	// Kept as direct binary call: slot_30 handles key/mask input through unmapped
+	// input-translation helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using Slot30T = void(*)(void*, uint32_t, uint8_t, bool*);

@@ -10,13 +10,13 @@ SkinStealer::SkinStealer() : IModule(0, Category::VISUAL, "Steals and copies pla
 }
 
 std::string SkinStealer::getModuleName() { return "Skin Stealer"; }
-std::string SkinStealer::getTooltip() { 
-	// Binary function: func_0x180168be0
+std::string SkinStealer::getTooltip() {
 	return "Steals and copies player skins, capes, and geometry.";
 }
 
 void SkinStealer::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180168d70
+	// Kept as direct binary call: onPreRender enumerates player skins/capes
+	// through unmapped Actor and ResourcePack helpers and writes files.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PreRenderFunc = void(*)(void*);

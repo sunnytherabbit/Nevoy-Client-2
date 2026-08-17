@@ -13,29 +13,19 @@ std::string Module_1802c1ee0::getTooltip() {
 }
 
 void Module_1802c1ee0::onEnable() {
-	// Binary function: func_0x1802c56a0
+	// Kept as direct binary call: onEnable uses the unmapped code-location
+	// scanner (func_0x1802c5770) to find and patch the target code.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
-	auto base = mod->ptrBase;
-
-	auto target = *reinterpret_cast<void**>(base + 0x83fc78);
-	if (target != nullptr) {
-		g_Data.patchFromCode(reinterpret_cast<void*>(base + 0x83fc60), target, 0x18);
-		g_Data.nopCode(target, 0x18);
-	}
+	using OnEnableT = void(*)(void*);
+	reinterpret_cast<OnEnableT>(mod->ptrBase + 0x2c56a0)(this);
 }
 
 void Module_1802c1ee0::onDisable() {
-	// Binary function: func_0x1802c5850
+	// Kept as direct binary call: onDisable restores the patched code and then
+	// touches a GUI option through the unmapped helper func_0x1802e13a0.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
-	auto base = mod->ptrBase;
-
-	auto target = *reinterpret_cast<void**>(base + 0x83fc88);
-	if (target != nullptr)
-		g_Data.patchToCode(target, reinterpret_cast<void*>(base + 0x83fc60), 0x18);
-
-	// Additional GUI side-effect (set option bit; unmapped helper func_0x1802e13a0):
-	// The binary calls a GUI options vtable and toggles a value. Not yet ported.
+	using OnDisableT = void(*)(void*);
+	reinterpret_cast<OnDisableT>(mod->ptrBase + 0x2c5850)(this);
 }
-

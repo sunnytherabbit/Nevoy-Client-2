@@ -11,13 +11,13 @@ std::string Module_180247570::getTooltip() {
 }
 
 void Module_180247570::onEnable() {
-	// Binary function: func_0x180248620
-	*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x80) = 0xbf800000;
-	*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x84) = 0;
+	// Ported from func_0x180248620.
+	this->currentScale = -1.f;
+	this->flag_0x84 = 0;
 }
 
 void Module_180247570::onDisable() {
-	// Binary function: func_0x180248640
+	// Uses unmapped helper func_0x180129fc0 for scale reset; ported from func_0x180248640.
 	auto mc = g_Data.getMinecraft();
 	if (mc == nullptr) return;
 
@@ -37,7 +37,7 @@ void Module_180247570::onDisable() {
 }
 
 void Module_180247570::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180248700
+	// Uses unmapped helper func_0x180129fc0 for scale sync; ported from func_0x180248700.
 	if (this->currentScale != this->targetScale || this->flag_0x84 != this->flag_0x8c) {
 		this->currentScale = this->targetScale;
 		this->flag_0x84 = this->flag_0x8c;

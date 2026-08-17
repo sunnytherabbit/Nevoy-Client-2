@@ -12,8 +12,7 @@ OdersoCompass::OdersoCompass() : IModule(0, Category::VISUAL, "Displays a compas
 }
 
 std::string OdersoCompass::getModuleName() { return "Compass"; }
-std::string OdersoCompass::getTooltip() { 
-	// Binary function: func_0x180320c20
+std::string OdersoCompass::getTooltip() {
 	return "Displays a compass.";
 }
 

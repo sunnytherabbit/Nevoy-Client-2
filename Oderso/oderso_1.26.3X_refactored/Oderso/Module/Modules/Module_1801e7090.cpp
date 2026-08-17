@@ -11,14 +11,14 @@ std::string Module_1801e7090::getTooltip() {
 }
 
 void Module_1801e7090::onEnable() {
-	// Binary function: func_0x1801e75e0
+	// Ported from func_0x1801e75e0: clear the UI/world flag at module-manager + 0x1c0 + 0x18.
 	auto flagPtr = g_Data.getUIFlagPtr();
 	if (flagPtr != nullptr)
 		*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(flagPtr) + 0x18) = 0;
 }
 
 void Module_1801e7090::onDisable() {
-	// Binary function: func_0x1801e7600
+	// Ported from func_0x1801e7600: restore the UI/world flag.
 	auto flagPtr = g_Data.getUIFlagPtr();
 	if (flagPtr != nullptr)
 		*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(flagPtr) + 0x18) = 1;

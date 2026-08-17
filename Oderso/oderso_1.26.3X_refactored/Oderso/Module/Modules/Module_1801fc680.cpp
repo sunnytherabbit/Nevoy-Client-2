@@ -27,7 +27,7 @@ void Module_1801fc680::onSaveConfig(void* conf) {
 }
 
 void Module_1801fc680::toggle(void* event, bool* cancel) {
-	// Binary function: func_0x1801fff40
+	// Kept as direct binary call: func_0x1801fff40 — chat/config vector processing with unmapped helpers.
 	if (event == nullptr)
 		return;
 

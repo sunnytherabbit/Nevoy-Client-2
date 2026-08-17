@@ -20,4 +20,6 @@ public:
 	char _binaryPadding[0xd8];
 };
 
+static_assert(sizeof(Module_18020a2d0) == 0x158, "Module_18020a2d0 must match the binary object size");
+
 #endif

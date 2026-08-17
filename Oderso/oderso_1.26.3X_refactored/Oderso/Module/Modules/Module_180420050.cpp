@@ -12,7 +12,7 @@ std::string Module_180420050::getTooltip() {
 }
 
 void Module_180420050::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180423530
+	// Ported from func_0x180423530; raw offsets retained because the full settings layout for this module is not yet reconstructed.
 	float fVar1;
 	fVar1 = *reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x98);
 	if ((fVar1 != *reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x9c)) || (std::isnan(fVar1) || std::isnan(*reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x9c)))) {
@@ -22,7 +22,7 @@ void Module_180420050::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_180420050::onEnable() {
-	// Binary function: func_0x180423510
+	// Ported from func_0x180423510; raw offsets retained because the full settings layout for this module is not yet reconstructed.
 	*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x9c) = *reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x98);
 	*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0xb8) = 1;
 }

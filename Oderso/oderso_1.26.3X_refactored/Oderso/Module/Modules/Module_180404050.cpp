@@ -11,7 +11,8 @@ std::string Module_180404050::getTooltip() {
 }
 
 void Module_180404050::onEnable() {
-	// Binary function: func_0x1804045b0
+	// Kept as direct binary call: func_0x1804045b0 walks a resource list, hashes strings,
+	// and inserts items into an unmapped map at this+0x80.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);
@@ -19,7 +20,7 @@ void Module_180404050::onEnable() {
 }
 
 void Module_180404050::onDisable() {
-	// Binary function: func_0x180404950
+	// Kept as direct binary call: func_0x180404950 calls func_0x180404960 to tear down the map at this+0x80.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using DisableFunc = void(*)(void*);

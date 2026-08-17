@@ -11,7 +11,7 @@ std::string Module_1801e20d0::getTooltip() {
 }
 
 void Module_1801e20d0::onEnable() {
-	// Binary function: func_0x1801e3780
+	// Kept as direct binary call: TLS-heavy file-path / file-chooser setup with unmapped string helpers (func_0x1801e3780).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);

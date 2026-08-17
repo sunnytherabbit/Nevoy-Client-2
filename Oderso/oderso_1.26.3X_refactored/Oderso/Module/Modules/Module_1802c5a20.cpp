@@ -26,7 +26,7 @@ std::string Module_1802c5a20::getTooltip() {
 }
 
 void Module_1802c5a20::onEnable() {
-	// Binary function: func_0x1802ccad0
+	// Ported from func_0x1802ccad0: propagates the stored values into the animation scratch fields.
 	uint64_t uVar1;
 	uint64_t uVar2;
 	uVar1 = *reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x120);

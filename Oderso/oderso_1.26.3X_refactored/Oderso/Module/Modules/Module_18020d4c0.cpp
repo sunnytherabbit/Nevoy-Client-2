@@ -11,23 +11,29 @@ std::string Module_18020d4c0::getTooltip() {
 }
 
 void Module_18020d4c0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x18020d9f0
-	if (g_Data.getClientInstance() != nullptr) {
-		float* val = reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x148);
-		int32_t* cnt = reinterpret_cast<int32_t*>(reinterpret_cast<uintptr_t>(this) + 0x14c);
-		if (*val > 0.0f) {
-			int c = *cnt;
-			*cnt = c + 1;
-			if (c > 0x4e)
-				*val = 0.0f;
-		}
+	// Ported from func_0x18020d9f0.
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+
+	auto client = g_Data.getClientInstance();
+	if (client == nullptr) {
+		// DAT_180840a68 side-effect when the client instance is not present.
+		*reinterpret_cast<uint32_t*>(mod->ptrBase + 0x840a68) = 0;
 		return;
 	}
-	// Unmapped global side-effect: DAT_180840a68 = 0;
+
+	float* val = reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x148);
+	int32_t* cnt = reinterpret_cast<int32_t*>(reinterpret_cast<uintptr_t>(this) + 0x14c);
+	if (*val > 0.0f) {
+		int c = *cnt;
+		*cnt = c + 1;
+		if (c > 0x4e)
+			*val = 0.0f;
+	}
 }
 
 void Module_18020d4c0::onEnable() {
-	// Binary function: func_0x18020d9e0
+	// Ported from func_0x18020d9e0.
 	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x148) = 0;
 }
 

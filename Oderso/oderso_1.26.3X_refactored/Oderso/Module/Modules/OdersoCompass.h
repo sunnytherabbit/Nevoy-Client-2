@@ -15,8 +15,10 @@ public:
 	virtual void onLoadConfig(void* conf) override;
 	virtual void onSaveConfig(void* conf) override;
 
-	float size = 0.f;
-	int color = 45;
+	float size = 0.f;  // 0x80
+	int color = 45;    // 0x84
 };
+
+static_assert(sizeof(OdersoCompass) == 0x88, "OdersoCompass must match the binary object size");
 
 #endif

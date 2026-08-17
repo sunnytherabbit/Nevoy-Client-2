@@ -11,7 +11,8 @@ std::string Module_18020a2d0::getTooltip() {
 }
 
 void Module_18020a2d0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x18020ad80
+	// Kept as direct binary call: onPreRender does an entity-name lookup with
+	// TLS-encrypted strings and unmapped Actor/NameTag helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PreRenderFunc = void(*)(void*);

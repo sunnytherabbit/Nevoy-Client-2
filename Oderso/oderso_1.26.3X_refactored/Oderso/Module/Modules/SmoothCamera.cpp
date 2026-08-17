@@ -19,7 +19,7 @@ std::string SmoothCamera::getTooltip() {
 }
 
 void SmoothCamera::onKeyUpdate(int key, bool isDown, bool* cancel) {
-	// Binary function: func_0x180123a10
+	// Kept as direct binary call: func_0x180123a10 — complex key-bind logic with TLS-encrypted strings and unmapped helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using KeyUpdateFunc = void(*)(void*, int, bool, bool*);
@@ -27,7 +27,7 @@ void SmoothCamera::onKeyUpdate(int key, bool isDown, bool* cancel) {
 }
 
 void SmoothCamera::onEnable() {
-	// Binary function: func_0x180121fb0
+	// Ported from func_0x180121fb0: initializes interpolation state and updates the scroll camera option.
 	auto base = reinterpret_cast<uintptr_t>(this);
 
 	if (*reinterpret_cast<bool*>(base + 0x86) == false || *reinterpret_cast<bool*>(base + 0xb0) == false) {
@@ -48,7 +48,7 @@ void SmoothCamera::onEnable() {
 }
 
 void SmoothCamera::onDisable() {
-	// Binary function: func_0x1801222b0
+	// Ported from func_0x1801222b0: resets interpolation state and restores the scroll camera option.
 	*reinterpret_cast<bool*>(reinterpret_cast<uintptr_t>(this) + 0xb0) = false;
 	*reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0xac) = 1.0f;
 
@@ -60,7 +60,7 @@ void SmoothCamera::onDisable() {
 }
 
 void SmoothCamera::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1801224c0
+	// Kept as direct binary call: func_0x1801224c0 — camera smoothing math with many unmapped helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);
@@ -68,7 +68,7 @@ void SmoothCamera::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void SmoothCamera::slot_27(int arg, char mask, bool* cancel) {
-	// Binary function: func_0x180123760
+	// Kept as direct binary call: func_0x180123760 — scroll/zoom logic using the binary option setter.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*, char, bool*);
@@ -76,7 +76,7 @@ void SmoothCamera::slot_27(int arg, char mask, bool* cancel) {
 }
 
 void SmoothCamera::slot_29() {
-	// Binary function: func_0x180124190
+	// Kept as direct binary call: func_0x180124190 — key+scroll event handling with TLS-encrypted strings.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*, int, bool);
@@ -84,7 +84,7 @@ void SmoothCamera::slot_29() {
 }
 
 void SmoothCamera::slot_31(int arg, char mask, bool* cancel) {
-	// Binary function: func_0x1801248e0
+	// Kept as direct binary call: func_0x1801248e0 — key+scroll event handling with TLS-encrypted strings.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*, int, char);

@@ -21,8 +21,13 @@ public:
 	bool rainbow = false;
 	bool hitHelppgg = false;
 
-	char _binaryPadding[0x31];
+	// 0x8b..0xb7: padding to keep field_0xb8 at its binary offset.
+	char _binaryPadding[0x2d];
 	void* field_0xb8 = nullptr;
+
+	char _binaryPadding2[0x8];
 };
+
+static_assert(sizeof(Module_18024b340) == 0xc8, "Module_18024b340 must be 0xc8 bytes to match the binary layout");
 
 #endif

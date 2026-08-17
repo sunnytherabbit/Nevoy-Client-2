@@ -1,5 +1,7 @@
 #include "Module_180360610.h"
 
+#include <cmath>
+
 Module_180360610::Module_180360610() : IModule(0, Category::CUSTOM, "Module_180360610") {
 	registerIntSetting("Block radius", &blockRadius, 16, 1, 20);
 }
@@ -13,7 +15,7 @@ std::string Module_180360610::getTooltip() {
 }
 
 void Module_180360610::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180362330
+	// Kept as direct binary call: complex per-frame block/entity search using unmapped world helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PreRenderFunc = void(*)(void*);
@@ -21,26 +23,27 @@ void Module_180360610::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_180360610::onEnable() {
-	// Binary function: func_0x1803622f0
+	// Ported from func_0x1803622f0: resets the block-radius search state.
 	*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x8c) = 0;
 	*reinterpret_cast<uint16_t*>(reinterpret_cast<uintptr_t>(this) + 0x90) = 0x101;
-	*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x84) = *reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x80);
+	*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x84) = this->blockRadius;
 	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x94) = 0xfffffe0c00000000;
 	*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x9c) = 0;
 }
 
 void Module_180360610::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1803635e0
-	if (g_Data.getClientInstance() != nullptr)
+	// Ported from func_0x1803635e0: mirrors DAT_180840a60/180840a68 update and resets state when no client is active.
+	g_Data.updateClientGlobal();
+	if (g_Data.getClientInstancePtr() != nullptr)
 		return;
-	// Unmapped global side-effect: DAT_180840a68 = 0;
+
 	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x94) = 0xfffffe0c00000000;
 	*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x9c) = 0;
 	*reinterpret_cast<uint16_t*>(reinterpret_cast<uintptr_t>(this) + 0x90) = 0x101;
 }
 
 void Module_180360610::slot_15() {
-	// Binary function: func_0x180362b00
+	// Kept as direct binary call: complex render/entity-list traversal using unmapped scene helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*);
@@ -48,14 +51,10 @@ void Module_180360610::slot_15() {
 }
 
 void Module_180360610::toggle(void* event, bool* cancel) {
-	// Binary function: func_0x180363450
+	// Ported from func_0x180363450: hotkey reset (0x3d) or AABB capture from the local-player position.
 	if (event == nullptr) return;
 
-	auto mod = g_Data.getModule();
-	if (mod == nullptr) return;
-
-	using GetEventKey = int(*)(void*);
-	int key = reinterpret_cast<GetEventKey>(mod->ptrBase + 0x1106e0)(event);
+	int key = getEventKey(event);
 
 	if (key != 0x15 && key != 0x1a) {
 		if (key != 0x3d) return;
@@ -66,7 +65,8 @@ void Module_180360610::toggle(void* event, bool* cancel) {
 		return;
 	}
 
-	auto player = reinterpret_cast<float*>(g_Data.getLocalPlayer());
+	g_Data.updateClientGlobal();
+	auto player = reinterpret_cast<float*>(g_Data.getLocalPlayerPtr());
 	if (player == nullptr) return;
 
 	int rad = this->blockRadius;

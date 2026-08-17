@@ -11,7 +11,7 @@ std::string Module_180136cd0::getTooltip() {
 }
 
 void Module_180136cd0::onEnable() {
-	// Binary function: func_0x180137230
+	// Kept as direct binary call: func_0x180137230 — settings-list search and TLS-encrypted name handling.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);

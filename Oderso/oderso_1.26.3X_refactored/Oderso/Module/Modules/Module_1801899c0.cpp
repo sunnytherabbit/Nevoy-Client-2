@@ -11,7 +11,7 @@ std::string Module_1801899c0::getTooltip() {
 }
 
 void Module_1801899c0::onAttack(int attackButton, bool isDown, bool* cancel) {
-	// Binary function: func_0x18018a850
+	// Kept as direct binary call: uses unmapped unordered_map/hash helper func_0x18018a080.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using AttackFunc = void(*)(void*, int, char, bool*);
@@ -33,7 +33,7 @@ void Module_1801899c0::onSaveConfig(void* conf) {
 }
 
 void Module_1801899c0::slot_30(int arg, char mask, bool* cancel) {
-	// Binary function: func_0x18018a940
+	// Kept as direct binary call: uses unmapped unordered_map/hash helper func_0x18018a080.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*, int, char, bool*);

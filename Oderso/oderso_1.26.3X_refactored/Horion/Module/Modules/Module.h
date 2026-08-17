@@ -48,7 +48,7 @@ public:
 	int GetCount();
 
 private:
-	void* _pad = nullptr;  // binary SettingEnum is 0x48 bytes
+	void* _pad = nullptr;  // pads SettingEnum out to the binary size of 0x30 bytes
 };
 
 enum class ValueType {

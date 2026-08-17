@@ -5,22 +5,17 @@ Module_180218db0::Module_180218db0() : IModule(0, Category::CUSTOM, "Visually ad
 }
 
 std::string Module_180218db0::getModuleName() {
-	// Binary function: func_0x180219020 -> "DynamicLighting"
 	return "DynamicLighting";
 }
 
 std::string Module_180218db0::getTooltip() {
-	// Binary function: func_0x1802191c0 -> "mod.dynamic_lighting.name"
-	// module_manifest has no description, so the binary string is used.
 	return "mod.dynamic_lighting.name";
 }
 
 void Module_180218db0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180219740
-	// Complex position tracking / dynamic-light update that relies on several
-	// unmapped game internals (ClientInstance -> BlockSource/Dimension vtable
-	// chains and the light-update helper func_0x180219390). Kept as a direct
-	// binary call.
+	// Kept as direct binary call: onPreRender tracks the held light-emitting
+	// block and updates the in-game light grid through several unmapped
+	// ClientInstance / BlockSource / Dimension vtable helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PreRenderFunc = void(*)(void*);
@@ -28,8 +23,7 @@ void Module_180218db0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_180218db0::onEnable() {
-	// Binary function: func_0x180219350
-	// The binary resets the cached block position / light state on enable.
+	// Ported from func_0x180219350: reset the cached block position / light state.
 	lastPos = 0xfffffe0c00000000;
 	lastY = 0;
 	lastLight = 0;
@@ -38,9 +32,8 @@ void Module_180218db0::onEnable() {
 }
 
 void Module_180218db0::onDisable() {
-	// Binary function: func_0x180219380
-	// Calls the unmapped light-update helper (func_0x180219390). Kept as a
-	// direct binary call.
+	// Kept as direct binary call: onDisable delegates to the unmapped light-update
+	// helper (func_0x180219390), which touches game-side light state.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using DisableFunc = void(*)(void*);

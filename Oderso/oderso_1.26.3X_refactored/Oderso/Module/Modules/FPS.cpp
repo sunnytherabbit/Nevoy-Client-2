@@ -9,8 +9,7 @@ FPS::FPS() : IModule(0, Category::VISUAL, "Displays your current FPS.") {
 }
 
 std::string FPS::getModuleName() { return "FPS"; }
-std::string FPS::getTooltip() { 
-	// Binary function: func_0x1802416c0
+std::string FPS::getTooltip() {
 	return "Displays your current FPS.";
 }
 

@@ -11,7 +11,7 @@ std::string Module_180193330::getTooltip() {
 }
 
 void Module_180193330::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180193890
+	// Kept as direct binary call: complex entity-name hash comparison with heavy TLS string handling.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PreRenderFunc = void(*)(void*);

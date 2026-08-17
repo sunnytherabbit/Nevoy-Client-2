@@ -11,26 +11,15 @@ std::string Module_1801d2430::getTooltip() {
 }
 
 void Module_1801d2430::onEnable() {
-	// Binary function: func_0x1801d29c0
+	// Kept as direct binary call: func_0x1801d29c0 — depends on TLS-initialized globals and unmapped helpers (func_0x180134bf0 / func_0x18011ae00 / func_0x180127220).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
-	auto base = mod->ptrBase;
-
-	using Func134bf0 = void*(*)(void*);
-	auto f1 = reinterpret_cast<Func134bf0>(base + 0x134bf0);
-	auto p = f1(reinterpret_cast<void*>(base + 0x8400a0));
-	if (p != nullptr)
-		this->field_0x80 = *reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(p) + 0x40);
-
-	using Func11ae00 = void*(*)(void*);
-	auto f2 = reinterpret_cast<Func11ae00>(base + 0x11ae00);
-	auto v = f2(reinterpret_cast<void*>(base + 0x840a48));
-	if (v != nullptr)
-		this->field_0x81 = *reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(v) + 0x778);
+	using EnableFunc = void(*)(void*);
+	reinterpret_cast<EnableFunc>(mod->ptrBase + 0x1d29c0)(this);
 }
 
 void Module_1801d2430::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1801d2aa0
+	// Kept as direct binary call: func_0x1801d2aa0 — entity-effect toggle logic with unmapped game-object helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);

@@ -11,7 +11,7 @@ std::string Module_180240430::getTooltip() {
 }
 
 void Module_180240430::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180241330
+	// Ported from func_0x180241330: pushes the configured reach value into the entity-list entry for type 0x32.
 	auto level = g_Data.getLevel();
 	if (level == nullptr) return;
 
@@ -24,61 +24,18 @@ void Module_180240430::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_180240430::onEnable() {
-	// Binary function: func_0x180240ec0
-	auto level = g_Data.getLevel();
-	if (level == nullptr) return;
-
-	auto ent = g_Data.getEntityListEntry(level, 0x32);
-	if (ent == nullptr) return;
-
-	this->savedReach = *reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(ent) + 0x18);
-
+	// Kept as direct binary call: reach-patch setup requires the binary's lazy global initialisation (func_0x180241090).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
-	auto base = mod->ptrBase;
-
-	auto target1 = *reinterpret_cast<void**>(base + 0x83fbb8);
-	auto target2 = *reinterpret_cast<void**>(base + 0x83fbc8);
-
-	if (target1 != nullptr) {
-		g_Data.patchFromCode(reinterpret_cast<void*>(base + 0x83fbd4), target1, 8);
-		g_Data.nopCode(target1, 8);
-	}
-
-	if (target2 != nullptr) {
-		g_Data.patchFromCode(reinterpret_cast<void*>(base + 0x83fbdc), target2, 3);
-		g_Data.patchToCode(target2, reinterpret_cast<void*>(base + 0x6edc94), 3);
-	}
+	using EnableFunc = void(*)(void*);
+	reinterpret_cast<EnableFunc>(mod->ptrBase + 0x240ec0)(this);
 }
 
 void Module_180240430::onDisable() {
-	// Binary function: func_0x180241170
-	auto level = g_Data.getLevel();
-	if (level == nullptr) return;
-
-	auto ent = g_Data.getEntityListEntry(level, 0x32);
-	if (ent == nullptr) return;
-
-	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(ent) + 0x10) = 0x42dc000041f00000;  // 110.0, 30.0
-
-	float value = this->savedReach;
-	if (value < 30.0f || value > 110.0f) {
-		auto defaultValue = *reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(ent) + 0x1c);
-		value = defaultValue;
-	}
-	*reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(ent) + 0x18) = value;
-
+	// Kept as direct binary call: reach-patch restore uses the binary's lazy global initialisation (func_0x180241090).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
-	auto base = mod->ptrBase;
-
-	auto target1 = *reinterpret_cast<void**>(base + 0x83fbe0);
-	auto target2 = *reinterpret_cast<void**>(base + 0x83fbf0);
-
-	if (target1 != nullptr)
-		g_Data.patchToCode(target1, reinterpret_cast<void*>(base + 0x83fbd4), 8);
-
-	if (target2 != nullptr)
-		g_Data.patchToCode(target2, reinterpret_cast<void*>(base + 0x83fbdc), 3);
+	using DisableFunc = void(*)(void*);
+	reinterpret_cast<DisableFunc>(mod->ptrBase + 0x241170)(this);
 }
 

@@ -13,7 +13,7 @@ std::string Module_180243e70::getTooltip() {
 }
 
 void Module_180243e70::onEnable() {
-	// Binary function: func_0x1802451a0
+	// Ported from func_0x1802451a0: caches the local player position when available.
 	auto player = g_Data.getLocalPlayer();
 	if (player == nullptr) {
 		// Unmapped global side-effect: DAT_180840a68 = 0;
@@ -28,7 +28,7 @@ void Module_180243e70::onEnable() {
 }
 
 bool Module_180243e70::isFlashMode() {
-	// Binary function: func_0x1802452b0
+	// Ported from func_0x1802452b0: hold-to-toggle mode.
 	return hold;
 }
 

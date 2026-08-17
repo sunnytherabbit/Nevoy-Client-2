@@ -13,7 +13,8 @@ std::string Module_1802e5290::getTooltip() {
 }
 
 void Module_1802e5290::onAttack(int attackButton, bool isDown, bool* cancel) {
-	// Binary function: func_0x1802ea290
+	// Kept as direct binary call: func_0x1802ea290 uses func_0x18045fc30 (attack button mask)
+	// and then dispatches through the unmapped object at this+0x1358's vtable.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using AttackFunc = void(*)(void*, int, char, bool*);
@@ -21,7 +22,8 @@ void Module_1802e5290::onAttack(int attackButton, bool isDown, bool* cancel) {
 }
 
 void Module_1802e5290::onEnable() {
-	// Binary function: func_0x1802e9b10
+	// Kept as direct binary call: func_0x1802e9b10 simply forwards to func_0x1802e9b20,
+	// which allocates and initializes a large, unmapped ref-counted structure stored at this+0x1358.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)();
@@ -39,7 +41,8 @@ void Module_1802e5290::onSaveConfig(void* conf) {
 }
 
 void Module_1802e5290::slot_30(int arg, char mask, bool* cancel) {
-	// Binary function: func_0x1802ea350
+	// Kept as direct binary call: func_0x1802ea350 mirrors onAttack and dispatches
+	// through the unmapped object at this+0x1358's vtable slot 0x18.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*, int, char, bool*);

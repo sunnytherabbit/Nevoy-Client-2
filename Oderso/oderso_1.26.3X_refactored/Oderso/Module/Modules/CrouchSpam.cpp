@@ -14,14 +14,12 @@ std::string CrouchSpam::getTooltip() {
 }
 
 void CrouchSpam::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180195140
+	// Manual port of func_0x180195140: toggles the MoveTurnInput sneak flag on the configured delay.
 	this->counter++;
 	if (this->delay <= this->counter) {
 		auto client = g_Data.getClientInstance();
-		if (client == nullptr) {
-			// Unmapped global side-effect: DAT_180840a68 = 0;
+		if (client == nullptr)
 			return;
-		}
 
 		auto input = client->getMoveTurnInput();
 		if (input != nullptr)

@@ -6,14 +6,13 @@ Limits::Limits() : IModule(0, Category::CUSTOM, "Limits C") {
 }
 
 std::string Limits::getModuleName() { return "Limits C"; }
-std::string Limits::getTooltip() { 
-	// Binary function: func_0x1802f4c40
+std::string Limits::getTooltip() {
 	return "Limits C";
 }
 
 void Limits::onEnable() {
-	// Binary function: func_0x1802f4dd0
-	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x90) = 0;
-	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x98) = 0;
+	// Ported from func_0x1802f4dd0: clear the two 8-byte state counters.
+	field_0x90 = 0;
+	field_0x98 = 0;
 }
 

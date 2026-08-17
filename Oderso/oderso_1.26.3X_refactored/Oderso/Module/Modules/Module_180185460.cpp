@@ -13,7 +13,7 @@ std::string Module_180185460::getTooltip() {
 }
 
 void Module_180185460::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1801888e0
+	// Kept as direct binary call: TLS-heavy swing-speed logic with unmapped game helpers (func_0x1801888e0).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PreRenderFunc = void(*)(void*);
@@ -21,7 +21,7 @@ void Module_180185460::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_180185460::onEnable() {
-	// Binary function: func_0x180188590
+	// Kept as direct binary call: TLS and unmapped global setters (func_0x180188590).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);
@@ -29,7 +29,7 @@ void Module_180185460::onEnable() {
 }
 
 void Module_180185460::onDisable() {
-	// Binary function: func_0x180188d50
+	// Kept as direct binary call: TLS and unmapped global setters (func_0x180188d50).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using DisableFunc = void(*)(void*);
@@ -37,7 +37,7 @@ void Module_180185460::onDisable() {
 }
 
 void Module_180185460::setEnabled(void* event, bool* cancel) {
-	// Binary function: func_0x180188ee0
+	// Ported from func_0x180188ee0 (key 0x2c toggle).
 	if (event == nullptr)
 		return;
 

@@ -3,7 +3,8 @@
 
 Module_1802c0340::Module_1802c0340() : IModule(0, Category::CUSTOM, "Module_1802c0340") {
 	registerBoolSetting("Disable", &disable, false);
-	registerFloatSetting("Multipli", &multipli, 0.f, 0.f, 10.f);
+	registerBoolSetting("Invert", &negative, false);
+	registerFloatSetting("Multipli", &multipli, 0.008726646f, 0.f, 10.f);
 }
 
 std::string Module_1802c0340::getModuleName() { return "Module_1802c0340"; }
@@ -13,80 +14,40 @@ std::string Module_1802c0340::getTooltip() {
 }
 
 void Module_1802c0340::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1802c1c40
-	uint8_t cVar1;
-	float fVar2;
-	float fVar3;
-	fVar2 = *reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x84);
-	if ((fVar2 != *reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x8c)) ||
-	    (std::isnan(fVar2) || std::isnan(*reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x8c)))) {
-		cVar1 = *reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x80);
-	} else {
-		cVar1 = *reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x80);
-		if ((*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x81) ==
-		     *reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x80)) &&
-		    (cVar1 = *reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x81),
-		     *reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x91) ==
-		     *reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x90))) {
-			// empty
-		}
-	}
-	*reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x8c) = fVar2;
-	*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x81) = cVar1;
-	*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x91) = *reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x90);
-	fVar2 = fVar2 * *reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x84);
-	if (*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x90) != '\0') {
-		fVar2 = -fVar2;
-	}
-	fVar3 = 0.0f;
-	if (cVar1 == '\0') {
-		fVar3 = fVar2;
-	}
-	**reinterpret_cast<float**>(reinterpret_cast<uintptr_t>(this) + 0x98) = fVar3;
+	// Ported from func_0x1802c1c40: recompute the patched float only when the
+	// input value, sign, or disable state changes.
+	if ((lastValue == value) && !std::isnan(lastValue) && !std::isnan(value) &&
+	    (lastDisable == disable) && (lastNegative == negative))
+		return;
+
+	lastValue = value;
+	lastDisable = disable;
+	lastNegative = negative;
+
+	float result = value * multipli;
+	if (negative)
+		result = -result;
+	float out = disable ? 0.0f : result;
+
+	if (codeBuf != nullptr)
+		*codeBuf = out;
 }
 
 void Module_1802c0340::onEnable() {
-	// Binary function: func_0x1802c1980
+	// Kept as direct binary call: onEnable uses the unmapped code-location
+	// scanner (func_0x1802c1a90) and an executable near-allocator
+	// (func_0x1800c23c0) that are not ported in the refactored source.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
-	auto base = mod->ptrBase;
-
-	*reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x8c) = -1.0f;
-	*reinterpret_cast<bool*>(reinterpret_cast<uintptr_t>(this) + 0x81) = false;
-	*reinterpret_cast<bool*>(reinterpret_cast<uintptr_t>(this) + 0x91) = false;
-
-	auto codePtr = *reinterpret_cast<uintptr_t*>(base + 0x83fc40);
-	if (codePtr == 0) return;
-
-	*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x94) =
-	    *reinterpret_cast<uint32_t*>(codePtr);
-
-	auto buf = g_Data.allocNearCode(codePtr, 4);
-	if (buf != nullptr)
-	    *reinterpret_cast<uint32_t*>(buf) = 0;
-
-	*reinterpret_cast<void**>(reinterpret_cast<uintptr_t>(this) + 0x98) = buf;
-
-	int32_t relOffset = (int32_t)((uintptr_t)buf - codePtr - 4);
-	g_Data.patchToCode(reinterpret_cast<void*>(codePtr), &relOffset, 4);
+	using OnEnableT = void(*)(void*);
+	reinterpret_cast<OnEnableT>(mod->ptrBase + 0x2c1980)(this);
 }
 
 void Module_1802c0340::onDisable() {
-	// Binary function: func_0x1802c1b70
+	// Kept as direct binary call: onDisable relies on the same unmapped
+	// scanner/allocator helpers used by onEnable.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
-	auto base = mod->ptrBase;
-
-	auto codePtr = *reinterpret_cast<uintptr_t*>(base + 0x83fc50);
-	if (codePtr == 0) return;
-
-	auto savedCode = *reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x94);
-	g_Data.patchToCode(reinterpret_cast<void*>(codePtr), &savedCode, 4);
-
-	auto buf = *reinterpret_cast<void**>(reinterpret_cast<uintptr_t>(this) + 0x98);
-	if (buf != nullptr) {
-		g_Data.freeNearCode(buf);
-		*reinterpret_cast<void**>(reinterpret_cast<uintptr_t>(this) + 0x98) = nullptr;
-	}
+	using OnDisableT = void(*)(void*);
+	reinterpret_cast<OnDisableT>(mod->ptrBase + 0x2c1b70)(this);
 }
-

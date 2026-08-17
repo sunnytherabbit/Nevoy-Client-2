@@ -23,7 +23,8 @@ std::string Module_1803238c0::getTooltip() {
 }
 
 void Module_1803238c0::onEnable() {
-	// Binary function: func_0x1803292b0
+	// Ported from func_0x1803292b0: copy the default button-layout descriptor
+	// (at offsets 0x128/0x130) into the per-layout slots starting at 0x168.
 	uint64_t uVar1;
 	uint64_t uVar2;
 	uVar1 = *reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x128);

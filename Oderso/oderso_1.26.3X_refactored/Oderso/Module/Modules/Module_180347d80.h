@@ -16,8 +16,10 @@ public:
 	// No settings extracted yet
 	virtual std::string getTooltip() override;
 
-	// padding to match binary layout up to 0x84
-	char _binaryPadding[0x8];
+	// 0x80: state flag cleared by onEnable and tested by onPreRender
+	int state = 0;
 };
+
+static_assert(sizeof(Module_180347d80) == 0x88, "Module_180347d80 must match the binary object size");
 
 #endif

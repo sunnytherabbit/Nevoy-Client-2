@@ -11,7 +11,7 @@ std::string Module_180429900::getTooltip() {
 }
 
 void Module_180429900::onDisable() {
-	// Binary function: func_0x180208fa0
+	// Kept as direct binary call: func_0x180208fa0 — background/option restore with unmapped UI object helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using DisableFunc = void(*)(void*);
@@ -19,7 +19,7 @@ void Module_180429900::onDisable() {
 }
 
 void Module_180429900::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x18042a880
+	// Kept as direct binary call: func_0x18042a880 — UI overlay rendering with TLS strings and unmapped helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);

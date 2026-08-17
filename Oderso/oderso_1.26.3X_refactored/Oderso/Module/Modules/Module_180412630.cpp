@@ -11,7 +11,7 @@ std::string Module_180412630::getTooltip() {
 }
 
 void Module_180412630::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1804130e0
+	// Kept as direct binary call: entity scanning with TLS strings and unmapped search helpers (func_0x1804130e0).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PreRenderFunc = void(*)(void*);

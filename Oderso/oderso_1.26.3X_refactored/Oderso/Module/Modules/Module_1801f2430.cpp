@@ -16,7 +16,7 @@ std::string Module_1801f2430::getTooltip() {
 }
 
 void Module_1801f2430::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1801f4330
+	// Ported from func_0x1801f4330: advance the pack-cycling counters once every switchDelay ticks.
 	this->currentIndex++;
 	if (this->currentIndex == this->switchDelay) {
 		this->currentIndex = 0;
@@ -37,7 +37,8 @@ void Module_1801f2430::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_1801f2430::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1801f4190
+	// Kept as direct binary call: func_0x1801f4190 manages several UI/texture vectors and
+	// calls multiple unmapped helpers (func_0x180217940, func_0x180081c50, etc.).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);

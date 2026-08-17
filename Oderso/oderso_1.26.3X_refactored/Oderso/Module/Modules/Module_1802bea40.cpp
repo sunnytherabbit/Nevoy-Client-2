@@ -11,7 +11,7 @@ std::string Module_1802bea40::getTooltip() {
 }
 
 void Module_1802bea40::onEnable() {
-	// Binary function: func_0x1802bfeb0
+	// Ported from func_0x1802bfeb0: saves the original 4-byte code, allocates a near trampoline, and patches a relative jump.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	auto base = mod->ptrBase;
@@ -30,7 +30,7 @@ void Module_1802bea40::onEnable() {
 }
 
 void Module_1802bea40::onDisable() {
-	// Binary function: func_0x1802c0080
+	// Ported from func_0x1802c0080: restores the original 4-byte code and frees the near trampoline.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	auto base = mod->ptrBase;
@@ -44,7 +44,7 @@ void Module_1802bea40::onDisable() {
 }
 
 void Module_1802bea40::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1802c0150
+	// Kept as direct binary call: func_0x1802c0150 — rainbow color/time rendering with unmapped helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);

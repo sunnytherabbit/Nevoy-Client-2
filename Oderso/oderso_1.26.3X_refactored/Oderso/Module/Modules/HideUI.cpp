@@ -11,8 +11,7 @@ HideUI::HideUI() : IModule(0, Category::VISUAL, "Hides the UI and can save scree
 }
 
 std::string HideUI::getModuleName() { return "Hide UI"; }
-std::string HideUI::getTooltip() { 
-	// Binary function: func_0x18014f080
+std::string HideUI::getTooltip() {
 	return "Hides the UI and can save screenshots.";
 }
 

@@ -26,6 +26,6 @@ std::string NameTags::getTooltip() {
 }
 
 bool NameTags::isFlashMode() {
-	// Binary function: func_0x18008cb60 (returns 1)
+	// Ported from func_0x18008cb60: always returns true.
 	return true;
 }

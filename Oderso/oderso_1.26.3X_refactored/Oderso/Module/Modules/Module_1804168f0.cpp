@@ -11,7 +11,7 @@ std::string Module_1804168f0::getTooltip() {
 }
 
 void Module_1804168f0::onEnable() {
-	// Binary function: func_0x180417760
+	// Kept as direct binary call: network/server checks and unmapped string helpers (func_0x180417760).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);
@@ -19,7 +19,7 @@ void Module_1804168f0::onEnable() {
 }
 
 void Module_1804168f0::onDisable() {
-	// Binary function: func_0x180417900
+	// Kept as direct binary call: network/server checks and unmapped string helpers (func_0x180417900).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using DisableFunc = void(*)(void*);
@@ -27,7 +27,7 @@ void Module_1804168f0::onDisable() {
 }
 
 void Module_1804168f0::slot_15() {
-	// Binary function: func_0x180417a80
+	// Kept as direct binary call: network/server checks and unmapped string helpers (func_0x180417a80).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*);

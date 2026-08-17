@@ -16,7 +16,13 @@ public:
 	// No settings extracted yet
 	virtual std::string getTooltip() override;
 
-	char _binaryPadding[0x10];
+	uint32_t savedCode = 0;
+	char _pad0x84[0x4];
+	void* codeBuf = nullptr;
 };
+
+static_assert(offsetof(Module_1802d3fd0, savedCode) == 0x80, "savedCode offset mismatch");
+static_assert(offsetof(Module_1802d3fd0, codeBuf) == 0x88, "codeBuf offset mismatch");
+static_assert(sizeof(Module_1802d3fd0) == 0x90, "Module_1802d3fd0 size must be 0x90");
 
 #endif

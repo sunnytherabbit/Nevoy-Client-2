@@ -13,7 +13,7 @@ std::string Module_1801a2840::getTooltip() {
 }
 
 void Module_1801a2840::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1801a4d00
+	// Kept as direct binary call: complex rendering with many unmapped helpers (func_0x1801a4d00).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);
@@ -21,7 +21,7 @@ void Module_1801a2840::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_1801a2840::slot_15() {
-	// Binary function: func_0x1801a72d0
+	// Kept as direct binary call: complex rendering/effects with many unmapped helpers (func_0x1801a72d0).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*);

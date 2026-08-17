@@ -13,7 +13,7 @@ std::string Module_1802f7580::getTooltip() {
 }
 
 void Module_1802f7580::onEnable() {
-	// Binary function: func_0x1802f9cd0
+	// Ported from func_0x1802f9cd0; raw offsets used for the unmapped grid-state fields.
 	*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x81) =
 	    *reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0x80);
 	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x94) =
@@ -54,7 +54,7 @@ void Module_1802f7580::onEnable() {
 }
 
 void Module_1802f7580::slot_15() {
-	// Binary function: func_0x1802f9e60
+	// Kept as direct binary call: complex 3D grid rendering with unmapped draw helpers (func_0x1802f9e60).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*);

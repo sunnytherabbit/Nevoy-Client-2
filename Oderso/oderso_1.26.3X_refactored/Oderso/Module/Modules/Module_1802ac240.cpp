@@ -7,8 +7,6 @@ Module_1802ac240::Module_1802ac240() : IModule(0, Category::CUSTOM, "HiveUtils")
 }
 
 std::string Module_1802ac240::getModuleName() {
-	// Binary function: func_0x1802b7240
-	// The binary builds a conditional display name from settings; the fallback is "HiveUtils".
 	return "HiveUtils";
 }
 
@@ -17,14 +15,11 @@ std::string Module_1802ac240::getRawModuleName() {
 }
 
 std::string Module_1802ac240::getTooltip() {
-	// Binary function: func_0x1802b7e50 -> "mod.hive_utils.name"
-	// module_manifest has no description, so the binary string is used.
 	return "mod.hive_utils.name";
 }
 
 void Module_1802ac240::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1802bae50
-	// Complex network/lobby/screen-state checks; kept as direct call.
+	// Kept as direct binary call: complex network/lobby/screen-state checks (func_0x1802bae50).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PreRenderFunc = void(*)(void*);
@@ -32,8 +27,7 @@ void Module_1802ac240::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_1802ac240::onEnable() {
-	// Binary function: func_0x1802b7fe0
-	// Server/lobby string checks; kept as direct call.
+	// Kept as direct binary call: server/lobby string checks (func_0x1802b7fe0).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);
@@ -41,8 +35,7 @@ void Module_1802ac240::onEnable() {
 }
 
 void Module_1802ac240::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1802bbec0
-	// Screen-name check and dodge-list clear; kept as direct call.
+	// Kept as direct binary call: screen-name check and dodge-list clear (func_0x1802bbec0).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);
@@ -50,8 +43,7 @@ void Module_1802ac240::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_1802ac240::onLoadConfig(void* conf) {
-	// Binary function: func_0x1802be850
-	// Config parsing and dodge/friend list load; kept as direct call.
+	// Kept as direct binary call: config parsing and dodge/friend list load (func_0x1802be850).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using OnLoadT = void(*)(void*, void*);
@@ -59,8 +51,7 @@ void Module_1802ac240::onLoadConfig(void* conf) {
 }
 
 void Module_1802ac240::toggle(void* event, bool* cancel) {
-	// Binary function: func_0x1802bc1a0
-	// Complex key/list processing; 3-arg binary form, kept as direct call.
+	// Kept as direct binary call: complex key/list processing; 3-arg binary form (func_0x1802bc1a0).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using ToggleFunc = void(*)(void*, void*, bool*);

@@ -11,7 +11,7 @@ std::string Module_1801e52f0::getTooltip() {
 }
 
 void Module_1801e52f0::onEnable() {
-	// Binary function: func_0x1801e5810
+	// Kept as direct binary call: complex player/screen checks with unmapped helpers (func_0x1801e5810).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);

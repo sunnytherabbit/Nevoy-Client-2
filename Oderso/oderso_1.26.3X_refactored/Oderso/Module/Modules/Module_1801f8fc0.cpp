@@ -15,27 +15,15 @@ std::string Module_1801f8fc0::getTooltip() {
 }
 
 void Module_1801f8fc0::onDisable() {
-	// Binary function: func_0x1801faae0
-	auto base = reinterpret_cast<uintptr_t>(this);
-
-	if (*reinterpret_cast<bool*>(base + 0xc5)) {
-		auto player = g_Data.getLocalPlayer();
-		auto stored = *reinterpret_cast<void**>(base + 0xc8);
-		if (player != nullptr && stored != nullptr) {
-			uint32_t v1 = *reinterpret_cast<uint32_t*>(base + 0xd4);
-			*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(player) + 0x10) = v1;
-			uint32_t v2 = *reinterpret_cast<uint32_t*>(base + 0xd8);
-			*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(stored) + 0x14) = v2;
-			*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(stored) + 0x48) = 0x4170000041700000;
-		}
-	}
-
-	*reinterpret_cast<uint16_t*>(base + 0xc4) = 0;
-	*reinterpret_cast<void**>(base + 0xc8) = nullptr;
+	// Kept as direct binary call: restores player/object UI state through unmapped offset helper func_0x180109090/150.
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using DisableFunc = void(*)(void*);
+	reinterpret_cast<DisableFunc>(mod->ptrBase + 0x1faae0)(this);
 }
 
 void Module_1801f8fc0::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1801fabe0
+	// Kept as direct binary call: heavy TLS-string UI setup and render-object state management.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);

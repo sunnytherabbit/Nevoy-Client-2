@@ -7,13 +7,13 @@ NoFire::NoFire() : IModule(0, Category::VISUAL, "Disables the fire overlay.") {
 }
 
 std::string NoFire::getModuleName() { return "NoFire"; }
-std::string NoFire::getTooltip() { 
-	// Binary function: func_0x1802d5c30
+std::string NoFire::getTooltip() {
 	return "Disables the fire overlay.";
 }
 
 void NoFire::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1802d64c0
+	// Ported from func_0x1802d64c0: toggle the 5-byte fire overlay patch based on
+	// the noFire setting, caching the last state to avoid repeated patches.
 	if (this->noFire == this->lastNoFire)
 		return;
 	this->lastNoFire = this->noFire;
@@ -33,7 +33,7 @@ void NoFire::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void NoFire::onEnable() {
-	// Binary function: func_0x1802d5fa0
+	// Ported from func_0x1802d5fa0: install the fire overlay hook / code patch.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	auto base = mod->ptrBase;
@@ -58,7 +58,7 @@ void NoFire::onEnable() {
 }
 
 void NoFire::onDisable() {
-	// Binary function: func_0x1802d63f0
+	// Ported from func_0x1802d63f0: remove the fire overlay hook and restore bytes.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	auto base = mod->ptrBase;

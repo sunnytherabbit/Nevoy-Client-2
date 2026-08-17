@@ -10,8 +10,7 @@ MoveDirectionLatestMovementKeyPressedWhenHoldingBoth::~MoveDirectionLatestMoveme
 }
 
 std::string MoveDirectionLatestMovementKeyPressedWhenHoldingBoth::getModuleName() { return "Makes you move in the direction of the latest movement key pressed when holding both"; }
-std::string MoveDirectionLatestMovementKeyPressedWhenHoldingBoth::getTooltip() { 
-	// Binary function: func_0x1801f22a0
+std::string MoveDirectionLatestMovementKeyPressedWhenHoldingBoth::getTooltip() {
 	return "Makes you move in the direction of the latest movement key pressed when holding both";
 }
 

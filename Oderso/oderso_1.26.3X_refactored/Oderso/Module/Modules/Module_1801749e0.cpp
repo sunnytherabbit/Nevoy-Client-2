@@ -15,7 +15,8 @@ std::string Module_1801749e0::getTooltip() {
 }
 
 void Module_1801749e0::slot_15() {
-	// Binary function: func_0x180177630
+	// Kept as direct binary call: func_0x180177630 contains heavy Mersenne-Twister-style random state,
+	// tessellator setup, and many unmapped rendering helpers.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using SlotFunc = void(*)(void*);

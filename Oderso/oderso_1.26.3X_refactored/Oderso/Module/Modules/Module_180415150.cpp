@@ -11,12 +11,11 @@ std::string Module_180415150::getTooltip() {
 }
 
 void Module_180415150::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180415650
-	auto client = g_Data.getClientInstance();
-	if (client == nullptr) {
-		// Unmapped global side-effect: DAT_180840a68 = 0;
+	// Ported from func_0x180415650: sets an options bit while the module is active.
+	g_Data.updateClientGlobal();
+	auto client = reinterpret_cast<C_ClientInstance*>(g_Data.getClientInstancePtr());
+	if (client == nullptr)
 		return;
-	}
 
 	auto option = getOption_0x18b1887(client);
 	if (option != nullptr)
@@ -24,12 +23,11 @@ void Module_180415150::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_180415150::onDisable() {
-	// Binary function: func_0x1804156f0
-	auto client = g_Data.getClientInstance();
-	if (client == nullptr) {
-		// Unmapped global side-effect: DAT_180840a68 = 0;
+	// Ported from func_0x1804156f0: clears an options bit when the module is disabled.
+	g_Data.updateClientGlobal();
+	auto client = reinterpret_cast<C_ClientInstance*>(g_Data.getClientInstancePtr());
+	if (client == nullptr)
 		return;
-	}
 
 	auto option = getOption_0x18b1887(client);
 	if (option != nullptr)

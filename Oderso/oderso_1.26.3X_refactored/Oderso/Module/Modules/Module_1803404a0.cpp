@@ -11,8 +11,8 @@ std::string Module_1803404a0::getTooltip() {
 }
 
 void Module_1803404a0::onEnable() {
-	// Binary function: func_0x180340f80
-	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x88) = 0;
-	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x90) = 0;
+	// Ported from func_0x180340f80: clear the two 8-byte state fields.
+	this->field_0x88 = 0;
+	this->field_0x90 = 0;
 }
 

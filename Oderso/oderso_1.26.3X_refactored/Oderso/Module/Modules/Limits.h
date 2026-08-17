@@ -14,11 +14,14 @@ public:
 
 	virtual void onEnable() override;	virtual std::string getTooltip() override;
 
-	int limitLe = 0;
-	bool limitRight = false;
+	int limitLe = 0;        // 0x80
+	bool limitRight = false; // 0x84
+	char _pad0x85[0xb];      // 0x85-0x8f
 
-	// padding to match binary layout up to 0xa0
-	char _binaryPadding[0x20];
+	uint64_t field_0x90 = 0; // 0x90
+	uint64_t field_0x98 = 0; // 0x98
 };
+
+static_assert(sizeof(Limits) == 0xa0, "Limits must match the binary object size");
 
 #endif

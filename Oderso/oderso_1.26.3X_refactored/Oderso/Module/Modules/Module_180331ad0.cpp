@@ -16,7 +16,7 @@ std::string Module_180331ad0::getTooltip() {
 }
 
 void Module_180331ad0::onEnable() {
-	// Binary function: func_0x180337220
+	// Kept as direct binary call: TLS-heavy file-path / file-chooser setup with unmapped string helpers (func_0x180337220).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);
@@ -24,36 +24,19 @@ void Module_180331ad0::onEnable() {
 }
 
 void Module_180331ad0::onDisable() {
-	// Binary function: func_0x180337f20
+	// Kept as direct binary call: crosshair patch restore requires the binary's lazy global initialisation (func_0x180337f20).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
-	auto base = mod->ptrBase;
-
-	auto target = *reinterpret_cast<void**>(base + 0x83ff18);
-	if (target != nullptr)
-		g_Data.patchToCode(target, reinterpret_cast<void*>(base + 0x83ff14), 1);
+	using DisableFunc = void(*)(void*);
+	reinterpret_cast<DisableFunc>(mod->ptrBase + 0x337f20)(this);
 }
 
 void Module_180331ad0::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x180337fe0
-	if (this->crosshairPng == this->lastCrosshairPng)
-		return;
-	this->lastCrosshairPng = this->crosshairPng;
-
+	// Kept as direct binary call: crosshair patch toggle requires the binary's lazy global initialisation (func_0x180337fe0).
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
-	auto base = mod->ptrBase;
-
-	auto target = *reinterpret_cast<void**>(base + 0x83ff28);
-	if (target == nullptr) return;
-
-	void* src;
-	if (this->crosshairPng) {
-		src = reinterpret_cast<void*>(base + 0x6edc98);
-	} else {
-		src = reinterpret_cast<void*>(base + 0x83ff14);
-	}
-	g_Data.patchToCode(target, src, 1);
+	using PostRenderFunc = void(*)(void*);
+	reinterpret_cast<PostRenderFunc>(mod->ptrBase + 0x337fe0)(this);
 }
 
 void Module_180331ad0::onLoadConfig(void* conf) {

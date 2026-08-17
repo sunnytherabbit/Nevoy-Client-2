@@ -9,8 +9,7 @@ CPS::CPS() : IModule(0, Category::VISUAL, "Displays your clicks per second.") {
 }
 
 std::string CPS::getModuleName() { return "CPS"; }
-std::string CPS::getTooltip() { 
-	// Binary function: func_0x1802f2510
+std::string CPS::getTooltip() {
 	return "Displays your clicks per second.";
 }
 

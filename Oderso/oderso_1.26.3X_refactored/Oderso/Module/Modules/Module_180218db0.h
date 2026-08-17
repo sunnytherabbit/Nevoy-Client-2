@@ -27,4 +27,6 @@ private:
 	uint8_t _pad0x8f = 0;                    // 0x8f, keeps the 0x10-byte region
 };
 
+static_assert(sizeof(Module_180218db0) == 0x90, "Module_180218db0 must match the binary object size");
+
 #endif

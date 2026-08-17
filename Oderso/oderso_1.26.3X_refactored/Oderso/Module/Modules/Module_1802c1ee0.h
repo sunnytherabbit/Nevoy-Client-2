@@ -15,9 +15,12 @@ public:
 	virtual void onDisable() override;
 	virtual std::string getTooltip() override;
 
-	float speed = 0.f;
-	float yMul = 0.f;
-	float zMul = 0.f;
+	float speed = 0.f;  // 0x80
+	float yMul = 0.f;   // 0x84
+	float zMul = 0.f;   // 0x88
+	char _pad0x8c[4];   // 0x8c-0x8f
 };
+
+static_assert(sizeof(Module_1802c1ee0) == 0x90, "Module_1802c1ee0 must match the binary object size");
 
 #endif
