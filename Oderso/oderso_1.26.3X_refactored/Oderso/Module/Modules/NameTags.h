@@ -11,6 +11,18 @@ public:
 	~NameTags();
 
 	virtual std::string getModuleName() override;
+
+	SettingEnum font;
+	bool rainbowText = true;
+	bool background = true;
+	bool outline = true;
+	float outlineSize = 1.f;
+	bool roundCorners = true;
+	float roundness = 5.f;
+	int maxColumns = 10;
+	int maxRows = 4;
+	float textSize = 1.f;
+	bool displayHeads = true;
 };
 
 #endif

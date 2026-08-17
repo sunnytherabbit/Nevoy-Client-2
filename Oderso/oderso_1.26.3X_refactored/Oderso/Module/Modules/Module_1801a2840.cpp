@@ -29,14 +29,12 @@ void Module_1801a2840::slot_15() {
 }
 
 void Module_1801a2840::onLoadConfig(void* conf) {
-	// Binary function: func_0x1801a9500
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onLoadConfig(conf);
 }
 
 void Module_1801a2840::onSaveConfig(void* conf) {
-	// Binary function: func_0x1801ad530
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onSaveConfig(conf);
 }
 

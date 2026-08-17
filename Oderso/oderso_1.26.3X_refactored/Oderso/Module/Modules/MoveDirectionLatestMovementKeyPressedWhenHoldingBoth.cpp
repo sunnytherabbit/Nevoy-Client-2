@@ -2,8 +2,8 @@
 #include "MoveDirectionLatestMovementKeyPressedWhenHoldingBoth.h"
 
 MoveDirectionLatestMovementKeyPressedWhenHoldingBoth::MoveDirectionLatestMovementKeyPressedWhenHoldingBoth() : IModule(0, Category::CUSTOM, "Makes you move in the direction of the latest movement key pressed when holding both") {
-	registerBoolSetting("Ignore second", &ignoreSecond, ignoreSecond);
-	registerBoolSetting("uUM", &uUM, uUM);
+	registerBoolSetting("Ignore second", &ignoreSecond, true);
+	registerBoolSetting("uUM", &uUM, true);
 }
 
 MoveDirectionLatestMovementKeyPressedWhenHoldingBoth::~MoveDirectionLatestMovementKeyPressedWhenHoldingBoth() {

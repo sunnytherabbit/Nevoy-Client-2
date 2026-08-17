@@ -16,6 +16,7 @@ public:
 	virtual void onSaveConfig(void* conf) override;
 
 	float size = 0.f;
+	int color = 45;
 };
 
 #endif

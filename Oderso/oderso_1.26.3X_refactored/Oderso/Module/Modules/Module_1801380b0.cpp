@@ -6,7 +6,8 @@ Module_1801380b0::Module_1801380b0() : IModule(0, Category::COMBAT, "") {
 	registerBoolSetting("Air", &air, air);
 	registerBoolSetting("Wrong", &wrong, wrong);
 	registerBoolSetting("Ignore a", &ignoreA, ignoreA);
-	registerBoolSetting("field_0x601", &field_0x601, field_0x601);
+
+	registerBoolSetting("Reset on load", &resetOnLoad, resetOnLoad);
 
 	registerIntSetting("Offset X", &offsetX, offsetX, 0, 1);
 	registerIntSetting("Offset Y", &offsetY, offsetY, 0, 1);
@@ -21,9 +22,9 @@ Module_1801380b0::Module_1801380b0() : IModule(0, Category::COMBAT, "") {
 	// binary via func_0x1801cd600; IModule has no registerColorSetting, so
 	// airColor/wrongColor/mixColor are also left unregistered.
 
-	registerIntSetting("Reset on load", &resetOnLoad, resetOnLoad, -1, 1);
-	registerIntSetting("Max heigY7", &maxHeigy7, maxHeigy7, -1, 1);
-	registerIntSetting("Max leng", &maxLeng, maxLeng, -1, 1);
+	registerIntSetting("Max width", &maxWidth, maxWidth, 1, 4096);
+	registerIntSetting("Max height", &maxHeight, maxHeight, 1, 4096);
+	registerIntSetting("Max length", &maxLength, maxLength, 1, 4096);
 
 	registerIntSetting("X", &x, x, -30000000, 30000000);
 	registerIntSetting("Y", &y, y, -30000000, 30000000);

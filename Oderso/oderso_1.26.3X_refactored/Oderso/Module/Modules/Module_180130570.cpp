@@ -1,7 +1,10 @@
 #include "Module_180130570.h"
 
 Module_180130570::Module_180130570() : IModule(0, Category::CUSTOM, "Module_180130570") {
+	registerIntSetting("field_0xa0", &field_0xa0, field_0xa0, 0, 0x7fffffff);
 	registerIntSetting("Change amount", &changeAmount, 1, 1, 10);
+	registerIntSetting("field_0xa8", &field_0xa8, field_0xa8, 0, 0x7fffffff);
+	registerIntSetting("field_0xac", &field_0xac, field_0xac, 0, 0x7fffffff);
 }
 
 std::string Module_180130570::getModuleName() { return "Module_180130570"; }

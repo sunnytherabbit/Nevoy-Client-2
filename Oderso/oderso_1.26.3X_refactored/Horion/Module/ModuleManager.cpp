@@ -126,6 +126,7 @@
 #include "Oderso/Module/Modules/Module_1804f24e0.h"
 #include "Oderso/Module/Modules/Module_1804e2da0.h"
 #include "Oderso/Module/Modules/Module_1804e6e10.h"
+#include "Oderso/Module/Modules/Make.h"
 // === Oderso generated includes END ===
 #include "../../Utils/Logger.h"
 #include "../../Utils/Json.hpp"
@@ -267,6 +268,7 @@ void ModuleManager::initModules() {
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802ac240()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802cfa50()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new MoveDirectionLatestMovementKeyPressedWhenHoldingBoth()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new Make()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801914f0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804168f0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802fc040()));

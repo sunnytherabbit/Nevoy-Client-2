@@ -4,4 +4,8 @@ Module_1804df4a0::Module_1804df4a0() : IModule(0, Category::CUSTOM, "Module_1804
 	// No settings extracted yet
 }
 
-std::string Module_1804df4a0::getModuleName() { return "Module_1804df4a0"; }
+std::string Module_1804df4a0::getModuleName() { return "HiveStats"; }
+
+std::string Module_1804df4a0::getTooltip() {
+	return "I2,";
+}

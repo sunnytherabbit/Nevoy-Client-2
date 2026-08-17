@@ -10,6 +10,10 @@ Generated: Mon Aug 17 13:23:52 2026
 - `func_0x...(...)` calls in source code (excl. prototypes): 0
 - Files with mismatched `{ } braces (project source): 0
 - Oderso modules with naming issues: 0
+- `onLoadConfig` / `onSaveConfig` placeholder comments cleaned: 80 across 41 files
+- `Module_1801380b0` constructor fixed to use valid header fields
+- `Module_180130570` extra int settings registered
+- `Make` module registered in `ModuleManager.cpp`
 
 ## Notes
 

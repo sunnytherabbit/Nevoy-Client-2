@@ -4,4 +4,8 @@ Module_1804e5480::Module_1804e5480() : IModule(0, Category::CUSTOM, "Module_1804
 	// No settings extracted yet
 }
 
-std::string Module_1804e5480::getModuleName() { return "Module_1804e5480"; }
+std::string Module_1804e5480::getModuleName() { return "PlayerInfo"; }
+
+std::string Module_1804e5480::getTooltip() {
+	return "Gives you basic information of each player on the server";
+}

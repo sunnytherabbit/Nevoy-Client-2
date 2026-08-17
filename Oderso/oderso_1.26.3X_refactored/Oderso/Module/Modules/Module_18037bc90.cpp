@@ -4,4 +4,8 @@ Module_18037bc90::Module_18037bc90() : IModule(0, Category::CUSTOM, "Module_1803
 	// No settings extracted yet
 }
 
-std::string Module_18037bc90::getModuleName() { return "Module_18037bc90"; }
+std::string Module_18037bc90::getModuleName() { return "BlockOverlay"; }
+
+std::string Module_18037bc90::getTooltip() {
+	return "Sets the overlay image file for the BlockOverlay";
+}

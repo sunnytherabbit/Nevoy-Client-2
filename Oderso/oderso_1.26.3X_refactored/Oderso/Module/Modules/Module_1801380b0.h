@@ -89,12 +89,12 @@ public:
 	int field_0x62c = 0;
 	int field_0x630 = 0;
 
-	// --- 0x634: Max width / height / length (default -1, min 1, max 1) ---
-	int maxWidth = -1;
+	// --- 0x634: Max width / height / length (default 1, min 1, max 4096) ---
+	int maxWidth = 1;
 	char _pad_0x638_0x63c[4] = {};
-	int maxHeight = -1;
+	int maxHeight = 1;
 	char _pad_0x640_0x644[4] = {};
-	int maxLength = -1;
+	int maxLength = 1;
 	char _pad_0x648_0x680[0x680 - 0x648] = {};
 
 	// 0x680/0x681: onPostRender writes 0 to 0x680; onPreRender reads 0x681.

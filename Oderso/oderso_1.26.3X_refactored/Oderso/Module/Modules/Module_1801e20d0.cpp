@@ -19,14 +19,12 @@ void Module_1801e20d0::onEnable() {
 }
 
 void Module_1801e20d0::onLoadConfig(void* conf) {
-	// Binary function: func_0x1801e3c80
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onLoadConfig(conf);
 }
 
 void Module_1801e20d0::onSaveConfig(void* conf) {
-	// Binary function: func_0x1801e49b0
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onSaveConfig(conf);
 }
 

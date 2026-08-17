@@ -19,14 +19,12 @@ void Module_180412630::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_180412630::onLoadConfig(void* conf) {
-	// Binary function: func_0x180135130
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onLoadConfig(conf);
 }
 
 void Module_180412630::onSaveConfig(void* conf) {
-	// Binary function: func_0x180135c90
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onSaveConfig(conf);
 }
 

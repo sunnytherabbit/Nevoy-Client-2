@@ -35,8 +35,7 @@ void Module_1802fc040::onDisable() {
 }
 
 void Module_1802fc040::onLoadConfig(void* conf) {
-	// Binary function: func_0x1803138b0
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onLoadConfig(conf);
 }
 

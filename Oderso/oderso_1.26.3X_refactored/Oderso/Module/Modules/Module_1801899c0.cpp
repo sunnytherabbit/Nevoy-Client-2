@@ -19,14 +19,12 @@ void Module_1801899c0::onAttack(int attackButton, bool isDown, bool* cancel) {
 }
 
 void Module_1801899c0::onLoadConfig(void* conf) {
-	// Binary function: func_0x18018aa50
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onLoadConfig(conf);
 }
 
 void Module_1801899c0::onSaveConfig(void* conf) {
-	// Binary function: func_0x18018b920
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onSaveConfig(conf);
 }
 

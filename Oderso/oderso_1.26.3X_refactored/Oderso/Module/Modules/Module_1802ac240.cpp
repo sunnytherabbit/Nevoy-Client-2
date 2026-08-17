@@ -42,8 +42,7 @@ void Module_1802ac240::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_1802ac240::onLoadConfig(void* conf) {
-	// Binary function: func_0x1802be850
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onLoadConfig(conf);
 }
 

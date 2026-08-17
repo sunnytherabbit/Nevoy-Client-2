@@ -4,4 +4,8 @@ Module_1804d6b70::Module_1804d6b70() : IModule(0, Category::CUSTOM, "Module_1804
 	// No settings extracted yet
 }
 
-std::string Module_1804d6b70::getModuleName() { return "Module_1804d6b70"; }
+std::string Module_1804d6b70::getModuleName() { return "Coords"; }
+
+std::string Module_1804d6b70::getTooltip() {
+	return "Prints your coordinates";
+}

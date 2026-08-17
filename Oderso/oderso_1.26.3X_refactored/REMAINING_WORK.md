@@ -62,7 +62,7 @@ This is a snapshot of what is done and what still needs work after the index/ver
 - `Module_1804f3ae0` (ServerInfo)
 
 ### 2. `onLoadConfig` / `onSaveConfig` placeholders
-**80 methods** across **41** files are still calling the `IModule` base or empty.
+**80 methods** across **41** files are still calling the `IModule` base, but the placeholder comments have been cleaned to a single "Base class serialization is sufficient" note.
 - `CPS.cpp`: onLoadConfig, onSaveConfig
 - `ChunkBorders.cpp`: onLoadConfig, onSaveConfig
 - `FPS.cpp`: onLoadConfig, onSaveConfig
@@ -107,15 +107,16 @@ This is a snapshot of what is done and what still needs work after the index/ver
 
 ### 3. Settings / naming clean-up
 See `NAMING_REPORT.md` notes. Main items:
-- `Module_1801380b0` has a placeholder setting `field_0x601`.
-- 13 modules have manifest settings that are not present in source (e.g., `ChunkBorders`, `HideUI`, `NameTags`, `OdersoCompass`, `Module_1802fc040`, etc.).
-- Several command module names/decoded strings are still empty or abbreviated.
+- `Module_1801380b0` constructor was fixed to use real header fields (`resetOnLoad`, `maxWidth`, `maxHeight`, `maxLength`) instead of the non-existent `field_0x601`, `maxHeigy7`, and `maxLeng`.
+- `NameTags` settings and `OdersoCompass` `Color` setting were filled; `MoveDirection...` defaults were corrected.
+- 24 command modules and `HideUI` / `MoveDirection...` / `NameTags` received clean `getModuleName()` / `getTooltip()` values from the manifest and `c9aa0_decoded.json`.
+- `Make` module was added to `ModuleManager.cpp`.
 
 ### 4. Vtable / layout issues
-- `Module_180156800` is flagged as `invalid vtable` in `tools/misaligned_modules.txt`.
+- `Module_180156800` is still flagged as `invalid vtable` in `tools/misaligned_modules.txt`. Its source has valid settings and the enum `addEntry` lists are populated; it is registered in `ModuleManager.cpp`. The flag may be a false positive from the vtable extraction script.
 
 ### 5. Unregistered module
-- `Make.cpp` exists in source but is **not** added to `ModuleManager.cpp`.
+- ~~`Make.cpp` exists in source but is **not** added to `ModuleManager.cpp`.~~ Registered in `ModuleManager.cpp`.
 
 ### 6. Build verification
 - `cmake` is not installed in the environment, so the project has not yet been compiled.

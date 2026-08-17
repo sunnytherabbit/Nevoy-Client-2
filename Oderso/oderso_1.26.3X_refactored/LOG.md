@@ -278,3 +278,26 @@ Refactor / port of `Oderso/oderso_1.26.3X_refactored` toward DLL parity with `Od
   - 13 informational notes: missing manifest settings and the `field_0x601` placeholder in `Module_1801380b0.cpp`.
 - Updated `HANDOFF.md` and `AGENTS.md` with the current verification and naming status.
 - **TODO count:** 0.
+
+---
+
+## Session 2026-08-17 14:12
+> User: "Start doing them"
+
+**Action taken:**
+- Reconciled conflicting context between the handoff summary and `AGENTS.md`; used `AGENTS.md` checkpoint as the authority.
+- Fixed `Module_1801380b0` constructor: replaced non-existent `field_0x601`, `maxHeigy7`, and `maxLeng` with valid header fields (`resetOnLoad`, `maxWidth`, `maxHeight`, `maxLength`) and corrected defaults/min/max.
+- Registered the three unnamed `int` settings for `Module_180130570` (`field_0xa0`, `field_0xa8`, `field_0x0xac`) alongside `Change amount`.
+- Filled `NameTags` constructor with all 11 manifest settings and matching header fields; corrected `getModuleName`/`getTooltip`.
+- Filled `OdersoCompass` missing `Color` setting and corrected `Module_1801afdc0` `Weather` enum.
+- Cleaned 80 `onLoadConfig` / `onSaveConfig` placeholder comments across 41 modules.
+- Filled clean `getModuleName()` / `getTooltip()` for 24 command modules, `HideUI`, `MoveDirection...`, and `NameTags` from `module_manifest_full.json` / `c9aa0_decoded.json`.
+- Registered `Make` in `ModuleManager.cpp` (include + `new Make()`).
+- Updated `REMAINING_WORK.md`, `AGENTS.md`, and `VERIFICATION.md` to reflect progress.
+- Regenerated `deeper_module_scan_report.md`: 102 implemented, 0 stubs, 0 missing.
+- Verified: 0 broken braces, 0 stray `func_0x` calls, 0 TODOs in module sources, 0 naming issues.
+
+**Blockers / next:**
+- `cmake` is not installed, so no build pass yet.
+- 45 modules are still behavior-only stubs (many are command modules with no IModule behavior overrides).
+- `Module_180156800` remains flagged as `invalid vtable` in `tools/misaligned_modules.txt` (likely extraction false positive; source is complete).

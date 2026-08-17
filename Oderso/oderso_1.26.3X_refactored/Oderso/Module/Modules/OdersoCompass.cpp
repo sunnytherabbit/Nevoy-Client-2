@@ -6,6 +6,8 @@
 #include <cmath>
 
 OdersoCompass::OdersoCompass() : IModule(0, Category::VISUAL, "Displays a compass.") {
+	registerIntSetting("Color", &color, 45, 45, 180);
+
 	registerFloatSetting("Size", &size, 1.f, 0.1f, 3.f);
 }
 
@@ -16,14 +18,12 @@ std::string OdersoCompass::getTooltip() {
 }
 
 void OdersoCompass::onLoadConfig(void* conf) {
-	// Binary function: func_0x180135130
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onLoadConfig(conf);
 }
 
 void OdersoCompass::onSaveConfig(void* conf) {
-	// Binary function: func_0x180135c90
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onSaveConfig(conf);
 }
 

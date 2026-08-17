@@ -4,4 +4,8 @@ Module_180376860::Module_180376860() : IModule(0, Category::CUSTOM, "Module_1803
 	// No settings extracted yet
 }
 
-std::string Module_180376860::getModuleName() { return "Module_180376860"; }
+std::string Module_180376860::getModuleName() { return "CustomHitsound"; }
+
+std::string Module_180376860::getTooltip() {
+	return "Sets the hit sound audio file path for CustomHu";
+}

@@ -13,6 +13,7 @@ public:
 
 	// No settings extracted yet
 	virtual std::string getTooltip() override;
+	SettingEnum weather;
 };
 
 #endif

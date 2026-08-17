@@ -4,27 +4,25 @@ This report cross-checks every module found in the DLL against the refactored so
 
 ## Summary
 - Total modules in manifest: 102
-- Implemented: 101
-- Stubs (source present, no behavior): 1
+- Implemented: 102
+- Stubs (source present, no behavior): 0
 - Missing from source: 0
 - Not registered in ModuleManager.cpp: 0
-- Top port candidates: 1
+- Top port candidates: 0
 
 ## Top port candidates (sorted by estimated impact)
-Count: 1
+Count: 0
 
 | Class | Name | Category | Status | Settings | Func calls | Strings | Score |
 |-------|------|----------|--------|----------|------------|---------|-------|
-| `NameTags` | NameTags | VISUAL | stub | 11 | 31 | 1 | 21.0 |
 
 ## Missing from source (no .cpp file)
 Count: 0
 
 
 ## Stubs (source present, only constructor + getModuleName)
-Count: 1
+Count: 0
 
-- `NameTags` — NameTags (VISUAL)
 
 ## Not registered in ModuleManager.cpp
 Count: 0

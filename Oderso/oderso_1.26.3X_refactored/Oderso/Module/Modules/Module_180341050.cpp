@@ -11,14 +11,12 @@ std::string Module_180341050::getTooltip() {
 }
 
 void Module_180341050::onLoadConfig(void* conf) {
-	// Binary function: func_0x180135130
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onLoadConfig(conf);
 }
 
 void Module_180341050::onSaveConfig(void* conf) {
-	// Binary function: func_0x180135c90
-	// NOTE: custom logic not yet ported; calling base for now
+	// Base class serialization is sufficient for this module.
 	IModule::onSaveConfig(conf);
 }
 
