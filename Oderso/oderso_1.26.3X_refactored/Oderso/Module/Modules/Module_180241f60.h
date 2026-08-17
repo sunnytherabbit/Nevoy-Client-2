@@ -17,9 +17,13 @@ public:
 	virtual void setEnabled(void* event = nullptr, bool* cancel = nullptr) override;
 	virtual void toggle(void* event = nullptr, bool* cancel = nullptr) override;
 
-	// binary fields used by setEnabled/toggle
-	uint16_t field_0x80 = 0;
-	char field_0x82 = -1;
+	// Binary layout: IModule is 0x80 bytes, then:
+	// 0x80 - state flag, 0x81 - busy flag, 0x82 - stored key
+	uint8_t field_0x80 = 0;
+	bool field_0x81 = false;
+	int8_t field_0x82 = -1;
 };
+
+static_assert(sizeof(Module_180241f60) == 0x88, "Module_180241f60 must be 0x88 bytes to match the binary layout");
 
 #endif

@@ -19,14 +19,21 @@ public:
 	virtual void onSaveConfig(void* conf) override;
 	virtual void slot_31(int arg = 0, char mask = 0, bool* cancel = nullptr) override;
 
+private:
+	// IModule is 0x80 bytes; binary fields live at 0x148, 0x149 and 0x14a.
+	char _binaryPadding[0xc8];
+
+public:
+	// 0x148: "Always sprint" setting.
 	bool alwaysSprint = false;
+	// 0x149: "Hide text" setting.
+	bool hideText = false;
+	// 0x14a: manual toggle state, toggled by onAttack / slot_31.
+	bool sprintToggle = false;
 
-	// padding to match binary layout up to 0x14b
-	char _binaryPadding[0xc5];
-
-	bool field_0x148 = false;
-	char _pad_0x149[1];
-	bool field_0x14a = false;
+private:
+	// Pad to 0x150 to keep the object well-sized for any binary-sized comparisons.
+	char _binaryPadding2[0x6];
 };
 
 #endif

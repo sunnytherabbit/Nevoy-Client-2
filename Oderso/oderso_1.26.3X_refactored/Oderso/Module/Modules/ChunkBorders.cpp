@@ -19,13 +19,16 @@ ChunkBorders::ChunkBorders() : IModule(0, Category::VISUAL, "Shows chunk borders
 }
 
 std::string ChunkBorders::getModuleName() { return "Chunk Borders"; }
-std::string ChunkBorders::getTooltip() { 
-	// Binary function: func_0x1801cdc60
+
+std::string ChunkBorders::getTooltip() {
+	// Manifest tooltip (matches binary getTooltip decrypted string).
 	return "Shows chunk borders and slime chunks.";
 }
 
 void ChunkBorders::onEnable() {
-	// Binary function: func_0x1801cde00
+	// func_0x1801cde00 -> func_0x1801cde10: chunk-state initialization.
+	// Not present in the decompiled C source; disassembly shows complex
+	// 0x250/0x28 record allocation. Kept as a direct binary call.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using EnableFunc = void(*)(void*);
@@ -33,7 +36,9 @@ void ChunkBorders::onEnable() {
 }
 
 void ChunkBorders::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	// Binary function: func_0x1801cdf40
+	// func_0x1801cdf40: chunk-border / slime-chunk / player-icon rendering.
+	// Not present in the decompiled C source and ~1370 bytes of rendering logic;
+	// too complex to port safely. Kept as a direct binary call.
 	auto mod = g_Data.getModule();
 	if (mod == nullptr) return;
 	using PostRenderFunc = void(*)(void*);
@@ -51,7 +56,10 @@ void ChunkBorders::onSaveConfig(void* conf) {
 }
 
 void ChunkBorders::toggle(void* event, bool* cancel) {
-	// Binary function: func_0x1801cf370
+	// func_0x1801cf370: key-event handler (getEventKey, then push a masked
+	// 64-bit value into a vector at this+0x708 guarded by this+0xb1).
+	// Not present in the decompiled C source and tightly coupled to the binary
+	// object layout; kept as a direct binary call.
 	if (event == nullptr || cancel == nullptr)
 		return;
 

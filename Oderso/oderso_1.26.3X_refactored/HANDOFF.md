@@ -210,22 +210,25 @@ Patch methods follow this exact rhythm:
 5. **Complex methods** using `func_0x180460100` / `std::function` entity iteration. Two are already ported; pattern is documented above.
 
 ### 8.2 Open blockers
-- `Module_180130570::onPreRender` (`func_0x180132b00`): the object needs a `changeAmount` setting and a pointer at `this + 0x98`, and the binary constructor is large. The `onPreRender` itself is only 21 lines and can be called directly once the header layout is fixed.
-- Remaining `onPreRender` / `slot_15` / `slot_30` methods that require large headers or `std::function` dispatchers.
+- MinGW cross-compile is green (`cmake --build build-mingw` reaches 100% and links `lib1.26.3X.dll`).
+- No `// TODO` markers remain in module `.cpp` files.
+- Remaining work is **252 `// Binary function:` direct-call stubs across 82 module `.cpp` files** (see 8.3). These should be converted to C++ where the decomp is short/clear; otherwise left as direct calls.
+- `IModule` size is locked at `0x80` (`Category` now `unsigned char`); any new derived-module fields must be placed after the base with correct padding.
 
-### 8.3 Files with the most TODOs (top 10)
+### 8.3 Files with the most binary-function stubs (top 10)
 
-| File | TODOs | Notes |
+| File | Stubs | Notes |
 |------|-------|-------|
-| `Module_1802c5a20.cpp` | 8 | many `defaults/min/max` |
-| `Module_180195270.cpp` | 7 | mostly `defaults/min/max` |
-| `Module_18021f300.cpp` | 3 | `defaults/min/max` |
-| `Module_1802c1ee0.cpp` | 3 | `defaults/min/max` |
-| `Module_1802cfa50.cpp` | 3 | `defaults/min/max` + bodies |
-| `Module_1803238c0.cpp` | 4 | `defaults/min/max` / `add entries` |
-| `Module_1802ac240.cpp` | 4 | unported bodies |
-| `Module_1802fc040.cpp` | 3 | unported bodies |
-| `Module_180360610.cpp` | 3 | `defaults/min/max` and bodies |
+| `SmoothCamera.cpp` | 8 | onEnable/onDisable/onPostRender/onKeyUpdate/slot_27/slot_29/slot_31 |
+| `Module_1802ac240.cpp` | 6 | onPreRender/onEnable/onPostRender/onLoad/toggle |
+| `Module_1802cfa50.cpp` | 6 | onEnable/onPreRender/onPostRender/onAttack/slot_30 |
+| `Module_180360610.cpp` | 6 | onEnable/onDisable/onKeyUpdate/onPostRender/onTick |
+| `Module_18017c4a0.cpp` | 5 | onPreRender uses `func_0x180460100` std::function dispatcher |
+| `Module_180185460.cpp` | 5 | onPreRender/onEnable/onAttack/onTick/slot_30 |
+| `Module_18018f510.cpp` | 5 | onEnable/onDisable/onPostRender/onTick/slot_30 |
+| `Module_1801914f0.cpp` | 5 | onPreRender/onEnable/onPostRender/onAttack/slot_30 |
+| `Module_1802fc040.cpp` | 5 | onPreRender/onPostRender/onEnable/onAttack/slot_30 |
+| `ChunkBorders.cpp` | 4 | onPreRender/onPostRender/onEnable/onDisable |
 
 A full file/TODO list is at the bottom of this doc.
 
@@ -306,9 +309,9 @@ Find all TODOs by file:
 grep -R "// TODO" Oderso/Module/Modules/*.cpp
 ```
 
-Find a binary function in the decompilation:
+Extract a single decompiled function:
 ```bash
-grep -n "// Function: func_0x180132b00" Oderso/ghidra_decompiled_1.26.3X_new.c
+python3 tools/extract_decomp_func.py 0x180132b00
 ```
 
 Count TODOs:

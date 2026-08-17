@@ -12,8 +12,9 @@ public:
 
 	virtual std::string getModuleName() override;
 
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) override;	
-	virtual void onEnable() override;	virtual std::string getTooltip() override;
+	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual void onEnable() override;
+	virtual std::string getTooltip() override;
 	virtual void onLoadConfig(void* conf) override;
 	virtual void onSaveConfig(void* conf) override;
 	virtual void toggle(void* event = nullptr, bool* cancel = nullptr) override;

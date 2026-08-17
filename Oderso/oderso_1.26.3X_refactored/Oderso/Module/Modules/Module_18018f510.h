@@ -19,14 +19,16 @@ public:
 	virtual void onSaveConfig(void* conf) override;
 	virtual void slot_31(int arg = 0, char mask = 0, bool* cancel = nullptr) override;
 
-	bool alwaysSneak = false;
+	// padding to match binary layout; first real field is at 0x148
+	char _binaryPadding[0xc8];
 
-	// padding to match binary layout up to 0x14b
-	char _binaryPadding[0xc5];
-
-	bool field_0x148 = false;
-	char _pad_0x149[1];
-	bool field_0x14a = false;
+	bool alwaysSneak = false;    // 0x148
+	bool hideText = false;       // 0x149
+	bool sneakToggled = false;   // 0x14a
 };
+
+static_assert(offsetof(Module_18018f510, alwaysSneak) == 0x148, "alwaysSneak offset mismatch");
+static_assert(offsetof(Module_18018f510, hideText) == 0x149, "hideText offset mismatch");
+static_assert(offsetof(Module_18018f510, sneakToggled) == 0x14a, "sneakToggled offset mismatch");
 
 #endif
