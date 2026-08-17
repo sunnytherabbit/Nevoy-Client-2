@@ -47,3 +47,13 @@ void Module_1802c5a20::onEnable() {
 	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x1b8) = uVar2;
 	return;
 }
+
+void Module_1802c5a20::onLoadConfig(void* conf) {
+	// Uses the IModule base config loader (binary vtable points to func_0x180135130).
+	IModule::onLoadConfig(conf);
+}
+
+void Module_1802c5a20::onSaveConfig(void* conf) {
+	// Uses the IModule base config saver (binary vtable points to func_0x180135c90).
+	IModule::onSaveConfig(conf);
+}

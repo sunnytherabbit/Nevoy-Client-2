@@ -1,6 +1,6 @@
 #include "Module_1804f24e0.h"
 
-Module_1804f24e0::Module_1804f24e0() : IModule(0, Category::CUSTOM, "Module_1804f24e0") {
+Module_1804f24e0::Module_1804f24e0() : IModule(0, Category::CUSTOM, "Shows you the seed of the world") {
 	// No settings extracted yet
 }
 

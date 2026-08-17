@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cstdint>
+
 #include "CEntity.h"
 #include "CGameSettingsInput.h"
 #include "CLoopbackPacketSender.h"
@@ -38,14 +40,14 @@ public:
 	}
 
 	void computeHash() {
-		hash = 0xCBF29CE484222325i64;
+		hash = 0xCBF29CE484222325LL;
 		if (this->text.getTextLength() <= 0)
 			return;
 		char* textP = this->text.getText();
 		auto c = *textP;
 
 		do {
-			hash = c ^ 0x100000001B3i64 * hash;
+			hash = c ^ 0x100000001B3LL * hash;
 			c = *++textP;
 		} while (*textP);
 	}
@@ -884,41 +886,41 @@ inline void* getOption_0x18b1887(C_ClientInstance* client) {
 	if (options == nullptr) return nullptr;
 
 	auto lVar3 = reinterpret_cast<uintptr_t>(options);
-	auto bucketBegin = *reinterpret_cast<longlong**>(lVar3 + 0x48);
-	auto bucketEnd = *reinterpret_cast<longlong**>(lVar3 + 0x50);
+	auto bucketBegin = *reinterpret_cast<long long**>(lVar3 + 0x48);
+	auto bucketEnd = *reinterpret_cast<long long**>(lVar3 + 0x50);
 	int bucketCount = (int)((reinterpret_cast<uintptr_t>(bucketEnd) - reinterpret_cast<uintptr_t>(bucketBegin)) >> 3);
 	int index = (bucketCount - 1) & 0x18b1887;
 
 	auto plVar7 = bucketBegin + index;
-	auto lVar4 = *reinterpret_cast<longlong*>(lVar3 + 0x68);
+	auto lVar4 = *reinterpret_cast<long long*>(lVar3 + 0x68);
 
-	longlong lVar6;
+	long long lVar6;
 	do {
 		if (*plVar7 == -1) return nullptr;
 		lVar6 = *plVar7 * 0x20;
-		plVar7 = reinterpret_cast<longlong*>(lVar4 + lVar6);
+		plVar7 = reinterpret_cast<long long*>(lVar4 + lVar6);
 	} while (*reinterpret_cast<int*>(lVar4 + 8 + lVar6) != 0x18b1887);
 
-	if (*reinterpret_cast<longlong*>(lVar3 + 0x70) == lVar4 + lVar6) return nullptr;
+	if (*reinterpret_cast<long long*>(lVar3 + 0x70) == lVar4 + lVar6) return nullptr;
 
-	auto optionMap = *reinterpret_cast<longlong*>(lVar4 + lVar6 + 0x10);
+	auto optionMap = *reinterpret_cast<long long*>(lVar4 + lVar6 + 0x10);
 	if (optionMap == 0) return nullptr;
 
-	auto uVar1 = *reinterpret_cast<uint*>(reinterpret_cast<uintptr_t>(client) + 0x18);
+	auto uVar1 = *reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(client) + 0x18);
 	auto uVar5 = (uVar1 & 0x3ffff) >> 0xb;
 
-	auto mapArrEnd = *reinterpret_cast<longlong**>(optionMap + 0x10);
-	auto mapArrBegin = *reinterpret_cast<longlong**>(optionMap + 8);
+	auto mapArrEnd = *reinterpret_cast<long long**>(optionMap + 0x10);
+	auto mapArrBegin = *reinterpret_cast<long long**>(optionMap + 8);
 	if (uVar5 >= (reinterpret_cast<uintptr_t>(mapArrEnd) - reinterpret_cast<uintptr_t>(mapArrBegin)) >> 3)
 		return nullptr;
 
-	auto lVar4b = *reinterpret_cast<longlong*>(mapArrBegin + uVar5);
+	auto lVar4b = *reinterpret_cast<long long*>(mapArrBegin + uVar5);
 	if (lVar4b == 0) return nullptr;
 
-	auto uVar2 = *reinterpret_cast<uint*>(lVar4b + (uVar1 & 0x7ff) * 4);
+	auto uVar2 = *reinterpret_cast<uint32_t*>(lVar4b + (uVar1 & 0x7ff) * 4);
 	if (((uVar1 & 0xfffc0000) ^ uVar2) >= 0x3ffff) return nullptr;
 
-	auto valueArr = *reinterpret_cast<longlong**>(optionMap + 0x50);
+	auto valueArr = *reinterpret_cast<long long**>(optionMap + 0x50);
 	return reinterpret_cast<void*>((uVar2 & 0x3ff) * 100 + valueArr[(uVar2 & 0x3fc00) >> 7]);
 }
 

@@ -42,8 +42,10 @@ void Module_1802ac240::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_1802ac240::onLoadConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
-	IModule::onLoadConfig(conf);
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using OnLoadT = void(*)(void*, void*);
+	reinterpret_cast<OnLoadT>(mod->ptrBase + 0x2be850)(this, conf);
 }
 
 void Module_1802ac240::toggle(void* event, bool* cancel) {

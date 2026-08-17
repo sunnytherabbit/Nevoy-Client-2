@@ -27,7 +27,7 @@ void Module_1801e7620::onDisable() {
 	if (mod == nullptr) return;
 	auto base = mod->ptrBase;
 
-	using ResolvePatch = longlong(*)(void*);
+	using ResolvePatch = __int64(*)(void*);
 	auto resolve1 = reinterpret_cast<ResolvePatch>(base + 0x1ed700);
 	auto resolve2 = reinterpret_cast<ResolvePatch>(base + 0x1ed7e0);
 

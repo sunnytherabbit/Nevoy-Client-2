@@ -22,7 +22,7 @@ public:
 	void onEnable() override;
 	void onDisable() override;
 	void onPostRender(C_MinecraftUIRenderContext* ctx) override;
-	bool callWhenDisabled() override {
+	bool callWhenDisabled(C_Entity* = nullptr) override {
 		return true;
 	}
 };

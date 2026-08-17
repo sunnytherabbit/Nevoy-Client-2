@@ -35,7 +35,8 @@ void Module_1802fc040::onDisable() {
 }
 
 void Module_1802fc040::onLoadConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Binary function: func_0x1803138b0 - load base settings then default keybind to 'L' if unset.
 	IModule::onLoadConfig(conf);
+	if (this->getKeybind() == 0) this->setKeybind(0x4c);
 }
 

@@ -24,7 +24,7 @@
 #define _CHAKRACOMMON_H_
 
 // Platform specific code
-#if defined(_WIN32) && defined(_MSC_VER)
+#if defined(_WIN32)
 #include <windows.h>
 
 // Header macros

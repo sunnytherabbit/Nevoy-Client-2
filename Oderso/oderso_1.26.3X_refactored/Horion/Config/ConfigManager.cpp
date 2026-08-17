@@ -1,13 +1,17 @@
 #include "ConfigManager.h"
+#include <cstdlib>
 
+#ifndef __MINGW32__
 #include <windows.storage.h>
 #include <wrl.h>
 
 using namespace ABI::Windows::Storage;
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
+#endif
 
 std::wstring ConfigManager::GetRoamingFolderPath() {
+#ifndef __MINGW32__
 	ComPtr<IApplicationDataStatics> appDataStatics;
 	auto hr = RoGetActivationFactory(HStringReference(L"Windows.Storage.ApplicationData").Get(), __uuidof(appDataStatics), &appDataStatics);
 	if (FAILED(hr)) throw std::runtime_error("Failed to retrieve application data statics");
@@ -31,6 +35,14 @@ std::wstring ConfigManager::GetRoamingFolderPath() {
 	uint32_t pathLength;
 	auto roamingPathCStr = roamingPathHString.GetRawBuffer(&pathLength);
 	return std::wstring(roamingPathCStr, pathLength);
+#else
+	const char* home = getenv("USERPROFILE");
+	if (!home) home = getenv("HOME");
+	std::string p(home ? home : ".");
+	p += "\\Oderso";
+	std::filesystem::create_directories(p);
+	return std::wstring(p.begin(), p.end());
+#endif
 }
 
 ConfigManager::ConfigManager() {

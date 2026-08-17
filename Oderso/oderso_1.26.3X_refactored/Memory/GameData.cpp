@@ -1,3 +1,4 @@
+#include <stdexcept>
 #include "GameData.h"
 
 #include <Windows.h>
@@ -26,7 +27,7 @@ void GameData::retrieveClientInstance() {
 	g_Data.clientInstance = reinterpret_cast<C_ClientInstance*>(g_Data.slimMem->ReadPtr<uintptr_t*>(g_Data.gameModule->ptrBase + clientInstanceOffset, {0x0, 0x0, 0x50}));
 #ifdef _DEBUG
 	if (g_Data.clientInstance == 0)
-		throw std::exception("Client Instance is 0");
+		throw std::runtime_error("Client Instance is 0");
 #endif
 }
 
@@ -187,7 +188,7 @@ void GameData::forEachEntity(std::function<void(C_Entity*, bool)> callback) {
 	{
 		// MultiplayerLevel::directTickEntities
 		__int64 region = reinterpret_cast<__int64>(g_Data.getLocalPlayer()->region);
-		__int64* entityIdMap = *(__int64**)(*(__int64*)(region + 0x20) + 0x138i64);
+		__int64* entityIdMap = *(__int64**)(*(__int64*)(region + 0x20) + 0x138LL);
 		for (__int64* i = (__int64*)*entityIdMap; i != entityIdMap; i = (__int64*)*i) {
 			__int64 actor = i[3];
 			C_Entity* ent = reinterpret_cast<C_Entity*>(actor);
@@ -230,10 +231,10 @@ void GameData::initGameData(const SlimUtils::SlimModule* gameModule, SlimUtils::
 }
 void GameData::sendPacketToInjector(HorionDataPacket horionDataPack) {
 	if (!isInjectorConnectionActive())
-		throw std::exception("Horion injector connection not active");
+		throw std::runtime_error("Horion injector connection not active");
 	if (horionDataPack.dataArraySize >= 3000) {
 		logF("Tried to send data packet with array size: %i %llX", horionDataPack.dataArraySize, horionDataPack.data.get());
-		throw std::exception("Data packet data too big");
+		throw std::runtime_error("Data packet data too big");
 	}
 
 	horionToInjectorQueue.push(horionDataPack);

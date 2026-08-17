@@ -17,7 +17,7 @@
 
 #ifndef logF
 //#define logF(x) Logger::WriteLogFileF(XorString(x))
-#define logF(x, ...) Logger::WriteLogFileF(XorString(x), __VA_ARGS__)
+#define logF(x, ...) Logger::WriteLogFileF(XorString(x), ##__VA_ARGS__)
 #endif
 
 struct TextForPrint {

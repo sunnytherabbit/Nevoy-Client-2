@@ -1,6 +1,6 @@
 #include "Module_180388cf0.h"
 
-Module_180388cf0::Module_180388cf0() : IModule(0, Category::CUSTOM, "Module_180388cf0") {
+Module_180388cf0::Module_180388cf0() : IModule(0, Category::CUSTOM, "Unbinds a key from a module") {
 	// No settings extracted yet
 }
 

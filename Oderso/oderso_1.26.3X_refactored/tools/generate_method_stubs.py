@@ -177,10 +177,12 @@ def main():
 
         # For .h methods with no binary func, use unknown marker
         complete = {}
-        for name, (ret, args) in h_methods.items():
-            func = "func_0xunknown"
-            if len(h_methods[name]) == 3:
-                ret, args, func = h_methods[name]
+        for name, info in h_methods.items():
+            if len(info) == 3:
+                ret, args, func = info
+            else:
+                ret, args = info
+                func = "func_0xunknown"
             complete[name] = (ret, args, func)
 
         update_header_all(h_path, complete)

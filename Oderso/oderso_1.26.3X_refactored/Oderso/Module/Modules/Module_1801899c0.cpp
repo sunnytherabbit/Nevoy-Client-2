@@ -19,13 +19,17 @@ void Module_1801899c0::onAttack(int attackButton, bool isDown, bool* cancel) {
 }
 
 void Module_1801899c0::onLoadConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
-	IModule::onLoadConfig(conf);
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using OnLoadT = void(*)(void*, void*);
+	reinterpret_cast<OnLoadT>(mod->ptrBase + 0x18aa50)(this, conf);
 }
 
 void Module_1801899c0::onSaveConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
-	IModule::onSaveConfig(conf);
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using OnSaveT = void(*)(void*, void*);
+	reinterpret_cast<OnSaveT>(mod->ptrBase + 0x18b920)(this, conf);
 }
 
 void Module_1801899c0::slot_30(int arg, char mask, bool* cancel) {

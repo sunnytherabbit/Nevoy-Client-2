@@ -17,6 +17,17 @@ import extract_nametags as en
 import extract_datacopy as ed
 
 
+# Some constructors copy encrypted strings from stack locals rather than .rdata;
+# the generic datacopy decrypter does not yet handle these.  Map them explicitly.
+DATACOPY_OVERRIDES = {
+    'func_0x180130570': {
+        0x3ba9: 'Render distance',
+        0x3bc1: 'VV render distance',
+        0x3bdd: 'RTX render distance',
+    },
+}
+
+
 def split_args(s):
     """Split a comma-separated argument list while ignoring commas inside parentheses."""
     args = []
@@ -106,8 +117,12 @@ def build_alias_map(body, off_map, dll, sections):
         puVar21 = local_d8;
         ppppuVar22 = &local_88;
         func_0x1806aa960(ppppuVar22, puVar1, sVar14);  // copy from puVar1's offset
+
+    Also tracks the local std::string object that a copy was written into,
+    e.g. 'puVar27 = local_a8; ... func_0x1806aa960(puVar27, src, len);'
     """
     alias = {}   # var -> offset or (var, 0)
+    last_ptr = {}  # ptr var -> local name it was assigned to
     lines = en._join_continued(body)
     # local_d8 style strings are heap copies; track offset via func_0x1806aa960
     for line in lines:
@@ -129,6 +144,18 @@ def build_alias_map(body, off_map, dll, sections):
             dst, src = m.group(1), m.group(2)
             if src in alias:
                 alias[dst] = alias[src]
+            # record that a pointer var was assigned to a local std::string
+            if dst.startswith('pu') or dst.startswith('pb') or dst.startswith('pc'):
+                last_ptr[dst] = src
+            continue
+        # local_a8._0_8_ = puVar27;  // large-string data pointer stored into the std::string object
+        m = re.search(r'\b(local_\w+)\._0_8_\s*=\s*(\w+)\s*;', line)
+        if m:
+            local_name, ptr = m.group(1), m.group(2)
+            if ptr in alias:
+                alias[local_name] = alias[ptr]
+            if ptr.startswith('pu') or ptr.startswith('pb') or ptr.startswith('pc'):
+                last_ptr[ptr] = local_name
             continue
         # func_0x1806aa960(dst, src, len);  // string copy
         m = re.search(r'func_0x1806aa960\s*\(\s*(\w+)\s*,\s*(\w+)\s*,', line)
@@ -136,6 +163,10 @@ def build_alias_map(body, off_map, dll, sections):
             dst, src = m.group(1), m.group(2)
             if src in alias:
                 alias[dst] = alias[src]
+            # the destination may be a pointer that was assigned to a local
+            local = last_ptr.get(dst)
+            if local:
+                alias[local] = alias.get(dst)
             continue
     return alias
 
@@ -192,6 +223,7 @@ def infer_type(reg_func, args):
     #   func_0x1801ccff0 -> int     (ValueType 3)
     #   func_0x1801ccd70 -> bool    (ValueType 5)
     #   func_0x1801d3a80 -> enum    (ValueType 7)
+    #   func_0x1801d3800 -> key     (ValueType 8)
     if reg_func == 'func_0x1801ccd70':
         return 'bool'
     if reg_func == 'func_0x1801d3a80':
@@ -200,14 +232,20 @@ def infer_type(reg_func, args):
         return 'int'
     if reg_func == 'func_0x1801cd2e0':
         return 'float'
+    if reg_func == 'func_0x1801d3800':
+        return 'key'
     return 'unknown'
 
 
-def update_alias(line, alias, off_map, const_map):
+def update_alias(line, alias, off_map, const_map, last_ptr=None):
     """Apply one statement to the alias and constant maps and return any call metadata."""
+    if last_ptr is None:
+        last_ptr = {}
     update_const_map(line, const_map)
     # pointer assignment to lVar15 + off
-    m = re.search(r'\b(\w+)\s*=\s*\([^)]*\*\s*\)\s*\(\s*\w+\s*\+\s*(0x[0-9a-fA-F]+|\d+)\s*\)', line)
+    # Handles: puVar3 = (ulonglong *)(lVar23 + 0x3ba9);
+    #          pcVar1 = (char *)(*(longlong *)(...) + 0x3bdd);
+    m = re.search(r'\b(\w+)\s*=\s*\([^)]*\*\s*\)\s*\(.*\+\s*(0x[0-9a-fA-F]+|\d+)\s*\)\s*;', line)
     if m:
         alias[m.group(1)] = int(m.group(2), 0)
         return None
@@ -217,6 +255,17 @@ def update_alias(line, alias, off_map, const_map):
         dst, src = m.group(1), m.group(2)
         if src in alias:
             alias[dst] = alias[src]
+        if dst.startswith('pu') or dst.startswith('pb') or dst.startswith('pc'):
+            last_ptr[dst] = src
+        return None
+    # local_a8._0_8_ = puVar27;  // large-string data pointer stored into the std::string object
+    m = re.search(r'\b(local_\w+)\._0_8_\s*=\s*(\w+)\s*;', line)
+    if m:
+        local_name, ptr = m.group(1), m.group(2)
+        if ptr in alias:
+            alias[local_name] = alias[ptr]
+        if ptr.startswith('pu') or ptr.startswith('pb') or ptr.startswith('pc'):
+            last_ptr[ptr] = local_name
         return None
     # func_0x1806aa960(dst, src, len);  string copy
     m = re.search(r'func_0x1806aa960\s*\(\s*(\w+)\s*,\s*(\w+)\s*,', line)
@@ -224,6 +273,10 @@ def update_alias(line, alias, off_map, const_map):
         dst, src = m.group(1), m.group(2)
         if src in alias:
             alias[dst] = alias[src]
+        # the destination may be a pointer that was assigned to a local
+        local = last_ptr.get(dst)
+        if local:
+            alias[local] = alias.get(dst)
         return None
     # IModule base constructor: func_0x18014fe60(this, key, category, nameptr)
     m = re.search(r'func_0x18014fe60\s*\((.*?)\)\s*;', line)
@@ -256,7 +309,7 @@ def update_alias(line, alias, off_map, const_map):
             tooltip = clean_name(raw)
         return ('tooltip', tooltip)
     # registration call
-    for fn in ('func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801d3a80', 'func_0x1801ccff0'):
+    for fn in ('func_0x1801ccd70', 'func_0x1801cd2e0', 'func_0x1801d3a80', 'func_0x1801ccff0', 'func_0x1801d3800'):
         pat = re.escape(fn) + r'\s*\((.*?)\)\s*;'
         m = re.search(pat, line)
         if m:
@@ -275,6 +328,7 @@ def update_alias(line, alias, off_map, const_map):
             #   enum:   (this, name, enum*  , default)
             #   int:    (this, name, int*   , default, min, max)
             #   float:  (this, name, float* , default, min, max)
+            #   key:    (this, name, name2, key* , default, ...)
             defaults = {}
             type_ = infer_type(fn, args)
             if type_ in ('int', 'float'):
@@ -286,6 +340,11 @@ def update_alias(line, alias, off_map, const_map):
             elif type_ in ('bool', 'enum'):
                 if 3 < len(parts):
                     v = eval_const(parts[3], 4, const_map)
+                    if v:
+                        defaults['default'] = v
+            elif type_ == 'key':
+                if 4 < len(parts):
+                    v = eval_const(parts[4], 4, const_map)
                     if v:
                         defaults['default'] = v
 
@@ -310,13 +369,16 @@ def extract_module(ctor, dll, sections, content):
         off = int(s['offset'], 0)
         if off not in off_map or not off_map[off]:
             off_map[off] = s['string']
+    for off, s in DATACOPY_OVERRIDES.get(ctor, {}).items():
+        off_map[off] = s
     alias = {}
     const_map = {}
+    last_ptr = {}
     result = {'constructor': ctor, 'name': None, 'category': None, 'key': None, 'tooltip': None, 'settings': []}
     for line in en._join_continued(body):
         if not line.strip() or line.strip().startswith('//'):
             continue
-        entry = update_alias(line, alias, off_map, const_map)
+        entry = update_alias(line, alias, off_map, const_map, last_ptr)
         if not entry:
             continue
         kind, val = entry

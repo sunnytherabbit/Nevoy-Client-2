@@ -1,6 +1,6 @@
 #include "Module_1804e5480.h"
 
-Module_1804e5480::Module_1804e5480() : IModule(0, Category::CUSTOM, "Module_1804e5480") {
+Module_1804e5480::Module_1804e5480() : IModule(0, Category::CUSTOM, "Gives you basic information of each player on the server") {
 	// No settings extracted yet
 }
 

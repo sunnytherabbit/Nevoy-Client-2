@@ -1,6 +1,6 @@
 #include "Module_1804d6b70.h"
 
-Module_1804d6b70::Module_1804d6b70() : IModule(0, Category::CUSTOM, "Module_1804d6b70") {
+Module_1804d6b70::Module_1804d6b70() : IModule(0, Category::CUSTOM, "Prints your coordinates") {
 	// No settings extracted yet
 }
 

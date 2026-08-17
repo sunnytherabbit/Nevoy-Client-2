@@ -11,12 +11,12 @@ std::string Module_18041e380::getTooltip() {
 }
 
 void Module_18041e380::onLoadConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Base class serialization is sufficient
 	IModule::onLoadConfig(conf);
 }
 
 void Module_18041e380::onSaveConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Base class serialization is sufficient
 	IModule::onSaveConfig(conf);
 }
 

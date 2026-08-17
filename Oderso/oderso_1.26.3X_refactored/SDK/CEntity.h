@@ -698,7 +698,7 @@ public:
 		__int64 v2;       // rcx
 
 		result = (__int64 *)(_this + 0xE8);
-		if (*result == -1i64) {
+		if (*result == -1LL) {
 			v2 = *(__int64 *)(_this + 0x330);
 			*result = ++*(__int64 *)(v2 + 0x1A0);
 		}

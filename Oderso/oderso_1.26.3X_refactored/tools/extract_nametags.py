@@ -174,11 +174,16 @@ def _join_continued(body):
             continue
         if buf:
             buf += ' ' + s
-            if s.endswith((';', '{', '}', ')', '\\')):
+            # Continue while the accumulated buffer still has unbalanced parens/brackets
+            # or does not end a statement cleanly.
+            paren_depth = (buf.count('(') - buf.count(')')) + (buf.count('[') - buf.count(']'))
+            if (s.endswith((';', '}', ')', '\\')) or not s.endswith(cont)) and paren_depth <= 0:
                 out.append(buf)
                 buf = ''
             continue
-        if s.endswith(cont):
+        # start a continuation buffer for unclosed parens/brackets or trailing operators
+        open_depth = (s.count('(') - s.count(')')) + (s.count('[') - s.count(']'))
+        if open_depth > 0 or s.endswith(cont):
             buf = s
             continue
         out.append(s)

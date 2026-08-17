@@ -1,5 +1,10 @@
 ﻿#include "Hooks.h"
 
+#include <intrin.h>
+#ifdef __MINGW32__
+#define _ReturnAddress() __builtin_return_address(0)
+#endif
+
 #include <algorithm>
 #include <glm/ext/matrix_clip_space.hpp>
 #include <glm/ext/matrix_relational.hpp>
@@ -243,7 +248,7 @@ void Hooks::Init() {
 			return origFunc(_this, matrix, lerpT);
 		};
 		
-		std::shared_ptr<FuncHook> bobViewHook = std::make_shared<FuncHook>(levelRendererBobView, (decltype(&bobViewHookF.operator()))bobViewHookF);
+		std::shared_ptr<FuncHook> bobViewHook = std::make_shared<FuncHook>(levelRendererBobView, +bobViewHookF);
 
 		g_Hooks.lambdaHooks.push_back(bobViewHook);
 
@@ -620,7 +625,8 @@ __int64 Hooks::RenderText(__int64 a1, C_MinecraftUIRenderContext* renderCtx) {
 						bool shouldRender = true;
 
 						IModuleContainer(std::shared_ptr<IModule> mod) {
-							const char* moduleNameChr = mod->getModuleName();
+							std::string moduleNameStr = mod->getModuleName();
+							const char* moduleNameChr = moduleNameStr.c_str();
 							this->enabled = mod->isEnabled();
 							this->keybind = mod->getKeybind();
 							this->backingModule = mod;
@@ -1557,9 +1563,9 @@ bool Hooks::ReturnTrue(__int64 _this) {
 __int64 Hooks::SkinRepository___loadSkinPack(__int64 _this, __int64 pack, __int64 a3) {
 	static auto func = g_Hooks.SkinRepository___loadSkinPackHook->GetFastcall<__int64, __int64, __int64, __int64>();
 
-	//auto res = (*(unsigned __int8 (**)(void))(**(__int64**)(pack + 8) + 48i64))();
-	//logF("SkinRepository___loadSkinPack: origin %i, is Trusted: %i", *(int*)((*(__int64*)pack) + 888i64), res);
-	*(int*)((*(__int64*)pack) + 888i64) = 2;  // Set pack origin to "2"
+	//auto res = (*(unsigned __int8 (**)(void))(**(__int64**)(pack + 8) + 48LL))();
+	//logF("SkinRepository___loadSkinPack: origin %i, is Trusted: %i", *(int*)((*(__int64*)pack) + 888LL), res);
+	*(int*)((*(__int64*)pack) + 888LL) = 2;  // Set pack origin to "2"
 
 	return func(_this, pack, a3);
 }
@@ -1620,47 +1626,45 @@ void prepCoolBean() {
 			current = current->nextEntry;
 			count++;
 		}
-		if (count > 5)  // we already added a server
-			goto end;
+		if (count <= 5) {  // only add a server if we haven't already
+			// make new one
+			BeansEntry* epic = new BeansEntry();
+			epic->nextEntry = listEnd;
+			epic->prevEntry = current;
+			epic->masterPlayer.setText("");
+			epic->unk = current->unk;
+			memcpy(epic->filler, current->filler, sizeof(BeansEntry::filler));
+			epic->masterPlayer2.setText("");
+			epic->serverName.setText("Epic");
+			memcpy(epic->filler2, current->filler2, sizeof(BeansEntry::filler2));
 
-		// make new one
-		BeansEntry* epic = new BeansEntry();
-		epic->nextEntry = listEnd;
-		epic->prevEntry = current;
-		epic->masterPlayer.setText("");
-		epic->unk = current->unk;
-		memcpy(epic->filler, current->filler, sizeof(BeansEntry::filler));
-		epic->masterPlayer2.setText("");
-		epic->serverName.setText("Epic");
-		memcpy(epic->filler2, current->filler2, sizeof(BeansEntry::filler2));
+			auto cT = current->start[0].get();
 
-		auto cT = current->start[0].get();
+			std::shared_ptr<ThirdPartyServer>* start = new std::shared_ptr<ThirdPartyServer>[1];
 
-		std::shared_ptr<ThirdPartyServer>* start = new std::shared_ptr<ThirdPartyServer>[1];
+			{
+				ThirdPartyServer* t = new ThirdPartyServer();
 
-		{
-			ThirdPartyServer* t = new ThirdPartyServer();
+				t->coolBoye = cT->coolBoye;
+				t->uuid.setText("");
+				t->masterPlayerAccount = cT->masterPlayerAccount;
+				t->lobbyDescription = cT->lobbyDescription;
+				t->pathToServerIcon.setText("");
+				t->serverName.setText("Horion Server");
+				t->serverName2.setText("Horion Server");  // This is the one actually displayed
+				t->domain.setText(".horionbeta.club");
+				t->serverAddress.setText("mc.horionbeta.club");
+				start[0] = std::shared_ptr<ThirdPartyServer>(t);
+			}
 
-			t->coolBoye = cT->coolBoye;
-			t->uuid.setText("");
-			t->masterPlayerAccount = cT->masterPlayerAccount;
-			t->lobbyDescription = cT->lobbyDescription;
-			t->pathToServerIcon.setText("");
-			t->serverName.setText("Horion Server");
-			t->serverName2.setText("Horion Server");  // This is the one actually displayed
-			t->domain.setText(".horionbeta.club");
-			t->serverAddress.setText("mc.horionbeta.club");
-			start[0] = std::shared_ptr<ThirdPartyServer>(t);
+			epic->start = start;
+			epic->end = &start[1];
+
+			current->nextEntry = epic;
+
+			// increase count
+			*reinterpret_cast<__int64*>(g_Data.getClientInstance()->minecraftGame->getServerEntries() + 0x50) += 1;
 		}
-
-		epic->start = start;
-		epic->end = &start[1];
-
-		current->nextEntry = epic;
-
-		// increase count
-		*reinterpret_cast<__int64*>(g_Data.getClientInstance()->minecraftGame->getServerEntries() + 0x50) += 1;
-	end:;
 	}
 }
 

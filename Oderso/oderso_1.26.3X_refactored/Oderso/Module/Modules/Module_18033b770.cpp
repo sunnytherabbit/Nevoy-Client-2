@@ -27,12 +27,16 @@ void Module_18033b770::onDisable() {
 }
 
 void Module_18033b770::onLoadConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
-	IModule::onLoadConfig(conf);
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using OnLoadT = void(*)(void*, void*);
+	reinterpret_cast<OnLoadT>(mod->ptrBase + 0x33f540)(this, conf);
 }
 
 void Module_18033b770::onSaveConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
-	IModule::onSaveConfig(conf);
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using OnSaveT = void(*)(void*, void*);
+	reinterpret_cast<OnSaveT>(mod->ptrBase + 0x33fc10)(this, conf);
 }
 

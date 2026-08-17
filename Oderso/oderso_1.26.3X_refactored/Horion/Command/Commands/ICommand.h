@@ -18,7 +18,7 @@ private:
 protected:
 	inline void assertTrue(bool condition) {
 		if (!condition) {
-			throw std::exception();
+			throw std::runtime_error("assertion failed");
 		}
 	};
 	inline float assertFloat(std::string string) { return std::stof(string); };

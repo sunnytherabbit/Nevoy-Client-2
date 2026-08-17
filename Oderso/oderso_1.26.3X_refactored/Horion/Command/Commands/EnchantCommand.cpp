@@ -124,7 +124,7 @@ bool EnchantCommand::execute(std::vector<std::string>* args) {
 				saveEnchantsToUserData(item, EnchantData);
 				__int64 proxy = reinterpret_cast<__int64>(g_Data.getLocalPlayer()->getSupplies());
 				if (!*(uint8_t*)(proxy + 168))
-					(*(void(__fastcall**)(unsigned long long, unsigned long long, C_ItemStack*))(**(unsigned long long**)(proxy + 176) + 72i64))(
+					(*(void(__fastcall**)(unsigned long long, unsigned long long, C_ItemStack*))(**(unsigned long long**)(proxy + 176) + 72LL))(
 						*(unsigned long long*)(proxy + 176),
 						*(unsigned int*)(proxy + 16),
 						item);  // Player::selectItem
@@ -147,7 +147,7 @@ bool EnchantCommand::execute(std::vector<std::string>* args) {
 			saveEnchantsToUserData(item, EnchantData);
 			__int64 proxy = reinterpret_cast<__int64>(g_Data.getLocalPlayer()->getSupplies());
 			if (!*(uint8_t*)(proxy + 168))
-				(*(void(__fastcall**)(unsigned long long, unsigned long long, C_ItemStack*))(**(unsigned long long**)(proxy + 176) + 72i64))(
+				(*(void(__fastcall**)(unsigned long long, unsigned long long, C_ItemStack*))(**(unsigned long long**)(proxy + 176) + 72LL))(
 					*(unsigned long long*)(proxy + 176),
 					*(unsigned int*)(proxy + 16),
 					item);  // Player::selectItem

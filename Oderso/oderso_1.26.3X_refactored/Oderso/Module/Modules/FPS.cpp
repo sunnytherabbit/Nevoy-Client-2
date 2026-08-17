@@ -15,12 +15,12 @@ std::string FPS::getTooltip() {
 }
 
 void FPS::onLoadConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Base class serialization is sufficient
 	IModule::onLoadConfig(conf);
 }
 
 void FPS::onSaveConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Base class serialization is sufficient
 	IModule::onSaveConfig(conf);
 }
 

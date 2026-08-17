@@ -5,6 +5,7 @@
 #endif
 
 #include <fstream>
+#include <filesystem>
 #include <sstream>
 #include <algorithm>
 #include <ctime>
@@ -234,7 +235,7 @@ public:
 
 	static __forceinline unsigned __int64 rotBy(int in, unsigned int by) {
 		auto mut = static_cast<unsigned __int64>(in);
-		return ((mut & 0x7FFFFFui64) | ((static_cast<unsigned int>(in) >> 8u) & 0x800000u) /*copy sign bit*/) << by;
+		return ((mut & 0x7FFFFFULL) | ((static_cast<unsigned int>(in) >> 8u) & 0x800000u) /*copy sign bit*/) << by;
 	}
 
 	static size_t posToHash(const vec3_ti& pos);
@@ -410,7 +411,7 @@ public:
 	static void setClipboardText(std::string& text);
 
 	static std::string readFileContents(std::wstring filePath) {
-		std::ifstream fileStr(filePath, std::ios::in | std::ios::binary);
+		std::ifstream fileStr(std::filesystem::path(filePath), std::ios::in | std::ios::binary);
 		if (fileStr) {
 			std::string contents;
 			fileStr.seekg(0, std::ios::end);
@@ -424,7 +425,7 @@ public:
 	}
 
 	static std::wstring wreadFileContents(std::wstring filePath) {
-		std::wifstream fileStr(filePath, std::ios::in | std::ios::binary);
+		std::wifstream fileStr(std::filesystem::path(filePath), std::ios::in | std::ios::binary);
 		if (fileStr) {
 			std::wstring contents;
 			fileStr.seekg(0, std::ios::end);

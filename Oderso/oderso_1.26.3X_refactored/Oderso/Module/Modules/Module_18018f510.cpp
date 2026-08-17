@@ -60,12 +60,12 @@ void Module_18018f510::onDisable() {
 }
 
 void Module_18018f510::onLoadConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Base class serialization is sufficient
 	IModule::onLoadConfig(conf);
 }
 
 void Module_18018f510::onSaveConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Base class serialization is sufficient
 	IModule::onSaveConfig(conf);
 }
 

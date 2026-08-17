@@ -28,12 +28,12 @@ void Module_1803455d0::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_1803455d0::onLoadConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Base class serialization is sufficient
 	IModule::onLoadConfig(conf);
 }
 
 void Module_1803455d0::onSaveConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Base class serialization is sufficient
 	IModule::onSaveConfig(conf);
 }
 

@@ -130,7 +130,7 @@ __int64 DrawUtils::getScreenContext() {
 }
 
 MatrixStack* DrawUtils::getMatrixStack() {
-	return reinterpret_cast<MatrixStack*>(*reinterpret_cast<__int64*>(DrawUtils::getScreenContext() + 0x18i64) + 0x30i64);
+	return reinterpret_cast<MatrixStack*>(*reinterpret_cast<__int64*>(DrawUtils::getScreenContext() + 0x18LL) + 0x30LL);
 }
 
 float DrawUtils::getTextWidth(std::string* textStr, float textSize, Fonts font) {

@@ -182,19 +182,12 @@ public:
 	void* funcPtr;
 	void* funcReal;
 
-	FuncHook(void* func, void* hooked) {
-		funcPtr = func;
-
-		MH_STATUS ret = MH_CreateHook(func, hooked, &funcReal);
-		if (ret == MH_OK && (__int64)func > 10) {
-		} else
-			logF("MH_CreateHook = %i", ret);
-	};
-
-	FuncHook(uintptr_t func, void* hooked) {
+	template <typename T, typename U>
+	FuncHook(T func, U hooked) {
 		funcPtr = reinterpret_cast<void*>(func);
+		void* hookedPtr = reinterpret_cast<void*>(reinterpret_cast<uintptr_t>(hooked));
 
-		MH_STATUS ret = MH_CreateHook(funcPtr, hooked, &funcReal);
+		MH_STATUS ret = MH_CreateHook(funcPtr, hookedPtr, &funcReal);
 		if (ret == MH_OK && (__int64)funcPtr > 10) {
 		} else
 			logF("MH_CreateHook = %i", ret);

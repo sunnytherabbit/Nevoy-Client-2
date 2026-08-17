@@ -6,7 +6,7 @@
 
 class IModule;
 
-enum class Category {
+enum class Category : unsigned char {
 	COMBAT = 0,
 	VISUAL = 1,
 	MOVEMENT = 2,
@@ -102,6 +102,7 @@ struct SettingEntry {
 	SettingValue maxValue;         // 0xe0
 	char _pad1[8];                 // 0x128
 	SettingEnum extraData;         // 0x130
+	bool isDragging = false;       // client-side UI state
 	void makeSureTheValueIsAGoodBoiAndTheUserHasntScrewedWithIt();
 };
 
@@ -119,8 +120,6 @@ private:
 	bool field_0x40 = false;
 	char _pad2[7];
 	std::vector<SettingEntry*> settings;
-	bool field_0x60 = false;
-	char _pad3[7];
 	std::vector<std::string> friendList;
 
 protected:
@@ -170,7 +169,7 @@ public:
 	void setEnabled(bool enabled);
 	virtual void toggle(void* event = nullptr, bool* cancel = nullptr);
 	virtual void onSendPacket(C_Packet*);
-	virtual void callWhenDisabled(C_Entity* entity = nullptr);
+	virtual bool callWhenDisabled(C_Entity* entity = nullptr);
 	virtual void onMove(C_MoveInputHandler*);
 	virtual void slot_26();
 	virtual void slot_27(int arg = 0, char mask = 0, bool* cancel = nullptr);
@@ -180,3 +179,5 @@ public:
 	virtual void slot_31(int arg = 0, char mask = 0, bool* cancel = nullptr);
 	const char* getTooltipCStr() { return this->tooltip.c_str(); };
 };
+
+static_assert(sizeof(IModule) == 0x80, "IModule must be exactly 0x80 bytes to match the binary layout");

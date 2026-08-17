@@ -19,12 +19,12 @@ void Module_18020a2d0::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
 }
 
 void Module_18020a2d0::onLoadConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Base class serialization is sufficient
 	IModule::onLoadConfig(conf);
 }
 
 void Module_18020a2d0::onSaveConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
+	// Base class serialization is sufficient
 	IModule::onSaveConfig(conf);
 }
 

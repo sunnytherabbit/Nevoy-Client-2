@@ -19,12 +19,16 @@ void Module_1801e20d0::onEnable() {
 }
 
 void Module_1801e20d0::onLoadConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
-	IModule::onLoadConfig(conf);
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using OnLoadT = void(*)(void*, void*);
+	reinterpret_cast<OnLoadT>(mod->ptrBase + 0x1e3c80)(this, conf);
 }
 
 void Module_1801e20d0::onSaveConfig(void* conf) {
-	// Base class serialization is sufficient for this module.
-	IModule::onSaveConfig(conf);
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using OnSaveT = void(*)(void*, void*);
+	reinterpret_cast<OnSaveT>(mod->ptrBase + 0x1e49b0)(this, conf);
 }
 

@@ -35,11 +35,14 @@ Target DLL for parity: `Oderso/1.26.3X.dll`.
   - Ported `Module_180130570` `onPreRender`/`onAttack`/`slot_30` by direct binary call and added `refreshEntityPointers()`/`onEnable()` to resolve the game-object pointer setup.
   - Reconstructed `Module_1801380b0` header so all fields (colors at 0x90/0xa0/0xb0, bools at 0x88/0x89/0x8d/0x601, ints 0x604-0x6b4) match the binary object layout.
   - Filled all `Module_1801380b0` constructor `registerIntSetting`/`registerBoolSetting` defaults, min, and max from the binary constructor and field initializers.
+  - Finalised `Module_1801380b0` min/max parity (`Opacity` 0–0xFF, `Offset X/Y/Z` 0–1, `Max width/height/length` 1–1, `X/Y/Z` ±30000000, `Rot` 0–270) and added missing offset `static_asserts` (offsetY/Z, y/z).
+  - Fixed global MinGW build blockers (`FuncHook` function pointer casts, `windows.foundation.h` IReference<boolean> redefinition, `__int64`, `getTooltip` declarations, UWP `__uuidof`/runtime linking, MinHook GS-cookie stubs in `compat.cpp`).
+  - Cleared the final 20 `// TODO` markers across 12 module `.cpp` files: ported `onLoadConfig`/`onSaveConfig` for 8 modules via direct binary call, set `getTooltip` literals for 3 modules, and confirmed the IModule base config methods are sufficient for 2 modules.
 - **New blockers:**
-  - None. All known module TODOs are resolved; the next pass would be a build/compile test or further parity verification.
+  - None. All known module TODOs are resolved; the MinGW cross-compile builds and links `lib1.26.3X.dll`.
 - **Validation:** 0 broken braces, 0 stray `func_0x` calls, 0 TODOs in module sources.
 - **Index/verification/naming pass:**
   - Indexed the entire refactored tree (`INDEX.md` / `INDEX.json`, 1197 files, 949 source files).
   - Verified the tree (`VERIFICATION.md`): 5 legacy TODOs (none in module sources), 0 stray `func_0x` calls, 0 broken braces in project source.
   - Verified/corrected module naming (`NAMING_REPORT.md`): 0 critical naming issues; fixed `Module_18021f300` non-printable module/setting names.
-- **Remaining work:** detailed in `REMAINING_WORK.md`. High level: 45 modules are still full stubs (settings/names/tooltips filled for many), `onLoadConfig`/`onSaveConfig` placeholder comments cleaned, `Module_1801380b0` constructor/field sync fixed, `Module_180130570` additional int settings registered, `Make` registered in `ModuleManager.cpp`, `Module_180156800` still flagged as invalid vtable (likely false positive), no build yet, untracked `__pycache__`/`temp_bin`.
+- **Remaining work:** detailed in `REMAINING_WORK.md`. High level: 0 `// TODO` markers remain in module sources, the MinGW build reaches 100% and produces `build-mingw/lib1.26.3X.dll`. `Module_180156800` is still flagged as invalid vtable in `tools/misaligned_modules.txt` (likely false positive). Next priorities are runtime parity validation, MSVC-specific build verification, and optional cleanup of untracked `__pycache__`/`temp_bin`.

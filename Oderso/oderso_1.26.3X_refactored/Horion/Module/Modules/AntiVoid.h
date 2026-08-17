@@ -1,5 +1,5 @@
 #pragma once
-#include "..\ModuleManager.h"
+#include "../ModuleManager.h"
 #include "Module.h"
 
 class AntiVoid : public IModule {

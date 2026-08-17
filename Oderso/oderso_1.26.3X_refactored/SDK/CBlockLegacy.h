@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cstdint>
+
 #include "../Utils/HMath.h"
 #include "TextHolder.h"
 //#include "Tag.h"

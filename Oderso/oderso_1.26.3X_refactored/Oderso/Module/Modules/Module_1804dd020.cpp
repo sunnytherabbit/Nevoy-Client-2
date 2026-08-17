@@ -1,6 +1,6 @@
 #include "Module_1804dd020.h"
 
-Module_1804dd020::Module_1804dd020() : IModule(0, Category::CUSTOM, "Module_1804dd020") {
+Module_1804dd020::Module_1804dd020() : IModule(0, Category::CUSTOM, "Ejects from the server") {
 	// No settings extracted yet
 }
 

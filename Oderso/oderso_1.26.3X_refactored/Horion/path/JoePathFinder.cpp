@@ -45,7 +45,7 @@ struct Edge {
 };
 static __forceinline unsigned __int64 rotBy(int in, unsigned int by){
 	auto mut = static_cast<unsigned __int64>(in);
-	return ((mut & 0x7FFFFFui64) | ((static_cast<unsigned int>(in) >> 8u) & 0x800000u)/*copy sign bit*/) << by;
+	return ((mut & 0x7FFFFFULL) | ((static_cast<unsigned int>(in) >> 8u) & 0x800000u)/*copy sign bit*/) << by;
 }
 
 static __forceinline unsigned __int64 posToHash(const vec3_ti& pos){

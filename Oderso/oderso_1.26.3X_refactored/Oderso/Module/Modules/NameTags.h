@@ -11,6 +11,8 @@ public:
 	~NameTags();
 
 	virtual std::string getModuleName() override;
+	virtual std::string getTooltip() override;
+	virtual bool isFlashMode() override;
 
 	SettingEnum font;
 	bool rainbowText = true;

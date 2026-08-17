@@ -131,7 +131,7 @@ public:
 
 #pragma pack(push, 8)
 
-__declspec(align(8)) class C_MovePlayerPacket : public C_Packet {
+class __declspec(align(8)) C_MovePlayerPacket : public C_Packet {
 public:
 	C_MovePlayerPacket();
 	C_MovePlayerPacket(C_LocalPlayer* player, vec3_t pos);

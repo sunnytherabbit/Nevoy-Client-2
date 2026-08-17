@@ -11,6 +11,7 @@
 #include <functional>
 #include <mutex>
 #include <chrono>
+#include <stdexcept>
 
 #include "../Horion/Config/AccountInformation.h"
 #include "../SDK/CChestBlockActor.h"
@@ -211,7 +212,7 @@ public:
 	inline bool isPacketToInjectorQueueEmpty() { return horionToInjectorQueue.empty(); };
 	inline HorionDataPacket getPacketToInjector() {
 		if (isPacketToInjectorQueueEmpty())
-			throw std::exception("Packet send queue is empty");
+			throw std::runtime_error("Packet send queue is empty");
 		HorionDataPacket pk = horionToInjectorQueue.front();
 		horionToInjectorQueue.pop();
 		return pk;
@@ -280,7 +281,7 @@ public:
 	}
 
 	// Returns the C_ClientInstance pointer via DAT_180840a58 vtable + 0xf8.
-	inline void* getClientInstance() {
+	inline void* getClientInstancePtr() {
 		auto mod = this->getModule();
 		if (mod == nullptr) return nullptr;
 		auto minecraft = *reinterpret_cast<void**>(mod->ptrBase + 0x840a58);
@@ -296,7 +297,7 @@ public:
 	inline void updateClientGlobal() {
 		auto mod = this->getModule();
 		if (mod == nullptr) return;
-		auto client = this->getClientInstance();
+		auto client = this->getClientInstancePtr();
 		*reinterpret_cast<void**>(mod->ptrBase + 0x840a60) = client;
 		if (client == nullptr)
 			*reinterpret_cast<void**>(mod->ptrBase + 0x840a68) = nullptr;
@@ -304,14 +305,14 @@ public:
 
 	// Returns the options object from C_ClientInstance + 0x1d8.
 	inline void* getOptions() {
-		auto client = this->getClientInstance();
+		auto client = this->getClientInstancePtr();
 		if (client == nullptr) return nullptr;
 		return *reinterpret_cast<void**>(reinterpret_cast<uintptr_t>(client) + 0x1d8);
 	}
 
 	// Returns the local player from C_ClientInstance + 0x218 (func_0x180122250).
-	inline void* getLocalPlayer() {
-		auto client = this->getClientInstance();
+	inline void* getLocalPlayerPtr() {
+		auto client = this->getClientInstancePtr();
 		if (client == nullptr) return nullptr;
 		return *reinterpret_cast<void**>(reinterpret_cast<uintptr_t>(client) + 0x218);
 	}

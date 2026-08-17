@@ -11,6 +11,7 @@ public:
 
 	virtual std::string getModuleName() override;
 	virtual std::string getTooltip() override;
+	virtual bool isEnabled() override;
 
 	bool visible = false;
 	bool crosshair = false;

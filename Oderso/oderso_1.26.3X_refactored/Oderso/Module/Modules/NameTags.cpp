@@ -24,3 +24,8 @@ std::string NameTags::getModuleName() { return "NameTags"; }
 std::string NameTags::getTooltip() {
 	return "Displays the name of every user on the server.";
 }
+
+bool NameTags::isFlashMode() {
+	// Binary function: func_0x18008cb60 (returns 1)
+	return true;
+}

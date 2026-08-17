@@ -56,3 +56,13 @@ void Module_1803238c0::onEnable() {
 	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x240) = *reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x150);
 	return;
 }
+
+void Module_1803238c0::onLoadConfig(void* conf) {
+	// Uses the IModule base config loader (binary vtable points to func_0x180135130).
+	IModule::onLoadConfig(conf);
+}
+
+void Module_1803238c0::onSaveConfig(void* conf) {
+	// Uses the IModule base config saver (binary vtable points to func_0x180135c90).
+	IModule::onSaveConfig(conf);
+}

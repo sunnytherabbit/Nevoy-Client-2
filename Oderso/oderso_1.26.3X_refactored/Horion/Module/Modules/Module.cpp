@@ -124,7 +124,7 @@ void IModule::registerEnumSetting(std::string name, SettingEnum* ptr, int defaul
 	setting->minValue.type = (char)ValueType::BOOL_T;
 
 	// Enum data
-	setting->extraData = ptr;
+	setting->extraData = *ptr;
 
 	setting->name = std::move(name);
 	settings.push_back(setting);
@@ -327,7 +327,8 @@ std::string IModule::getTooltip() {
 }
 void IModule::onAttack(int, bool, bool*) {
 }
-void IModule::callWhenDisabled(C_Entity*) {
+bool IModule::callWhenDisabled(C_Entity*) {
+	return false;
 }
 void IModule::onMove(C_MoveInputHandler*) {
 }
@@ -364,7 +365,7 @@ void IModule::clientMessageF(const char* fmt, ...) {
 void SettingEntry::makeSureTheValueIsAGoodBoiAndTheUserHasntScrewedWithIt() {
 	switch (valueType) {
 		case ValueType::ENUM_T:
-			value->_int = std::max(0, std::min(reinterpret_cast<SettingEnum*>(extraData._pad ? 0 : nullptr)->GetCount() - 1, value->_int));  // extraData is now an object
+			value->_int = std::max(0, std::min(extraData.GetCount() - 1, value->_int));  // extraData is now an object
 			break;
 		case ValueType::BOOL_T:
 			break;

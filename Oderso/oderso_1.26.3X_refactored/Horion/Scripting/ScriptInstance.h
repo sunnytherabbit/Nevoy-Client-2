@@ -7,6 +7,7 @@
 #include "ScriptManager.h"
 #include <queue>
 #include <mutex>
+#include <condition_variable>
 #include "JsScriptModule.h"
 
 class JsScriptModule;

@@ -37,7 +37,7 @@ public:
 	bool ignoreA = false;
 	char _pad_0x8e_0x90[2] = {};
 
-	// --- 0x90: Color objects (unregistered; IModule has no registerColorSetting) ---
+	// --- 0x90: Color objects (registered as individual R/G/B/A floats) ---
 	float airColor[4] = {1.f, 1.f, 1.f, 0.f};
 	float wrongColor[4] = {1.f, 0.f, 1.f, 0.f};
 	float mixColor[4] = {0.5f, 1.f, 1.f, 0.f};
@@ -89,7 +89,7 @@ public:
 	int field_0x62c = 0;
 	int field_0x630 = 0;
 
-	// --- 0x634: Max width / height / length (default 1, min 1, max 4096) ---
+	// --- 0x634: Max width / height / length (default 1, min 1, max 1) ---
 	int maxWidth = 1;
 	char _pad_0x638_0x63c[4] = {};
 	int maxHeight = 1;
@@ -117,26 +117,36 @@ public:
 	char _pad_0x6bd_0x6c0[0x6c0 - 0x6bd] = {};
 
 	// Layout sanity checks (these fire at compile time if the offsets drift).
-	static_assert(offsetof(Module_1801380b0, opacity) == 0x80, "opacity offset");
-	static_assert(offsetof(Module_1801380b0, air) == 0x88, "air offset");
-	static_assert(offsetof(Module_1801380b0, ignoreA) == 0x8d, "ignoreA offset");
-	static_assert(offsetof(Module_1801380b0, airColor) == 0x90, "airColor offset");
-	static_assert(offsetof(Module_1801380b0, field_0x128) == 0x128, "field_0x128 offset");
-	static_assert(offsetof(Module_1801380b0, field_0x378) == 0x378, "field_0x378 offset");
-	static_assert(offsetof(Module_1801380b0, pattern) == 0x568, "pattern offset");
-	static_assert(offsetof(Module_1801380b0, positions) == 0x5d0, "positions offset");
-	static_assert(offsetof(Module_1801380b0, blocks) == 0x5e8, "blocks offset");
-	static_assert(offsetof(Module_1801380b0, resetOnLoad) == 0x601, "resetOnLoad offset");
-	static_assert(offsetof(Module_1801380b0, offsetX) == 0x604, "offsetX offset");
-	static_assert(offsetof(Module_1801380b0, field_0x61c) == 0x61c, "field_0x61c offset");
-	static_assert(offsetof(Module_1801380b0, maxWidth) == 0x634, "maxWidth offset");
-	static_assert(offsetof(Module_1801380b0, field_0x680) == 0x680, "field_0x680 offset");
-	static_assert(offsetof(Module_1801380b0, field_0x681) == 0x681, "field_0x681 offset");
-	static_assert(offsetof(Module_1801380b0, structureName) == 0x688, "structureName offset");
-	static_assert(offsetof(Module_1801380b0, x) == 0x6a8, "x offset");
-	static_assert(offsetof(Module_1801380b0, rot) == 0x6b4, "rot offset");
-	static_assert(offsetof(Module_1801380b0, field_0x6bc) == 0x6bc, "field_0x6bc offset");
-	static_assert(sizeof(Module_1801380b0) >= 0x6c0, "class size");
+	// Layout sanity checks moved outside class definition.
 };
+
+static_assert(offsetof(Module_1801380b0, opacity) == 0x80, "opacity offset");
+static_assert(offsetof(Module_1801380b0, air) == 0x88, "air offset");
+static_assert(offsetof(Module_1801380b0, ignoreA) == 0x8d, "ignoreA offset");
+static_assert(offsetof(Module_1801380b0, airColor) == 0x90, "airColor offset");
+static_assert(offsetof(Module_1801380b0, wrongColor) == 0xa0, "wrongColor offset");
+static_assert(offsetof(Module_1801380b0, mixColor) == 0xb0, "mixColor offset");
+static_assert(offsetof(Module_1801380b0, field_0x128) == 0x128, "field_0x128 offset");
+static_assert(offsetof(Module_1801380b0, field_0x378) == 0x378, "field_0x378 offset");
+static_assert(offsetof(Module_1801380b0, pattern) == 0x568, "pattern offset");
+static_assert(offsetof(Module_1801380b0, positions) == 0x5d0, "positions offset");
+static_assert(offsetof(Module_1801380b0, blocks) == 0x5e8, "blocks offset");
+static_assert(offsetof(Module_1801380b0, resetOnLoad) == 0x601, "resetOnLoad offset");
+static_assert(offsetof(Module_1801380b0, offsetX) == 0x604, "offsetX offset");
+static_assert(offsetof(Module_1801380b0, offsetY) == 0x60c, "offsetY offset");
+static_assert(offsetof(Module_1801380b0, offsetZ) == 0x614, "offsetZ offset");
+static_assert(offsetof(Module_1801380b0, field_0x61c) == 0x61c, "field_0x61c offset");
+static_assert(offsetof(Module_1801380b0, maxWidth) == 0x634, "maxWidth offset");
+static_assert(offsetof(Module_1801380b0, maxHeight) == 0x63c, "maxHeight offset");
+static_assert(offsetof(Module_1801380b0, maxLength) == 0x644, "maxLength offset");
+static_assert(offsetof(Module_1801380b0, field_0x680) == 0x680, "field_0x680 offset");
+static_assert(offsetof(Module_1801380b0, field_0x681) == 0x681, "field_0x681 offset");
+static_assert(offsetof(Module_1801380b0, structureName) == 0x688, "structureName offset");
+static_assert(offsetof(Module_1801380b0, x) == 0x6a8, "x offset");
+static_assert(offsetof(Module_1801380b0, y) == 0x6ac, "y offset");
+static_assert(offsetof(Module_1801380b0, z) == 0x6b0, "z offset");
+static_assert(offsetof(Module_1801380b0, rot) == 0x6b4, "rot offset");
+static_assert(offsetof(Module_1801380b0, field_0x6bc) == 0x6bc, "field_0x6bc offset");
+static_assert(sizeof(Module_1801380b0) >= 0x6c0, "class size");
 
 #endif

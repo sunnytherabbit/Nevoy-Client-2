@@ -273,7 +273,7 @@ void ClickGui::renderCategory(Category category) {
 			{
 				std::vector<SettingEntry*>* settings = mod->getSettings();
 				if (settings->size() > 2 && allowRender) {
-					std::shared_ptr<ClickModule> clickMod = getClickModule(ourWindow, mod->getRawModuleName());
+					std::shared_ptr<ClickModule> clickMod = getClickModule(ourWindow, mod->getRawModuleName().c_str());
 					if (rectPos.contains(&mousePos) && shouldToggleRightClick && !ourWindow->isInAnimation) {
 						shouldToggleRightClick = false;
 						clickMod->isExtended = !clickMod->isExtended;
@@ -289,7 +289,7 @@ void ClickGui::renderCategory(Category category) {
 					if (clickMod->isExtended) {
 						float startYOffset = currentYOffset;
 						for (auto setting : *settings) {
-								if (strcmp(setting->name, "enabled") == 0 || strcmp(setting->name, "keybind") == 0)
+								if (strcmp(setting->name.c_str(), "enabled") == 0 || strcmp(setting->name.c_str(), "keybind") == 0)
 								continue;
 
 							vec2_t textPos = vec2_t(
@@ -382,7 +382,7 @@ void ClickGui::renderCategory(Category category) {
 										DrawUtils::fillRectangle(rectPos, selectedModuleColor, backgroundAlpha);
 										if (shouldToggleRightClick && !ourWindow->isInAnimation) {
 											shouldToggleRightClick = false;
-											setting->minValue->_bool = !setting->minValue->_bool;
+											setting->minValue._bool = !setting->minValue._bool;
 										}
 									}else
 										DrawUtils::fillRectangle(rectPos, moduleColor, backgroundAlpha);
@@ -391,13 +391,13 @@ void ClickGui::renderCategory(Category category) {
 									GuiUtils::drawCrossLine(vec2_t(
 																currentXOffset + windowSize->x + paddingRight - (crossSize / 2) - 1.f,
 																currentYOffset + textPaddingY + (textHeight / 2)),
-															whiteColor, crossWidth, crossSize, !setting->minValue->_bool);
+															whiteColor, crossWidth, crossSize, !setting->minValue._bool);
 									
 									currentYOffset += textHeight + (textPaddingY * 2);
 								}
-								if (setting->minValue->_bool) {
+								if (setting->minValue._bool) {
 									int e = 0;
-									auto enumData = reinterpret_cast<SettingEnum*>(setting->extraData);
+									auto enumData = &setting->extraData;
 									for (auto it = enumData->Entrys.begin();
 										 it != enumData->Entrys.end(); it++, e++) {
 										if ((currentYOffset - ourWindow->pos.y) > cutoffHeight) {
@@ -407,7 +407,7 @@ void ClickGui::renderCategory(Category category) {
 										bool isEven = e % 2 == 0;
 										rectPos.y = currentYOffset;
 										rectPos.w = currentYOffset + textHeight + (textPaddingY * 2);
-										EnumEntry i = *it._Ptr;
+										EnumEntry i = *it;
 										char name[0x21];
 										sprintf_s(name, 0x21, "   %s", i.GetName().c_str());
 										// Convert first letter to uppercase for more friendlieness
@@ -489,8 +489,8 @@ void ClickGui::renderCategory(Category category) {
 										DrawUtils::fillRectangle(rectPos, moduleColor, backgroundAlpha);              // Background
 										DrawUtils::drawRectangle(rect, whiteColor, 1.f, backgroundAlpha);  // Slider background
 
-										const float minValue = setting->minValue->_float;
-										const float maxValue = setting->maxValue->_float - minValue;
+										const float minValue = setting->minValue._float;
+										const float maxValue = setting->maxValue._float - minValue;
 										float value = (float) fmax(0, setting->value->_float - minValue);  // Value is now always > 0 && < maxValue
 										if (value > maxValue)
 											value = maxValue;
@@ -584,8 +584,8 @@ void ClickGui::renderCategory(Category category) {
 										DrawUtils::fillRectangle(rectPos, moduleColor, backgroundAlpha);              // Background
 										DrawUtils::drawRectangle(rect, whiteColor, 1.f, backgroundAlpha);  // Slider background
 
-										const float minValue = (float)setting->minValue->_int;
-										const float maxValue = (float)setting->maxValue->_int - minValue;
+										const float minValue = (float)setting->minValue._int;
+										const float maxValue = (float)setting->maxValue._int - minValue;
 										float value = (float)fmax(0, setting->value->_int - minValue);  // Value is now always > 0 && < maxValue
 										if (value > maxValue)
 											value = maxValue;
@@ -706,7 +706,7 @@ void ClickGui::renderCategory(Category category) {
 				ourWindow->isInAnimation = true;
 
 				for (auto& mod : moduleList) {
-					std::shared_ptr<ClickModule> clickMod = getClickModule(ourWindow, mod->getRawModuleName());
+					std::shared_ptr<ClickModule> clickMod = getClickModule(ourWindow, mod->getRawModuleName().c_str());
 					clickMod->isExtended = false;
 				}
 			}

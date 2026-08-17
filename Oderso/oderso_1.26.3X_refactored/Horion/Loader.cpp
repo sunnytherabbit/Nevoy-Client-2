@@ -1,3 +1,4 @@
+#include <stdexcept>
 #include "Loader.h"
 
 SlimUtils::SlimMem mem;
@@ -15,11 +16,11 @@ DWORD WINAPI keyThread(LPVOID lpParam) {
 
 	bool* keyMap = static_cast<bool*>(malloc(0xFF * 4 + 0x4));
 	if (keyMap == nullptr)
-		throw std::exception("Keymap not allocated");
+		throw std::runtime_error("Keymap not allocated");
 
 	auto clickMap = reinterpret_cast<uintptr_t>(malloc(5));
 	if (clickMap == 0)
-		throw std::exception("Clickmap not allocated");
+		throw std::runtime_error("Clickmap not allocated");
 
 	bool* keyMapAddr = nullptr;
 	uintptr_t sigOffset = FindSignature("48 8D 0D ?? ?? ?? ?? 89 1C B9");
@@ -28,7 +29,7 @@ DWORD WINAPI keyThread(LPVOID lpParam) {
 		keyMapAddr = reinterpret_cast<bool*>(sigOffset + offset + /*length of instruction*/ 7);  // Offset is relative
 	} else {
 		logF("!!!KeyMap not located!!!");
-		throw std::exception("Keymap not located");
+		throw std::runtime_error("Keymap not located");
 	}
 
 	C_HIDController** hidController = g_Data.getHIDController();
@@ -274,7 +275,7 @@ DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
 				// They read the message, lets send the next one
 				HorionDataPacket nextDataPack = g_Data.getPacketToInjector();
 				if (nextDataPack.dataArraySize >= 3000) {
-					throw std::exception("Horion Data packet too big to send");
+					throw std::runtime_error("Horion Data packet too big to send");
 				}
 
 				horionToInjector->cmd = nextDataPack.cmd;

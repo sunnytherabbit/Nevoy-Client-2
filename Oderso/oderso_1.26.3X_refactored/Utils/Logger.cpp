@@ -4,10 +4,18 @@
 #define WIN32_LEAN_AND_MEAN
 #endif
 #include <Windows.h>
+#include <share.h>
+#include <cstdio>
 
 #include "Utils.h"
 
 #include <sstream>
+
+// MinGW's windows.foundation.h defines IReference<boolean> and IReference<BYTE>
+// as the same type (both are unsigned char), causing a redefinition error.
+// Skipping the boolean specialization is safe for this file's UWP usage.
+#define ____FIReference_1_boolean_FWD_DEFINED__
+#define ____FIReference_1_boolean_INTERFACE_DEFINED__
 #include <windows.storage.h>
 #include <wrl.h>
 
@@ -30,7 +38,7 @@ bool Logger::isActive() {
 
 std::wstring Logger::GetRoamingFolderPath() {
 	ComPtr<IApplicationDataStatics> appDataStatics;
-	auto hr = RoGetActivationFactory(HStringReference(L"Windows.Storage.ApplicationData").Get(), __uuidof(appDataStatics), &appDataStatics);
+	auto hr = RoGetActivationFactory(HStringReference(L"Windows.Storage.ApplicationData").Get(), __uuidof(IApplicationDataStatics), &appDataStatics);
 	if (FAILED(hr)) throw std::runtime_error("Failed to retrieve application data statics");
 
 	ComPtr<IApplicationData> appData;

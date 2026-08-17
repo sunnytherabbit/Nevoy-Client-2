@@ -17,6 +17,11 @@ elseif(CMAKE_BUILD_TYPE MATCHES BetaConf)
     add_compile_definitions(_BETA)
 endif()
 
+if (MINGW)
+    # MinGW does not predefine the __int64 keyword that MSVC projects use.
+    add_compile_definitions("__int64=long long")
+endif()
+
 include_directories(.)
 include_directories(include)
 include_directories(include/glm/)
@@ -194,7 +199,6 @@ add_library(Oderso SHARED
         Horion/Module/Modules/MidClick.h
         Horion/Module/Modules/Module.cpp
         Horion/Module/Modules/Module.h
-        Horion/Module/Modules/NameTags.cpp
         Horion/Module/Modules/NameTags.h
         Horion/Module/Modules/Nbt.cpp
         Horion/Module/Modules/Nbt.h
@@ -394,6 +398,7 @@ target_link_libraries(Oderso PRIVATE
     MinHook.x64
     d3d11 d3dcompiler dxgi
     winmm winhttp wininet ws2_32 shell32 version
+    runtimeobject
 )
 
 target_sources(Oderso PRIVATE ${Oderso_MODULE_SOURCES})

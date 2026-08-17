@@ -17,6 +17,7 @@
 //#include <Psapi.h>     //Functions that gather module-information
 
 #include <algorithm>    //transform-function that is used to apply the tolower-function to a wstring
+#include <cstdint>    // uintptr_t
 #include <cassert>      //Used for debugging
 #include <cctype>       //tolower-function that converts a char to lowercase
 //#include <iostream>     //cout
@@ -24,11 +25,17 @@
 #include <memory>       //unique_ptr
 #include <string>       //String/WString implementation
 #include <type_traits>  //Used to restrict usage of template functions Read and Write to specific types
+#include <cstring>      // memcpy
 #include <vector>
 
 // clang-format on
 
 namespace SlimUtils {
+
+// MinGW doesn't provide memcpy_s; fall back to std::memcpy.
+#ifdef __MINGW32__
+#define memcpy_s(dest, destsz, src, count) std::memcpy(dest, src, count)
+#endif
 
 //Exclude module-names from SlimModule-structs
 #define VERYSLIM_SLIMMODULE

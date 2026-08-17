@@ -54,7 +54,7 @@ void Module_18024b340::slot_15() {
 
 	*reinterpret_cast<void**>(reinterpret_cast<uintptr_t>(this) + 0xb8) = finalObj;
 
-	using SetupRender = void(*)(void*, char, uint, uint);
+	using SetupRender = void(*)(void*, char, unsigned int, unsigned int);
 	auto setupRender = reinterpret_cast<SetupRender>(base + 0x107830);
 	setupRender(ctx0, 4, 0, 0);
 
