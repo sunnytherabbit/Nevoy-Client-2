@@ -1,0 +1,12 @@
+# Generated build artifacts
+Oderso/oderso_1.26.3X_refactored/build-mingw/
+
+# Decompilation dumps and Ghidra project state
+Oderso/ghidra_decompiled_*.c
+Oderso/ghidra_decompiled_*.c.bak
+Oderso/ghidra_project/
+Oderso/oderso_1.26.3X_refactored/decomp/
+Oderso/oderso_1.26.3X_refactored/decomp_stubs/
+
+# Tool working trash (no permanent deletion)
+Oderso/oderso_1.26.3X_refactored/.trash/

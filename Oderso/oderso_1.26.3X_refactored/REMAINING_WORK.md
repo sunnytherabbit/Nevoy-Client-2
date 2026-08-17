@@ -18,5 +18,5 @@ The original list of 45 modules that appeared to have only constructor + `getMod
 ## Still to investigate
 1. **Runtime parity validation** — the built `lib1.26.3X.dll` needs to be tested in-game against the original `Oderso/1.26.3X.dll`.
 2. **MSVC build verification** — the MinGW build is green, but a native Windows/MSVC build may expose ABI or layout differences.
-3. **`Module_180156800` vtable flag** — still flagged as `invalid vtable` in `tools/misaligned_modules.txt`; source is complete and the flag is likely a false positive from the vtable extraction script.
+3. **`Module_180156800` vtable flag** — resolved. The vtable extraction script `tools/extract_module_vtable.py` was pointing at a stale/missing decomp dump; switching it to `ghidra_decompiled_1.26.3X_new.c` and regenerating `tools/module_vtables_full.txt` produced 0 skipped modules, leaving `tools/misaligned_modules.txt` empty.
 4. **Repository clean-up** — move untracked `__pycache__` and `temp_bin/` artifacts to a trash folder per the global rule.

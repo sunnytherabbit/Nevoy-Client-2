@@ -6,7 +6,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
 DLL = BASE / ".." / "1.26.3X.dll"
-DECOMP = BASE / ".." / "ghidra_decompiled_1.26.3X.c"
+DECOMP = BASE / ".." / "ghidra_decompiled_1.26.3X_new.c"
 FUNC_SUMMARY = BASE / "tools" / "function_summary.json"
 
 from vtable_config import SLOT_NAMES as IMODULE_SLOTS
