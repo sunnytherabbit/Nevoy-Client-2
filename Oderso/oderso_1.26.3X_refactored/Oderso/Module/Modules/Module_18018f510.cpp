@@ -39,7 +39,7 @@ void Module_18018f510::onAttack(int attackButton, bool isDown, bool* cancel) {
 		return;
 
 	// The binary maps the attack key through func_0x180116750 and checks it against param_2 (attackButton)
-	// and the current mouse state via func_0x18045fc30(). Approximate by toggling on any attack press.
+	// and the current mouse state via func_0x18045fc30. Approximate by toggling on any attack press.
 	this->sneakToggled = !this->sneakToggled;
 }
 

@@ -41,7 +41,7 @@ Target DLL for parity: `Oderso/1.26.3X.dll`.
   - Ran a 6-subagent parallel pass over the remaining `// Binary function:` method stubs (originally 152 across 69 module `.cpp` files). Each stub was either ported to idiomatic C++ or replaced with a clean direct binary call and a short rationale. Remaining stale `// Binary function:` comments in `getModuleName()`/`getTooltip()` were removed manually.
 - **New blockers:**
   - None. All known module TODOs are resolved; the MinGW cross-compile builds and links `lib1.26.3X.dll`.
-- **Validation:** 0 broken braces, 0 stray `func_0x` calls, 0 `// TODO` markers, and 0 `// Binary function:` comments in module sources; the MinGW build links `lib1.26.3X.dll`.
+- **Validation:** 0 broken braces, 0 stray `func_0x` function calls (prototypes and comment references only), 0 `// TODO` markers, and 0 `// Binary function:` comments in module sources; the MinGW build links `lib1.26.3X.dll` with non-fatal warnings.
 - **Index/verification/naming pass:**
   - Indexed the entire refactored tree (`INDEX.md` / `INDEX.json`, 1197 files, 949 source files).
   - Verified the tree (`VERIFICATION.md`): 5 legacy TODOs (none in module sources), 0 stray `func_0x` calls, 0 broken braces in project source.
