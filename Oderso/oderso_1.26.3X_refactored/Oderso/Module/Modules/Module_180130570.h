@@ -9,15 +9,29 @@ public:
 	Module_180130570();
 	~Module_180130570() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onEnable() override;
+	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual void onAttack(int attackButton, bool isDown, bool* cancel = nullptr) override;
+	virtual void slot_30(int arg = 0, char mask = 0, bool* cancel = nullptr) override;
 
-	int changeAmount = 0;
+private:
+	void refreshEntityPointers();
+
+public:
+	// Pointers/object refs initialised by the binary constructor.
+	void* field_0x80 = nullptr;
+	void* field_0x88 = nullptr;
+	void* field_0x90 = nullptr;
+	void* field_0x98 = nullptr;
+
+	int field_0xa0 = 0;
+	int changeAmount = 1;
+	int field_0xa8 = 0;
+	int field_0xac = 0;
+	int field_0xb0 = 0x7fffffff;
+	int field_0xb4 = 0;
 };
 
 #endif

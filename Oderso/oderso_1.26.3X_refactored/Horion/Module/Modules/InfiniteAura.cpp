@@ -9,7 +9,7 @@ InfiniteAura::InfiniteAura() : IModule(0, Category::COMBAT, "Killaura with infin
 InfiniteAura::~InfiniteAura() {
 }
 
-const char* InfiniteAura::getModuleName() {
+std::string InfiniteAura::getModuleName() {
 	return ("InfiniteAura");
 }
 

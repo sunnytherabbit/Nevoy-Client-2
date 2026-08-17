@@ -6,7 +6,7 @@ Freelook::Freelook(): IModule(0, Category::VISUAL, "Move straight while moving y
 }
 Freelook::~Freelook() {
 }
-const char* Freelook::getModuleName() {
+std::string Freelook::getModuleName() {
 	return "Freelook";
 }
 vec2_t mouseEnd = {0, 0};

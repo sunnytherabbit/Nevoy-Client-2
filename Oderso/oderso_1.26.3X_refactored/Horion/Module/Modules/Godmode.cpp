@@ -8,7 +8,7 @@ Godmode::Godmode() : IModule(0, Category::MISC, "Regen health so fast you won't 
 Godmode::~Godmode() {
 }
 
-const char* Godmode::getModuleName() {
+std::string Godmode::getModuleName() {
 	return "Godmode";
 }
 

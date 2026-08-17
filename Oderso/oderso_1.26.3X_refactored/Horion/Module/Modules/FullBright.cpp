@@ -9,7 +9,7 @@ FullBright::~FullBright() {
 
 float originalGamma = -1;
 
-const char* FullBright::getModuleName() {
+std::string FullBright::getModuleName() {
 	return "Fullbright";
 }
 

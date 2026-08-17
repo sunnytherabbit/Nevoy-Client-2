@@ -26,7 +26,7 @@ public:
 	float size = 0.6f;
 
 	// Inherited via IModule
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;
 	virtual void onLoadConfig(void* confVoid) override;
 	virtual void onSaveConfig(void* confVoid) override;

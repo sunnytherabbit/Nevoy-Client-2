@@ -7,7 +7,7 @@ Glide::Glide() : IModule(0, Category::MOVEMENT, "Float down") {
 Glide::~Glide() {
 }
 
-const char* Glide::getModuleName() {
+std::string Glide::getModuleName() {
 	if (isEnabled()) {
 		static char modName[30];  // This is kinda ghetto rn, there should be a better way to make this...
 		sprintf_s(modName, 30, "Glide [%.2f]", glideModEffective);
@@ -29,6 +29,6 @@ void Glide::onTick(C_GameMode* gm) {
 	gm->player->velocity.y = glideModEffective;
 }
 
-const char* Glide::getRawModuleName() {
+std::string Glide::getRawModuleName() {
 	return "Glide";
 }

@@ -118,7 +118,7 @@ public:
 	void onLoadConfig(void* conf);
 	void onSaveConfig(void* conf);
 	void onTick(C_GameMode* gameMode);
-	void onAttack(C_Entity* attackedEnt);
+	void onAttack(int attackButton, bool isDown);
 
 	void onKeyUpdate(int key, bool isDown);
 	void onPreRender(C_MinecraftUIRenderContext* renderCtx);

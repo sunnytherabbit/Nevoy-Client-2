@@ -10,15 +10,15 @@ public:
 	NoFire();
 	~NoFire() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) override;
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual void onEnable() override;
+	virtual void onDisable() override;
+	virtual std::string getTooltip() override;
 
 	bool noFire = false;
+	bool lastNoFire = false;
 	float height = 1.5f;
 };
 

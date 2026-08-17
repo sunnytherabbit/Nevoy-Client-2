@@ -10,13 +10,9 @@ public:
 	HideUI();
 	~HideUI() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() override;
-	virtual void onDisable() override;
+	virtual std::string getTooltip() override;
 
 	bool hideUi = false;
 	bool printSaved = false;

@@ -13,7 +13,7 @@ public:
 
 	// Inherited via IModule
 	virtual bool isFlashMode() override;
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	virtual void onEnable() override;
 	virtual void onDisable() override;
 };

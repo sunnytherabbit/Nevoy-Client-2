@@ -12,6 +12,6 @@ AntiBot::AntiBot() : IModule(0, Category::PLAYER, "Enable this module to filter 
 AntiBot::~AntiBot() {
 }
 
-const char* AntiBot::getModuleName() {
+std::string AntiBot::getModuleName() {
 	return ("AntiBot");
 }

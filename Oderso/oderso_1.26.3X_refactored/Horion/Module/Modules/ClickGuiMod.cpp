@@ -8,7 +8,7 @@ ClickGuiMod::ClickGuiMod() : IModule(VK_INSERT, Category::VISUAL, "The clickgui 
 ClickGuiMod::~ClickGuiMod() {
 }
 
-const char* ClickGuiMod::getModuleName() {
+std::string ClickGuiMod::getModuleName() {
 	return ("ClickGui");
 }
 

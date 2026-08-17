@@ -6,7 +6,7 @@ AutoTotem::AutoTotem() : IModule(0, Category::PLAYER, "Automatically puts totems
 AutoTotem::~AutoTotem() {
 }
 
-const char* AutoTotem::getModuleName() {
+std::string AutoTotem::getModuleName() {
 	return ("AutoTotem");
 }
 

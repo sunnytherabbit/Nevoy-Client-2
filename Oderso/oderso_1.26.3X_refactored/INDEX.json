@@ -1,0 +1,5987 @@
+[
+  {
+    "path": "deeper_module_scan_report.md",
+    "size": 6403,
+    "ext": ".md"
+  },
+  {
+    "path": "CMakeLists.txt",
+    "size": 17364,
+    "ext": ".txt"
+  },
+  {
+    "path": "Oderso.rc",
+    "size": 53,
+    "ext": ".rc"
+  },
+  {
+    "path": "func_1801380b0_decomp.txt",
+    "size": 157035,
+    "ext": ".txt"
+  },
+  {
+    "path": "portable_modules_report.md",
+    "size": 35984,
+    "ext": ".md"
+  },
+  {
+    "path": "function_index.json",
+    "size": 1689269,
+    "ext": ".json"
+  },
+  {
+    "path": "missing_source_report.md",
+    "size": 12558,
+    "ext": ".md"
+  },
+  {
+    "path": "README.md",
+    "size": 3378,
+    "ext": ".md"
+  },
+  {
+    "path": "LOG.md",
+    "size": 16378,
+    "ext": ".md"
+  },
+  {
+    "path": ".gitignore",
+    "size": 223,
+    "ext": ""
+  },
+  {
+    "path": "Oderso.manifest",
+    "size": 353,
+    "ext": ".manifest"
+  },
+  {
+    "path": "resource.h",
+    "size": 562,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion.rc",
+    "size": 1535,
+    "ext": ".rc"
+  },
+  {
+    "path": "HANDOFF.md",
+    "size": 13694,
+    "ext": ".md"
+  },
+  {
+    "path": "Horion/GuiUtils.cpp",
+    "size": 496,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/ImmediateGui.h",
+    "size": 1379,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/GuiUtils.h",
+    "size": 171,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Loader.h",
+    "size": 780,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/DrawUtils.h",
+    "size": 5158,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/ImmediateGui.cpp",
+    "size": 2979,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Loader.cpp",
+    "size": 13296,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/DrawUtils.cpp",
+    "size": 20574,
+    "ext": ".cpp"
+  },
+  {
+    "path": "tools/module_manifest_full.json",
+    "size": 42311,
+    "ext": ".json"
+  },
+  {
+    "path": "tools/rdata_strings.txt",
+    "size": 132819,
+    "ext": ".txt"
+  },
+  {
+    "path": "tools/build_module_manifest.py",
+    "size": 4843,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/extract_rdata_strings.py",
+    "size": 2253,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/extract_module_strings.py",
+    "size": 12698,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/port_modules.py",
+    "size": 7950,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/parse_module_settings.py",
+    "size": 12469,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/decode_module_names.py.bak",
+    "size": 17760,
+    "ext": ".bak"
+  },
+  {
+    "path": "tools/module_hash_map.txt",
+    "size": 6274,
+    "ext": ".txt"
+  },
+  {
+    "path": "tools/refactor.py",
+    "size": 20507,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/regenerate_vtables.py",
+    "size": 2079,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/reconstruct_imodule.py",
+    "size": 3718,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/module_vtables.txt",
+    "size": 18255,
+    "ext": ".txt"
+  },
+  {
+    "path": "tools/decode_module_names.py",
+    "size": 17760,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/add_return_placeholders.py",
+    "size": 1224,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/extract_nametags_strings.py",
+    "size": 6964,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/map_symbols.py",
+    "size": 1720,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/cleanup_module_headers.py",
+    "size": 942,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/symbol_map.txt",
+    "size": 59974,
+    "ext": ".txt"
+  },
+  {
+    "path": "tools/c9aa0_batch_decoder.py",
+    "size": 14296,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/module_vtables_full.txt",
+    "size": 302045,
+    "ext": ".txt"
+  },
+  {
+    "path": "tools/port_default_methods.py",
+    "size": 5787,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/audit_missing_source.py",
+    "size": 10477,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/extract_module_vtable.py",
+    "size": 6652,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/extract_module_settings.py",
+    "size": 6281,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/fix_vtable_stubs.py",
+    "size": 9662,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/extract_nametags.py",
+    "size": 12695,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/c9aa0_decoded.json",
+    "size": 6130,
+    "ext": ".json"
+  },
+  {
+    "path": "tools/top_candidates.txt",
+    "size": 123427,
+    "ext": ".txt"
+  },
+  {
+    "path": "tools/module_vtables_40.txt",
+    "size": 29810,
+    "ext": ".txt"
+  },
+  {
+    "path": "tools/module_manifest_named.json",
+    "size": 53418,
+    "ext": ".json"
+  },
+  {
+    "path": "tools/reconstruct_layouts.py",
+    "size": 3477,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/infer_module_names.py",
+    "size": 2523,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/analyze_decomp.py",
+    "size": 5625,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/generate_modules.py",
+    "size": 10878,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/module_hash_map.json",
+    "size": 17945,
+    "ext": ".json"
+  },
+  {
+    "path": "tools/deeper_module_scan.py",
+    "size": 7841,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/add_vtable_method_stubs.py",
+    "size": 5923,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/function_summary.json",
+    "size": 5436365,
+    "ext": ".json"
+  },
+  {
+    "path": "tools/relabel_vtables.py",
+    "size": 1005,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/add_cpp_method_stubs.py",
+    "size": 4839,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/vtable_config.py",
+    "size": 3054,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/decrypt_oderso_strings.py",
+    "size": 4975,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/port_simple_returns.py",
+    "size": 3376,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/misaligned_modules.txt",
+    "size": 48,
+    "ext": ".txt"
+  },
+  {
+    "path": "tools/build_full_manifest.py",
+    "size": 6574,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/dump_setting_calls.py",
+    "size": 655,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/manual_c9aa0_decoder.py",
+    "size": 2392,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/generate_method_stubs.py",
+    "size": 6797,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/decode_module_names_fixed.py",
+    "size": 21347,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/module_manifest.json",
+    "size": 48863,
+    "ext": ".json"
+  },
+  {
+    "path": "tools/scan_portable_modules.py",
+    "size": 5855,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/nametags_setting_calls.txt",
+    "size": 14520,
+    "ext": ".txt"
+  },
+  {
+    "path": "tools/port_simple_methods.py",
+    "size": 7051,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/map_module_hashes.py",
+    "size": 3209,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/extract_datacopy.py",
+    "size": 9189,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/module_name_overrides.json",
+    "size": 1794,
+    "ext": ".json"
+  },
+  {
+    "path": "tools/missing_vtables.txt",
+    "size": 13925,
+    "ext": ".txt"
+  },
+  {
+    "path": "tools/generate_missing_vtables.py",
+    "size": 2572,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/c9aa0_decoder.py",
+    "size": 7279,
+    "ext": ".py"
+  },
+  {
+    "path": "tools/analyze_modules.py",
+    "size": 7718,
+    "ext": ".py"
+  },
+  {
+    "path": "Memory/GameData.h",
+    "size": 14871,
+    "ext": ".h"
+  },
+  {
+    "path": "Memory/Hooks.h",
+    "size": 9793,
+    "ext": ".h"
+  },
+  {
+    "path": "Memory/SlimMem.h",
+    "size": 8920,
+    "ext": ".h"
+  },
+  {
+    "path": "Memory/SlimMem.cpp",
+    "size": 4942,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Memory/Hooks.cpp",
+    "size": 73893,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Memory/GameData.cpp",
+    "size": 8248,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Memory/MinHook.h",
+    "size": 7093,
+    "ext": ".h"
+  },
+  {
+    "path": "include/atlrx.h",
+    "size": 43142,
+    "ext": ".h"
+  },
+  {
+    "path": "include/WinHttpClient.h",
+    "size": 35447,
+    "ext": ".h"
+  },
+  {
+    "path": "include/StringProcess.h",
+    "size": 15011,
+    "ext": ".h"
+  },
+  {
+    "path": "include/RegExp.h",
+    "size": 4588,
+    "ext": ".h"
+  },
+  {
+    "path": "resources/coolroblox.json",
+    "size": 3717,
+    "ext": ".json"
+  },
+  {
+    "path": "resources/Steve.dat",
+    "size": 65536,
+    "ext": ".dat"
+  },
+  {
+    "path": "resources/Steve_old.dat",
+    "size": 65536,
+    "ext": ".dat"
+  },
+  {
+    "path": "resources/oldroblox.json",
+    "size": 5224,
+    "ext": ".json"
+  },
+  {
+    "path": "Utils/keys.h",
+    "size": 9029,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/VoxelIntersector.h",
+    "size": 356,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/Utils.h",
+    "size": 10086,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/compat.cpp",
+    "size": 293,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Utils/Utils.cpp",
+    "size": 6280,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Utils/TextFormat.h",
+    "size": 668,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/VersionUtil.cpp",
+    "size": 1445,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Utils/Json.hpp",
+    "size": 718329,
+    "ext": ".hpp"
+  },
+  {
+    "path": "Utils/SkinUtil.cpp",
+    "size": 7348,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Utils/VoxelIntersector.cpp",
+    "size": 12360,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Utils/MemoryUtil.h",
+    "size": 581,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/xorstr.h",
+    "size": 2908,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/MemoryUtil.cpp",
+    "size": 850,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Utils/SkinUtil.h",
+    "size": 1045,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/VulkanUtil.h",
+    "size": 315,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/VersionUtil.h",
+    "size": 667,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/HMath.h",
+    "size": 13730,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/ChakraHelper.h",
+    "size": 7605,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/TextFormat.cpp",
+    "size": 1244,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Utils/Target.h",
+    "size": 239,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/Target.cpp",
+    "size": 2470,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Utils/NetworkUtil.h",
+    "size": 418,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/DllHelper.h",
+    "size": 649,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/Logger.cpp",
+    "size": 6235,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Utils/Logger.h",
+    "size": 1077,
+    "ext": ".h"
+  },
+  {
+    "path": "Utils/VulkanUtil.cpp",
+    "size": 646,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Utils/NetworkUtil.cpp",
+    "size": 1804,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/MatrixStack.h",
+    "size": 750,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CPacket.cpp",
+    "size": 7533,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/Tessellator.h",
+    "size": 477,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/TextHolder.h",
+    "size": 4566,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/MojangsonToken.h",
+    "size": 2268,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/TextHolder.cpp",
+    "size": 902,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/TextHolder_oderso.cpp",
+    "size": 1874,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CInventoryTransaction.h",
+    "size": 2053,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CPacket.h",
+    "size": 3797,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CEntity.h",
+    "size": 26467,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/Tag.h",
+    "size": 12817,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CEntity.cpp",
+    "size": 2699,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CCamera.cpp",
+    "size": 1891,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CClientInstance.h",
+    "size": 27703,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/Tessellator.cpp",
+    "size": 847,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CEntityList.h",
+    "size": 1081,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CInventoryTransaction.cpp",
+    "size": 916,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CGameSettingsInput.h",
+    "size": 497,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CRakNetInstance.h",
+    "size": 1168,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/Tag.cpp",
+    "size": 11607,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CImageBuffer.h",
+    "size": 65,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CInventory.h",
+    "size": 6153,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CMoveInputHandler.h",
+    "size": 589,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CChestBlockActor.cpp",
+    "size": 679,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CGameMode.h",
+    "size": 1423,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CHIDController.h",
+    "size": 311,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CMinecraftUIRenderContext.h",
+    "size": 2339,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CUIScene.h",
+    "size": 4885,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CChestBlockActor.h",
+    "size": 1358,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CBlockLegacy.h",
+    "size": 1761,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CClientInstance.cpp",
+    "size": 2820,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CClientInstanceScreenModel.h",
+    "size": 586,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/MatrixStack.cpp",
+    "size": 85,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CCamera.h",
+    "size": 868,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CLoopbackPacketSender.h",
+    "size": 617,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CMoveInputHandler.cpp",
+    "size": 157,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CComplexInventoryTransaction.cpp",
+    "size": 4870,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CComplexInventoryTransaction.h",
+    "size": 1334,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CGameMode.cpp",
+    "size": 820,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CBlockLegacy.cpp",
+    "size": 2033,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CItem.cpp",
+    "size": 6831,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CMinecraftUIRenderContext.cpp",
+    "size": 547,
+    "ext": ".cpp"
+  },
+  {
+    "path": "SDK/CItem.h",
+    "size": 14913,
+    "ext": ".h"
+  },
+  {
+    "path": "SDK/CInventory.cpp",
+    "size": 3217,
+    "ext": ".cpp"
+  },
+  {
+    "path": "minhook/MinHook.x64.lib",
+    "size": 26876,
+    "ext": ".lib"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180156800.h",
+    "size": 666,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802f7580.h",
+    "size": 519,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180219990.cpp",
+    "size": 716,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804168f0.cpp",
+    "size": 1036,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801a2840.cpp",
+    "size": 1368,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180130570.cpp",
+    "size": 2068,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801749e0.h",
+    "size": 477,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802501f0.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801a2840.h",
+    "size": 670,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801e20d0.h",
+    "size": 539,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18041e380.h",
+    "size": 475,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/FPS.h",
+    "size": 420,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801edba0.cpp",
+    "size": 407,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1803404a0.h",
+    "size": 487,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801f2430.cpp",
+    "size": 1903,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180380410.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802bea40.h",
+    "size": 863,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Make.h",
+    "size": 543,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180341050.cpp",
+    "size": 692,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18031b4d0.cpp",
+    "size": 466,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804d6b70.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18020d4c0.cpp",
+    "size": 1342,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801a0e40.h",
+    "size": 475,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/MoveDirectionLatestMovementKeyPressedWhenHoldingBoth.cpp",
+    "size": 933,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180380fc0.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180347d80.h",
+    "size": 561,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18018f510.h",
+    "size": 908,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/ChunkBorders.h",
+    "size": 1132,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801380b0.h",
+    "size": 5294,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801afdc0.cpp",
+    "size": 330,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802c1ee0.cpp",
+    "size": 1323,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18040d7d0.h",
+    "size": 446,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180248800.h",
+    "size": 495,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180242db0.cpp",
+    "size": 350,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802bea40.cpp",
+    "size": 1626,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180331ad0.cpp",
+    "size": 2057,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18037bc90.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801a0e40.cpp",
+    "size": 692,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180195270.h",
+    "size": 587,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180136cd0.h",
+    "size": 412,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180156800.cpp",
+    "size": 1757,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801fbc20.h",
+    "size": 377,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180243e70.cpp",
+    "size": 756,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804e5480.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18017c4a0.cpp",
+    "size": 3317,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18021f300.h",
+    "size": 466,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/CPS.h",
+    "size": 420,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/CrouchSpam.h",
+    "size": 504,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180420050.h",
+    "size": 562,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801edba0.h",
+    "size": 396,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802ac240.h",
+    "size": 770,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180245d30.h",
+    "size": 689,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Subtitles.h",
+    "size": 488,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801afdc0.h",
+    "size": 377,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Limits.h",
+    "size": 453,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18018d820.cpp",
+    "size": 1276,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18038bc60.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Limits.cpp",
+    "size": 577,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/SmoothCamera.cpp",
+    "size": 3236,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180188f20.cpp",
+    "size": 330,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180417c20.cpp",
+    "size": 499,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180136cd0.cpp",
+    "size": 566,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180420050.cpp",
+    "size": 1248,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804df4a0.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804ce890.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802e5290.cpp",
+    "size": 1580,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802452c0.cpp",
+    "size": 330,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180404050.cpp",
+    "size": 805,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180412630.cpp",
+    "size": 974,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1803404a0.cpp",
+    "size": 561,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1803455d0.cpp",
+    "size": 1297,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18040d7d0.cpp",
+    "size": 581,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802c1ee0.h",
+    "size": 477,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18018f510.cpp",
+    "size": 2662,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180193330.cpp",
+    "size": 974,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802fc040.h",
+    "size": 602,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804df4a0.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180360610.cpp",
+    "size": 3629,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802fb570.cpp",
+    "size": 330,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/NameTags.h",
+    "size": 270,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801914f0.h",
+    "size": 909,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/SmoothCamera.h",
+    "size": 978,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/HideUI.cpp",
+    "size": 581,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180223cc0.cpp",
+    "size": 1237,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180412630.h",
+    "size": 579,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801899c0.h",
+    "size": 676,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801dd4b0.cpp",
+    "size": 5457,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801c2930.cpp",
+    "size": 330,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802fc040.cpp",
+    "size": 1268,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801fc680.h",
+    "size": 754,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802501f0.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1803238c0.cpp",
+    "size": 3667,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180177eb0.cpp",
+    "size": 330,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804e44c0.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801e52f0.cpp",
+    "size": 566,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802f7580.cpp",
+    "size": 2769,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180193330.h",
+    "size": 579,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/CrouchSpam.cpp",
+    "size": 908,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802c5a20.cpp",
+    "size": 2720,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1803138e0.cpp",
+    "size": 809,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801d2430.h",
+    "size": 509,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180185460.h",
+    "size": 795,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801d2430.cpp",
+    "size": 1301,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180429900.h",
+    "size": 616,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/NameTags.cpp",
+    "size": 228,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180188f20.h",
+    "size": 377,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/MoveDirectionLatestMovementKeyPressedWhenHoldingBoth.h",
+    "size": 580,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802c0340.cpp",
+    "size": 3664,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/SkinStealer.h",
+    "size": 562,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801e20d0.cpp",
+    "size": 928,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180371f00.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804e7c10.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1803138e0.h",
+    "size": 512,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801f2430.h",
+    "size": 817,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180331ad0.h",
+    "size": 820,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804ce890.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180243e70.h",
+    "size": 487,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180241f60.cpp",
+    "size": 1766,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18038bc60.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180388cf0.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180415790.h",
+    "size": 475,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804de3f0.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180424ef0.cpp",
+    "size": 1159,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180130570.h",
+    "size": 953,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180149a30.cpp",
+    "size": 1348,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18019a5d0.cpp",
+    "size": 834,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801e6000.h",
+    "size": 377,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/HideUI.h",
+    "size": 383,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801f8fc0.cpp",
+    "size": 1917,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180218db0.cpp",
+    "size": 1176,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/SkinStealer.cpp",
+    "size": 928,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18032ce60.h",
+    "size": 555,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180388cf0.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1803455d0.h",
+    "size": 638,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180429900.cpp",
+    "size": 1216,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802cfa50.h",
+    "size": 792,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180404ac0.cpp",
+    "size": 692,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18020ca00.cpp",
+    "size": 330,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180248800.cpp",
+    "size": 686,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180415790.cpp",
+    "size": 692,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/ChunkBorders.cpp",
+    "size": 2223,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802cfa50.cpp",
+    "size": 3968,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18032ce60.cpp",
+    "size": 1028,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804e2da0.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180371f00.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802f4ea0.h",
+    "size": 638,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801dd4b0.h",
+    "size": 650,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804d8520.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801e7620.cpp",
+    "size": 3288,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804c9320.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18037bc90.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804f3ae0.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180223cc0.h",
+    "size": 680,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180241f60.h",
+    "size": 666,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802e5290.h",
+    "size": 941,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801899c0.cpp",
+    "size": 1327,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18020d4c0.h",
+    "size": 661,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Subtitles.cpp",
+    "size": 1054,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802039a0.cpp",
+    "size": 723,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180242db0.h",
+    "size": 370,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802079f0.cpp",
+    "size": 1297,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/FPS.cpp",
+    "size": 712,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18031e130.h",
+    "size": 863,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802039a0.h",
+    "size": 473,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/NoFire.h",
+    "size": 524,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802c0340.h",
+    "size": 615,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180245d30.cpp",
+    "size": 635,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801e52f0.h",
+    "size": 440,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804cf410.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804e6e10.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180178c80.h",
+    "size": 466,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18020a2d0.cpp",
+    "size": 974,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804e44c0.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180424ef0.h",
+    "size": 573,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18041e380.cpp",
+    "size": 692,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180404ac0.h",
+    "size": 475,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18031e130.cpp",
+    "size": 2108,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804c9320.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180415150.cpp",
+    "size": 1099,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180376860.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801e7620.h",
+    "size": 822,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802f4ea0.cpp",
+    "size": 1297,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180218db0.h",
+    "size": 598,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18033b770.cpp",
+    "size": 1167,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804e7c10.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804f3ae0.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180149a30.h",
+    "size": 661,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180404050.h",
+    "size": 474,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802fb570.h",
+    "size": 377,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804f24e0.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802ce320.h",
+    "size": 475,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180240430.h",
+    "size": 625,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804dd020.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802452c0.h",
+    "size": 377,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180195270.cpp",
+    "size": 914,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180380410.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804e2da0.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/NoFire.cpp",
+    "size": 2231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18014f210.h",
+    "size": 475,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802079f0.h",
+    "size": 638,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804dd020.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180247570.h",
+    "size": 616,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18018d820.h",
+    "size": 546,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801914f0.cpp",
+    "size": 2716,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802d3fd0.h",
+    "size": 477,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804e6e10.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18014f210.cpp",
+    "size": 692,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804e5480.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180178c80.cpp",
+    "size": 622,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18024b340.h",
+    "size": 597,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801e7090.cpp",
+    "size": 773,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180177eb0.h",
+    "size": 377,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801fc680.cpp",
+    "size": 1239,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180219990.h",
+    "size": 464,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180417c20.h",
+    "size": 376,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801380b0.cpp",
+    "size": 3301,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180380fc0.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180415150.h",
+    "size": 488,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802ac240.cpp",
+    "size": 1706,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801fbc20.cpp",
+    "size": 330,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804cf410.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804d6b70.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180240430.cpp",
+    "size": 2777,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804d8520.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18033b770.h",
+    "size": 575,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180341050.h",
+    "size": 475,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18024b340.cpp",
+    "size": 2876,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801e7090.h",
+    "size": 448,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802ce320.cpp",
+    "size": 692,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801c2930.h",
+    "size": 377,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18020a2d0.h",
+    "size": 579,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180247570.cpp",
+    "size": 1927,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180376860.h",
+    "size": 574,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180185460.cpp",
+    "size": 1493,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801749e0.cpp",
+    "size": 706,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180347d80.cpp",
+    "size": 766,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18021f300.cpp",
+    "size": 577,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804f24e0.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/OdersoCompass.h",
+    "size": 459,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801f8fc0.h",
+    "size": 656,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/CPS.cpp",
+    "size": 724,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_180360610.h",
+    "size": 743,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18031b4d0.h",
+    "size": 418,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804168f0.h",
+    "size": 547,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/OdersoCompass.cpp",
+    "size": 813,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1804de3f0.cpp",
+    "size": 231,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18017c4a0.h",
+    "size": 1062,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18019a5d0.h",
+    "size": 518,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Make.cpp",
+    "size": 257,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802c5a20.h",
+    "size": 890,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1803238c0.h",
+    "size": 697,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1801e6000.cpp",
+    "size": 330,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_18020ca00.h",
+    "size": 377,
+    "ext": ".h"
+  },
+  {
+    "path": "Oderso/Module/Modules/Module_1802d3fd0.cpp",
+    "size": 1189,
+    "ext": ".cpp"
+  },
+  {
+    "path": "include/chakra/ChakraCommon.h",
+    "size": 85158,
+    "ext": ".h"
+  },
+  {
+    "path": "include/chakra/ChakraCoreWindows.h",
+    "size": 1700,
+    "ext": ".h"
+  },
+  {
+    "path": "include/chakra/ChakraCommonWindows.h",
+    "size": 14191,
+    "ext": ".h"
+  },
+  {
+    "path": "include/chakra/ChakraDebug.h",
+    "size": 42265,
+    "ext": ".h"
+  },
+  {
+    "path": "include/chakra/ChakraCore.h",
+    "size": 78396,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/copying.txt",
+    "size": 2865,
+    "ext": ".txt"
+  },
+  {
+    "path": "include/glm/CMakeLists.txt",
+    "size": 373,
+    "ext": ".txt"
+  },
+  {
+    "path": "include/glm/.appveyor.yml",
+    "size": 3027,
+    "ext": ".yml"
+  },
+  {
+    "path": "include/glm/readme.md",
+    "size": 44690,
+    "ext": ".md"
+  },
+  {
+    "path": "include/glm/.gitignore",
+    "size": 604,
+    "ext": ""
+  },
+  {
+    "path": "include/glm/manual.md",
+    "size": 95215,
+    "ext": ".md"
+  },
+  {
+    "path": "include/glm/.travis.yml",
+    "size": 27839,
+    "ext": ".yml"
+  },
+  {
+    "path": "include/oderso/decls.h",
+    "size": 1316507,
+    "ext": ".h"
+  },
+  {
+    "path": "include/oderso/compat.h",
+    "size": 4112,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/util/autoexp.vc2010.dat",
+    "size": 129432,
+    "ext": ".dat"
+  },
+  {
+    "path": "include/glm/util/usertype.dat",
+    "size": 2610,
+    "ext": ".dat"
+  },
+  {
+    "path": "include/glm/util/autoexp.txt",
+    "size": 434,
+    "ext": ".txt"
+  },
+  {
+    "path": "include/glm/util/glm.natvis",
+    "size": 1724,
+    "ext": ".natvis"
+  },
+  {
+    "path": "include/glm/glm/vec4.hpp",
+    "size": 438,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/integer.hpp",
+    "size": 10476,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/vector_relational.hpp",
+    "size": 6343,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/mat2x3.hpp",
+    "size": 224,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/mat4x4.hpp",
+    "size": 224,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/mat2x2.hpp",
+    "size": 224,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/exponential.hpp",
+    "size": 5615,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/vec2.hpp",
+    "size": 437,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/CMakeLists.txt",
+    "size": 2668,
+    "ext": ".txt"
+  },
+  {
+    "path": "include/glm/glm/vec3.hpp",
+    "size": 437,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/fwd.hpp",
+    "size": 45542,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/mat4x3.hpp",
+    "size": 223,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/mat4x2.hpp",
+    "size": 224,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/mat2x4.hpp",
+    "size": 224,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/packing.hpp",
+    "size": 10897,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/mat3x3.hpp",
+    "size": 223,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/mat3x2.hpp",
+    "size": 224,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/mat3x4.hpp",
+    "size": 223,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/matrix.hpp",
+    "size": 5738,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/glm.hpp",
+    "size": 4499,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/trigonometric.hpp",
+    "size": 10675,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/geometric.hpp",
+    "size": 5351,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext.hpp",
+    "size": 8475,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/common.hpp",
+    "size": 27618,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double3x2_precision.hpp",
+    "size": 1590,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float2x4.hpp",
+    "size": 448,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_bool2.hpp",
+    "size": 392,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_double_precision.hpp",
+    "size": 1318,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float4x2.hpp",
+    "size": 449,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_packing.inl",
+    "size": 0,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float4x3.hpp",
+    "size": 449,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_bool3.hpp",
+    "size": 392,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_relational.hpp",
+    "size": 4529,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_uint1_sized.hpp",
+    "size": 1240,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_bool1.hpp",
+    "size": 649,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_common.inl",
+    "size": 4379,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int3x2_sized.hpp",
+    "size": 1179,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_float1_precision.hpp",
+    "size": 1150,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float2x3_precision.hpp",
+    "size": 1582,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_int2_sized.hpp",
+    "size": 1235,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float2x2.hpp",
+    "size": 711,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_common.hpp",
+    "size": 995,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_bool4.hpp",
+    "size": 392,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float2x4_precision.hpp",
+    "size": 1582,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float4x4.hpp",
+    "size": 710,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float2x3.hpp",
+    "size": 448,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_clip_space.hpp",
+    "size": 29725,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_integer.hpp",
+    "size": 2683,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_float2_precision.hpp",
+    "size": 1394,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_transform.inl",
+    "size": 4697,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_exponential.inl",
+    "size": 2574,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int3x4_sized.hpp",
+    "size": 1179,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_common.hpp",
+    "size": 5037,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_int4_sized.hpp",
+    "size": 1235,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint3x3_sized.hpp",
+    "size": 1725,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_transform.inl",
+    "size": 629,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double4x2_precision.hpp",
+    "size": 1590,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_clip_space.inl",
+    "size": 20007,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_double4_precision.hpp",
+    "size": 1587,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float3x4_precision.hpp",
+    "size": 1582,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_integer.inl",
+    "size": 6944,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_uint3.hpp",
+    "size": 417,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float4x3_precision.hpp",
+    "size": 1582,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_common.inl",
+    "size": 617,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_uint2.hpp",
+    "size": 417,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_float_precision.hpp",
+    "size": 1153,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float3x4.hpp",
+    "size": 449,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_transform.hpp",
+    "size": 1331,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint3x4_sized.hpp",
+    "size": 1203,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_bool4_precision.hpp",
+    "size": 1340,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_int3_sized.hpp",
+    "size": 1235,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_uint1.hpp",
+    "size": 711,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_transform.hpp",
+    "size": 6026,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int3x3_sized.hpp",
+    "size": 1685,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_common.inl",
+    "size": 3572,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_exponential.hpp",
+    "size": 1741,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_relational.inl",
+    "size": 2462,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_bool3_precision.hpp",
+    "size": 1340,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double2x2_precision.hpp",
+    "size": 2970,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_packing.hpp",
+    "size": 676,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_float.hpp",
+    "size": 976,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_uint4.hpp",
+    "size": 417,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float3x2.hpp",
+    "size": 442,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_double3_precision.hpp",
+    "size": 1556,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_common.hpp",
+    "size": 4840,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float3x3_precision.hpp",
+    "size": 2955,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float3x3.hpp",
+    "size": 713,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_int_sized.hpp",
+    "size": 1329,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint3x2_sized.hpp",
+    "size": 1195,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float4x4_precision.hpp",
+    "size": 2955,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double4x2.hpp",
+    "size": 451,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint2x3_sized.hpp",
+    "size": 1203,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int2x2.hpp",
+    "size": 801,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_int1.hpp",
+    "size": 693,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int4x4.hpp",
+    "size": 801,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_float3.hpp",
+    "size": 425,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double2x4.hpp",
+    "size": 451,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_ulp.hpp",
+    "size": 2050,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_geometric.hpp",
+    "size": 1897,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int2x4_sized.hpp",
+    "size": 1179,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_float2.hpp",
+    "size": 424,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double2x3_precision.hpp",
+    "size": 1590,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint4x2_sized.hpp",
+    "size": 1203,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int2x3.hpp",
+    "size": 694,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_bool2_precision.hpp",
+    "size": 1340,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_double.hpp",
+    "size": 985,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double4x3.hpp",
+    "size": 451,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint3x2.hpp",
+    "size": 704,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_common_simd.inl",
+    "size": 372,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_int2.hpp",
+    "size": 405,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_double2_precision.hpp",
+    "size": 1400,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float3x2_precision.hpp",
+    "size": 1582,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_relational.hpp",
+    "size": 6710,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_integer.hpp",
+    "size": 5510,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_relational.hpp",
+    "size": 2264,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_float1.hpp",
+    "size": 773,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_uint3_sized.hpp",
+    "size": 1259,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_int3.hpp",
+    "size": 405,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint3x3.hpp",
+    "size": 816,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_constants.inl",
+    "size": 710,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double4x4.hpp",
+    "size": 716,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_uint_sized.hpp",
+    "size": 1366,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int2x4.hpp",
+    "size": 694,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int2x2_sized.hpp",
+    "size": 1685,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int4x2.hpp",
+    "size": 694,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_double1_precision.hpp",
+    "size": 1155,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double2x2.hpp",
+    "size": 716,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint4x4_sized.hpp",
+    "size": 1725,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float4x2_precision.hpp",
+    "size": 1582,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double2x3.hpp",
+    "size": 451,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_projection.hpp",
+    "size": 8056,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_float4.hpp",
+    "size": 425,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_common.inl",
+    "size": 5241,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int4x3.hpp",
+    "size": 694,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int4x3_sized.hpp",
+    "size": 1179,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double2x4_precision.hpp",
+    "size": 1590,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint3x4.hpp",
+    "size": 703,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_int4.hpp",
+    "size": 405,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_relational.hpp",
+    "size": 1954,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_trigonometric.hpp",
+    "size": 1813,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_bool1_precision.hpp",
+    "size": 876,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_ulp.hpp",
+    "size": 3848,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_packing.inl",
+    "size": 0,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_float3_precision.hpp",
+    "size": 1394,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint4x4.hpp",
+    "size": 816,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int4x4_sized.hpp",
+    "size": 1685,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint2x2.hpp",
+    "size": 816,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_projection.inl",
+    "size": 3961,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_common.hpp",
+    "size": 9343,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint2x2_sized.hpp",
+    "size": 1725,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint4x3_sized.hpp",
+    "size": 1203,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint2x3.hpp",
+    "size": 704,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_constants.hpp",
+    "size": 1037,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double3x4.hpp",
+    "size": 451,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_trigonometric.inl",
+    "size": 895,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double4x3_precision.hpp",
+    "size": 1590,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_ulp.inl",
+    "size": 2194,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_packing.hpp",
+    "size": 670,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_int1_sized.hpp",
+    "size": 1212,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int3x2.hpp",
+    "size": 694,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double3x4_precision.hpp",
+    "size": 1590,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_relational.inl",
+    "size": 1019,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_double4.hpp",
+    "size": 428,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int3x3.hpp",
+    "size": 801,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_uint2_sized.hpp",
+    "size": 1259,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint4x2.hpp",
+    "size": 705,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint2x4.hpp",
+    "size": 704,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int2x3_sized.hpp",
+    "size": 1179,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int4x2_sized.hpp",
+    "size": 1179,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_double1.hpp",
+    "size": 782,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double4x4_precision.hpp",
+    "size": 2970,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_ulp.inl",
+    "size": 7038,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/quaternion_geometric.inl",
+    "size": 1218,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint2x4_sized.hpp",
+    "size": 1204,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_uint4x3.hpp",
+    "size": 705,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double3x3_precision.hpp",
+    "size": 2970,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double3x2.hpp",
+    "size": 451,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_float2x2_precision.hpp",
+    "size": 2955,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_integer.inl",
+    "size": 3325,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/scalar_relational.inl",
+    "size": 1127,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_int3x4.hpp",
+    "size": 694,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_uint4_sized.hpp",
+    "size": 1259,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_double3.hpp",
+    "size": 428,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_float4_precision.hpp",
+    "size": 1394,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/vector_double2.hpp",
+    "size": 428,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_relational.inl",
+    "size": 2926,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/ext/matrix_double3x3.hpp",
+    "size": 716,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/simd/neon.h",
+    "size": 4888,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/glm/simd/vector_relational.h",
+    "size": 139,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/glm/simd/matrix.h",
+    "size": 39951,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/glm/simd/packing.h",
+    "size": 129,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/glm/simd/common.h",
+    "size": 7002,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/glm/simd/trigonometric.h",
+    "size": 136,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/glm/simd/geometric.h",
+    "size": 3922,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/glm/simd/integer.h",
+    "size": 3688,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/glm/simd/platform.h",
+    "size": 13089,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/glm/simd/exponential.h",
+    "size": 377,
+    "ext": ".h"
+  },
+  {
+    "path": "include/glm/glm/detail/func_exponential.inl",
+    "size": 4348,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/func_integer_simd.inl",
+    "size": 1634,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/func_vector_relational.inl",
+    "size": 2408,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/func_packing.inl",
+    "size": 2951,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/_fixes.hpp",
+    "size": 380,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_quat.inl",
+    "size": 11495,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_half.inl",
+    "size": 4513,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/func_vector_relational_simd.inl",
+    "size": 72,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/qualifier.hpp",
+    "size": 5896,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/func_matrix_simd.inl",
+    "size": 8563,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/_noise.hpp",
+    "size": 2279,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_half.hpp",
+    "size": 254,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/_features.hpp",
+    "size": 11376,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/func_integer.inl",
+    "size": 14994,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/_vectorize.hpp",
+    "size": 5346,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/func_geometric.inl",
+    "size": 7451,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_quat.hpp",
+    "size": 5960,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/func_common.inl",
+    "size": 24608,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_quat_simd.inl",
+    "size": 5976,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/func_trigonometric.inl",
+    "size": 5216,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat2x4.inl",
+    "size": 14160,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat4x2.inl",
+    "size": 16416,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/_swizzle.hpp",
+    "size": 48409,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat4x3.inl",
+    "size": 17969,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/func_packing_simd.inl",
+    "size": 72,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_vec4.inl",
+    "size": 37181,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/func_trigonometric_simd.inl",
+    "size": 0,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat3x3.hpp",
+    "size": 6331,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat3x2.hpp",
+    "size": 5381,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/compute_common.hpp",
+    "size": 1192,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/setup.hpp",
+    "size": 39453,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat2x2.inl",
+    "size": 13967,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_vec1.inl",
+    "size": 14004,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/func_common_simd.inl",
+    "size": 6004,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat4x4.inl",
+    "size": 25342,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/func_geometric_simd.inl",
+    "size": 4116,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat2x3.inl",
+    "size": 13443,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_vec2.inl",
+    "size": 23226,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/glm.cpp",
+    "size": 8465,
+    "ext": ".cpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat3x4.hpp",
+    "size": 5534,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_vec3.inl",
+    "size": 27209,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat4x4_simd.inl",
+    "size": 49,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat2x3.hpp",
+    "size": 5296,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat4x4.hpp",
+    "size": 6834,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/func_matrix.inl",
+    "size": 12732,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat2x2.hpp",
+    "size": 6154,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_vec1.hpp",
+    "size": 11253,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/_swizzle_func.hpp",
+    "size": 34337,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_vec3.hpp",
+    "size": 17551,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/compute_vector_relational.hpp",
+    "size": 600,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_vec4_simd.inl",
+    "size": 19614,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat3x4.inl",
+    "size": 16913,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/func_exponential_simd.inl",
+    "size": 813,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_vec2.hpp",
+    "size": 15598,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat4x3.hpp",
+    "size": 5811,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat4x2.hpp",
+    "size": 5505,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_float.hpp",
+    "size": 1574,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat2x4.hpp",
+    "size": 5355,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat3x2.inl",
+    "size": 14505,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_mat3x3.inl",
+    "size": 17188,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/detail/type_vec4.hpp",
+    "size": 22819,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/integer.hpp",
+    "size": 2031,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/matrix_integer.hpp",
+    "size": 12613,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/matrix_inverse.inl",
+    "size": 4928,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/quaternion.inl",
+    "size": 6037,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/packing.inl",
+    "size": 24819,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/matrix_transform.inl",
+    "size": 85,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/vec1.hpp",
+    "size": 808,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/type_precision.inl",
+    "size": 43,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/bitfield.inl",
+    "size": 20131,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/ulp.hpp",
+    "size": 5042,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/round.inl",
+    "size": 4374,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/packing.hpp",
+    "size": 35988,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/quaternion_simd.inl",
+    "size": 0,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/ulp.inl",
+    "size": 5009,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/round.hpp",
+    "size": 5278,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/matrix_transform.hpp",
+    "size": 1190,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/type_precision.hpp",
+    "size": 64221,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/bitfield.hpp",
+    "size": 9878,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/integer.inl",
+    "size": 2270,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/quaternion.hpp",
+    "size": 5465,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/matrix_inverse.hpp",
+    "size": 1467,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/epsilon.inl",
+    "size": 2196,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/random.hpp",
+    "size": 2607,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/matrix_access.inl",
+    "size": 1125,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/type_ptr.hpp",
+    "size": 6826,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/reciprocal.inl",
+    "size": 6336,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/constants.hpp",
+    "size": 4014,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/color_space.hpp",
+    "size": 1964,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/noise.hpp",
+    "size": 1492,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/color_space.inl",
+    "size": 2954,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/noise.inl",
+    "size": 33172,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/matrix_access.hpp",
+    "size": 1408,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/random.inl",
+    "size": 8701,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/epsilon.hpp",
+    "size": 1768,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/constants.inl",
+    "size": 3837,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/reciprocal.hpp",
+    "size": 3415,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtc/type_ptr.inl",
+    "size": 8549,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtc/type_aligned.hpp",
+    "size": 67983,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/vector_angle.hpp",
+    "size": 1793,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/log_base.inl",
+    "size": 379,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_query.inl",
+    "size": 3239,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/extend.inl",
+    "size": 901,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/integer.hpp",
+    "size": 2166,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/associated_min_max.inl",
+    "size": 8536,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_transform_2d.inl",
+    "size": 1343,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/hash.hpp",
+    "size": 3473,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/rotate_vector.hpp",
+    "size": 3590,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_interpolation.hpp",
+    "size": 1998,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/functions.hpp",
+    "size": 1286,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/quaternion.inl",
+    "size": 4209,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/exterior_product.inl",
+    "size": 633,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/gradient_paint.inl",
+    "size": 904,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/string_cast.hpp",
+    "size": 1383,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/color_space_YCoCg.hpp",
+    "size": 1866,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/type_trait.inl",
+    "size": 2039,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/extended_min_max.hpp",
+    "size": 3574,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/euler_angles.inl",
+    "size": 22753,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/fast_square_root.hpp",
+    "size": 2933,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/raw_data.inl",
+    "size": 23,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_cross_product.inl",
+    "size": 678,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/spline.hpp",
+    "size": 1580,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/fast_trigonometry.hpp",
+    "size": 2395,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/optimum_pow.inl",
+    "size": 380,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/dual_quaternion.hpp",
+    "size": 9463,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/closest_point.hpp",
+    "size": 1327,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/number_precision.inl",
+    "size": 50,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/mixed_product.inl",
+    "size": 253,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/transform.inl",
+    "size": 569,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/bit.inl",
+    "size": 2262,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/io.inl",
+    "size": 11936,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/fast_trigonometry.inl",
+    "size": 4014,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/optimum_pow.hpp",
+    "size": 1307,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/spline.inl",
+    "size": 1801,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/raw_data.hpp",
+    "size": 1243,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_cross_product.hpp",
+    "size": 1325,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/euler_angles.hpp",
+    "size": 10677,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/fast_square_root.inl",
+    "size": 2044,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/color_space_YCoCg.inl",
+    "size": 2737,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/type_trait.hpp",
+    "size": 2136,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/extended_min_max.inl",
+    "size": 2349,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/io.hpp",
+    "size": 7162,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/float_notmalize.inl",
+    "size": 293,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/transform.hpp",
+    "size": 1685,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/bit.hpp",
+    "size": 3038,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/number_precision.hpp",
+    "size": 2322,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/mixed_product.hpp",
+    "size": 1060,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/closest_point.inl",
+    "size": 1117,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/dual_quaternion.inl",
+    "size": 10326,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/associated_min_max.hpp",
+    "size": 7629,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_transform_2d.hpp",
+    "size": 2528,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/integer.inl",
+    "size": 3824,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/log_base.hpp",
+    "size": 1170,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_query.hpp",
+    "size": 2744,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/vector_angle.inl",
+    "size": 1417,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/extend.hpp",
+    "size": 1069,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/gradient_paint.hpp",
+    "size": 1461,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/quaternion.hpp",
+    "size": 4577,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/exterior_product.hpp",
+    "size": 1336,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/string_cast.inl",
+    "size": 17656,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/functions.inl",
+    "size": 773,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/rotate_vector.inl",
+    "size": 3833,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_interpolation.inl",
+    "size": 4259,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/hash.inl",
+    "size": 5611,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/vector_query.inl",
+    "size": 4482,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/polar_coordinates.hpp",
+    "size": 1333,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/orthonormalize.inl",
+    "size": 604,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/component_wise.inl",
+    "size": 4188,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/normalize_dot.inl",
+    "size": 492,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/std_based_type.inl",
+    "size": 48,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_factorisation.inl",
+    "size": 2773,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/type_aligned.inl",
+    "size": 46,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/vec_swizzle.hpp",
+    "size": 76256,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/projection.hpp",
+    "size": 1092,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/compatibility.inl",
+    "size": 1461,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/scalar_relational.hpp",
+    "size": 889,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/wrap.hpp",
+    "size": 863,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/rotate_normalized_axis.inl",
+    "size": 1652,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/texture.hpp",
+    "size": 1290,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/color_encoding.inl",
+    "size": 1747,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/norm.hpp",
+    "size": 2695,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_major_storage.inl",
+    "size": 3655,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_operation.inl",
+    "size": 5644,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/color_space.hpp",
+    "size": 1973,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/normal.hpp",
+    "size": 1050,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/intersect.inl",
+    "size": 6671,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/perpendicular.inl",
+    "size": 199,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/easing.hpp",
+    "size": 6873,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/transform2.inl",
+    "size": 3578,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_decompose.hpp",
+    "size": 1397,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/fast_exponential.hpp",
+    "size": 3118,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/common.inl",
+    "size": 3444,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/handed_coordinate_space.hpp",
+    "size": 1514,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/intersect.hpp",
+    "size": 3350,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/perpendicular.hpp",
+    "size": 1107,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/easing.inl",
+    "size": 11700,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_operation.hpp",
+    "size": 3052,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/color_space.inl",
+    "size": 3189,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/normal.inl",
+    "size": 271,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/color_encoding.hpp",
+    "size": 1676,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_major_storage.hpp",
+    "size": 3762,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/norm.inl",
+    "size": 2604,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/texture.inl",
+    "size": 309,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/handed_coordinate_space.inl",
+    "size": 533,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/common.hpp",
+    "size": 3116,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/range.hpp",
+    "size": 2238,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/fast_exponential.inl",
+    "size": 4206,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/transform2.hpp",
+    "size": 3437,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_decompose.inl",
+    "size": 6440,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/scalar_multiplication.hpp",
+    "size": 2253,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/std_based_type.hpp",
+    "size": 2013,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/matrix_factorisation.hpp",
+    "size": 2887,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/orthonormalize.hpp",
+    "size": 1322,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/normalize_dot.hpp",
+    "size": 1530,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/component_wise.hpp",
+    "size": 2351,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/polar_coordinates.inl",
+    "size": 734,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/vector_query.hpp",
+    "size": 2202,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/scalar_relational.inl",
+    "size": 1096,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/wrap.inl",
+    "size": 53,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/compatibility.hpp",
+    "size": 14989,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/rotate_normalized_axis.hpp",
+    "size": 2236,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/glm/gtx/projection.inl",
+    "size": 232,
+    "ext": ".inl"
+  },
+  {
+    "path": "include/glm/glm/gtx/type_aligned.hpp",
+    "size": 33290,
+    "ext": ".hpp"
+  },
+  {
+    "path": "include/glm/cmake/glm/glmConfig.cmake",
+    "size": 662,
+    "ext": ".cmake"
+  },
+  {
+    "path": "include/glm/cmake/glm/glmConfig-version.cmake",
+    "size": 325,
+    "ext": ".cmake"
+  },
+  {
+    "path": "tools/__pycache__/auto_port_simple.cpython-314.pyc",
+    "size": 9135,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/port_default_methods.cpython-314.pyc",
+    "size": 7649,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/add_return_placeholders.cpython-314.pyc",
+    "size": 2297,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/fix_vtable_stubs.cpython-314.pyc",
+    "size": 9457,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/decode_module_names_fixed.cpython-314.pyc",
+    "size": 26500,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/port_simple_returns.cpython-314.pyc",
+    "size": 5836,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/extract_datacopy.cpython-314.pyc",
+    "size": 11795,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/parse_module_settings.cpython-314.pyc",
+    "size": 15330,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/add_vtable_method_stubs.cpython-314.pyc",
+    "size": 8641,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/analyze_modules.cpython-314.pyc",
+    "size": 12043,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/decode_module_names.cpython-314.pyc",
+    "size": 23968,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/c9aa0_batch_decoder.cpython-314.pyc",
+    "size": 15583,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/port_simple_methods.cpython-314.pyc",
+    "size": 10304,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/extract_nametags.cpython-314.pyc",
+    "size": 18008,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/vtable_config.cpython-314.pyc",
+    "size": 2407,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/port_modules.cpython-314.pyc",
+    "size": 11955,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/generate_method_stubs.cpython-314.pyc",
+    "size": 9454,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/extract_module_vtable.cpython-314.pyc",
+    "size": 10456,
+    "ext": ".pyc"
+  },
+  {
+    "path": "tools/__pycache__/add_cpp_method_stubs.cpython-314.pyc",
+    "size": 7232,
+    "ext": ".pyc"
+  },
+  {
+    "path": "Horion/Scripting/ScriptInstance.cpp",
+    "size": 4290,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/JsScriptModule.h",
+    "size": 943,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/ScriptInstance.h",
+    "size": 1470,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/JsScriptModule.cpp",
+    "size": 1001,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/ScriptManager.cpp",
+    "size": 16801,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/ScriptManager.h",
+    "size": 4404,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Config/AccountInformation.h",
+    "size": 488,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Config/ConfigManager.h",
+    "size": 669,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Config/AccountInformation.cpp",
+    "size": 875,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Config/ConfigManager.cpp",
+    "size": 4058,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/ModuleManager.h",
+    "size": 5386,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/ModuleManager.cpp",
+    "size": 26866,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/path/JoePath.cpp",
+    "size": 1957,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/path/JoeSegment.cpp",
+    "size": 4309,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/path/JoeConstants.cpp",
+    "size": 626,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/path/JoeMovementController.h",
+    "size": 750,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/path/JoeConstants.h",
+    "size": 431,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/path/JoePathFinder.cpp",
+    "size": 18791,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/path/JoePath.h",
+    "size": 573,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/path/JoePathFinder.h",
+    "size": 545,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/path/JoeMovementController.cpp",
+    "size": 8640,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/path/JoeSegment.h",
+    "size": 775,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/FriendList/FriendList.cpp",
+    "size": 887,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/FriendList/FriendList.h",
+    "size": 584,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Menu/ClickGui.h",
+    "size": 1958,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Menu/ClickGui.cpp",
+    "size": 31988,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Menu/TabGui.h",
+    "size": 331,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Menu/TabGui.cpp",
+    "size": 6258,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/CommandMgr.h",
+    "size": 1752,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/CommandMgr.cpp",
+    "size": 3454,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/UnbindCommand.cpp",
+    "size": 1305,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/SetOffhandCommand.cpp",
+    "size": 2407,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/ServerCommand.cpp",
+    "size": 627,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/SetPrefixCommand.cpp",
+    "size": 518,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/SayCommand.cpp",
+    "size": 1411,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/DupeCommand.cpp",
+    "size": 1346,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/PlayerTeleportCommand.cpp",
+    "size": 1767,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/BindCommand.cpp",
+    "size": 2334,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/XpCommand.h",
+    "size": 175,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/BruhCommand.h",
+    "size": 213,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/WaypointCommand.cpp",
+    "size": 2196,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/PathCommand.cpp",
+    "size": 2555,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/TestCommand.h",
+    "size": 214,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/ICommand.cpp",
+    "size": 637,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/SayCommand.h",
+    "size": 229,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/ExecuteCommand.h",
+    "size": 268,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/DamageCommand.cpp",
+    "size": 786,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/DamageCommand.h",
+    "size": 219,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/CommandBlockExploitCommand.cpp",
+    "size": 4476,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/TopCommand.h",
+    "size": 180,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/PlayerTeleportCommand.h",
+    "size": 243,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/CoordsCommand.h",
+    "size": 219,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/SetPrefixCommand.h",
+    "size": 255,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/WaypointCommand.h",
+    "size": 311,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/ScriptCommand.h",
+    "size": 234,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/SpammerCommand.cpp",
+    "size": 2362,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/EjectCommand.h",
+    "size": 216,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/ModulesCommand.cpp",
+    "size": 712,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/RelativeTeleportCommand.cpp",
+    "size": 769,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/TestCommand.cpp",
+    "size": 1168,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/CommandBlockExploitCommand.h",
+    "size": 259,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/PanicCommand.cpp",
+    "size": 549,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/XpCommand.cpp",
+    "size": 825,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/NbtCommand.h",
+    "size": 262,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/FriendListCommand.h",
+    "size": 231,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/ToggleCommand.cpp",
+    "size": 847,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/TopCommand.cpp",
+    "size": 1424,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/UnbindCommand.h",
+    "size": 236,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/NameSpoofCommand.h",
+    "size": 248,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/BindCommand.h",
+    "size": 230,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/ScriptCommand.cpp",
+    "size": 1688,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/ModulesCommand.h",
+    "size": 222,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/RelativeTeleportCommand.h",
+    "size": 249,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/HideCommand.h",
+    "size": 213,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/NbtCommand.cpp",
+    "size": 3467,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/EnchantCommand.cpp",
+    "size": 6541,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/HelpCommand.cpp",
+    "size": 556,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/ExecuteCommand.cpp",
+    "size": 576,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/HideCommand.cpp",
+    "size": 411,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/ServerCommand.h",
+    "size": 220,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/GiveCommand.h",
+    "size": 387,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/GiveCommand.cpp",
+    "size": 6785,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/TeleportCommand.h",
+    "size": 225,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/EjectCommand.cpp",
+    "size": 287,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/ConfigCommand.cpp",
+    "size": 707,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/SetOffhandCommand.h",
+    "size": 249,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/DupeCommand.h",
+    "size": 214,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/GameModeCommand.h",
+    "size": 225,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/TeleportCommand.cpp",
+    "size": 592,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/NameSpoofCommand.cpp",
+    "size": 899,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/PanicCommand.h",
+    "size": 216,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/PathCommand.h",
+    "size": 184,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/ConfigCommand.h",
+    "size": 259,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/GameModeCommand.cpp",
+    "size": 666,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/SpammerCommand.h",
+    "size": 242,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/ICommand.h",
+    "size": 1082,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/CoordsCommand.cpp",
+    "size": 454,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/EnchantCommand.h",
+    "size": 272,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/FriendListCommand.cpp",
+    "size": 2191,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/ToggleCommand.h",
+    "size": 219,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Command/Commands/BruhCommand.cpp",
+    "size": 293,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Command/Commands/HelpCommand.h",
+    "size": 213,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/path/goals/JoeGoalXZ.cpp",
+    "size": 752,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/path/goals/JoeGoalXYZ.h",
+    "size": 288,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/path/goals/JoeGoal.h",
+    "size": 204,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/path/goals/JoeGoalXYZ.cpp",
+    "size": 339,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/path/goals/JoeGoal.cpp",
+    "size": 45,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/path/goals/JoeGoalXZ.h",
+    "size": 306,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/path/goals/JoeGoalY.h",
+    "size": 286,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/path/goals/JoeGoalY.cpp",
+    "size": 506,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoTotem.h",
+    "size": 204,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/InventoryCleaner.h",
+    "size": 582,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/InfiniteAura.h",
+    "size": 355,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NoFriends.h",
+    "size": 213,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Phase.cpp",
+    "size": 389,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/TestModule.h",
+    "size": 657,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/InventoryCleaner.cpp",
+    "size": 8624,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/HudModule.cpp",
+    "size": 7867,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/BowAimbot.h",
+    "size": 381,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AirSwim.h",
+    "size": 294,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Glide.cpp",
+    "size": 900,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/RainbowSky.cpp",
+    "size": 217,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/InstaBreak.h",
+    "size": 185,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Speed.h",
+    "size": 342,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NoSwing.h",
+    "size": 176,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AntiVoid.cpp",
+    "size": 812,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Fly.h",
+    "size": 390,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Nbt.cpp",
+    "size": 1133,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/FastLadder.h",
+    "size": 207,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Compass.cpp",
+    "size": 4580,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Jetpack.cpp",
+    "size": 1735,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Glide.h",
+    "size": 333,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Reach.h",
+    "size": 407,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/StackableItem.cpp",
+    "size": 644,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/HudModule.h",
+    "size": 696,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/JavascriptModule.h",
+    "size": 705,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Killaura.h",
+    "size": 608,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Tower.h",
+    "size": 314,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoTotem.cpp",
+    "size": 1093,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/VanillaPlus.cpp",
+    "size": 2447,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Blink.h",
+    "size": 579,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Teams.cpp",
+    "size": 327,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Xray.cpp",
+    "size": 546,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AntiBot.h",
+    "size": 854,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Criticals.cpp",
+    "size": 466,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Derp.cpp",
+    "size": 1001,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/InventoryMove.h",
+    "size": 277,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/ESP.cpp",
+    "size": 2443,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Teams.h",
+    "size": 381,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AntiBot.cpp",
+    "size": 669,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoSprint.h",
+    "size": 244,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AntiImmobile.h",
+    "size": 158,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/InventoryMove.cpp",
+    "size": 2191,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/TestModule.cpp",
+    "size": 7585,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Crasher.h",
+    "size": 313,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/TriggerBot.h",
+    "size": 326,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/HighJump.cpp",
+    "size": 275,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/ViewModel.h",
+    "size": 466,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/RainbowSky.h",
+    "size": 185,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/FastLadder.cpp",
+    "size": 285,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Bhop.cpp",
+    "size": 1002,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Waypoints.h",
+    "size": 1549,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/CrystalAura.cpp",
+    "size": 6488,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Module.cpp",
+    "size": 10132,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoArmor.cpp",
+    "size": 3925,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Aimbot.cpp",
+    "size": 3040,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Freelook.h",
+    "size": 606,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/FollowPathModule.h",
+    "size": 837,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoSneak.cpp",
+    "size": 1125,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Freelook.cpp",
+    "size": 2243,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Nuker.h",
+    "size": 466,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoGapple.cpp",
+    "size": 332,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/ViewModel.cpp",
+    "size": 1062,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Timer.cpp",
+    "size": 469,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/ExtendedBlockReach.cpp",
+    "size": 383,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Step.h",
+    "size": 281,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/FullBright.h",
+    "size": 356,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Xray.h",
+    "size": 346,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AirJump.cpp",
+    "size": 677,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Criticals.h",
+    "size": 237,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/ClickGuiMod.h",
+    "size": 503,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NameTags.h",
+    "size": 1183,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Blink.cpp",
+    "size": 381,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Tower.cpp",
+    "size": 2828,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/EditionFaker.cpp",
+    "size": 464,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/JavascriptModule.cpp",
+    "size": 2090,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Bhop.h",
+    "size": 289,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/InfiniteAura.cpp",
+    "size": 3280,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/FastEast.cpp",
+    "size": 991,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AirStuck.cpp",
+    "size": 273,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/EditionFaker.h",
+    "size": 215,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Jesus.h",
+    "size": 253,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/TriggerBot.cpp",
+    "size": 678,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/PacketLogger.cpp",
+    "size": 744,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/NoPacket.cpp",
+    "size": 368,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/NameTags.cpp",
+    "size": 3232,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AntiImmobile.cpp",
+    "size": 266,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/ChestStealer.h",
+    "size": 329,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Jetpack.h",
+    "size": 374,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoSprint.cpp",
+    "size": 628,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/ChestAura.cpp",
+    "size": 1424,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Godmode.cpp",
+    "size": 872,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoGapple.h",
+    "size": 301,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Teleport.h",
+    "size": 347,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NoPaintingCrash.cpp",
+    "size": 264,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Freecam.cpp",
+    "size": 1666,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/VanillaPlus.h",
+    "size": 319,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/ChestAura.h",
+    "size": 428,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/HighJump.h",
+    "size": 204,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Timer.h",
+    "size": 280,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Hitbox.cpp",
+    "size": 1014,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/NoPacket.h",
+    "size": 239,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NoSlowDown.cpp",
+    "size": 2295,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/FastEat.h",
+    "size": 259,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Step.cpp",
+    "size": 438,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/TimeChanger.cpp",
+    "size": 303,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/NoSlowDown.h",
+    "size": 311,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/StackableItem.h",
+    "size": 216,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Speed.cpp",
+    "size": 861,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Compass.h",
+    "size": 446,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AirSwim.cpp",
+    "size": 736,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Radar.cpp",
+    "size": 6434,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Tracer.h",
+    "size": 205,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/StorageESP.h",
+    "size": 401,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Zoom.h",
+    "size": 391,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Killaura.cpp",
+    "size": 4174,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Nuker.cpp",
+    "size": 1002,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/ExtendedBlockReach.h",
+    "size": 364,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/StorageESP.cpp",
+    "size": 2202,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Reach.cpp",
+    "size": 1123,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Waypoints.cpp",
+    "size": 6052,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/NightMode.cpp",
+    "size": 449,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/ESP.h",
+    "size": 339,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NoFall.cpp",
+    "size": 698,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Crasher.cpp",
+    "size": 1072,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Velocity.cpp",
+    "size": 394,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoArmor.h",
+    "size": 259,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Spammer.h",
+    "size": 587,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/ClickGuiMod.cpp",
+    "size": 951,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Freecam.h",
+    "size": 424,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NoPaintingCrash.h",
+    "size": 199,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Twerk.h",
+    "size": 289,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NoHurtcam.h",
+    "size": 147,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Hitbox.h",
+    "size": 342,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Fucker.h",
+    "size": 404,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/InstaBreak.cpp",
+    "size": 222,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Aimbot.h",
+    "size": 515,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Spider.cpp",
+    "size": 5155,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AntiVoid.h",
+    "size": 348,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/FollowPathModule.cpp",
+    "size": 5258,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/MidClick.h",
+    "size": 261,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NoWeb.cpp",
+    "size": 261,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/MidClick.cpp",
+    "size": 1022,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/BowAimbot.cpp",
+    "size": 3120,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/NoHurtcam.cpp",
+    "size": 217,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Tracer.cpp",
+    "size": 931,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Module.h",
+    "size": 5123,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Spammer.cpp",
+    "size": 893,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/NoFriends.cpp",
+    "size": 207,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/CubeGlide.h",
+    "size": 388,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Phase.h",
+    "size": 228,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Nbt.h",
+    "size": 219,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NoWeb.h",
+    "size": 217,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/CrystalAura.h",
+    "size": 864,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Derp.h",
+    "size": 294,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/PacketLogger.h",
+    "size": 246,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Spider.h",
+    "size": 290,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoClicker.h",
+    "size": 403,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/FullBright.cpp",
+    "size": 713,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Twerk.cpp",
+    "size": 632,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/NoSwing.cpp",
+    "size": 194,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AirJump.h",
+    "size": 283,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Jesus.cpp",
+    "size": 665,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/NoFall.h",
+    "size": 259,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Zoom.cpp",
+    "size": 446,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Scaffold.cpp",
+    "size": 4963,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoClicker.cpp",
+    "size": 1861,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AutoSneak.h",
+    "size": 310,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/CubeGlide.cpp",
+    "size": 1318,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/ChestStealer.cpp",
+    "size": 1128,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/AirStuck.h",
+    "size": 201,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Fly.cpp",
+    "size": 1886,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Scaffold.h",
+    "size": 379,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Fucker.cpp",
+    "size": 2001,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Velocity.h",
+    "size": 229,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/TimeChanger.h",
+    "size": 244,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Teleport.cpp",
+    "size": 1963,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Module/Modules/Radar.h",
+    "size": 274,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/Godmode.h",
+    "size": 341,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Module/Modules/NightMode.h",
+    "size": 273,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/ModuleManagerFunctions.cpp",
+    "size": 7192,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/GameFunctions.cpp",
+    "size": 802,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/LevelFunctions.h",
+    "size": 180,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/CommandManagerFunctions.h",
+    "size": 153,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/CommandManagerFunctions.cpp",
+    "size": 621,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/LocalPlayerFunctions.h",
+    "size": 412,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/HorionFunctions.cpp",
+    "size": 763,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/LevelFunctions.cpp",
+    "size": 2845,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/GameFunctions.h",
+    "size": 148,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/Vector2Functions.h",
+    "size": 463,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/EntityFunctions.cpp",
+    "size": 5388,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/DrawFunctions.h",
+    "size": 357,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/InventoryFunctions.h",
+    "size": 230,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/DrawFunctions.cpp",
+    "size": 9206,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/Vector3Functions.h",
+    "size": 480,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/EntityFunctions.h",
+    "size": 1342,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/Vector3Functions.cpp",
+    "size": 10900,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/HorionFunctions.h",
+    "size": 164,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/GlobalFunctions.cpp",
+    "size": 1058,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/LocalPlayerFunctions.cpp",
+    "size": 6985,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/ModuleManagerFunctions.h",
+    "size": 412,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/GlobalFunctions.h",
+    "size": 126,
+    "ext": ".h"
+  },
+  {
+    "path": "Horion/Scripting/Functions/Vector2Functions.cpp",
+    "size": 10405,
+    "ext": ".cpp"
+  },
+  {
+    "path": "Horion/Scripting/Functions/InventoryFunctions.cpp",
+    "size": 5028,
+    "ext": ".cpp"
+  }
+]

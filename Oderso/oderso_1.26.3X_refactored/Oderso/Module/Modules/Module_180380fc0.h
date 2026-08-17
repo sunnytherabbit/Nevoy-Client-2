@@ -9,7 +9,7 @@ public:
 	Module_180380fc0();
 	~Module_180380fc0() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
 	virtual void onTick(C_GameMode* gameMode) {}
 	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}

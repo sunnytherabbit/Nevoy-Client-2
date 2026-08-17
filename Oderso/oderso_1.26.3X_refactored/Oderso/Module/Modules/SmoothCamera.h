@@ -10,13 +10,16 @@ public:
 	SmoothCamera();
 	~SmoothCamera() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) override;
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual void onEnable() override;
+	virtual void onDisable() override;
+	virtual std::string getTooltip() override;
+	virtual void onKeyUpdate(int key, bool isDown, bool* cancel = nullptr) override;
+	virtual void slot_27(int arg = 0, char mask = 0, bool* cancel = nullptr) override;
+	virtual void slot_29() override;
+	virtual void slot_31(int arg = 0, char mask = 0, bool* cancel = nullptr) override;
 
 	float strength = 0.f;
 	bool animation = false;
@@ -26,6 +29,8 @@ public:
 
 	vec2_t lastViewAngles{};
 	bool smoothInit = false;
+
+	char _binaryPadding[0x30];
 };
 
 #endif

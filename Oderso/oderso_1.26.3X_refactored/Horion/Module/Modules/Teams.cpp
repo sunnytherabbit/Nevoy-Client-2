@@ -8,6 +8,6 @@ Teams::Teams() : IModule(0, Category::COMBAT, "Don't attack team members!") {
 Teams::~Teams() {
 }
 
-const char* Teams::getModuleName() {
+std::string Teams::getModuleName() {
 	return ("Teams");
 }

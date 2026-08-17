@@ -9,7 +9,7 @@ Tower::Tower() : IModule(0, Category::WORLD, "Like scaffold, but vertically and 
 Tower::~Tower() {
 }
 
-const char* Tower::getModuleName() {
+std::string Tower::getModuleName() {
 	return ("Tower");
 }
 

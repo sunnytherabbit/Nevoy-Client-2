@@ -6,4 +6,37 @@ Module_180149a30::Module_180149a30() : IModule(0, Category::CUSTOM, "Module_1801
 	registerBoolSetting("No numbe", &noNumbe, false);
 }
 
-const char* Module_180149a30::getModuleName() { return "Module_180149a30"; }
+std::string Module_180149a30::getModuleName() { return "Module_180149a30"; }
+std::string Module_180149a30::getTooltip() { 
+	// Binary function: func_0x18014b660
+	return "";
+}
+
+void Module_180149a30::onDisable() {
+	// Binary function: func_0x18014b7f0
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using DisableFunc = void(*)(void*);
+	reinterpret_cast<DisableFunc>(mod->ptrBase + 0x14b7f0)(this);
+}
+
+void Module_180149a30::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
+	// Binary function: func_0x18014b970
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using PostRenderFunc = void(*)(void*);
+	reinterpret_cast<PostRenderFunc>(mod->ptrBase + 0x14b970)(this);
+}
+
+void Module_180149a30::onLoadConfig(void* conf) {
+	// Binary function: func_0x180135130
+	// NOTE: custom logic not yet ported; calling base for now
+	IModule::onLoadConfig(conf);
+}
+
+void Module_180149a30::onSaveConfig(void* conf) {
+	// Binary function: func_0x180135c90
+	// NOTE: custom logic not yet ported; calling base for now
+	IModule::onSaveConfig(conf);
+}
+

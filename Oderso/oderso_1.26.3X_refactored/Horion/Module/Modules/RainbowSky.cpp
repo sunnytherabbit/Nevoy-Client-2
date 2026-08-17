@@ -6,6 +6,6 @@ RainbowSky::RainbowSky() : IModule(0, Category::VISUAL, "Makes your sky look rai
 RainbowSky::~RainbowSky() {
 }
 
-const char* RainbowSky::getModuleName() {
+std::string RainbowSky::getModuleName() {
 	return ("RainbowSky");
 }

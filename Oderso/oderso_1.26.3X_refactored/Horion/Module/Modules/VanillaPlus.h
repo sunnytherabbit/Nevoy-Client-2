@@ -8,7 +8,7 @@ public:
 	VanillaPlus();
 	virtual ~VanillaPlus(){};
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	virtual void onEnable() override;
 	virtual void onDisable() override;
 	virtual void onTick(C_GameMode*) override;

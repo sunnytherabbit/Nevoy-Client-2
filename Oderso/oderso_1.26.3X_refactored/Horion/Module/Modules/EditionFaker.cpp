@@ -12,6 +12,6 @@ int EditionFaker::getFakedEditon() {
 	return 1;  // Android
 }
 
-const char* EditionFaker::getModuleName() {
+std::string EditionFaker::getModuleName() {
 	return ("EditionFaker");
 }

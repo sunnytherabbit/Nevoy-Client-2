@@ -9,18 +9,20 @@ public:
 	Module_1801dd4b0();
 	~Module_1801dd4b0() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual void onEnable() override;
+	virtual void onDisable() override;
+	virtual std::string getTooltip() override;
 
 	bool thirdPerson = false;
 	bool sE = false;
 	float adjustYOffset = 0.f;
 	bool noBackground = false;
+
+	char _binaryPadding[0x14];
+	bool field_0x9c = false;
 };
 
 #endif

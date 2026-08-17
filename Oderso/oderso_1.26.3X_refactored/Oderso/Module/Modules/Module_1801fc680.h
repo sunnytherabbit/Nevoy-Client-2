@@ -9,19 +9,21 @@ public:
 	Module_1801fc680();
 	~Module_1801fc680() {}
 
-	virtual const char* getModuleName() override;
-
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual std::string getModuleName() override;
+	virtual std::string getTooltip() override;
+	virtual void onLoadConfig(void* conf) override;
+	virtual void onSaveConfig(void* conf) override;
+	virtual void toggle(void* event = nullptr, bool* cancel = nullptr) override;
 
 	float size = 0.f;
 	bool shadow = false;
 	bool rainbowText = false;
 	bool simpleNames = false;
 	bool showItem = false;
+
+	char _binaryPadding[0x74];
+	// std::vector storage at 0x108 (begin/end/capacity)
+	void* vector_0x108[3] = {};
 };
 
 #endif

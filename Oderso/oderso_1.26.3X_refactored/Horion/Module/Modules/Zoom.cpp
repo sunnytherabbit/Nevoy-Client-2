@@ -12,7 +12,7 @@ bool Zoom::isFlashMode() {
 	return true;
 }
 
-const char* Zoom::getModuleName() {
+std::string Zoom::getModuleName() {
 	return ("Zoom");
 }
 

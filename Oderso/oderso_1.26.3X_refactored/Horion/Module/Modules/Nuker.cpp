@@ -9,7 +9,7 @@ Nuker::Nuker() : IModule(VK_NUMPAD5, Category::WORLD, "Break multiple blocks at 
 Nuker::~Nuker() {
 }
 
-const char* Nuker::getModuleName() {
+std::string Nuker::getModuleName() {
 	return ("Nuker");
 }
 

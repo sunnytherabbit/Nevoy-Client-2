@@ -9,6 +9,7 @@
 #include "../Module/ModuleManager.h"
 
 struct ClickModule {
+	const char* name = "";
 	bool isExtended = false;
 };
 

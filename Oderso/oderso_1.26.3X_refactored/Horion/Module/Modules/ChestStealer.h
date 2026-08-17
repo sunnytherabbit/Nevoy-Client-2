@@ -12,5 +12,5 @@ public:
 
 	// Inherited via IModule
 	virtual void chestScreenController_tick(C_ChestScreenController* c);
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 };

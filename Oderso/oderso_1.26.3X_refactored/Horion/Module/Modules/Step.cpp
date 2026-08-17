@@ -7,7 +7,7 @@ Step::Step() : IModule(0, Category::MOVEMENT, "Increases your step height") {
 Step::~Step() {
 }
 
-const char* Step::getModuleName() {
+std::string Step::getModuleName() {
 	return ("Step");
 }
 

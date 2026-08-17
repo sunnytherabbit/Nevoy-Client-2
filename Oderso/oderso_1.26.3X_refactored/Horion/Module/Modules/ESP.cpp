@@ -11,7 +11,7 @@ ESP::ESP() : IModule('O', Category::VISUAL, "Makes it easier to find entities ar
 ESP::~ESP() {
 }
 
-const char* ESP::getModuleName() {
+std::string ESP::getModuleName() {
 	return ("ESP");
 }
 

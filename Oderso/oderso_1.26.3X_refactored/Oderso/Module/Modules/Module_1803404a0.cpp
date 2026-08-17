@@ -4,4 +4,15 @@ Module_1803404a0::Module_1803404a0() : IModule(0, Category::CUSTOM, "Module_1803
 	// No settings extracted yet
 }
 
-const char* Module_1803404a0::getModuleName() { return "Module_1803404a0"; }
+std::string Module_1803404a0::getModuleName() { return "Module_1803404a0"; }
+std::string Module_1803404a0::getTooltip() { 
+	// Binary function: func_0x180340df0
+	return "";
+}
+
+void Module_1803404a0::onEnable() {
+	// Binary function: func_0x180340f80
+	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x88) = 0;
+	*reinterpret_cast<uint64_t*>(reinterpret_cast<uintptr_t>(this) + 0x90) = 0;
+}
+

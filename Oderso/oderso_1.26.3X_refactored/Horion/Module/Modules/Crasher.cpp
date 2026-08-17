@@ -6,7 +6,7 @@ Crasher::Crasher() : IModule(0, Category::MISC, "Crash Realms Servers") {
 Crasher::~Crasher() {
 }
 
-const char* Crasher::getModuleName() {
+std::string Crasher::getModuleName() {
 	return ("Crasher");
 }
 

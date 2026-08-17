@@ -9,7 +9,7 @@ TriggerBot::TriggerBot() : IModule(0, Category::COMBAT, "Attacks entities you're
 TriggerBot::~TriggerBot() {
 }
 
-const char* TriggerBot::getModuleName() {
+std::string TriggerBot::getModuleName() {
 	return ("TriggerBot");
 }
 void TriggerBot::onTick(C_GameMode* gm) {

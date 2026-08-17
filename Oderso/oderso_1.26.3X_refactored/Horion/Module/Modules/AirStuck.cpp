@@ -6,7 +6,7 @@ AirStuck::AirStuck() : IModule(0, Category::MOVEMENT, "Become stuck.") {
 AirStuck::~AirStuck() {
 }
 
-const char* AirStuck::getModuleName() {
+std::string AirStuck::getModuleName() {
 	return ("AirStuck");
 }
 

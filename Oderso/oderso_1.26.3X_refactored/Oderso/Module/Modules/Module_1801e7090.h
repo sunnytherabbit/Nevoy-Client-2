@@ -9,15 +9,12 @@ public:
 	Module_1801e7090();
 	~Module_1801e7090() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
-
+	virtual void onEnable() override;
+	virtual void onDisable() override;
 	// No settings extracted yet
+	virtual std::string getTooltip() override;
 };
 
 #endif

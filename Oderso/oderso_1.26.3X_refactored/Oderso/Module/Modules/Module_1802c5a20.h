@@ -9,13 +9,12 @@ public:
 	Module_1802c5a20();
 	~Module_1802c5a20() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onEnable() override;
+	virtual std::string getTooltip() override;
+	virtual void onLoadConfig(void* conf) override;
+	virtual void onSaveConfig(void* conf) override;
 
 	bool shadow = false;
 	bool rainbowText = false;
@@ -31,6 +30,9 @@ public:
 	bool sneak = false;
 	bool mouse = false;
 	bool leftCps = false;
+
+	// padding to match binary layout up to 0x1c0
+	char _binaryPadding[0x140];
 };
 
 #endif

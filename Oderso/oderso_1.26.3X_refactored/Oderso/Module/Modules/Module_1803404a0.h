@@ -9,15 +9,14 @@ public:
 	Module_1803404a0();
 	~Module_1803404a0() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
-
+	virtual void onEnable() override;
 	// No settings extracted yet
+	virtual std::string getTooltip() override;
+
+	// padding to match binary layout up to 0x98
+	char _binaryPadding[0x18];
 };
 
 #endif

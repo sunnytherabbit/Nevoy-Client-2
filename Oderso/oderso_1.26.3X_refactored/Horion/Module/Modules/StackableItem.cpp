@@ -6,7 +6,7 @@ StackableItem::StackableItem() : IModule(0, Category::PLAYER, "Stack items you n
 StackableItem::~StackableItem() {
 }
 
-const char* StackableItem::getModuleName() {
+std::string StackableItem::getModuleName() {
 	return ("StackableItem");
 }
 

@@ -11,7 +11,7 @@ Compass::Compass() : IModule(0, Category::VISUAL, "Compass") {
 Compass::~Compass() {
 }
 
-const char* Compass::getModuleName() {
+std::string Compass::getModuleName() {
 	return "Compass";
 }
 

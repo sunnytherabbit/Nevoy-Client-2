@@ -11,7 +11,7 @@ NoSlowDown::NoSlowDown() : IModule(0, Category::MOVEMENT, "Don't get slowed down
 NoSlowDown::~NoSlowDown() {
 }
 
-const char* NoSlowDown::getModuleName() {
+std::string NoSlowDown::getModuleName() {
 	return ("NoSlowDown");
 }
 

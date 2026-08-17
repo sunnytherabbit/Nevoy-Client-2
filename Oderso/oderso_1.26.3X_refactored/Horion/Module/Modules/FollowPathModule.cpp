@@ -4,7 +4,7 @@
 
 FollowPathModule::FollowPathModule() : IModule(0, Category::MOVEMENT, "Follows joe paths") {}
 
-const char *FollowPathModule::getModuleName() {
+std::string FollowPathModule::getModuleName() {
 	return "FollowPath";
 }
 

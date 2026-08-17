@@ -8,7 +8,7 @@ Teleport::Teleport() : IModule(0, Category::MISC, "Click a block to teleport to 
 Teleport::~Teleport() {
 }
 
-const char* Teleport::getModuleName() {
+std::string Teleport::getModuleName() {
 	return "Teleport";
 }
 

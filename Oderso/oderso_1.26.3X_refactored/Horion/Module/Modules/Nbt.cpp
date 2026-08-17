@@ -8,7 +8,7 @@ Nbt::Nbt() : IModule(0, Category::PLAYER, "Print NBT tags, right click on mobs (
 Nbt::~Nbt() {
 }
 
-const char* Nbt::getModuleName() {
+std::string Nbt::getModuleName() {
 	return ("Nbt");
 }
 

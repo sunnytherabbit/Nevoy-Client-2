@@ -11,7 +11,7 @@ Reach::Reach() : IModule(0, Category::COMBAT, "Increases your reach") {
 Reach::~Reach() {
 }
 
-const char* Reach::getModuleName() {
+std::string Reach::getModuleName() {
 	return ("Reach");
 }
 

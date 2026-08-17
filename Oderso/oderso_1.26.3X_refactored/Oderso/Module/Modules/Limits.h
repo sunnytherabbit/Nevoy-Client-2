@@ -9,16 +9,16 @@ public:
 	Limits();
 	~Limits() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
+	
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onEnable() override;	virtual std::string getTooltip() override;
 
 	int limitLe = 0;
 	bool limitRight = false;
+
+	// padding to match binary layout up to 0xa0
+	char _binaryPadding[0x20];
 };
 
 #endif

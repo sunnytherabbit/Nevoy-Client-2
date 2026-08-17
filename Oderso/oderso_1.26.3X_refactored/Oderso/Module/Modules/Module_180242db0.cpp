@@ -4,4 +4,9 @@ Module_180242db0::Module_180242db0() : IModule(0, Category::CUSTOM, "Module_1802
 	registerBoolSetting("Rainbow", &rainbow, false);
 }
 
-const char* Module_180242db0::getModuleName() { return "Module_180242db0"; }
+std::string Module_180242db0::getModuleName() { return "Module_180242db0"; }
+std::string Module_180242db0::getTooltip() { 
+	// Binary function: func_0x180243b30
+	return "";
+}
+

@@ -9,15 +9,16 @@ public:
 	Module_180243e70();
 	~Module_180243e70() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
+	
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onEnable() override;	virtual std::string getTooltip() override;
+	virtual bool isFlashMode() override;
 
 	bool hold = false;
+
+	float storedX = 0.f;
+	float storedY = 0.f;
 };
 
 #endif

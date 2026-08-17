@@ -11,7 +11,7 @@ public:
 
 	// Inherited via IModule
 	virtual void onTick(C_GameMode* gm) override;
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
 	inline std::vector<C_MovePlayerPacket*>* getMovePlayerPacketHolder() { return &MovePlayerPacketHolder; };
 	inline std::vector<PlayerAuthInputPacket*>* getPlayerAuthInputPacketHolder() { return &PlayerAuthInputPacketHolder; };

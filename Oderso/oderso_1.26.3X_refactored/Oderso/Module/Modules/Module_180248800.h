@@ -9,16 +9,16 @@ public:
 	Module_180248800();
 	~Module_180248800() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
+	
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual std::string getTooltip() override;
 
 	int health = 0;
 	bool fadeCol = false;
+
+	char _binaryPadding[0x18];
 };
 
 #endif

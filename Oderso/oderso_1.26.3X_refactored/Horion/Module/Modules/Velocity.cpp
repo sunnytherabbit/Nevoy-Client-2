@@ -8,6 +8,6 @@ Velocity::Velocity() : IModule(0, Category::MOVEMENT, "Don't ever take knockback
 Velocity::~Velocity() {
 }
 
-const char* Velocity::getModuleName() {
+std::string Velocity::getModuleName() {
 	return ("Velocity");
 }

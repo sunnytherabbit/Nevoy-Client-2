@@ -7,7 +7,7 @@ AutoSprint::AutoSprint() : IModule(0, Category::MOVEMENT, "Automatically sprint 
 AutoSprint::~AutoSprint() {
 }
 
-const char* AutoSprint::getModuleName() {
+std::string AutoSprint::getModuleName() {
 	return ("AutoSprint");
 }
 

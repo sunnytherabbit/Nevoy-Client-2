@@ -10,16 +10,9 @@ HideUI::HideUI() : IModule(0, Category::VISUAL, "Hides the UI and can save scree
 	registerBoolSetting("Print folder", &printFolder, false);
 }
 
-const char* HideUI::getModuleName() { return "Hide UI"; }
-
-void HideUI::onEnable() {
-	if (hideUi) {
-		auto hud = moduleMgr->getModule<HudModule>();
-		if (hud != nullptr) hud->setEnabled(false);
-	}
+std::string HideUI::getModuleName() { return "Hide UI"; }
+std::string HideUI::getTooltip() { 
+	// Binary function: func_0x18014f080
+	return "Hides the UI and can save screenshots.";
 }
 
-void HideUI::onDisable() {
-	auto hud = moduleMgr->getModule<HudModule>();
-	if (hud != nullptr) hud->setEnabled(true);
-}

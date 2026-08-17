@@ -26,7 +26,7 @@ Radar::Radar() : IModule(0, Category::VISUAL, "Radar") {
 Radar::~Radar() {
 }
 
-const char* Radar::getModuleName() {
+std::string Radar::getModuleName() {
 	return "Radar";
 }
 

@@ -10,6 +10,6 @@ public:
 	~Spider();
 
 	// Inherited via IModule
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	virtual void onMove(C_MoveInputHandler* input) override;
 };

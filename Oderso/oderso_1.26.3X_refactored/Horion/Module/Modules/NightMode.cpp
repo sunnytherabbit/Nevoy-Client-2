@@ -7,7 +7,7 @@ NightMode::NightMode() : IModule(0, Category::VISUAL, "Darkens the environment")
 NightMode::~NightMode() {
 }
 
-const char* NightMode::getModuleName() {
+std::string NightMode::getModuleName() {
 	return "NightMode";
 }
 

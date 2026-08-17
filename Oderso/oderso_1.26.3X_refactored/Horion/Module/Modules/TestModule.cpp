@@ -38,7 +38,7 @@ TestModule::TestModule() : IModule(0, Category::MISC, "For testing purposes") {
 TestModule::~TestModule() {
 }
 
-const char* TestModule::getModuleName() {
+std::string TestModule::getModuleName() {
 	return "TestModule";
 }
 

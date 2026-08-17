@@ -6,7 +6,7 @@ Xray::Xray() : IModule(0, Category::VISUAL, "Allows you to see certain blocks ea
 Xray::~Xray() {
 }
 
-const char* Xray::getModuleName() {
+std::string Xray::getModuleName() {
 	return ("Xray");
 }
 

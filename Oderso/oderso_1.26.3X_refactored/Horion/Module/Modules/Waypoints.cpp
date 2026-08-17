@@ -11,7 +11,7 @@ Waypoints::Waypoints() : IModule(0, Category::VISUAL, "Shows holograms for user-
 Waypoints::~Waypoints() {
 }
 
-const char* Waypoints::getModuleName() {
+std::string Waypoints::getModuleName() {
 	return "Waypoints";
 }
 

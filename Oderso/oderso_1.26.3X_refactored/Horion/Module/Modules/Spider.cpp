@@ -8,7 +8,7 @@ Spider::Spider() : IModule(0, Category::MOVEMENT, "Climb walls") {
 Spider::~Spider() {
 }
 
-const char* Spider::getModuleName() {
+std::string Spider::getModuleName() {
 	return "Spider";
 }
 

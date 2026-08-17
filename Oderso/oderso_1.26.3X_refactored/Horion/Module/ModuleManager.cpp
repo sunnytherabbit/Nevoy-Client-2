@@ -28,7 +28,7 @@
 #include "Oderso/Module/Modules/Module_18031b4d0.h"
 #include "Oderso/Module/Modules/Module_1802ac240.h"
 #include "Oderso/Module/Modules/Module_1802cfa50.h"
-#include "Oderso/Module/Modules/Make.h"
+#include "Oderso/Module/Modules/MoveDirectionLatestMovementKeyPressedWhenHoldingBoth.h"
 #include "Oderso/Module/Modules/Module_1801914f0.h"
 #include "Oderso/Module/Modules/Module_1804168f0.h"
 #include "Oderso/Module/Modules/Module_1802fc040.h"
@@ -266,7 +266,7 @@ void ModuleManager::initModules() {
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_18031b4d0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802ac240()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802cfa50()));
-		this->moduleList.push_back(std::shared_ptr<IModule>(new Make()));
+		this->moduleList.push_back(std::shared_ptr<IModule>(new MoveDirectionLatestMovementKeyPressedWhenHoldingBoth()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1801914f0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1804168f0()));
 		this->moduleList.push_back(std::shared_ptr<IModule>(new Module_1802fc040()));
@@ -369,7 +369,7 @@ void ModuleManager::initModules() {
 		std::sort(moduleList.begin(), moduleList.end(), [](auto lhs, auto rhs) {
 			auto current = lhs;
 			auto other = rhs;
-			return std::string{*current->getModuleName()} < std::string{*other->getModuleName()};
+			return current->getModuleName() < other->getModuleName();
 		});
 
 		initialized = true;
@@ -422,14 +422,14 @@ void ModuleManager::onTick(C_GameMode* gameMode) {
 	}
 }
 
-void ModuleManager::onAttack(C_Entity* attackEnt) {
+void ModuleManager::onAttack(int attackButton, bool isDown) {
 	if (!isInitialized())
 		return;
 
 	auto lock = this->lockModuleList();
 	for (auto& mod : this->moduleList) {
 		if (mod->isEnabled() || mod->callWhenDisabled())
-			mod->onAttack(attackEnt);
+			mod->onAttack(attackButton, isDown);
 	}
 }
 

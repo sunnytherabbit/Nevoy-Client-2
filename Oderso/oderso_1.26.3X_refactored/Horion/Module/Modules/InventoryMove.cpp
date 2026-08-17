@@ -6,7 +6,7 @@ InventoryMove::InventoryMove() : IModule(0, Category::MOVEMENT, "Move even thoug
 InventoryMove::~InventoryMove() {
 }
 
-const char* InventoryMove::getModuleName() {
+std::string InventoryMove::getModuleName() {
 	return ("InventoryMove");
 }
 

@@ -21,7 +21,7 @@ struct CompareTargetEnArray {
 	}
 };
 
-const char* BowAimbot::getModuleName() {
+std::string BowAimbot::getModuleName() {
 	return ("BowAimbot");
 }
 
@@ -53,7 +53,7 @@ void BowAimbot::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
 
 	if (!targetList.empty()) {
 		std::sort(targetList.begin(), targetList.end(), CompareTargetEnArray());
-		vec3_t origin = g_Data.getLocalPlayer()->eyePos0;  // TODO: sort list
+		vec3_t origin = g_Data.getLocalPlayer()->eyePos0;
 		C_Entity* entity = targetList[0];
 		vec3_t pos = entity->aabb.centerPoint();
 		if (predict) {

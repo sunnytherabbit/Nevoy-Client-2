@@ -7,7 +7,7 @@ Timer::Timer() : IModule(0, Category::MISC, "Increase the ticks per second") {
 Timer::~Timer() {
 }
 
-const char* Timer::getModuleName() {
+std::string Timer::getModuleName() {
 	return ("Timer");
 }
 

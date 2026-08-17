@@ -6,7 +6,7 @@ NoPacket::NoPacket() : IModule(VK_NUMPAD7, Category::MISC, "Prevents you from se
 NoPacket::~NoPacket() {
 }
 
-const char* NoPacket::getModuleName() {
+std::string NoPacket::getModuleName() {
 	return ("NoPacket");
 }
 bool NoPacket::allowAutoStart() {

@@ -7,6 +7,6 @@ FastLadder::FastLadder() : IModule(0, Category::MOVEMENT, "Climb up ladders fast
 FastLadder::~FastLadder() {
 }
 
-const char* FastLadder::getModuleName() {
+std::string FastLadder::getModuleName() {
 	return ("FastLadder");
 }

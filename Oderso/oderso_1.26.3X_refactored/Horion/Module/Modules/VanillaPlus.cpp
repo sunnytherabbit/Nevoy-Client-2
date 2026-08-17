@@ -13,7 +13,7 @@ VanillaPlus::VanillaPlus() : IModule(0, Category::MISC, "Tweaks the minecraft ex
 	registerBoolSetting("Fast Item Lerp", &fastFlyingItems, true);
 }
 
-const char* VanillaPlus::getModuleName() {
+std::string VanillaPlus::getModuleName() {
 	return "Vanilla+";
 }
 

@@ -9,32 +9,7 @@ DLL = BASE / ".." / "1.26.3X.dll"
 DECOMP = BASE / ".." / "ghidra_decompiled_1.26.3X.c"
 FUNC_SUMMARY = BASE / "tools" / "function_summary.json"
 
-# IModule virtual order (extracted from Horion/Module/Modules/Module.h)
-IMODULE_SLOTS = [
-    "destructor",
-    "getModuleName",
-    "getRawModuleName",
-    "getKeybind",
-    "setKeybind",
-    "allowAutoStart",
-    "onTick",
-    "onKeyUpdate",
-    "onEnable",
-    "onDisable",
-    "onAttack",
-    "onPreRender",
-    "onPostRender",
-    "onLevelRender",
-    "onMove",
-    "onLoadConfig",
-    "onSaveConfig",
-    "isFlashMode",
-    "setEnabled",
-    "toggle",
-    "isEnabled",
-    "onSendPacket",
-    "callWhenDisabled",
-]
+from vtable_config import SLOT_NAMES as IMODULE_SLOTS
 
 
 def parse_pe():
@@ -91,14 +66,56 @@ def extract_function(func_name, starts):
 
 
 def find_vtable_ptr(ctor_body):
-    """Find the vtable pointer assigned to the object in the constructor."""
-    m = re.search(r"\*\w+\s*=\s*&(PTR_LAB_([0-9a-fA-F]+)|PTR_([0-9a-fA-F]+)|LAB_([0-9a-fA-F]+))", ctor_body)
-    if not m:
-        return None
-    for g in (m.group(2), m.group(3), m.group(4)):
-        if g:
-            return int(g, 16)
-    return None
+    """Find the vtable pointer assigned to the object in the constructor.
+
+    Ghidra may emit labels like:
+      *param_1 = &PTR_func_0x18012f790_1806b6a40;  # trailing hex is the vtable address
+      *param_1 = &PTR_LAB_1806ba8e0;
+      local_60 = param_1; puVar19 = local_90; ... *puVar19 = &PTR_...;
+    We locate the last assignment of a &PTR_... / &LAB_... value to either
+    *param_1 or to a local that was assigned from param_1 (directly or chained).
+    """
+    # Iteratively track aliases for param_1, including chains (x = param_1; y = x;).
+    aliases = {"param_1"}
+    changed = True
+    for _ in range(20):
+        if not changed:
+            break
+        changed = False
+        for alias in list(aliases):
+            for m in re.finditer(
+                r"^\s*(\w+)\s*=\s*(?:\([^)]*\))?\s*" + re.escape(alias) + r"\s*;",
+                ctor_body,
+                re.MULTILINE,
+            ):
+                if m.group(1) not in aliases:
+                    aliases.add(m.group(1))
+                    changed = True
+
+    # Find all stores of a vtable-like pointer to a dereferenced alias
+    best_va = None
+    for alias in aliases:
+        # *alias = ... &PTR_... ;
+        for m in re.finditer(
+            r"^\s*\*\s*" + re.escape(alias) + r"\s*=\s*(?:\([^)]*\))?&?([^;\n]+)",
+            ctor_body,
+            re.MULTILINE,
+        ):
+            label = m.group(1)
+            tokens = re.findall(r"(?:0x)?([0-9a-fA-F]{6,})", label)
+            if tokens:
+                best_va = int(tokens[-1], 16)
+        # alias = &PTR_... ;  (the vtable pointer may first be loaded into a local)
+        for m in re.finditer(
+            r"^\s*" + re.escape(alias) + r"\s*=\s*(?:\([^)]*\))?&([^;\n]+)",
+            ctor_body,
+            re.MULTILINE,
+        ):
+            label = m.group(1)
+            tokens = re.findall(r"(?:0x)?([0-9a-fA-F]{6,})", label)
+            if tokens:
+                best_va = int(tokens[-1], 16)
+    return best_va
 
 
 def get_summary(func_name):

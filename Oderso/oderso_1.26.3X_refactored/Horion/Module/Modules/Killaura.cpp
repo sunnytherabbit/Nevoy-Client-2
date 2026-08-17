@@ -14,7 +14,7 @@ Killaura::Killaura() : IModule('P', Category::COMBAT, "Attacks entities around y
 Killaura::~Killaura() {
 }
 
-const char* Killaura::getModuleName() {
+std::string Killaura::getModuleName() {
 	return ("Killaura");
 }
 

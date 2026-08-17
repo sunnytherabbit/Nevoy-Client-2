@@ -183,7 +183,7 @@ void TabGui::render() {
 			auto mod = *it;
 			if (selected[0].selectedItemId == static_cast<int>(mod->getCategory())) {
 				auto name = mod->getModuleName();
-				renderLabel(name, mod);
+				renderLabel(name.c_str(), mod);
 			}
 		}	
 

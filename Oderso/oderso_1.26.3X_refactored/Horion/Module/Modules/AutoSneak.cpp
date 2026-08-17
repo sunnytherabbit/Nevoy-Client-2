@@ -7,7 +7,7 @@ AutoSneak::AutoSneak() : IModule(0, Category::MOVEMENT, "Automatically sneak wit
 AutoSneak::~AutoSneak() {
 }
 
-const char* AutoSneak::getModuleName() {
+std::string AutoSneak::getModuleName() {
 	return ("AutoSneak");
 }
 

@@ -9,16 +9,23 @@ public:
 	Module_1801f2430();
 	~Module_1801f2430() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual std::string getTooltip() override;
+	virtual void onLoadConfig(void* conf) override;
+	virtual void onSaveConfig(void* conf) override;
 
-	float noBackground = 0.f;
+	// padding to 0xd0 (derived 0x50)
+	char _binaryPadding[0x50];
+
+	bool noBackground = false;
+	float size = 1.f;
 	bool switchPack = false;
+	int32_t switchDelay = 100;
+	int32_t currentIndex = 0;
+	int32_t selectedIndex = 0;
 };
 
 #endif

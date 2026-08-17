@@ -6,7 +6,7 @@ AirSwim::AirSwim() : IModule(0, Category::MOVEMENT, "Swim even though your in ai
 AirSwim::~AirSwim() {
 }
 
-const char* AirSwim::getModuleName() {
+std::string AirSwim::getModuleName() {
 	return ("AirSwim");
 }
 

@@ -18,7 +18,7 @@ ViewModel::ViewModel() : IModule(0, Category::VISUAL, "Custom item view model") 
 ViewModel::~ViewModel() {
 }
 
-const char* ViewModel::getModuleName() {
+std::string ViewModel::getModuleName() {
 	return "ViewModel";
 }
 

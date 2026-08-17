@@ -15,7 +15,7 @@ std::weak_ptr<JsScriptModule> JavascriptModule::getBackingScriptModule() {
 	return this->backingScriptModule;
 }
 
-const char* JavascriptModule::getModuleName() {
+std::string JavascriptModule::getModuleName() {
 	auto p = this->backingScriptModule.lock();
 	if (p)
 		return p->getModuleNameCh();

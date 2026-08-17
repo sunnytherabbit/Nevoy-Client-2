@@ -10,7 +10,7 @@ Spammer::Spammer() : IModule(0, Category::MISC, "Spams a message in a specified 
 Spammer::~Spammer() {
 }
 
-const char* Spammer::getModuleName() {
+std::string Spammer::getModuleName() {
 	return ("Spammer");
 }
 

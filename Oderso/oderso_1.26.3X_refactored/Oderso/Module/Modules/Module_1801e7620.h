@@ -9,13 +9,12 @@ public:
 	Module_1801e7620();
 	~Module_1801e7620() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onDisable() override;
+	virtual std::string getTooltip() override;
+	virtual void slot_15() override;
+	virtual void toggle(void* event = nullptr, bool* cancel = nullptr) override;
 
 	bool entities = false;
 	bool items = false;
@@ -27,6 +26,11 @@ public:
 	bool portalOverlay = false;
 	bool fire = false;
 	bool lightning = false;
+
+	// padding to match binary layout up to 0xbc
+	char _binaryPadding[0x31];
+
+	bool field_0xbb = false;
 };
 
 #endif

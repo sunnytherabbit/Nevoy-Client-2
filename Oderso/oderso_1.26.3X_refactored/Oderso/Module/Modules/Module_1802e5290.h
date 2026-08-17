@@ -9,15 +9,28 @@ public:
 	Module_1802e5290();
 	~Module_1802e5290() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
+	
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onEnable() override;	virtual std::string getTooltip() override;
+	virtual void onAttack(int attackButton, bool isDown, bool* cancel = nullptr) override;
+	virtual void onLoadConfig(void* conf) override;
+	virtual void onSaveConfig(void* conf) override;
+	virtual void slot_30(int arg = 0, char mask = 0, bool* cancel = nullptr) override;
 
 	float scale = 0.f;
+	char _pad_0x84[0x30];
+	int field_0xb4 = 0;
+	int field_0xb8 = 0;
+	int field_0xbc = 0;
+	int field_0xc0 = 0;
+	int field_0xc4 = 0;
+	int field_0xc8 = 0;
+	int field_0xcc = 0;
+	int field_0xd0 = 0;
+	int field_0xd4 = 0;
+	char _pad_0xd8[0x280];
+	void* field_0x1358 = nullptr;
 };
 
 #endif

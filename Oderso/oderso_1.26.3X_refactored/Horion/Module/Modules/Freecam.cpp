@@ -7,7 +7,7 @@ Freecam::Freecam() : IModule('V', Category::MISC, "Move your cam without moving 
 Freecam::~Freecam() {
 }
 
-const char* Freecam::getModuleName() {
+std::string Freecam::getModuleName() {
 	return ("Freecam");
 }
 

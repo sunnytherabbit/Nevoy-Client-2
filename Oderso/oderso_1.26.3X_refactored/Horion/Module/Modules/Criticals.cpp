@@ -6,7 +6,7 @@ Criticals::Criticals() : IModule(0, Category::COMBAT, "Each hit is a critical hi
 Criticals::~Criticals() {
 }
 
-const char* Criticals::getModuleName() {
+std::string Criticals::getModuleName() {
 	return ("Criticals");
 }
 

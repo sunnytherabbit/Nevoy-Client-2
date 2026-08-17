@@ -7,6 +7,6 @@ TimeChanger::TimeChanger() : IModule(0, Category::VISUAL, "Changes the client-si
 TimeChanger::~TimeChanger() {
 }
 
-const char* TimeChanger::getModuleName() {
+std::string TimeChanger::getModuleName() {
 	return "TimeChanger";
 }

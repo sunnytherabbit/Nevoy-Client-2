@@ -5,4 +5,4 @@ Make::Make() : IModule(0, Category::CUSTOM, "Make") {
 	registerBoolSetting("Forward/Backward", &forwardBackward, false);
 }
 
-const char* Make::getModuleName() { return "Make"; }
+std::string Make::getModuleName() { return "Make"; }

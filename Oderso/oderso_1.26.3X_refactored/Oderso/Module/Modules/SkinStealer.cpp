@@ -9,4 +9,17 @@ SkinStealer::SkinStealer() : IModule(0, Category::VISUAL, "Steals and copies pla
 	registerBoolSetting("Clone", &clone, false);
 }
 
-const char* SkinStealer::getModuleName() { return "Skin Stealer"; }
+std::string SkinStealer::getModuleName() { return "Skin Stealer"; }
+std::string SkinStealer::getTooltip() { 
+	// Binary function: func_0x180168be0
+	return "Steals and copies player skins, capes, and geometry.";
+}
+
+void SkinStealer::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
+	// Binary function: func_0x180168d70
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using PreRenderFunc = void(*)(void*);
+	reinterpret_cast<PreRenderFunc>(mod->ptrBase + 0x168d70)(this);
+}
+

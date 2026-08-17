@@ -6,7 +6,7 @@ FastEat::FastEat() : IModule(0, Category::PLAYER, "Eat food almost instant") {
 FastEat::~FastEat() {
 }
 
-const char* FastEat::getModuleName() {
+std::string FastEat::getModuleName() {
 	return ("FastEat");
 }
 

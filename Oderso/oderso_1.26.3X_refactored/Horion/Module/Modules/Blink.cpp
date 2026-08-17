@@ -8,7 +8,7 @@ Blink::~Blink() {
 	this->getPlayerAuthInputPacketHolder()->clear();
 }
 
-const char* Blink::getModuleName() {
+std::string Blink::getModuleName() {
 	return ("Blink");
 }
 

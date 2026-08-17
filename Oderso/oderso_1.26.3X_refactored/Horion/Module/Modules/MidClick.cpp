@@ -6,7 +6,7 @@ MidClick::MidClick() : IModule(0, Category::PLAYER, "Click a player with your mo
 MidClick::~MidClick() {
 }
 
-const char* MidClick::getModuleName() {
+std::string MidClick::getModuleName() {
 	return "MidClick";
 }
 

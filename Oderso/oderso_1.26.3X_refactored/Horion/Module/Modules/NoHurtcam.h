@@ -5,5 +5,5 @@ class NoHurtcam : public IModule{
 public:
 	NoHurtcam();
 	~NoHurtcam();
-	const char* getModuleName() override;
+	std::string getModuleName() override;
 };

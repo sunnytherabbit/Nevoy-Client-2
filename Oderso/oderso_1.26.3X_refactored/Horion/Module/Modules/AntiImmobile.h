@@ -6,5 +6,5 @@ public:
 	AntiImmobile();
 	~AntiImmobile();
 
-	const char* getModuleName() override;
+	std::string getModuleName() override;
 };

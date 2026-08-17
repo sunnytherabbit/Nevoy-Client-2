@@ -7,7 +7,7 @@ Bhop::Bhop() : IModule(0, Category::MOVEMENT, "Hop around like a bunny!") {
 Bhop::~Bhop() {
 }
 
-const char* Bhop::getModuleName() {
+std::string Bhop::getModuleName() {
 	return ("Bhop");
 }
 

@@ -15,7 +15,7 @@ Aimbot::Aimbot() : IModule(0, Category::COMBAT, "Automatically aims at the neare
 Aimbot::~Aimbot() {
 }
 
-const char* Aimbot::getModuleName() {
+std::string Aimbot::getModuleName() {
 	return ("Aimbot");
 }
 

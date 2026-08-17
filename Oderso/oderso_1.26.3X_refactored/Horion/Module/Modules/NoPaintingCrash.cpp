@@ -6,6 +6,6 @@ NoPaintingCrash::NoPaintingCrash() : IModule(0, Category::MISC, "Fix Painting cr
 NoPaintingCrash::~NoPaintingCrash() {
 }
 
-const char* NoPaintingCrash::getModuleName() {
+std::string NoPaintingCrash::getModuleName() {
 	return ("NoPaintingCrash");
 }

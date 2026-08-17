@@ -17,7 +17,7 @@ public:
 
 	// Inherited via IModule
 	virtual void onSaveConfig(void*) override{}; // delete
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	virtual void onTick(C_GameMode* gm) override;
 	void onEnable() override;
 	void onDisable() override;

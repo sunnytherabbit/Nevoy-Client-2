@@ -100,7 +100,23 @@ def main():
             if name_key in seen:
                 continue
             seen.add(name_key)
-            clean_settings.append({'name': n, 'type': s['type']})
+            entry = {'name': n, 'type': s['type']}
+            for k in ('default', 'min', 'max'):
+                if k in s:
+                    val = s[k]
+                    if isinstance(val, dict):
+                        # choose the right numeric field by setting type
+                        if s['type'] == 'float':
+                            entry[k] = val.get('float')
+                        elif s['type'] == 'int':
+                            entry[k] = val.get('int')
+                        elif s['type'] == 'bool':
+                            entry[k] = bool(val.get('int', 0))
+                        else:
+                            entry[k] = val.get('int')
+                    else:
+                        entry[k] = val
+            clean_settings.append(entry)
         data['settings'] = clean_settings
         def is_garbage(s):
             if not s or not s.strip():

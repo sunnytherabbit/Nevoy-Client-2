@@ -22,6 +22,7 @@ struct SavedWindowSettings {
 
 std::map<unsigned int, std::shared_ptr<ClickWindow>> windowMap;
 std::map<unsigned int, SavedWindowSettings> savedWindowSettings;
+std::map<unsigned int, bool> savedModuleSettings;
 
 bool isDragging = false;
 unsigned int draggedWindow = -1;
@@ -72,7 +73,6 @@ std::shared_ptr<ClickWindow> ClickGui::getWindow(const char* name) {
 	if (search != windowMap.end()) {  // Window exists already
 		return search->second;
 	} else {  // Create window
-		// TODO: restore settings for position etc
 		std::shared_ptr<ClickWindow> newWindow = std::make_shared<ClickWindow>();
 		newWindow->name = name;
 
@@ -95,8 +95,12 @@ std::shared_ptr<ClickModule> ClickGui::getClickModule(std::shared_ptr<ClickWindo
 	if (search != window->moduleMap.end()) {  // Window exists already
 		return search->second;
 	} else {  // Create window
-		// TODO: restore settings for position etc
 		std::shared_ptr<ClickModule> newModule = std::make_shared<ClickModule>();
+		newModule->name = name;
+
+		auto savedModSearch = savedModuleSettings.find(id);
+		if (savedModSearch != savedModuleSettings.end())
+			newModule->isExtended = savedModSearch->second;
 
 		window->moduleMap.insert(std::make_pair(id, newModule));
 		return newModule;
@@ -853,6 +857,7 @@ void ClickGui::onKeyUpdate(int key, bool isDown) {
 using json = nlohmann::json;
 void ClickGui::onLoadConfig(void* confVoid) {
 	savedWindowSettings.clear();
+	savedModuleSettings.clear();
 	windowMap.clear();
 	json* conf = reinterpret_cast<json*>(confVoid);
 	if (conf->contains("ClickGui")) {
@@ -884,6 +889,18 @@ void ClickGui::onLoadConfig(void* confVoid) {
 							} catch (std::exception e) {}
 						}
 					}
+					if(value.contains("modules")){
+						auto modulesObj = value.at("modules");
+						if(!modulesObj.is_null()){
+							for(auto it = modulesObj.begin(); it != modulesObj.end(); ++it){
+								if(it.value().is_null() || !it.value().contains("isExtended"))
+									continue;
+								try{
+									savedModuleSettings[Utils::getCrcHash(it.key().c_str())] = it.value()["isExtended"].get<bool>();
+								} catch (std::exception e) {}
+							}
+						}
+					}
 					savedWindowSettings[Utils::getCrcHash(catName)] = windowSettings;
 				} catch (std::exception e) {
 					logF("Config Load Error (ClickGuiMenu): %s", e.what());
@@ -894,9 +911,12 @@ void ClickGui::onLoadConfig(void* confVoid) {
 }
 void ClickGui::onSaveConfig(void* confVoid) {
 	json* conf = reinterpret_cast<json*>(confVoid);
-	// First update our map
+	// First update our maps
 	for(const auto& wind : windowMap){
 		savedWindowSettings[wind.first] = {wind.second->pos, wind.second->isExtended, wind.second->name};
+		for(const auto& mod : wind.second->moduleMap){
+			savedModuleSettings[mod.first] = mod.second->isExtended;
+		}
 	}
 
 	// Save to json
@@ -910,6 +930,18 @@ void ClickGui::onSaveConfig(void* confVoid) {
 		subObj["pos"]["x"] = wind.second.pos.x;
 		subObj["pos"]["y"] = wind.second.pos.y;
 		subObj["isExtended"] = wind.second.isExtended;
+
+		auto winIt = windowMap.find(wind.first);
+		if(winIt != windowMap.end()){
+			json modules = {};
+			for(const auto& mod : winIt->second->moduleMap){
+				json m = {};
+				m["isExtended"] = mod.second->isExtended;
+				modules[mod.second->name] = m;
+			}
+			subObj["modules"] = modules;
+		}
+
 		obj[wind.second.name] = subObj;
 	}
 

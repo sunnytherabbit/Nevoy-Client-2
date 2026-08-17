@@ -9,13 +9,11 @@ public:
 	Module_1802c1ee0();
 	~Module_1802c1ee0() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onEnable() override;
+	virtual void onDisable() override;
+	virtual std::string getTooltip() override;
 
 	float speed = 0.f;
 	float yMul = 0.f;

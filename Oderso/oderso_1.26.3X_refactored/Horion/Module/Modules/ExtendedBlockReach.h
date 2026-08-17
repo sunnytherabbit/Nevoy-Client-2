@@ -12,5 +12,5 @@ public:
 	inline float getBlockReach() { return blockReach; };
 	inline void setBlockReach(float reach) { blockReach = reach; };
 	// Inherited via IModule
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 };

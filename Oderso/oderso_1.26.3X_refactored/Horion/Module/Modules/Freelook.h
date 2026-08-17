@@ -14,7 +14,7 @@ public:
 	Freelook();
 	~Freelook();
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	bool isFlashMode() override {
 		return true;
 	}

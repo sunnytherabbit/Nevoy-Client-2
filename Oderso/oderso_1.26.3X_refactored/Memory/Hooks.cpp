@@ -272,10 +272,10 @@ void* Hooks::Player_tickWorld(C_Player* _this, __int64 unk) {
 	auto o = oTick(_this, unk);
 
 	if (_this == g_Data.getLocalPlayer()) {
-		// TODO: refactor all modules to not use GameMode
-		C_GameMode* gm = *reinterpret_cast<C_GameMode**>(reinterpret_cast<__int64>(_this) + 4840);
-		GameData::updateGameData(gm);
-		moduleMgr->onTick(gm);
+		GameData::updateGameData(_this);
+		C_GameMode* gm = g_Data.getCGameMode();
+		if (gm != nullptr)
+			moduleMgr->onTick(gm);
 	}
 	return o;
 }
@@ -1720,7 +1720,7 @@ __int64 Hooks::InGamePlayScreen___renderLevel(__int64 playScreen, __int64 a2, __
 }
 __int64 Hooks::GameMode_attack(C_GameMode* _this, C_Entity* ent) {
 	auto func = g_Hooks.GameMode_attackHook->GetFastcall<__int64, C_GameMode*, C_Entity*>();
-	moduleMgr->onAttack(ent);
+	moduleMgr->onAttack(0, true);  // left-click attack
 	return func(_this, ent);
 }
 void Hooks::LocalPlayer__updateFromCamera(__int64 a1, C_Camera* camera) {

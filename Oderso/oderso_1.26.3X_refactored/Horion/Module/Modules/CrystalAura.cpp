@@ -14,7 +14,7 @@ CrystalAura::CrystalAura() : IModule(VK_NUMPAD0, Category::COMBAT, "Destroys nea
 }
 CrystalAura::~CrystalAura() {
 }
-const char* CrystalAura::getModuleName() {
+std::string CrystalAura::getModuleName() {
 	return ("CrystalAura");
 }
 

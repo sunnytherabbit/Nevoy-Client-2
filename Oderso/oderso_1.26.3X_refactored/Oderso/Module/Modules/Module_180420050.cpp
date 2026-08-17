@@ -1,7 +1,29 @@
 #include "Module_180420050.h"
+#include <cmath>
 
 Module_180420050::Module_180420050() : IModule(0, Category::CUSTOM, "Module_180420050") {
-	registerFloatSetting("Outline opacity", &outlineOpacity, 0.f, 0.f, 1.f);  // TODO: defaults/min/max
+	registerFloatSetting("Outline opacity", &outlineOpacity, 1.f, 0.f, 1.f);
 }
 
-const char* Module_180420050::getModuleName() { return "Module_180420050"; }
+std::string Module_180420050::getModuleName() { return "Module_180420050"; }
+std::string Module_180420050::getTooltip() { 
+	// Binary function: func_0x180423380
+	return "";
+}
+
+void Module_180420050::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
+	// Binary function: func_0x180423530
+	float fVar1;
+	fVar1 = *reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x98);
+	if ((fVar1 != *reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x9c)) || (std::isnan(fVar1) || std::isnan(*reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x9c)))) {
+	*reinterpret_cast<float*>(reinterpret_cast<uintptr_t>(this) + 0x9c) = fVar1;
+	*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0xb8) = 1;
+}
+}
+
+void Module_180420050::onEnable() {
+	// Binary function: func_0x180423510
+	*reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x9c) = *reinterpret_cast<uint32_t*>(reinterpret_cast<uintptr_t>(this) + 0x98);
+	*reinterpret_cast<uint8_t*>(reinterpret_cast<uintptr_t>(this) + 0xb8) = 1;
+}
+

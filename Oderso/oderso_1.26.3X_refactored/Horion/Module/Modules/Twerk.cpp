@@ -7,7 +7,7 @@ Twerk::Twerk() : IModule(0x0, Category::MOVEMENT, "Crouch Spam") {
 Twerk::~Twerk() {
 }
 
-const char* Twerk::getModuleName() {
+std::string Twerk::getModuleName() {
 	return ("Twerk");
 }
 

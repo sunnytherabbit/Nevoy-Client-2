@@ -7,7 +7,7 @@ AutoGapple::AutoGapple() : IModule(0, Category::MOVEMENT, "Auto eat gapples if y
 AutoGapple::~AutoGapple() {
 }
 
-const char* AutoGapple::getModuleName() {
+std::string AutoGapple::getModuleName() {
 	return ("AutoGapple");
 }
 

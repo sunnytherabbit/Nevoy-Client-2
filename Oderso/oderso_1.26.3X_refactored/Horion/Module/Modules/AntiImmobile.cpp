@@ -5,6 +5,6 @@ AntiImmobile::AntiImmobile() : IModule(0, Category::MISC, "Disables immobile fla
 AntiImmobile::~AntiImmobile() {
 }
 
-const char* AntiImmobile::getModuleName() {
+std::string AntiImmobile::getModuleName() {
 	return "AntiImmobile";
 }

@@ -46,6 +46,9 @@ public:
 	EnumEntry& GetEntry(int ind);
 	EnumEntry& GetSelectedEntry();
 	int GetCount();
+
+private:
+	void* _pad = nullptr;  // binary SettingEnum is 0x48 bytes
 };
 
 enum class ValueType {
@@ -58,6 +61,8 @@ enum class ValueType {
 	ENUM_T
 };
 
+// Binary SettingValue is a 0x48 variant: the active value is stored at offset
+// 0x0 (TEXT_T overlays a std::string here) and a type tag lives at offset 0x40.
 struct SettingValue {
 	union {
 		float _float;
@@ -65,37 +70,58 @@ struct SettingValue {
 		__int64 int64;
 		int _int;
 		bool _bool;
-		std::string* text;
 		SettingEnum* Enum;
+		char _buf[0x40];
 	};
+	char type;
+	char _pad[7];
+
+	std::string& getText() { return *reinterpret_cast<std::string*>(_buf); }
+	~SettingValue() { if (type == (char)ValueType::TEXT_T) getText().~basic_string(); }
+};
+
+// Binary wrappers place a SettingValue at offset 0x18.  Methods store the
+// header pointer and add 0x18 to reach the active value.
+struct SettingValueHeader {
+	void* vtable = nullptr;
+	void* typeInfo = nullptr;
+	int min = 0;
+	int max = 0x7fffffff;
+	char _pad[8];
+	SettingValue value;
 };
 
 struct SettingEntry {
-	char name[0x20] = "";
-	ValueType valueType;
-	SettingValue* value = nullptr;
-	SettingValue* defaultValue = nullptr;
-	SettingValue* minValue = nullptr;
-	SettingValue* maxValue = nullptr;
-	void* extraData; // Only used by enum for now
-
-	// ClickGui Data
-	bool isDragging = false;  // This is incredibly hacky and i wanted to avoid this as much as possible but i want to get this clickgui done
-
+	std::string name;              // 0x00
+	std::string displayName;       // 0x20
+	ValueType valueType;           // 0x40
+	char _pad0[4];
+	SettingValue* value = nullptr; // 0x48
+	SettingValue defaultValue;     // 0x50
+	SettingValue minValue;         // 0x98
+	SettingValue maxValue;         // 0xe0
+	char _pad1[8];                 // 0x128
+	SettingEnum extraData;         // 0x130
 	void makeSureTheValueIsAGoodBoiAndTheUserHasntScrewedWithIt();
 };
 
 class IModule {
 private:
-	bool enabled = false;
 	int keybind = 0x0;
+	bool enabled = false;
 	bool extended = false;
+	char _pad0[6];
 	vec2_t ModulePos;
-private:
+	short field_0x18 = 1;
+	char _pad1[2];
 	Category category;
-	const char* tooltip;
-
+	std::string tooltip;
+	bool field_0x40 = false;
+	char _pad2[7];
 	std::vector<SettingEntry*> settings;
+	bool field_0x60 = false;
+	char _pad3[7];
+	std::vector<std::string> friendList;
 
 protected:
 	IModule(int key, Category c, const char* tooltip);
@@ -116,28 +142,41 @@ public:
 
 	inline std::vector<SettingEntry*>* getSettings() { return &settings; };
 
-	virtual const char* getModuleName() = 0;
-	virtual const char* getRawModuleName();
+	virtual std::string getModuleName() = 0;
+	virtual std::string getRawModuleName();
+	virtual std::string getTooltip();
 	virtual int getKeybind();
 	virtual void setKeybind(int key);
 	virtual bool allowAutoStart();
 
 	virtual void onTick(C_GameMode*);
-	virtual void onKeyUpdate(int key, bool isDown);
+	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx);
+	virtual void onKeyUpdate(int key, bool isDown, bool* cancel = nullptr);
+	// vtable slot 10: binary onAttack passes a button mask in the isDown parameter for some modules.
+	virtual void onAttack(int attackButton, bool isDown, bool* cancel = nullptr);
 	virtual void onEnable();
 	virtual void onDisable();
-	virtual void onAttack(C_Entity*);
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx);
 	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx);
 	virtual void onLevelRender();
-	virtual void onMove(C_MoveInputHandler*);
+
+	virtual void slot_15();
+	virtual void slot_16();
 	virtual void onLoadConfig(void* conf);
 	virtual void onSaveConfig(void* conf);
 	virtual bool isFlashMode();
-	virtual void setEnabled(bool enabled);
-	virtual void toggle();
 	virtual bool isEnabled();
+	// vtable slot 21: binary setEnabled is an event-driven handler, not a bool setter.
+	virtual void setEnabled(void* event = nullptr, bool* cancel = nullptr);
+	void setEnabled(bool enabled);
+	virtual void toggle(void* event = nullptr, bool* cancel = nullptr);
 	virtual void onSendPacket(C_Packet*);
-	virtual bool callWhenDisabled();
-	const char* getTooltip();
+	virtual void callWhenDisabled(C_Entity* entity = nullptr);
+	virtual void onMove(C_MoveInputHandler*);
+	virtual void slot_26();
+	virtual void slot_27(int arg = 0, char mask = 0, bool* cancel = nullptr);
+	virtual void slot_28();
+	virtual void slot_29();
+	virtual void slot_30(int arg = 0, char mask = 0, bool* cancel = nullptr);
+	virtual void slot_31(int arg = 0, char mask = 0, bool* cancel = nullptr);
+	const char* getTooltipCStr() { return this->tooltip.c_str(); };
 };

@@ -10,15 +10,16 @@ public:
 	CrouchSpam();
 	~CrouchSpam() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) override;
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
+	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;
 	virtual void onDisable() override;
 
 	// No settings extracted yet
+	virtual std::string getTooltip() override;
+
+	int counter = 0;
+	int delay = 5;
 };
 
 #endif

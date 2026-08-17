@@ -7,7 +7,7 @@ StorageESP::StorageESP() : IModule(0, Category::VISUAL, "ESP for storage blocks"
 StorageESP::~StorageESP() {
 }
 
-const char* StorageESP::getModuleName() {
+std::string StorageESP::getModuleName() {
 	return ("StorageESP");
 }
 

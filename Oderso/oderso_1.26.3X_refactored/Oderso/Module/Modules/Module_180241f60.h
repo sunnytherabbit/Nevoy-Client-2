@@ -9,15 +9,17 @@ public:
 	Module_180241f60();
 	~Module_180241f60() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
-
+	virtual void onEnable() override;
 	// No settings extracted yet
+	virtual std::string getTooltip() override;
+	virtual void setEnabled(void* event = nullptr, bool* cancel = nullptr) override;
+	virtual void toggle(void* event = nullptr, bool* cancel = nullptr) override;
+
+	// binary fields used by setEnabled/toggle
+	uint16_t field_0x80 = 0;
+	char field_0x82 = -1;
 };
 
 #endif

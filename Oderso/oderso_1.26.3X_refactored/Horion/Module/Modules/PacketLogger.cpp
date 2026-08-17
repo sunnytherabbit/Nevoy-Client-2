@@ -6,7 +6,7 @@ PacketLogger::PacketLogger() : IModule(0, Category::MISC, "Logging Packets !") {
 PacketLogger::~PacketLogger() {
 }
 
-const char* PacketLogger::getModuleName() {
+std::string PacketLogger::getModuleName() {
 	return ("PacketLogger");
 }
 

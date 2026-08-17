@@ -6,6 +6,6 @@ InstaBreak::InstaBreak() : IModule(VK_NUMPAD4, Category::WORLD, "Break any block
 InstaBreak::~InstaBreak() {
 }
 
-const char* InstaBreak::getModuleName() {
+std::string InstaBreak::getModuleName() {
 	return ("InstaBreak");
 }

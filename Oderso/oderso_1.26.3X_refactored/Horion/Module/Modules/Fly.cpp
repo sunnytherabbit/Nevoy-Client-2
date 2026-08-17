@@ -11,7 +11,7 @@ Fly::~Fly() {
 
 
 
-const char* Fly::getModuleName() {
+std::string Fly::getModuleName() {
 	return ("Fly");
 }
 

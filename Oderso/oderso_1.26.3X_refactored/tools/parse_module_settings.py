@@ -37,19 +37,65 @@ def split_args(s):
     return args
 
 
-def eval_const(expr, size=4):
-    """Try to evaluate a constant expression."""
+def eval_const(expr, size=4, const_map=None, depth=0, seen=None):
+    """Try to evaluate a constant expression.
+
+    Handles plain hex/decimal, CONCAT44 wrappers, and known local variables.
+    For floats the 32-bit hex is packed as IEEE 754; for ints the integer value is kept.
+    """
+    if const_map is None:
+        const_map = {}
+    if seen is None:
+        seen = set()
+    if depth > 10:
+        return None
     expr = expr.strip()
+    # Resolve a known local variable assignment recursively
+    if re.fullmatch(r'\w+', expr) and expr in const_map and expr not in seen:
+        seen.add(expr)
+        return eval_const(const_map[expr], size, const_map, depth + 1, seen)
+    # Direct hex constant (possibly a 64-bit CONCAT44 result)
     m = re.fullmatch(r'0x[0-9a-fA-F]+', expr)
     if m:
         v = int(expr, 0)
         if size == 8:
             return {'qword': v, 'int': v & 0xffffffff, 'float': struct.unpack('<f', struct.pack('<I', v & 0xffffffff))[0]}
         return {'int': v & 0xffffffff, 'float': struct.unpack('<f', struct.pack('<I', v & 0xffffffff))[0], 'hex': hex(v)}
+    # Plain decimal
     m = re.fullmatch(r'-?\d+', expr)
     if m:
         return {'int': int(expr), 'float': float(int(expr))}
+    # CONCAT44(high, low) -> lower 32 bits determine the float/int value
+    m = re.fullmatch(r'CONCAT44\s*\(\s*([^,]+)\s*,\s*([^)]+)\s*\)', expr)
+    if m:
+        return eval_const(m.group(2), size, const_map)
+    # Fallback: take the last 32-bit hex token in the expression (often the lower half)
+    tokens = re.findall(r'0x[0-9a-fA-F]+', expr)
+    if tokens:
+        return eval_const(tokens[-1], size, const_map)
+    # Last plain decimal token
+    tokens = re.findall(r'-?\d+', expr)
+    if tokens:
+        return eval_const(tokens[-1], size, const_map)
     return None
+
+
+def update_const_map(line, const_map):
+    """Update the line-local constant map with uVar assignments.
+
+    Recognizes simple assignments such as:
+        uVar25 = 0x3f000000;
+        uVar25 = CONCAT44(uVar26, 0x3f000000);
+        uVar25 = CONCAT44(uVar26, uVar6);   # if uVar6 is already known, use it
+    """
+    for m in re.finditer(r'\b(\w+)\s*=\s*([^;]+);', line):
+        var, rhs = m.group(1), m.group(2).strip()
+        if re.match(r'uVar\d+$', var):
+            val = eval_const(rhs, 4, const_map)
+            if val:
+                # Store the original RHS expression so later CONCAT44 resolvers
+                # can see the concrete hex token if needed.
+                const_map[var] = rhs
 
 
 def build_alias_map(body, off_map, dll, sections):
@@ -157,8 +203,9 @@ def infer_type(reg_func, args):
     return 'unknown'
 
 
-def update_alias(line, alias, off_map):
-    """Apply one statement to the alias map and return any call metadata."""
+def update_alias(line, alias, off_map, const_map):
+    """Apply one statement to the alias and constant maps and return any call metadata."""
+    update_const_map(line, const_map)
     # pointer assignment to lVar15 + off
     m = re.search(r'\b(\w+)\s*=\s*\([^)]*\*\s*\)\s*\(\s*\w+\s*\+\s*(0x[0-9a-fA-F]+|\d+)\s*\)', line)
     if m:
@@ -222,13 +269,34 @@ def update_alias(line, alias, off_map):
                     name = clean_name(raw)
                     if name:
                         break
+            # Extract default / min / max for numeric settings.
+            # Registration signatures (after this + name pointer pair):
+            #   bool:   (this, name, bool*  , default)
+            #   enum:   (this, name, enum*  , default)
+            #   int:    (this, name, int*   , default, min, max)
+            #   float:  (this, name, float* , default, min, max)
+            defaults = {}
+            type_ = infer_type(fn, args)
+            if type_ in ('int', 'float'):
+                for i, key in ((4, 'default'), (5, 'min'), (6, 'max')):
+                    if i < len(parts):
+                        v = eval_const(parts[i], 4, const_map)
+                        if v:
+                            defaults[key] = v
+            elif type_ in ('bool', 'enum'):
+                if 3 < len(parts):
+                    v = eval_const(parts[3], 4, const_map)
+                    if v:
+                        defaults['default'] = v
+
             return ('setting', {
                 'reg_func': fn,
                 'name': name,
-                'type': infer_type(fn, args),
+                'type': type_,
                 'offset': off,
                 'raw_args': args,
                 'parts': parts,
+                **defaults,
             })
     return None
 
@@ -243,11 +311,12 @@ def extract_module(ctor, dll, sections, content):
         if off not in off_map or not off_map[off]:
             off_map[off] = s['string']
     alias = {}
+    const_map = {}
     result = {'constructor': ctor, 'name': None, 'category': None, 'key': None, 'tooltip': None, 'settings': []}
     for line in en._join_continued(body):
         if not line.strip() or line.strip().startswith('//'):
             continue
-        entry = update_alias(line, alias, off_map)
+        entry = update_alias(line, alias, off_map, const_map)
         if not entry:
             continue
         kind, val = entry

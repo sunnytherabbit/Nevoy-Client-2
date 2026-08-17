@@ -6,7 +6,7 @@ NoFall::NoFall() : IModule(VK_NUMPAD3, Category::MOVEMENT, "Prevents you from ta
 NoFall::~NoFall() {
 }
 
-const char* NoFall::getModuleName() {
+std::string NoFall::getModuleName() {
 	return ("NoFall");
 }
 

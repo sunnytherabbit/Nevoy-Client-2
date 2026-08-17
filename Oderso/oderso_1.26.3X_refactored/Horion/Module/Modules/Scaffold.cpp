@@ -10,7 +10,7 @@ Scaffold::Scaffold() : IModule(VK_NUMPAD1, Category::WORLD, "Automatically build
 Scaffold::~Scaffold() {
 }
 
-const char* Scaffold::getModuleName() {
+std::string Scaffold::getModuleName() {
 	return "Scaffold";
 }
 

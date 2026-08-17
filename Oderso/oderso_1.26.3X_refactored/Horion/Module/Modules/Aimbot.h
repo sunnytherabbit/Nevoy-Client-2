@@ -19,6 +19,6 @@ public:
 	~Aimbot();
 
 	// Inherited via IModule
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) override;
 };

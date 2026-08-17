@@ -7,7 +7,7 @@ CubeGlide::CubeGlide() : IModule(0, Category::MOVEMENT, "Glide on Cubecraft") {
 CubeGlide::~CubeGlide() {
 }
 
-const char* CubeGlide::getModuleName() {
+std::string CubeGlide::getModuleName() {
 	return "CubeGlide";
 }
 

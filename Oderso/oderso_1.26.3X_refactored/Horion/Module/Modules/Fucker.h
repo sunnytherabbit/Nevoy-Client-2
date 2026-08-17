@@ -17,6 +17,6 @@ public:
 	~Fucker();
 
 	// Inherited via IModule
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	virtual void onTick(C_GameMode* gm) override;
 };

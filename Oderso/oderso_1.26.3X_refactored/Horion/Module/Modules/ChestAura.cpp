@@ -8,7 +8,7 @@ ChestAura::ChestAura() : IModule(0, Category::PLAYER, "Aura for opening chests")
 ChestAura::~ChestAura() {
 }
 
-const char* ChestAura::getModuleName() {
+std::string ChestAura::getModuleName() {
 	return ("ChestAura");
 }
 

@@ -1,6 +1,6 @@
 # Oderso 1.26.3X refactored source
 
-This folder is a C++/C/CMake project scaffold that mirrors the `Borion/Borion-OSS` layout. It is generated from the Ghidra decompilation `ghidra_decompiled_1.26.3X.c` (~18 MB, 16,869 functions).
+This folder is a C++/C/CMake project scaffold that mirrors the `Borion/Borion-OSS` layout. It is generated from the Ghidra decompilation `ghidra_decompiled_1.26.3X.c` (~28 MB, 19,539 functions).
 
 ## Project layout
 
@@ -18,10 +18,8 @@ This folder is a C++/C/CMake project scaffold that mirrors the `Borion/Borion-OS
 │   ├── compat.h      - type aliases and Ghidra artifact macros
 │   └── decls.h       - auto-generated forward declarations / global symbols
 ├── Oderso/           - Borion-style source tree for logically grouped code
-│   └── Raw/          - mechanical first-pass output (68 group files)
 ├── resources/        - placeholder
-└── tools/
-    └── refactor.py   - script used to split and clean the decompiled file
+└── tools/            - helper scripts for manifest and decomp analysis
 ```
 
 ## What is already clean
@@ -31,17 +29,9 @@ This folder is a C++/C/CMake project scaffold that mirrors the `Borion/Borion-OS
 * `Utils/compat.cpp`: placeholder definitions for loader symbols (`ThreadLocalStoragePointer`, `_tls_index`).
 * `include/oderso/decls.h`: auto-generated forward declarations and `DAT_`/`PTR_` global externs.
 
-## What is a mechanical first pass
+## Mechanical first pass
 
-`Oderso/Raw/group_*.cpp` contains the bulk of the 16,869 functions. The script `tools/refactor.py` performs only non-semantic cleanup:
-
-* normalizes `undefined`/`undefined4`/`undefined8`/... to `uint8_t`/`uint32_t`/`uint64_t`/...
-* renames generic Ghidra variables by type prefix (`uVar1` -> `uVal_1`, `pcVar1` -> `fnPtr_1`, etc.)
-* fixes Ghidra's `code *` into `func_ptr_t`
-* fixes pointer-to-array return syntax (`uint8_t (*) [16] f(...)` -> `uint8_t (*f(...))[16]`)
-* generates `decls.h`
-
-It does **not** perform control-flow cleanup, logical variable naming by usage, or removal of Ghidra artifacts such as `ZEXT`, `CONCAT`, `SUB`, `LOCK`/`UNLOCK`, stack-underscore variables (`_local_*`), etc. Those require per-function manual work.
+The previous `Oderso/Raw/group_*.cpp` mechanical split and the `tools/refactor.py` normalization helper have been removed from this tree as part of the decomp cleanup. The current tooling works directly against `ghidra_decompiled_1.26.3X.c` (symlinked to `ghidra_decompiled_1.26.3X_new.c`).
 
 ## Building
 
@@ -51,20 +41,13 @@ The cleaned SDK portion can be compiled standalone:
 g++ -std=c++17 -c SDK/TextHolder.cpp -I. -o /tmp/TextHolder.o
 ```
 
-A full CMake build (for the hand-cleaned target `Oderso`) works on Windows with MSVC or with a MinGW/Clang cross setup. The raw mechanical files are **not** enabled by default because they still contain Ghidra artifacts. To attempt building them:
-
-```bash
-cmake -S . -B build -DBUILD_DECOMPILED_RAW=ON
-cmake --build build
-```
-
-Expect many compile errors until the artifacts are fixed.
+A full CMake build (for the hand-cleaned target `Oderso`) works on Windows with MSVC or with a MinGW/Clang cross setup. The raw mechanical files in `raw_decompiled_backup/` are **not** part of the default build.
 
 ## Next steps
 
-1. Specify which functions or modules you want fully hand-refactored; 16,869 functions is too large to do in one pass.
+1. Specify which functions or modules you want fully hand-refactored; 19,539 functions is too large to do in one pass.
 2. Continue with `func_0x180001110` and the surrounding string / `TextHolder` helpers, or pick a module (Command, Module, Config, etc.) if you can identify address ranges.
-3. Use `Oderso/Raw/` as the mechanical starting point and move hand-cleaned files into `Oderso/Module/`, `Oderso/Command/`, `SDK/`, etc. as their purpose becomes clear.
+3. Work from `ghidra_decompiled_1.26.3X.c` (symlinked to `ghidra_decompiled_1.26.3X_new.c`) and move hand-cleaned files into `Oderso/Module/`, `Oderso/Command/`, `SDK/`, etc. as their purpose becomes clear.
 
 ## Assumptions
 

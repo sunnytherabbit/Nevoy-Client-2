@@ -30,7 +30,7 @@ AutoArmor::AutoArmor() : IModule(0, Category::PLAYER, "Automatically equips the 
 AutoArmor::~AutoArmor() {
 }
 
-const char* AutoArmor::getModuleName() {
+std::string AutoArmor::getModuleName() {
 	return ("AutoArmor");
 }
 

@@ -9,13 +9,11 @@ public:
 	SkinStealer();
 	~SkinStealer() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
+	
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual std::string getTooltip() override;
 
 	bool selfStet = false;
 	bool skin = false;
@@ -23,6 +21,8 @@ public:
 	bool geometry = false;
 	bool copyPath = false;
 	bool clone = false;
+
+	char _binaryPadding[0x10];
 };
 
 #endif

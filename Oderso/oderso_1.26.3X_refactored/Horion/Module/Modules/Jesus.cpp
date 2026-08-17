@@ -6,7 +6,7 @@ Jesus::Jesus() : IModule(0, Category::MOVEMENT, "Walk over water, like Jesus") {
 Jesus::~Jesus() {
 }
 
-const char* Jesus::getModuleName() {
+std::string Jesus::getModuleName() {
 	return "Jesus";
 }
 

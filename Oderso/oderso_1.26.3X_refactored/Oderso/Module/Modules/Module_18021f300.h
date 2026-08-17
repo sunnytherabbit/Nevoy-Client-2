@@ -9,13 +9,8 @@ public:
 	Module_18021f300();
 	~Module_18021f300() {}
 
-	virtual const char* getModuleName() override;
-
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual std::string getModuleName() override;
+	virtual std::string getTooltip() override;
 
 	bool players = false;
 	bool checkFe = false;

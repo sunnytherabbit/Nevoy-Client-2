@@ -9,15 +9,15 @@ public:
 	Module_18018d820();
 	~Module_18018d820() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;	
+	virtual void onEnable() override;	virtual std::string getTooltip() override;
 
 	int sE = 0;
+
+	// padding to match binary layout up to 0x8c
+	char _binaryPadding[0x10];
 };
 
 #endif

@@ -9,13 +9,8 @@ public:
 	Module_180178c80();
 	~Module_180178c80() {}
 
-	virtual const char* getModuleName() override;
-
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual std::string getModuleName() override;
+	virtual std::string getTooltip() override;
 
 	float uUM = 0.f;
 	float sE = 0.f;

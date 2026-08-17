@@ -9,13 +9,9 @@ public:
 	Module_18024b340();
 	~Module_18024b340() {}
 
-	virtual const char* getModuleName() override;
-
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual std::string getModuleName() override;
+	virtual std::string getTooltip() override;
+	virtual void slot_15() override;
 
 	bool mobs = false;
 	bool projectiles = false;
@@ -24,6 +20,9 @@ public:
 	bool eye = false;
 	bool rainbow = false;
 	bool hitHelppgg = false;
+
+	char _binaryPadding[0x31];
+	void* field_0xb8 = nullptr;
 };
 
 #endif

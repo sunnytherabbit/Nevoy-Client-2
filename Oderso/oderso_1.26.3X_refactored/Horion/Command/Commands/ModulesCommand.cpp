@@ -17,7 +17,7 @@ bool ModulesCommand::execute(std::vector<std::string>* args) {
 	clientMessageF("Modules (%i):", modules->size());
 	for (auto it = modules->begin(); it != modules->end(); ++it) {
 		auto mod = *it;
-		clientMessageF("%s %s- %s%s", mod->getModuleName(), GRAY, ITALIC, mod->getTooltip());
+		clientMessageF("%s %s- %s%s", mod->getModuleName().c_str(), GRAY, ITALIC, mod->getTooltip().c_str());
 	}
 
 	return true;

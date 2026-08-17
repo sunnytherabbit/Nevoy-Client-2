@@ -12,6 +12,6 @@ public:
 	~ESP();
 
 	// Inherited via IModule
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;
 };

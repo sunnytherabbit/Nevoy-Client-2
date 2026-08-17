@@ -26,6 +26,55 @@ def to_ident(s):
     return s
 
 
+def choose_default(s):
+    """Return a C++ literal default value for a setting.
+
+    Uses the manifest default if it looks sane (within min/max), otherwise
+    falls back to the minimum value, then zero.
+    """
+    t = s['type']
+    d = s.get('default')
+    mn = s.get('min')
+    mx = s.get('max')
+    if t == 'bool':
+        if d is True:
+            return 'true'
+        return 'false'
+    if t == 'enum':
+        if isinstance(d, (int, float)):
+            return str(int(d))
+        return '0'
+    if t == 'int':
+        try:
+            mn_i = int(mn)
+        except Exception:
+            mn_i = 0
+        try:
+            mx_i = int(mx)
+        except Exception:
+            mx_i = None
+        if isinstance(d, (int, float)):
+            dv = int(d)
+            if (mx_i is None or dv <= mx_i) and dv >= mn_i:
+                return str(dv)
+        return str(mn_i) if mn is not None else '0'
+    if t == 'float':
+        try:
+            mn_f = float(mn)
+        except Exception:
+            mn_f = 0.0
+        try:
+            mx_f = float(mx)
+        except Exception:
+            mx_f = None
+        if isinstance(d, (int, float)):
+            dv = float(d)
+            if (mx_f is None or dv <= mx_f) and dv >= mn_f:
+                return f'{dv:.6g}f'
+        return f'{mn_f:.6g}f' if mn is not None else '0.f'
+    return '0'
+
+
 def to_camel(s, used=None):
     s = re.sub(r'[^A-Za-z0-9 ]', ' ', s)
     words = [w for w in s.split() if w]
@@ -60,12 +109,13 @@ def gen_header(mod):
     for s in mod.get('settings', []):
         n = to_camel(s['name'], used)
         t = s['type']
+        def_val = choose_default(s)
         if t == 'bool':
-            members.append(f'\tbool {n} = false;')
+            members.append(f'\tbool {n} = {def_val};')
         elif t == 'int':
-            members.append(f'\tint {n} = 0;')
+            members.append(f'\tint {n} = {def_val};')
         elif t == 'float':
-            members.append(f'\tfloat {n} = 0.f;')
+            members.append(f'\tfloat {n} = {def_val};')
         elif t == 'enum':
             members.append(f'\tSettingEnum {n};')
     member_block = '\n'.join(members) if members else '\t// No settings extracted yet'
@@ -107,13 +157,23 @@ def gen_source(mod):
         var = to_camel(n, used)
         t = s['type']
         if t == 'bool':
-            regs.append(f'\tregisterBoolSetting("{escape(n)}", &{var}, false);')
+            regs.append(f'\tregisterBoolSetting("{escape(n)}", &{var}, {var});')
         elif t == 'int':
-            regs.append(f'\tregisterIntSetting("{escape(n)}", &{var}, 0, 0, 1);  // TODO: defaults/min/max')
+            mn = s.get('min')
+            mx = s.get('max')
+            min_s = str(int(mn)) if mn is not None and isinstance(mn, (int, float)) else '0'
+            max_s = str(int(mx)) if mx is not None and isinstance(mx, (int, float)) else '1'
+            regs.append(f'\tregisterIntSetting("{escape(n)}", &{var}, {var}, {min_s}, {max_s});')
         elif t == 'float':
-            regs.append(f'\tregisterFloatSetting("{escape(n)}", &{var}, 0.f, 0.f, 1.f);  // TODO: defaults/min/max')
+            mn = s.get('min')
+            mx = s.get('max')
+            min_s = f'{float(mn):.6g}f' if mn is not None and isinstance(mn, (int, float)) else '0.f'
+            max_s = f'{float(mx):.6g}f' if mx is not None and isinstance(mx, (int, float)) else '1.f'
+            regs.append(f'\tregisterFloatSetting("{escape(n)}", &{var}, {var}, {min_s}, {max_s});')
         elif t == 'enum':
-            regs.append(f'\tregisterEnumSetting("{escape(n)}", &{var}, 0);  // TODO: add entries')
+            d = s.get('default')
+            d_s = str(int(d)) if d is not None and isinstance(d, (int, float)) else '0'
+            regs.append(f'\tregisterEnumSetting("{escape(n)}", &{var}, {d_s});  // Add enum entries')
     reg_block = '\n'.join(regs) if regs else '\t// No settings extracted yet'
     return f'''#include "{cn}.h"
 

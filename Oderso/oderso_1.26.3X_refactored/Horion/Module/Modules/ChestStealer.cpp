@@ -9,7 +9,7 @@ ChestStealer::ChestStealer() : IModule(0, Category::PLAYER, "Automatically takes
 ChestStealer::~ChestStealer() {
 }
 
-const char* ChestStealer::getModuleName() {
+std::string ChestStealer::getModuleName() {
 	return ("ChestStealer");
 }
 

@@ -4,4 +4,29 @@ Module_180243e70::Module_180243e70() : IModule(0, Category::CUSTOM, "Module_1802
 	registerBoolSetting("Hold", &hold, false);
 }
 
-const char* Module_180243e70::getModuleName() { return "Module_180243e70"; }
+std::string Module_180243e70::getModuleName() { return "Module_180243e70"; }
+std::string Module_180243e70::getTooltip() { 
+	// Binary function: func_0x180245010
+	return "";
+}
+
+void Module_180243e70::onEnable() {
+	// Binary function: func_0x1802451a0
+	auto player = g_Data.getLocalPlayer();
+	if (player == nullptr) {
+		// Unmapped global side-effect: DAT_180840a68 = 0;
+		return;
+	}
+
+	auto pos = player->getPos();
+	if (pos != nullptr) {
+		this->storedX = pos->x;
+		this->storedY = pos->y;
+	}
+}
+
+bool Module_180243e70::isFlashMode() {
+	// Binary function: func_0x1802452b0
+	return hold;
+}
+

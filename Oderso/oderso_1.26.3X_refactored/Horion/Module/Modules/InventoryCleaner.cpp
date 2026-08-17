@@ -14,7 +14,7 @@ InventoryCleaner::InventoryCleaner() : IModule(0, Category::PLAYER, "Automatical
 InventoryCleaner::~InventoryCleaner() {
 }
 
-const char* InventoryCleaner::getModuleName() {
+std::string InventoryCleaner::getModuleName() {
 	return ("InventoryCleaner");
 }
 

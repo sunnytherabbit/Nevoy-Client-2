@@ -10,6 +10,6 @@ private:
 	int Odelay = 0;
 	float delay = 1;
 	inline float& getDelay() { return delay; };
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	void onTick(C_GameMode* gm);
 };

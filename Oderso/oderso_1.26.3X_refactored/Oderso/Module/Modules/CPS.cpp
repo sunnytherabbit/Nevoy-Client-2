@@ -8,16 +8,21 @@ CPS::CPS() : IModule(0, Category::VISUAL, "Displays your clicks per second.") {
 	// No settings extracted yet
 }
 
-const char* CPS::getModuleName() { return "CPS"; }
-
-void CPS::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	if (g_Data.getLocalPlayer() == nullptr) return;
-
-	float scale = 1.f;
-	std::string cpsText = "CPS: " + std::to_string(g_Data.getLeftCPS()) + " - " + std::to_string(g_Data.getRightCPS());
-	vec4_t rectPos = vec4_t(2.5f, 5.f, DrawUtils::getTextWidth(&cpsText, scale) + 7.f, 15.f);
-	vec2_t textPos = vec2_t(rectPos.x + 1.5f, rectPos.y + 1.f);
-
-	DrawUtils::fillRectangle(rectPos, MC_Color(12, 12, 12), 1.f);
-	DrawUtils::drawText(textPos, &cpsText, MC_Color(200, 200, 200), scale);
+std::string CPS::getModuleName() { return "CPS"; }
+std::string CPS::getTooltip() { 
+	// Binary function: func_0x1802f2510
+	return "Displays your clicks per second.";
 }
+
+void CPS::onLoadConfig(void* conf) {
+	// Binary function: func_0x180135130
+	// NOTE: custom logic not yet ported; calling base for now
+	IModule::onLoadConfig(conf);
+}
+
+void CPS::onSaveConfig(void* conf) {
+	// Binary function: func_0x180135c90
+	// NOTE: custom logic not yet ported; calling base for now
+	IModule::onSaveConfig(conf);
+}
+

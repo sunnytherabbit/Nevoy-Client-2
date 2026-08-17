@@ -9,7 +9,7 @@ Tracer::Tracer() : IModule('R', Category::VISUAL, "Draws lines to ESP highlighte
 Tracer::~Tracer() {
 }
 
-const char* Tracer::getModuleName() {
+std::string Tracer::getModuleName() {
 	return "Tracer";
 }
 void Tracer::onLevelRender() {

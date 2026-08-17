@@ -8,7 +8,7 @@ Derp::Derp() : IModule(0, Category::MISC, "lol you stupid") {
 Derp::~Derp() {
 }
 
-const char* Derp::getModuleName() {
+std::string Derp::getModuleName() {
 	return "Derp";
 }
 

@@ -9,15 +9,18 @@ public:
 	Module_180247570();
 	~Module_180247570() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual void onEnable() override;
+	virtual void onDisable() override;
+	virtual std::string getTooltip() override;
 
-	float scale = 0.f;
+	float currentScale = 0.f;
+	uint8_t flag_0x84 = 0;
+	char _pad_0x85[3];
+	float targetScale = 0.f;
+	uint8_t flag_0x8c = 0;
 };
 
 #endif

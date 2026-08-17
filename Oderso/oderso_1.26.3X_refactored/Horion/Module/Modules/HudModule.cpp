@@ -20,7 +20,7 @@ HudModule::HudModule() : IModule(0, Category::VISUAL, "Displays ArrayList/TabGUI
 HudModule::~HudModule() {
 }
 
-const char* HudModule::getModuleName() {
+std::string HudModule::getModuleName() {
 	return ("HUD");
 }
 

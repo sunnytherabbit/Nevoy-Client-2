@@ -7,6 +7,6 @@ ExtendedBlockReach::ExtendedBlockReach() : IModule(0, Category::PLAYER, "Extened
 ExtendedBlockReach::~ExtendedBlockReach() {
 }
 
-const char* ExtendedBlockReach::getModuleName() {
+std::string ExtendedBlockReach::getModuleName() {
 	return ("ExtendedBlockReach");
 }

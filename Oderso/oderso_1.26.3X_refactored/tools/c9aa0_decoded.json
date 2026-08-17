@@ -1,0 +1,310 @@
+{
+  "Module_180371f00": {
+    "strings": [
+      "Sets the crosshair image file for the CustomC"
+    ],
+    "call_args": [
+      "&local_b8",
+      "&local_58",
+      "&local_78"
+    ],
+    "name": "CustomCrosshair",
+    "tooltip": "Sets the crosshair image file for the CustomC",
+    "raw": "",
+    "verified": true
+  },
+  "Module_180376860": {
+    "strings": [
+      "Sets the hit sound audio file path for CustomH\u0007u"
+    ],
+    "call_args": [
+      "local_b8",
+      "local_58",
+      "&local_78"
+    ],
+    "name": "CustomHitsound",
+    "tooltip": "Sets the hit sound audio file path for CustomH\u0007u",
+    "raw": "",
+    "verified": true
+  },
+  "Module_18037bc90": {
+    "strings": [
+      "Sets the overlay image file for the BlockOverlay"
+    ],
+    "call_args": [
+      "local_b8",
+      "local_58",
+      "&local_78"
+    ],
+    "name": "BlockOverlay",
+    "tooltip": "Sets the overlay image file for the BlockOverlay",
+    "raw": "",
+    "verified": true
+  },
+  "Module_180380410": {
+    "strings": [
+      "&09"
+    ],
+    "call_args": [
+      "puVar9",
+      "local_98",
+      "&local_b8"
+    ],
+    "name": "SetPrefix",
+    "tooltip": "&09",
+    "raw": "",
+    "verified": true
+  },
+  "Module_180380fc0": {
+    "strings": [
+      "<set|remove|list|clear> [key] [message]",
+      "Set, list, remove or clear text hotkeys for Tex"
+    ],
+    "call_args": [
+      "puVar9",
+      "local_98",
+      "&local_b8"
+    ],
+    "name": "TextHotkey",
+    "tooltip": "<set|remove|list|clear> [key] [message]",
+    "raw": "Set, list, remove or clear text hotkeys for Tex",
+    "verified": true
+  },
+  "Module_180388cf0": {
+    "strings": [],
+    "call_args": [
+      "local_78",
+      "local_58",
+      "local_98"
+    ],
+    "name": "Unbind",
+    "tooltip": "Unbinds a key from a module",
+    "raw": "",
+    "verified": true
+  },
+  "Module_18038bc60": {
+    "strings": [
+      "Manage Waypointss"
+    ],
+    "call_args": [
+      "local_88",
+      "local_a8",
+      "puVar8"
+    ],
+    "name": "Waypoints",
+    "tooltip": "Manage Waypointss",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804c9320": {
+    "strings": [
+      "",
+      ""
+    ],
+    "call_args": [
+      "&local_88",
+      "&local_a8",
+      "pppuVar9"
+    ],
+    "name": "Bind",
+    "tooltip": "Bind a key to a module",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804ce890": {
+    "strings": [
+      "0)\u0018"
+    ],
+    "call_args": [
+      "puVar8",
+      "local_98",
+      "&local_b8"
+    ],
+    "name": "ClearChat",
+    "tooltip": "0)\u0018",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804cf410": {
+    "strings": [
+      "<load|new|save|delete|migrate|list|rename> [name]",
+      "\u0016"
+    ],
+    "call_args": [
+      "local_a8",
+      "local_c8",
+      "puVar7"
+    ],
+    "name": "ConfigManager",
+    "tooltip": "<load|new|save|delete|migrate|list|rename> [name]",
+    "raw": "\u0016",
+    "verified": true
+  },
+  "Module_1804d6b70": {
+    "strings": [
+      ""
+    ],
+    "call_args": [
+      "local_88",
+      "local_a8",
+      "puVar7"
+    ],
+    "name": "Coords",
+    "tooltip": "Prints your coordinates",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804d8520": {
+    "strings": [
+      "O$\u0019",
+      "2!\u0019"
+    ],
+    "call_args": [
+      "&local_88",
+      "&local_a8",
+      "&local_68"
+    ],
+    "name": "Dodge",
+    "tooltip": "O$\u0019",
+    "raw": "2!\u0019",
+    "verified": true
+  },
+  "Module_1804dd020": {
+    "strings": [],
+    "call_args": [
+      "local_118",
+      "local_138",
+      "puVar16"
+    ],
+    "name": "Eject",
+    "tooltip": "Ejects from the server",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804de3f0": {
+    "strings": [
+      "9<>"
+    ],
+    "call_args": [
+      "&local_88",
+      "&local_a8",
+      "pppuVar9"
+    ],
+    "name": "Help",
+    "tooltip": "9<>",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804df4a0": {
+    "strings": [
+      "I2,",
+      "&=\""
+    ],
+    "call_args": [
+      "&local_88",
+      "local_a8",
+      "pppuVar10"
+    ],
+    "name": "HiveStats",
+    "tooltip": "I2,",
+    "raw": "&=\"",
+    "verified": true
+  },
+  "Module_1804e2da0": {
+    "strings": [
+      "Sets the nickname for the Nick"
+    ],
+    "call_args": [
+      "local_68",
+      "local_88",
+      "local_a8"
+    ],
+    "name": "Nick",
+    "tooltip": "Sets the nickname for the Nick",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804e44c0": {
+    "strings": [
+      "Creates a panorama at the c"
+    ],
+    "call_args": [
+      "&local_88",
+      "&local_58",
+      "local_a8"
+    ],
+    "name": "Panorama",
+    "tooltip": "Creates a panorama at the c",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804e5480": {
+    "strings": [],
+    "call_args": [
+      "local_88",
+      "local_a8",
+      "puVar7"
+    ],
+    "name": "PlayerInfo",
+    "tooltip": "Gives you basic information of each player on the server",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804e6e10": {
+    "strings": [
+      ""
+    ],
+    "call_args": [
+      "&local_58",
+      "&local_78",
+      "&local_98"
+    ],
+    "name": "Say",
+    "tooltip": "Sends a chat message",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804e7c10": {
+    "strings": [
+      "<set|pos|rotation|rot> <file|pos|rotation> ",
+      "Command to change schematic data for the Sc"
+    ],
+    "call_args": [
+      "puVar9",
+      "local_a8",
+      "&local_c8"
+    ],
+    "name": "Schematic",
+    "tooltip": "<set|pos|rotation|rot> <file|pos|rotation> ",
+    "raw": "Command to change schematic data for the Sc",
+    "verified": true
+  },
+  "Module_1804f24e0": {
+    "strings": [
+      ""
+    ],
+    "call_args": [
+      "&local_58",
+      "&local_78",
+      "local_98"
+    ],
+    "name": "Seed",
+    "tooltip": "Shows you the seed of the world",
+    "raw": "",
+    "verified": true
+  },
+  "Module_1804f3ae0": {
+    "strings": [
+      "Shows information about the server you're pla"
+    ],
+    "call_args": [
+      "puVar9",
+      "local_98",
+      "&local_b8"
+    ],
+    "name": "ServerInfo",
+    "tooltip": "Shows information about the server you're pla",
+    "raw": "",
+    "verified": true
+  }
+}

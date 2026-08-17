@@ -8,7 +8,7 @@ Hitbox::Hitbox() : IModule(0, Category::COMBAT, "Increase an entitys hitbox size
 Hitbox::~Hitbox() {
 }
 
-const char* Hitbox::getModuleName() {
+std::string Hitbox::getModuleName() {
 	return ("Hitbox");
 }
 

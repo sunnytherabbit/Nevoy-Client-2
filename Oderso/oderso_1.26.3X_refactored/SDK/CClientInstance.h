@@ -15,6 +15,7 @@ public:
 
 class Tessellator;
 class C_Block;
+class C_GuiData;
 
 class BlockTessellator;
 class ResourceLocation {
@@ -218,6 +219,23 @@ public:
 
 class C_MoveInputHandler;
 class C_CameraManager;
+
+class C_Options {
+private:
+	char pad_0x0000[0x10];  //0x0000
+public:
+	float field_0x10;  //0x0010
+	float field_0x14;  //0x0014
+private:
+	char pad_0x0018[0x8];  //0x0018
+public:
+	float field_0x20;  //0x0020
+private:
+	char pad_0x0024[0x24];  //0x0024
+public:
+	float field_0x48;  //0x0048
+	float field_0x4c;  //0x004c
+};
 
 class C_ClientInstance {
 private:
@@ -508,8 +526,8 @@ public:
 	virtual bool isMultiC_PlayerClient(void) const;
 	virtual __int64 sub_14012F590() const;
 	virtual __int64 sub_14012F4D0() const;
-	virtual __int64 getOptions(void);
-	virtual __int64 getOptions(void) const;
+	virtual C_Options* getOptions(void);
+	virtual C_Options* getOptions(void) const;
 	//virtual __int64 getOptionsPtr(void);
 	virtual __int64 getUser(void);
 	virtual __int64 getUser(void) const;
@@ -845,3 +863,79 @@ public:
 
 	inline C_GameSettingsInput* getGameSettingsInput() { return this->ptr->ptr->ptr->settingsInput; };
 };
+
+// Helper: query the in-game world time (ticks) through the object at C_ClientInstance + 0x1d8.
+// This matches the binary calls func_0x1801221f0 / func_0x180119880.
+inline int getClientWorldTime(C_ClientInstance* client) {
+	if (client == nullptr) return 0;
+	auto ptr = *reinterpret_cast<void**>(reinterpret_cast<uintptr_t>(client) + 0x1d8);
+	if (ptr == nullptr) return 0;
+	auto vtable = *reinterpret_cast<void***>(ptr);
+	auto getTime = reinterpret_cast<int (*)(void*, uint8_t, uint64_t)>(vtable[0x410 / sizeof(void*)]);
+	return getTime(ptr, 0x82, 0x290a57924a9cb60f);
+}
+
+// Helper: lookup the option object for the hardcoded hash 0x18b1887.
+// This matches the binary func_0x180190690 (used by several module onEnable/onDisable/onPreRender).
+inline void* getOption_0x18b1887(C_ClientInstance* client) {
+	if (client == nullptr) return nullptr;
+
+	auto options = *reinterpret_cast<void**>(reinterpret_cast<uintptr_t>(client) + 0x10);
+	if (options == nullptr) return nullptr;
+
+	auto lVar3 = reinterpret_cast<uintptr_t>(options);
+	auto bucketBegin = *reinterpret_cast<longlong**>(lVar3 + 0x48);
+	auto bucketEnd = *reinterpret_cast<longlong**>(lVar3 + 0x50);
+	int bucketCount = (int)((reinterpret_cast<uintptr_t>(bucketEnd) - reinterpret_cast<uintptr_t>(bucketBegin)) >> 3);
+	int index = (bucketCount - 1) & 0x18b1887;
+
+	auto plVar7 = bucketBegin + index;
+	auto lVar4 = *reinterpret_cast<longlong*>(lVar3 + 0x68);
+
+	longlong lVar6;
+	do {
+		if (*plVar7 == -1) return nullptr;
+		lVar6 = *plVar7 * 0x20;
+		plVar7 = reinterpret_cast<longlong*>(lVar4 + lVar6);
+	} while (*reinterpret_cast<int*>(lVar4 + 8 + lVar6) != 0x18b1887);
+
+	if (*reinterpret_cast<longlong*>(lVar3 + 0x70) == lVar4 + lVar6) return nullptr;
+
+	auto optionMap = *reinterpret_cast<longlong*>(lVar4 + lVar6 + 0x10);
+	if (optionMap == 0) return nullptr;
+
+	auto uVar1 = *reinterpret_cast<uint*>(reinterpret_cast<uintptr_t>(client) + 0x18);
+	auto uVar5 = (uVar1 & 0x3ffff) >> 0xb;
+
+	auto mapArrEnd = *reinterpret_cast<longlong**>(optionMap + 0x10);
+	auto mapArrBegin = *reinterpret_cast<longlong**>(optionMap + 8);
+	if (uVar5 >= (reinterpret_cast<uintptr_t>(mapArrEnd) - reinterpret_cast<uintptr_t>(mapArrBegin)) >> 3)
+		return nullptr;
+
+	auto lVar4b = *reinterpret_cast<longlong*>(mapArrBegin + uVar5);
+	if (lVar4b == 0) return nullptr;
+
+	auto uVar2 = *reinterpret_cast<uint*>(lVar4b + (uVar1 & 0x7ff) * 4);
+	if (((uVar1 & 0xfffc0000) ^ uVar2) >= 0x3ffff) return nullptr;
+
+	auto valueArr = *reinterpret_cast<longlong**>(optionMap + 0x50);
+	return reinterpret_cast<void*>((uVar2 & 0x3ff) * 100 + valueArr[(uVar2 & 0x3fc00) >> 7]);
+}
+
+// Helper: extract the key code from an input event object.
+// Matches func_0x1801106e0: event->vftable[1]()
+inline int getEventKey(void* event) {
+	if (event == nullptr) return -1;
+	auto vtable = *reinterpret_cast<void***>(event);
+	auto fn = reinterpret_cast<int (*)(void*)>(vtable[1]);
+	return fn(event);
+}
+
+// Helper: call the option setter virtual on the object at client + 0x1d8 (world/level settings).
+// Matches func_0x1801198e0: obj->vftable[0x5e0](obj, value, hash, 0x291794c44cb25c52)
+inline void setOption(void* options, uint32_t value, uint64_t hash) {
+	if (options == nullptr) return;
+	auto vtable = *reinterpret_cast<void***>(options);
+	auto fn = reinterpret_cast<void (*)(void*, uint32_t, uint64_t, uint64_t)>(vtable[0x5e0 / sizeof(void*)]);
+	fn(options, value, hash, 0x291794c44cb25c52);
+}

@@ -7,7 +7,7 @@ AntiVoid::AntiVoid() : IModule(0, Category::MOVEMENT, "Automatically teleports y
 AntiVoid::~AntiVoid() {
 }
 
-const char* AntiVoid::getModuleName() {
+std::string AntiVoid::getModuleName() {
 	return ("AntiVoid");
 }
 

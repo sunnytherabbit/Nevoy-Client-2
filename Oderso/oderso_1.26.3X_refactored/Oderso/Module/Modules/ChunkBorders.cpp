@@ -18,48 +18,48 @@ ChunkBorders::ChunkBorders() : IModule(0, Category::VISUAL, "Shows chunk borders
 	registerFloatSetting("Icon size", &iconSize, 1.f, 0.1f, 5.f);
 }
 
-const char* ChunkBorders::getModuleName() { return "ChunkBorders"; }
-
-void ChunkBorders::onLevelRender() {
-	if (!chunkBorders || g_Data.getLocalPlayer() == nullptr) return;
-
-	auto cameraMgr = g_Data.getClientInstance()->getCameraManager();
-	if (cameraMgr == nullptr) return;
-	auto cam = cameraMgr->getCameraOrDebugCamera();
-	if (cam == nullptr) return;
-
-	vec3_t forward{};
-	cam->getForwardVector(&forward);
-	g_Data.getClientInstance()->levelRenderer->origin.add(forward.mul(0.2f));
-
-	vec3_t* pos = g_Data.getLocalPlayer()->getPos();
-	int chunkX = (int)floorf(pos->x / 16.f);
-	int chunkZ = (int)floorf(pos->z / 16.f);
-
-	int r = radius;
-	if (r < 1) r = 1;
-	float h = size;
-
-	DrawUtils::setColor(0, 255, 0, 1);  // green chunk borders
-
-	for (int dx = -r; dx <= r; ++dx) {
-		float x1 = (float)((chunkX + dx) * 16);
-		for (int dz = -r; dz <= r; ++dz) {
-			float z1 = (float)((chunkZ + dz) * 16);
-			// Draw the four vertical corners of this chunk
-			vec3_t corners[4] = {
-				vec3_t(x1, pos->y - h, z1),
-				vec3_t(x1 + 16.f, pos->y - h, z1),
-				vec3_t(x1 + 16.f, pos->y - h, z1 + 16.f),
-				vec3_t(x1, pos->y - h, z1 + 16.f)};
-			for (int i = 0; i < 4; ++i) {
-				int j = (i + 1) % 4;
-				DrawUtils::drawLine3d(corners[i], corners[j]);
-				DrawUtils::drawLine3d(corners[i].add(0, h * 2.f, 0), corners[j].add(0, h * 2.f, 0));
-				DrawUtils::drawLine3d(corners[i], corners[i].add(0, h * 2.f, 0));
-			}
-		}
-	}
-
-	DrawUtils::flush();
+std::string ChunkBorders::getModuleName() { return "Chunk Borders"; }
+std::string ChunkBorders::getTooltip() { 
+	// Binary function: func_0x1801cdc60
+	return "Shows chunk borders and slime chunks.";
 }
+
+void ChunkBorders::onEnable() {
+	// Binary function: func_0x1801cde00
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using EnableFunc = void(*)(void*);
+	reinterpret_cast<EnableFunc>(mod->ptrBase + 0x1cde00)(this);
+}
+
+void ChunkBorders::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
+	// Binary function: func_0x1801cdf40
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using PostRenderFunc = void(*)(void*);
+	reinterpret_cast<PostRenderFunc>(mod->ptrBase + 0x1cdf40)(this);
+}
+
+void ChunkBorders::onLoadConfig(void* conf) {
+	// Binary function: func_0x180135130
+	// NOTE: custom logic not yet ported; calling base for now
+	IModule::onLoadConfig(conf);
+}
+
+void ChunkBorders::onSaveConfig(void* conf) {
+	// Binary function: func_0x180135c90
+	// NOTE: custom logic not yet ported; calling base for now
+	IModule::onSaveConfig(conf);
+}
+
+void ChunkBorders::toggle(void* event, bool* cancel) {
+	// Binary function: func_0x1801cf370
+	if (event == nullptr || cancel == nullptr)
+		return;
+
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using ToggleFunc = void(*)(void*, void*, bool*);
+	reinterpret_cast<ToggleFunc>(mod->ptrBase + 0x1cf370)(this, event, cancel);
+}
+

@@ -9,21 +9,21 @@ OdersoCompass::OdersoCompass() : IModule(0, Category::VISUAL, "Displays a compas
 	registerFloatSetting("Size", &size, 1.f, 0.1f, 3.f);
 }
 
-const char* OdersoCompass::getModuleName() { return "Compass"; }
-
-void OdersoCompass::onPostRender(C_MinecraftUIRenderContext* renderCtx) {
-	C_LocalPlayer* player = g_Data.getLocalPlayer();
-	if (player == nullptr || size <= 0.f) return;
-
-	float yaw = player->yaw;
-	float angle = fmodf(-yaw + 3600.f, 360.f);
-	const char* dirs[] = {"S", "SW", "W", "NW", "N", "NE", "E", "SE"};
-	int idx = (int)((angle + 22.5f) / 45.f) % 8;
-
-	std::string text = dirs[idx];
-	vec2_t windowSize = g_Data.getClientInstance()->getGuiData()->windowSize;
-	float textWidth = DrawUtils::getTextWidth(&text, size);
-	vec2_t pos = vec2_t(windowSize.x / 2.f - textWidth / 2.f, 30.f * size);
-
-	DrawUtils::drawText(pos, &text, MC_Color(255, 255, 255), size);
+std::string OdersoCompass::getModuleName() { return "Compass"; }
+std::string OdersoCompass::getTooltip() { 
+	// Binary function: func_0x180320c20
+	return "Displays a compass.";
 }
+
+void OdersoCompass::onLoadConfig(void* conf) {
+	// Binary function: func_0x180135130
+	// NOTE: custom logic not yet ported; calling base for now
+	IModule::onLoadConfig(conf);
+}
+
+void OdersoCompass::onSaveConfig(void* conf) {
+	// Binary function: func_0x180135c90
+	// NOTE: custom logic not yet ported; calling base for now
+	IModule::onSaveConfig(conf);
+}
+

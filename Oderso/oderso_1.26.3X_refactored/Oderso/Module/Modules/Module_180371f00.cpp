@@ -4,4 +4,4 @@ Module_180371f00::Module_180371f00() : IModule(0, Category::CUSTOM, "Module_1803
 	// No settings extracted yet
 }
 
-const char* Module_180371f00::getModuleName() { return "Module_180371f00"; }
+std::string Module_180371f00::getModuleName() { return "Module_180371f00"; }

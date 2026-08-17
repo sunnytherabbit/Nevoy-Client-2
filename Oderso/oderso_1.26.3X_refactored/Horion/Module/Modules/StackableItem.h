@@ -6,6 +6,6 @@ public:
 	StackableItem();
 	~StackableItem();
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	virtual void onTick(C_GameMode* gm) override;
 };

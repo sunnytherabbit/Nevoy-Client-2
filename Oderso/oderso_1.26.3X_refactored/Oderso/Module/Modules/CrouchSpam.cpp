@@ -4,21 +4,27 @@
 #include "../../../Memory/GameData.h"
 
 CrouchSpam::CrouchSpam() : IModule(0, Category::MOVEMENT, "Crouch Spam.") {
-	// No settings extracted yet
+	registerIntSetting("Delay", &delay, 5, 1, 60);
 }
 
-const char* CrouchSpam::getModuleName() { return "CrouchSpam"; }
+std::string CrouchSpam::getModuleName() { return "CrouchSpam"; }
+std::string CrouchSpam::getTooltip() { return "Spams crouch."; }
 
-void CrouchSpam::onTick(C_GameMode* gm) {
-	C_LocalPlayer* player = g_Data.getLocalPlayer();
-	if (player == nullptr) return;
-	auto input = g_Data.getClientInstance()->getMoveTurnInput();
-	if (input == nullptr) return;
+void CrouchSpam::onPreRender(C_MinecraftUIRenderContext* renderCtx) {
+	// Binary function: func_0x180195140
+	this->counter++;
+	if (this->delay <= this->counter) {
+		auto client = g_Data.getClientInstance();
+		if (client == nullptr) {
+			// Unmapped global side-effect: DAT_180840a68 = 0;
+			return;
+		}
 
-	static int counter = 0;
-	if (++counter >= 2) {
-		counter = 0;
-		input->isSneakDown = !input->isSneakDown;
+		auto input = client->getMoveTurnInput();
+		if (input != nullptr)
+			input->isSneakDown ^= 1;
+
+		this->counter = 0;
 	}
 }
 
@@ -27,3 +33,4 @@ void CrouchSpam::onDisable() {
 	if (input != nullptr)
 		input->isSneakDown = false;
 }
+

@@ -7,7 +7,7 @@ AirJump::AirJump() : IModule('G', Category::MOVEMENT, "Jump even you're not on t
 AirJump::~AirJump() {
 }
 
-const char* AirJump::getModuleName() {
+std::string AirJump::getModuleName() {
 	return ("AirJump");
 }
 

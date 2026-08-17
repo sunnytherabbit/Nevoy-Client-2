@@ -9,5 +9,5 @@ public:
 	~NoFriends();
 
 	// Inherited via IModule
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 };

@@ -7,6 +7,6 @@ HighJump::HighJump() : IModule(0, Category::MOVEMENT, "Jump higher than ever bef
 HighJump::~HighJump() {
 }
 
-const char* HighJump::getModuleName() {
+std::string HighJump::getModuleName() {
 	return ("HighJump");
 }

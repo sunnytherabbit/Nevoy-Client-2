@@ -9,17 +9,20 @@ public:
 	Module_1802cfa50();
 	~Module_1802cfa50() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) override;	
+	virtual void onEnable() override;	virtual std::string getTooltip() override;
+	virtual void slot_15() override;
+	virtual void toggle(void* event = nullptr, bool* cancel = nullptr) override;
 
 	int radius = 0;
 	bool litColor = false;
 	bool showLightLevel = false;
+
+	// padding to match binary layout up to 0xe0
+	char _binaryPadding[0x58];
 };
 
 #endif

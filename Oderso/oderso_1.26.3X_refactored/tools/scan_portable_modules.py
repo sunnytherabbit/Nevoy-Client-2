@@ -107,10 +107,14 @@ def main():
                     break
                 if in_func:
                     body += line
-        m2 = re.search(r"\*\w+\s*=\s*&(PTR_LAB_|PTR_FUN_|PTR_|LAB_)([0-9a-fA-F]+)", body)
+        m2 = re.search(r"^\s*\*\s*param_1\s*=\s*(?:\([^)]*\))?&([^;\n]+)", body, re.MULTILINE)
         if not m2:
             continue
-        vtable_va = int(m2.group(2), 16)
+        label = m2.group(1)
+        tokens = re.findall(r"(?:0x)?([0-9a-fA-F]{6,})", label)
+        if not tokens:
+            continue
+        vtable_va = int(tokens[-1], 16)
         vtable = read_vtable(pe, vtable_va, len(SLOTS))
         if not vtable:
             continue

@@ -1,0 +1,179 @@
+Module: ChunkBorders
+Vtable VA: 0x1806bb4f0 -> file offset 0x6ba8f0
+
+[ 0] destructor      func_0x1802189c0  calls=  3 strings=  0 dat=  0 winapi=  0
+[ 1] getModuleName   func_0x1801cdb10  calls=  6 strings=  1 dat=  0 winapi=  0  <-- override?
+[ 2] getRawModuleName func_0x1801d4de0  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 3] getTooltip      func_0x1801cdc60  calls=  7 strings=  1 dat=  0 winapi=  0  <-- override?
+[ 4] getKeybind      func_0x1801d4f90  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 5] setKeybind      func_0x1801d4fa0  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 6] allowAutoStart  func_0x18008cb60  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 7] onTick          func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 8] onPreRender     func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 9] onKeyUpdate     func_0x1801d4fb0  calls=  9 strings=  0 dat=  3 winapi=  0  <-- override?
+[10] onAttack        func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[11] onEnable        func_0x1801cde00  calls=  2 strings=  0 dat=  0 winapi=  0
+[12] onDisable       func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[13] onPostRender    func_0x1801cdf40  calls= 17 strings=  1 dat=  8 winapi=  0  <-- override?
+[14] onLevelRender   func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[15] onLoadConfig    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[16] onSaveConfig    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[17] isFlashMode     func_0x180135130  calls= 15 strings=  1 dat=  1 winapi=  0  <-- override?
+[18] setEnabled      func_0x180135c90  calls= 17 strings=  1 dat=  0 winapi=  0  <-- override?
+[19] toggle          func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[20] isEnabled       func_0x1800ad860  calls=  1 strings=  0 dat=  0 winapi=  0
+[21] onSendPacket    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[22] callWhenDisabled func_0x1801cf370  calls=  4 strings=  0 dat=  2 winapi=  0  <-- override?
+[23] onMove          func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[24] slot_24         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[25] slot_25         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[26] slot_26         func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[27] slot_27         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[28] slot_28         func_0x18008cb60  calls=  1 strings=  0 dat=  0 winapi=  0
+[29] slot_29         func_0x1801da3f0  calls= 10 strings=  0 dat=  4 winapi=  0  <-- override?
+[30] slot_30         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[31] slot_31         func_0x1801db030  calls= 10 strings=  0 dat=  4 winapi=  0  <-- override?
+
+Module: Module_1801380b0
+Vtable VA: 0x1806b6e00 -> file offset 0x6b6200
+
+[ 0] destructor      func_0x1801c2280  calls=  3 strings=  0 dat=  0 winapi=  0
+[ 1] getModuleName   func_0x1801422c0  calls=  6 strings=  1 dat=  1 winapi=  0  <-- override?
+[ 2] getRawModuleName func_0x1801d4de0  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 3] getTooltip      func_0x180142430  calls=  8 strings=  1 dat=  0 winapi=  0  <-- override?
+[ 4] getKeybind      func_0x1801d4f90  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 5] setKeybind      func_0x1801d4fa0  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 6] allowAutoStart  func_0x18008cb60  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 7] onTick          func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 8] onPreRender     func_0x180143d70  calls= 14 strings=  0 dat=  4 winapi=  0  <-- override?
+[ 9] onKeyUpdate     func_0x1801d4fb0  calls=  9 strings=  0 dat=  3 winapi=  0  <-- override?
+[10] onAttack        func_0x180148e10  calls=  3 strings=  0 dat=  0 winapi=  0
+[11] onEnable        func_0x1801425c0  calls= 22 strings=  1 dat=  4 winapi=  0  <-- override?
+[12] onDisable       func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[13] onPostRender    func_0x1801443d0  calls=  1 strings=  0 dat=  3 winapi=  0  <-- override?
+[14] onLevelRender   func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[15] onLoadConfig    func_0x180144470  calls= 71 strings=  1 dat= 10 winapi=  0  <-- override?
+[16] onSaveConfig    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[17] isFlashMode     func_0x1801d5d90  calls= 31 strings=  1 dat=  5 winapi=  0  <-- override?
+[18] setEnabled      func_0x1801d8b10  calls= 20 strings=  1 dat=  0 winapi=  0  <-- override?
+[19] toggle          func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[20] isEnabled       func_0x1800ad860  calls=  1 strings=  0 dat=  0 winapi=  0
+[21] onSendPacket    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[22] callWhenDisabled func_0x180148c20  calls=  8 strings=  0 dat=  1 winapi=  0  <-- override?
+[23] onMove          func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[24] slot_24         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[25] slot_25         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[26] slot_26         func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[27] slot_27         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[28] slot_28         func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[29] slot_29         func_0x1801da3f0  calls= 10 strings=  0 dat=  4 winapi=  0  <-- override?
+[30] slot_30         func_0x180148ec0  calls=  3 strings=  0 dat=  0 winapi=  0
+[31] slot_31         func_0x1801db030  calls= 10 strings=  0 dat=  4 winapi=  0  <-- override?
+
+Module: Module_1801a2840
+Vtable VA: 0x1806b8b80 -> file offset 0x6b7f80
+
+[ 0] destructor      func_0x1801c2780  calls=  5 strings=  0 dat=  0 winapi=  0
+[ 1] getModuleName   func_0x1801a4a10  calls=  6 strings=  1 dat=  0 winapi=  0  <-- override?
+[ 2] getRawModuleName func_0x1801d4de0  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 3] getTooltip      func_0x1801a4b70  calls=  8 strings=  1 dat=  0 winapi=  0  <-- override?
+[ 4] getKeybind      func_0x1801d4f90  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 5] setKeybind      func_0x1801d4fa0  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 6] allowAutoStart  func_0x18008cb60  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 7] onTick          func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 8] onPreRender     func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 9] onKeyUpdate     func_0x1801d4fb0  calls=  9 strings=  0 dat=  3 winapi=  0  <-- override?
+[10] onAttack        func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[11] onEnable        func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[12] onDisable       func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[13] onPostRender    func_0x1801a4d00  calls= 34 strings=  1 dat=  3 winapi=  0  <-- override?
+[14] onLevelRender   func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[15] onLoadConfig    func_0x1801a72d0  calls= 36 strings=  1 dat=  6 winapi=  0  <-- override?
+[16] onSaveConfig    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[17] isFlashMode     func_0x1801a9500  calls= 24 strings=  1 dat=  3 winapi=  0  <-- override?
+[18] setEnabled      func_0x1801ad530  calls= 20 strings=  1 dat=  0 winapi=  0  <-- override?
+[19] toggle          func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[20] isEnabled       func_0x1800ad860  calls=  1 strings=  0 dat=  0 winapi=  0
+[21] onSendPacket    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[22] callWhenDisabled func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[23] onMove          func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[24] slot_24         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[25] slot_25         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[26] slot_26         func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[27] slot_27         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[28] slot_28         func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[29] slot_29         func_0x1801da3f0  calls= 10 strings=  0 dat=  4 winapi=  0  <-- override?
+[30] slot_30         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[31] slot_31         func_0x1801db030  calls= 10 strings=  0 dat=  4 winapi=  0  <-- override?
+
+Module: Module_1802fc040
+Vtable VA: 0x1806c4650 -> file offset 0x6c3a50
+
+[ 0] destructor      func_0x180371950  calls=  5 strings=  0 dat=  0 winapi=  0
+[ 1] getModuleName   func_0x180311ac0  calls=  6 strings=  1 dat=  0 winapi=  0  <-- override?
+[ 2] getRawModuleName func_0x1801d4de0  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 3] getTooltip      func_0x180311c10  calls=  8 strings=  1 dat=  0 winapi=  0  <-- override?
+[ 4] getKeybind      func_0x1801d4f90  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 5] setKeybind      func_0x1801d4fa0  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 6] allowAutoStart  func_0x18008cb60  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 7] onTick          func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 8] onPreRender     func_0x180313170  calls=  8 strings=  0 dat=  3 winapi=  0  <-- override?
+[ 9] onKeyUpdate     func_0x1801d4fb0  calls=  9 strings=  0 dat=  3 winapi=  0  <-- override?
+[10] onAttack        func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[11] onEnable        func_0x180311da0  calls= 19 strings=  1 dat=  6 winapi=  0  <-- override?
+[12] onDisable       func_0x180312f20  calls= 10 strings=  1 dat=  7 winapi=  0  <-- override?
+[13] onPostRender    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[14] onLevelRender   func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[15] onLoadConfig    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[16] onSaveConfig    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[17] isFlashMode     func_0x1803138b0  calls=  2 strings=  0 dat=  0 winapi=  0
+[18] setEnabled      func_0x1801d8b10  calls= 20 strings=  1 dat=  0 winapi=  0  <-- override?
+[19] toggle          func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[20] isEnabled       func_0x1800ad860  calls=  1 strings=  0 dat=  0 winapi=  0
+[21] onSendPacket    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[22] callWhenDisabled func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[23] onMove          func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[24] slot_24         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[25] slot_25         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[26] slot_26         func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[27] slot_27         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[28] slot_28         func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[29] slot_29         func_0x1801da3f0  calls= 10 strings=  0 dat=  4 winapi=  0  <-- override?
+[30] slot_30         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[31] slot_31         func_0x1801db030  calls= 10 strings=  0 dat=  4 winapi=  0  <-- override?
+
+Module: Module_180360610
+Vtable VA: 0x1806c5a40 -> file offset 0x6c4e40
+
+[ 0] destructor      func_0x180371d20  calls=  4 strings=  0 dat=  0 winapi=  0
+[ 1] getModuleName   func_0x180361ff0  calls=  6 strings=  1 dat=  1 winapi=  0  <-- override?
+[ 2] getRawModuleName func_0x1801d4de0  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 3] getTooltip      func_0x180362160  calls=  8 strings=  1 dat=  0 winapi=  0  <-- override?
+[ 4] getKeybind      func_0x1801d4f90  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 5] setKeybind      func_0x1801d4fa0  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 6] allowAutoStart  func_0x18008cb60  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 7] onTick          func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[ 8] onPreRender     func_0x180362330  calls= 10 strings=  0 dat=  3 winapi=  0  <-- override?
+[ 9] onKeyUpdate     func_0x1801d4fb0  calls=  9 strings=  0 dat=  3 winapi=  0  <-- override?
+[10] onAttack        func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[11] onEnable        func_0x1803622f0  calls=  1 strings=  0 dat=  0 winapi=  0
+[12] onDisable       func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[13] onPostRender    func_0x1803635e0  calls=  1 strings=  0 dat=  3 winapi=  0  <-- override?
+[14] onLevelRender   func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[15] onLoadConfig    func_0x180362b00  calls= 12 strings=  0 dat=  2 winapi=  0  <-- override?
+[16] onSaveConfig    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[17] isFlashMode     func_0x1801d5d90  calls= 31 strings=  1 dat=  5 winapi=  0  <-- override?
+[18] setEnabled      func_0x1801d8b10  calls= 20 strings=  1 dat=  0 winapi=  0  <-- override?
+[19] toggle          func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[20] isEnabled       func_0x1800ad860  calls=  1 strings=  0 dat=  0 winapi=  0
+[21] onSendPacket    func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[22] callWhenDisabled func_0x180363450  calls=  3 strings=  0 dat=  3 winapi=  0  <-- override?
+[23] onMove          func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[24] slot_24         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[25] slot_25         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[26] slot_26         func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[27] slot_27         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[28] slot_28         func_0x180088ba0  calls=  1 strings=  0 dat=  0 winapi=  0
+[29] slot_29         func_0x1801da3f0  calls= 10 strings=  0 dat=  4 winapi=  0  <-- override?
+[30] slot_30         func_0x18008c310  calls=  1 strings=  0 dat=  0 winapi=  0
+[31] slot_31         func_0x1801db030  calls= 10 strings=  0 dat=  4 winapi=  0  <-- override?

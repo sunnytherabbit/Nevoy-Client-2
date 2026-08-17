@@ -6,7 +6,7 @@ public:
 	~NoPacket();
 
 	// Inherited via IModule
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	bool allowAutoStart() override;
 	void onEnable() override;
 };

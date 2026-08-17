@@ -6,7 +6,7 @@ Phase::Phase() : IModule('I', Category::MOVEMENT, "Walk through walls") {
 Phase::~Phase() {
 }
 
-const char* Phase::getModuleName() {
+std::string Phase::getModuleName() {
 	return ("Phase");
 }
 

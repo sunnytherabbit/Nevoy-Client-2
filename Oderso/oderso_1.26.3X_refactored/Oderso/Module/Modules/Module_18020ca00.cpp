@@ -4,4 +4,9 @@ Module_18020ca00::Module_18020ca00() : IModule(0, Category::CUSTOM, "Module_1802
 	// No settings extracted yet
 }
 
-const char* Module_18020ca00::getModuleName() { return "Module_18020ca00"; }
+std::string Module_18020ca00::getModuleName() { return "Module_18020ca00"; }
+std::string Module_18020ca00::getTooltip() { 
+	// Binary function: func_0x18020d330
+	return "";
+}
+

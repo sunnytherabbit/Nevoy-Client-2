@@ -13,7 +13,7 @@ Fucker::Fucker() : IModule(VK_NUMPAD9, Category::MISC, "Destroys certain blocks 
 Fucker::~Fucker() {
 }
 
-const char* Fucker::getModuleName() {
+std::string Fucker::getModuleName() {
 	return ("Fucker");
 }
 

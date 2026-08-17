@@ -4,4 +4,17 @@ Module_180136cd0::Module_180136cd0() : IModule(0, Category::CUSTOM, "Module_1801
 	// No settings extracted yet
 }
 
-const char* Module_180136cd0::getModuleName() { return "Module_180136cd0"; }
+std::string Module_180136cd0::getModuleName() { return "Module_180136cd0"; }
+std::string Module_180136cd0::getTooltip() { 
+	// Binary function: func_0x180137090
+	return "";
+}
+
+void Module_180136cd0::onEnable() {
+	// Binary function: func_0x180137230
+	auto mod = g_Data.getModule();
+	if (mod == nullptr) return;
+	using EnableFunc = void(*)(void*);
+	reinterpret_cast<EnableFunc>(mod->ptrBase + 0x137230)(this);
+}
+

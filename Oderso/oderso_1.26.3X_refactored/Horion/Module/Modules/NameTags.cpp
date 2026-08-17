@@ -30,7 +30,7 @@ NameTags::NameTags() : IModule(0, Category::VISUAL, "Displays the name of every 
 NameTags::~NameTags() {
 }
 
-const char* NameTags::getModuleName() {
+std::string NameTags::getModuleName() {
 	return ("NameTags");
 }
 

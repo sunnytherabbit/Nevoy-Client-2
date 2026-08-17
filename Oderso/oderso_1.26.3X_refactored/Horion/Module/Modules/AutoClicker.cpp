@@ -11,7 +11,7 @@ AutoClicker::AutoClicker() : IModule(0, Category::COMBAT, "A simple autoclicker,
 AutoClicker::~AutoClicker() {
 }
 
-const char* AutoClicker::getModuleName() {
+std::string AutoClicker::getModuleName() {
 	return ("AutoClicker");
 }
 

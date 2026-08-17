@@ -6,6 +6,6 @@ NoSwing::NoSwing() : IModule(0, Category::PLAYER, "Disable arm swing animation")
 NoSwing::~NoSwing() {
 }
 
-const char* NoSwing::getModuleName() {
+std::string NoSwing::getModuleName() {
 	return ("NoSwing");
 }

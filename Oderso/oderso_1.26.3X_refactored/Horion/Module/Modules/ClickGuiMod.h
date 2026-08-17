@@ -10,7 +10,7 @@ public:
 
 	// Inherited via IModule
 	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) override;
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 	virtual void onDisable() override;
 	virtual void onEnable() override;
 	virtual bool allowAutoStart() override;

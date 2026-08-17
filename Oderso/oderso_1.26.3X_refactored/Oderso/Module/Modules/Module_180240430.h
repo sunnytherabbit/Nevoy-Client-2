@@ -9,15 +9,15 @@ public:
 	Module_180240430();
 	~Module_180240430() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual void onEnable() override;
+	virtual void onDisable() override;
+	virtual std::string getTooltip() override;
 
-	// No settings extracted yet
+	float savedReach = 0.f;    // 0x80: original reach value stored on enable
+	float reachValue = 3.f;    // 0x84: user reach setting
 };
 
 #endif

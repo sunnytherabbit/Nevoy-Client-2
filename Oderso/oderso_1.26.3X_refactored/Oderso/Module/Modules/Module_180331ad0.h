@@ -9,18 +9,24 @@ public:
 	Module_180331ad0();
 	~Module_180331ad0() {}
 
-	virtual const char* getModuleName() override;
+	virtual std::string getModuleName() override;
 
-	virtual void onTick(C_GameMode* gameMode) {}
-	virtual void onPreRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) {}
-	virtual void onEnable() {}
-	virtual void onDisable() {}
+	virtual void onPostRender(C_MinecraftUIRenderContext* renderCtx) override;
+	virtual void onEnable() override;
+	virtual void onDisable() override;
+	virtual std::string getTooltip() override;
+	virtual void onLoadConfig(void* conf) override;
+	virtual void onSaveConfig(void* conf) override;
 
 	bool crosshairPng = false;
 	bool customCrosshair = false;
 	bool customColor = false;
 	bool hitHelp = false;
+
+	// Used by onPostRender to avoid patching every frame.
+	bool lastCrosshairPng = false;
+
+	char _binaryPadding[0xf0];
 };
 
 #endif
