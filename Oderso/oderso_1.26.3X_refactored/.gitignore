@@ -23,3 +23,6 @@ CppProperties.json
 *.tmp
 *.cache
 *.log
+__pycache__/
+*.pyc
+.trash/
