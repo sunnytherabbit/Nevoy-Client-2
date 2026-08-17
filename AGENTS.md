@@ -46,3 +46,9 @@ Target DLL for parity: `Oderso/1.26.3X.dll`.
   - Verified the tree (`VERIFICATION.md`): 5 legacy TODOs (none in module sources), 0 stray `func_0x` calls, 0 broken braces in project source.
   - Verified/corrected module naming (`NAMING_REPORT.md`): 0 critical naming issues; fixed `Module_18021f300` non-printable module/setting names.
 - **Remaining work:** detailed in `REMAINING_WORK.md`. High level: 0 `// TODO` markers remain in module sources, the MinGW build reaches 100% and produces `build-mingw/lib1.26.3X.dll`. `Module_180156800` is still flagged as invalid vtable in `tools/misaligned_modules.txt` (likely false positive). Next priorities are runtime parity validation, MSVC-specific build verification, and optional cleanup of untracked `__pycache__`/`temp_bin`.
+
+## Agent execution rules
+
+- Run at most **6 subagents in parallel** to avoid platform rate limits and give each agent enough context.
+- If the subagent tool is rate-limited, fall back to manual/scripted passes and retry once the limit resets.
+- Always verify the MinGW build after any batch of module edits before committing.
