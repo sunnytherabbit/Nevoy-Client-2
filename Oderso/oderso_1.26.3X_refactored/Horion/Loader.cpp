@@ -308,6 +308,9 @@ DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
 #endif
 
 DWORD WINAPI start(LPVOID lpParam) {
+#ifdef ODERSO_DEBUG_POPUPS
+	MessageBoxA(NULL, "Oderso injected — start() running", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
+#endif
 	logF("Starting up...");
 	logF("MSC v%i at %s", _MSC_VER, __TIMESTAMP__);
 
@@ -319,9 +322,17 @@ DWORD WINAPI start(LPVOID lpParam) {
 	DWORD procId = GetCurrentProcessId();
 	if (!mem.Open(procId, SlimUtils::ProcessAccess::Full)) {
 		logF("Failed to open process, error-code: %i", GetLastError());
+#ifdef ODERSO_DEBUG_POPUPS
+		MessageBoxA(NULL, "Oderso: mem.Open failed — check process permissions", "Oderso Debug", MB_OK | MB_ICONERROR);
+#endif
 		return 1;
 	}
 	gameModule = mem.GetModule(L"Minecraft.Windows.exe");  // Get Module for Base Address
+#ifdef ODERSO_DEBUG_POPUPS
+	if (gameModule == nullptr) {
+		MessageBoxA(NULL, "Oderso: Minecraft.Windows.exe module not found", "Oderso Debug", MB_OK | MB_ICONERROR);
+	}
+#endif
 
 	MH_Initialize();
 	GameData::initGameData(gameModule, &mem, (HMODULE)lpParam);
@@ -368,6 +379,10 @@ DWORD WINAPI start(LPVOID lpParam) {
 	countThread.detach();
 
 	logF("Count thread started");
+
+#ifdef ODERSO_DEBUG_POPUPS
+	MessageBoxA(NULL, "Oderso initialized — press Insert to open the menu", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
+#endif
 
 	ExitThread(0);
 }

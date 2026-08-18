@@ -22,6 +22,8 @@ if (MINGW)
     add_compile_definitions("__int64=long long")
 endif()
 
+option(ODERSO_DEBUG_POPUPS "Show debug MessageBox popups during injection (useful for runtime verification)" OFF)
+
 include_directories(.)
 include_directories(include)
 include_directories(include/glm/)
@@ -400,5 +402,10 @@ target_link_libraries(Oderso PRIVATE
     winmm winhttp wininet ws2_32 shell32 version
     runtimeobject
 )
+
+if (ODERSO_DEBUG_POPUPS)
+    target_compile_definitions(Oderso PRIVATE ODERSO_DEBUG_POPUPS)
+    target_link_libraries(Oderso PRIVATE user32)
+endif()
 
 target_sources(Oderso PRIVATE ${Oderso_MODULE_SOURCES})
