@@ -7,6 +7,9 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
     add_compile_options(-Wno-dynamic-class-memaccess -Wno-microsoft-goto -Wno-delete-incomplete /EHsc /Ob1)
 elseif (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     add_compile_options(/MP /Ob1)
+    # Match the original working Oderso build: link the C/C++ runtime statically.
+    # This avoids needing VCRUNTIME140.dll / MSVCP140.dll inside the UWP process.
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 endif()
 
 add_compile_definitions(WIN32_LEAN_AND_MEAN)
@@ -402,6 +405,13 @@ target_link_libraries(Oderso PRIVATE
     winmm winhttp wininet ws2_32 shell32 version
     runtimeobject
 )
+
+if (MSVC)
+    # MinHook.x64.lib embeds a /DEFAULTLIB:MSVCRT directive. When we link the
+    # rest of the project with /MT (LIBCMT), the linker warns about the
+    # defaultlib conflict. Tell it to ignore the one from MinHook.
+    target_link_options(Oderso PRIVATE /NODEFAULTLIB:MSVCRT)
+endif()
 
 if (ODERSO_DEBUG_POPUPS)
     target_compile_definitions(Oderso PRIVATE ODERSO_DEBUG_POPUPS)
