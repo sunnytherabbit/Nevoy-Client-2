@@ -1,4 +1,5 @@
 #include <stdexcept>
+#include <cstring>
 #include "Loader.h"
 
 #ifdef ODERSO_DEBUG_POPUPS
@@ -9,12 +10,25 @@ static LONG WINAPI OdersoExceptionHandler(EXCEPTION_POINTERS* pExceptionInfo) {
 	if (code == 0x40010006 || code == 0x40010007 || code == 0x80000003 || code == 0x80000004 || code == 0xE06D7363)
 		return EXCEPTION_CONTINUE_SEARCH;
 
-	char msg[256];
-	sprintf_s(msg, "Oderso crash\nCode: 0x%08X\nAddress: %p\nFlags: 0x%08X",
+	void* addr = pExceptionInfo->ExceptionRecord->ExceptionAddress;
+	HMODULE hMod = nullptr;
+	char modName[128] = "unknown";
+	if (GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS, (LPCSTR)addr, &hMod)) {
+		GetModuleFileNameA(hMod, modName, sizeof(modName));
+		// basename only
+		char* p = strrchr(modName, '\\');
+		if (p) p++; else p = modName;
+		memmove(modName, p, strlen(p) + 1);
+	}
+
+	char msg[512];
+	sprintf_s(msg, "Oderso crash\nCode: 0x%08X\nAddress: %p\nModule: %s\nImageOffset: 0x%llX\nFlags: 0x%08X",
 		code,
-		pExceptionInfo->ExceptionRecord->ExceptionAddress,
+		addr,
+		modName,
+		hMod ? (uintptr_t)addr - (uintptr_t)hMod : 0,
 		pExceptionInfo->ExceptionRecord->ExceptionFlags);
-	MessageBoxA(NULL, msg, "Oderso Debug", MB_OK | MB_ICONERROR);
+	MessageBoxA(NULL, msg, "Oderso Debug", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
 	return EXCEPTION_CONTINUE_SEARCH;
 }
 #endif
