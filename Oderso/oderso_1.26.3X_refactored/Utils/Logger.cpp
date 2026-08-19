@@ -39,23 +39,23 @@ bool Logger::isActive() {
 std::wstring Logger::GetRoamingFolderPath() {
 	ComPtr<IApplicationDataStatics> appDataStatics;
 	auto hr = RoGetActivationFactory(HStringReference(L"Windows.Storage.ApplicationData").Get(), __uuidof(IApplicationDataStatics), &appDataStatics);
-	if (FAILED(hr)) throw std::runtime_error("Failed to retrieve application data statics");
+	if (FAILED(hr)) return std::wstring();
 
 	ComPtr<IApplicationData> appData;
 	hr = appDataStatics->get_Current(&appData);
-	if (FAILED(hr)) throw std::runtime_error("Failed to retrieve current application data");
+	if (FAILED(hr)) return std::wstring();
 
 	ComPtr<IStorageFolder> roamingFolder;
 	hr = appData->get_RoamingFolder(&roamingFolder);
-	if (FAILED(hr)) throw std::runtime_error("Failed to retrieve roaming folder");
+	if (FAILED(hr)) return std::wstring();
 
 	ComPtr<IStorageItem> folderItem;
 	hr = roamingFolder.As(&folderItem);
-	if (FAILED(hr)) throw std::runtime_error("Failed to cast roaming folder to IStorageItem");
+	if (FAILED(hr)) return std::wstring();
 
 	HString roamingPathHString;
 	hr = folderItem->get_Path(roamingPathHString.GetAddressOf());
-	if (FAILED(hr)) throw std::runtime_error("Failed to retrieve roaming folder path");
+	if (FAILED(hr)) return std::wstring();
 
 	uint32_t pathLength;
 	auto roamingPathCStr = roamingPathHString.GetRawBuffer(&pathLength);
@@ -74,6 +74,11 @@ void Logger::WriteLogFileF(volatile char* fmt, ...) {
 
 
 		std::wstring roam = GetRoamingFolderPath();
+		if (roam.empty()) {
+			loggerActive = false;
+			LeaveCriticalSection(&loggerLock);
+			return;
+		}
 		sprintf_s(logPath, 200, "%S\\logs.txt", roam.c_str());
 
 		try {
@@ -131,6 +136,11 @@ void Logger::WriteBigLogFileF(size_t maxSize, const char* fmt, ...) {
 		EnterCriticalSection(&loggerLock);
 
 		std::wstring roam = GetRoamingFolderPath();
+		if (roam.empty()) {
+			loggerActive = false;
+			LeaveCriticalSection(&loggerLock);
+			return;
+		}
 		sprintf_s(logPath, 200, "%S\\logs.txt", roam.c_str());
 
 		try {

@@ -336,6 +336,14 @@ DWORD WINAPI start(LPVOID lpParam) {
 
 	MH_Initialize();
 	GameData::initGameData(gameModule, &mem, (HMODULE)lpParam);
+
+	if (g_Data.getClientInstance() == nullptr || g_Data.getClientInstance()->loopbackPacketSender == nullptr) {
+#ifdef ODERSO_DEBUG_POPUPS
+		MessageBoxA(NULL, "Oderso: ClientInstance not ready", "Oderso Debug", MB_OK | MB_ICONERROR);
+#endif
+		return 1;
+	}
+
 	Target::init(g_Data.getPtrLocalPlayer());
 
 	Hooks::Init();
