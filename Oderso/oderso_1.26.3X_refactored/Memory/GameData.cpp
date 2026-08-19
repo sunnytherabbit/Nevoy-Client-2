@@ -103,16 +103,11 @@ void GameData::hide() {
 	g_Data.shouldHideB = !(g_Data.shouldHideB);
 }
 
-void GameData::updateGameData(C_Player* player) {
+void GameData::updateGameData(C_GameMode* gameMode) {
 	retrieveClientInstance();
+	g_Data.localPlayer = g_Data.getLocalPlayer();
 
-	if (player == nullptr)
-		return;
-
-	g_Data.localPlayer = static_cast<C_LocalPlayer*>(player);
-	C_GameMode* gameMode = *reinterpret_cast<C_GameMode**>(reinterpret_cast<__int64>(player) + 0x12E8);
-
-	if (gameMode != nullptr && gameMode->player == player) {  // GameMode::tick might also be run on the local server
+	if (g_Data.localPlayer != nullptr && gameMode != nullptr && gameMode->player == g_Data.localPlayer) {  // GameMode::tick might also be run on the local server
 		g_Data.gameMode = gameMode;
 		QueryPerformanceCounter(reinterpret_cast<LARGE_INTEGER*>(&g_Data.lastUpdate));
 

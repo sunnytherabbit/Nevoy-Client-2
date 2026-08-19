@@ -120,7 +120,7 @@ public:
 	static bool shouldHide();
 	static void hide();
 	static void terminate();
-	static void updateGameData(C_Player* player);
+	static void updateGameData(C_GameMode* gameMode);
 	static void initGameData(const SlimUtils::SlimModule* gameModule, SlimUtils::SlimMem* slimMem, void* hDllInst);
 	static void addChestToList(C_ChestBlockActor* ChestBlock2);
 	static void EntityList_tick(C_EntityList* list);

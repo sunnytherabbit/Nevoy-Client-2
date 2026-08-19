@@ -28,6 +28,23 @@ static LONG WINAPI OdersoExceptionHandler(EXCEPTION_POINTERS* pExceptionInfo) {
 		modName,
 		hMod ? (uintptr_t)addr - (uintptr_t)hMod : 0,
 		pExceptionInfo->ExceptionRecord->ExceptionFlags);
+
+	// Always write a persistent crash log so we can diagnose even when the UI is not ready.
+	{
+		char logPath[MAX_PATH] = "C:\\OdersoCrash.log";
+		DWORD written = 0;
+		HANDLE hLog = CreateFileA(logPath, FILE_APPEND_DATA, FILE_SHARE_READ, NULL, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+		if (hLog != INVALID_HANDLE_VALUE) {
+			SetFilePointer(hLog, 0, NULL, FILE_END);
+			char logMsg[1024];
+			int len = sprintf_s(logMsg, "[0x%08X] Addr=%p Module=%s ImageOffset=0x%llX Flags=0x%08X\r\n",
+				code, addr, modName, hMod ? (uintptr_t)addr - (uintptr_t)hMod : 0,
+				pExceptionInfo->ExceptionRecord->ExceptionFlags);
+			WriteFile(hLog, logMsg, (DWORD)len, &written, NULL);
+			CloseHandle(hLog);
+		}
+	}
+
 	MessageBoxA(NULL, msg, "Oderso Debug", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
 	return EXCEPTION_CONTINUE_SEARCH;
 }

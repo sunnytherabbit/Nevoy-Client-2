@@ -285,10 +285,9 @@ void* Hooks::Player_tickWorld(C_Player* _this, __int64 unk) {
 	auto o = oTick(_this, unk);
 
 	if (_this == g_Data.getLocalPlayer()) {
-		GameData::updateGameData(_this);
-		C_GameMode* gm = g_Data.getCGameMode();
-		if (gm != nullptr)
-			moduleMgr->onTick(gm);
+		C_GameMode* gm = *reinterpret_cast<C_GameMode**>(reinterpret_cast<__int64>(_this) + 0x12E8);
+		GameData::updateGameData(gm);
+		moduleMgr->onTick(gm);
 	}
 	return o;
 }

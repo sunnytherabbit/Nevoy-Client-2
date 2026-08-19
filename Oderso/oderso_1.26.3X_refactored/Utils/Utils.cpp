@@ -152,49 +152,33 @@ uintptr_t Utils::FindSignatureModule(const char* szModule, const char* szSignatu
 	const char* oldPat = pattern;
 
 	for (uintptr_t pCur = rangeStart; pCur < rangeEnd; pCur++) {
-		bool pageFault = false;
-#ifdef _MSC_VER
-		__try {
-#endif
-			if (!*pattern)
-				return firstMatch;
+		if (!*pattern)
+			return firstMatch;
 
-			while (*(PBYTE)pattern == ' ')
-				pattern++;
+		while (*(PBYTE)pattern == ' ')
+			pattern++;
 
-			if (!*pattern)
-				return firstMatch;
+		if (!*pattern)
+			return firstMatch;
 
-			if (oldPat != pattern) {
-				oldPat = pattern;
-				if (*(PBYTE)pattern != '\?')
-					patByte = GET_BYTE(pattern);
-			}
-
-			if (*(PBYTE)pattern == '\?' || *(BYTE*)pCur == patByte) {
-				if (!firstMatch)
-					firstMatch = pCur;
-
-				if (!pattern[2] || !pattern[1])
-					return firstMatch;
-
-				pattern += 2;
-			} else {
-				pattern = szSignature;
-				firstMatch = 0;
-			}
-#ifdef _MSC_VER
-		} __except (EXCEPTION_EXECUTE_HANDLER) {
-			pageFault = true;
+		if (oldPat != pattern) {
+			oldPat = pattern;
+			if (*(PBYTE)pattern != '\?')
+				patByte = GET_BYTE(pattern);
 		}
 
-		if (pageFault) {
+		if (*(PBYTE)pattern == '\?' || *(BYTE*)pCur == patByte) {
+			if (!firstMatch)
+				firstMatch = pCur;
+
+			if (!pattern[2] || !pattern[1])
+				return firstMatch;
+
+			pattern += 2;
+		} else {
 			pattern = szSignature;
 			firstMatch = 0;
-			pCur = ((pCur + 0x1000) & ~0xFFF) - 1;
-			continue;
 		}
-#endif
 	}
 #ifdef _DEBUG
 #ifdef __clang__
