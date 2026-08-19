@@ -3,9 +3,14 @@
 
 #ifdef ODERSO_DEBUG_POPUPS
 static LONG WINAPI OdersoExceptionHandler(EXCEPTION_POINTERS* pExceptionInfo) {
+	DWORD code = pExceptionInfo->ExceptionRecord->ExceptionCode;
+	// Ignore non-fatal debug-string exceptions (OutputDebugStringA) and single-step/breakpoints.
+	if (code == 0x40010006 || code == 0x40010007 || code == 0x80000003 || code == 0x80000004)
+		return EXCEPTION_CONTINUE_SEARCH;
+
 	char msg[256];
 	sprintf_s(msg, "Oderso crash\nCode: 0x%08X\nAddress: %p\nFlags: 0x%08X",
-		pExceptionInfo->ExceptionRecord->ExceptionCode,
+		code,
 		pExceptionInfo->ExceptionRecord->ExceptionAddress,
 		pExceptionInfo->ExceptionRecord->ExceptionFlags);
 	MessageBoxA(NULL, msg, "Oderso Debug", MB_OK | MB_ICONERROR);
@@ -24,6 +29,7 @@ bool isRunning = true;
 #endif
 
 DWORD WINAPI keyThread(LPVOID lpParam) {
+	try {
 	logF("Key thread started");
 
 	bool* keyMap = static_cast<bool*>(malloc(0xFF * 4 + 0x4));
@@ -74,9 +80,14 @@ DWORD WINAPI keyThread(LPVOID lpParam) {
 	Sleep(200);  // Give the threads a bit of time to exit
 
 	FreeLibraryAndExitThread(static_cast<HMODULE>(lpParam), 1);  // Uninject
+	} catch (const std::exception& e) {
+		MessageBoxA(NULL, e.what(), "Oderso keyThread exception", MB_OK | MB_ICONERROR);
+		FreeLibraryAndExitThread(static_cast<HMODULE>(lpParam), 1);
+	}
 }
 
 DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
+	try {
 	logF("Injector Connection Thread started");
 
 	struct MemoryBoi {
@@ -313,6 +324,10 @@ DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
 	delete[] magicArray;
 
 	ExitThread(0);
+	} catch (const std::exception& e) {
+		MessageBoxA(NULL, e.what(), "Oderso injectorThread exception", MB_OK | MB_ICONERROR);
+		ExitThread(1);
+	}
 }
 
 #ifndef _MSC_VER
