@@ -4,8 +4,9 @@
 #ifdef ODERSO_DEBUG_POPUPS
 static LONG WINAPI OdersoExceptionHandler(EXCEPTION_POINTERS* pExceptionInfo) {
 	DWORD code = pExceptionInfo->ExceptionRecord->ExceptionCode;
-	// Ignore non-fatal debug-string exceptions (OutputDebugStringA) and single-step/breakpoints.
-	if (code == 0x40010006 || code == 0x40010007 || code == 0x80000003 || code == 0x80000004)
+	// Ignore non-fatal debug-string exceptions, breakpoints, and C++ exceptions.
+	// C++ exceptions are caught by the thread-level try/catch blocks which show the actual message.
+	if (code == 0x40010006 || code == 0x40010007 || code == 0x80000003 || code == 0x80000004 || code == 0xE06D7363)
 		return EXCEPTION_CONTINUE_SEARCH;
 
 	char msg[256];
@@ -81,7 +82,10 @@ DWORD WINAPI keyThread(LPVOID lpParam) {
 
 	FreeLibraryAndExitThread(static_cast<HMODULE>(lpParam), 1);  // Uninject
 	} catch (const std::exception& e) {
-		MessageBoxA(NULL, e.what(), "Oderso keyThread exception", MB_OK | MB_ICONERROR);
+		MessageBoxA(NULL, e.what(), "Oderso keyThread exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
+		FreeLibraryAndExitThread(static_cast<HMODULE>(lpParam), 1);
+	} catch (...) {
+		MessageBoxA(NULL, "unknown exception", "Oderso keyThread exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
 		FreeLibraryAndExitThread(static_cast<HMODULE>(lpParam), 1);
 	}
 }
@@ -325,7 +329,10 @@ DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
 
 	ExitThread(0);
 	} catch (const std::exception& e) {
-		MessageBoxA(NULL, e.what(), "Oderso injectorThread exception", MB_OK | MB_ICONERROR);
+		MessageBoxA(NULL, e.what(), "Oderso injectorThread exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
+		ExitThread(1);
+	} catch (...) {
+		MessageBoxA(NULL, "unknown exception", "Oderso injectorThread exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
 		ExitThread(1);
 	}
 }
@@ -436,12 +443,12 @@ DWORD WINAPI start(LPVOID lpParam) {
 	return 0;
 	} catch (const std::exception& e) {
 #ifdef ODERSO_DEBUG_POPUPS
-		MessageBoxA(NULL, e.what(), "Oderso Debug", MB_OK | MB_ICONERROR);
+		MessageBoxA(NULL, e.what(), "Oderso start() exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
 #endif
 		return 1;
 	} catch (...) {
 #ifdef ODERSO_DEBUG_POPUPS
-		MessageBoxA(NULL, "Oderso: unknown C++ exception", "Oderso Debug", MB_OK | MB_ICONERROR);
+		MessageBoxA(NULL, "Oderso: unknown C++ exception", "Oderso start() exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
 #endif
 		return 1;
 	}
