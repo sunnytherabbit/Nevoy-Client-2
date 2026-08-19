@@ -344,7 +344,6 @@ DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
 DWORD WINAPI start(LPVOID lpParam) {
 #ifdef ODERSO_DEBUG_POPUPS
 	AddVectoredExceptionHandler(1, OdersoExceptionHandler);
-	MessageBoxA(NULL, "Oderso injected — start() running", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
 #endif
 	try {
 	logF("Starting up...");

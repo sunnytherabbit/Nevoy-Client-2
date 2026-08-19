@@ -25,8 +25,8 @@ void GameData::retrieveClientInstance() {
 	}
 
 	if (clientInstanceOffset == 0x0) {
-		g_Data.clientInstance = nullptr;
-		return;
+		// Fall back to the last known direct pointer offset if the signature is dead.
+		clientInstanceOffset = 0x03CD5058;
 	}
 
 	// clientInstanceOffset = 0x03CD5058;  // pointer scanned, can't find good signatures so it'll stay
