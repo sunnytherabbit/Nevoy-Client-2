@@ -104,10 +104,10 @@ private:
 	bool isAllowingWIPFeatures = false;
 	__int64 lastUpdate;
 	AccountInformation accountInformation = AccountInformation::asGuest();
-	static void retrieveClientInstance();
 	TextHolder* fakeName;
 
 public:
+	static void retrieveClientInstance();
 	NetworkedData networkedData;
 
 	static bool canUseMoveKeys();

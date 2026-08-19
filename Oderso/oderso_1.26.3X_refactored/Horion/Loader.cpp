@@ -373,11 +373,24 @@ DWORD WINAPI start(LPVOID lpParam) {
 	MH_Initialize();
 	GameData::initGameData(gameModule, &mem, (HMODULE)lpParam);
 
-	if (g_Data.getClientInstance() == nullptr || g_Data.getClientInstance()->loopbackPacketSender == nullptr) {
+	// Allow injection before the game has fully created ClientInstance.
+	// Poll for up to 30 seconds; the game continues loading while we wait.
+	{
+		int attempts = 0;
+		while (attempts < 300) {
+			auto ci = g_Data.getClientInstance();
+			if (ci != nullptr && ci->loopbackPacketSender != nullptr)
+				break;
+			Sleep(100);
+			g_Data.retrieveClientInstance();
+			attempts++;
+		}
+		if (g_Data.getClientInstance() == nullptr || g_Data.getClientInstance()->loopbackPacketSender == nullptr) {
 #ifdef ODERSO_DEBUG_POPUPS
-		MessageBoxA(NULL, "Oderso: ClientInstance not ready", "Oderso Debug", MB_OK | MB_ICONERROR);
+			MessageBoxA(NULL, "Oderso: ClientInstance not ready after 30s", "Oderso Debug", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
 #endif
-		return 1;
+			return 1;
+		}
 	}
 
 	Target::init(g_Data.getPtrLocalPlayer());
