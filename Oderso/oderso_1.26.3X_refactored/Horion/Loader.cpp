@@ -2,7 +2,8 @@
 #include <cstring>
 #include "Loader.h"
 
-#ifdef ODERSO_DEBUG_POPUPS
+// OdersoExceptionHandler is always compiled.  The message box is the last thing it does;
+// the crash log is written even if MessageBoxA cannot be displayed during early injection.
 static LONG WINAPI OdersoExceptionHandler(EXCEPTION_POINTERS* pExceptionInfo) {
 	DWORD code = pExceptionInfo->ExceptionRecord->ExceptionCode;
 	// Ignore non-fatal debug-string exceptions, breakpoints, and C++ exceptions.
@@ -48,7 +49,6 @@ static LONG WINAPI OdersoExceptionHandler(EXCEPTION_POINTERS* pExceptionInfo) {
 	MessageBoxA(NULL, msg, "Oderso Debug", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
 	return EXCEPTION_CONTINUE_SEARCH;
 }
-#endif
 
 SlimUtils::SlimMem mem;
 const SlimUtils::SlimModule* gameModule;
@@ -373,9 +373,7 @@ DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
 #endif
 
 DWORD WINAPI start(LPVOID lpParam) {
-#ifdef ODERSO_DEBUG_POPUPS
 	AddVectoredExceptionHandler(1, OdersoExceptionHandler);
-#endif
 	try {
 	logF("Starting up...");
 	logF("MSC v%i at %s", _MSC_VER, __TIMESTAMP__);
