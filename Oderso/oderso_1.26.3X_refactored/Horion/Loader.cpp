@@ -1,6 +1,18 @@
 #include <stdexcept>
 #include "Loader.h"
 
+#ifdef ODERSO_DEBUG_POPUPS
+static LONG WINAPI OdersoExceptionHandler(EXCEPTION_POINTERS* pExceptionInfo) {
+	char msg[256];
+	sprintf_s(msg, "Oderso crash\nCode: 0x%08X\nAddress: %p\nFlags: 0x%08X",
+		pExceptionInfo->ExceptionRecord->ExceptionCode,
+		pExceptionInfo->ExceptionRecord->ExceptionAddress,
+		pExceptionInfo->ExceptionRecord->ExceptionFlags);
+	MessageBoxA(NULL, msg, "Oderso Debug", MB_OK | MB_ICONERROR);
+	return EXCEPTION_CONTINUE_SEARCH;
+}
+#endif
+
 SlimUtils::SlimMem mem;
 const SlimUtils::SlimModule* gameModule;
 bool isRunning = true;
@@ -309,8 +321,10 @@ DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
 
 DWORD WINAPI start(LPVOID lpParam) {
 #ifdef ODERSO_DEBUG_POPUPS
+	AddVectoredExceptionHandler(1, OdersoExceptionHandler);
 	MessageBoxA(NULL, "Oderso injected — start() running", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
 #endif
+	try {
 	logF("Starting up...");
 	logF("MSC v%i at %s", _MSC_VER, __TIMESTAMP__);
 
@@ -404,7 +418,18 @@ DWORD WINAPI start(LPVOID lpParam) {
 	MessageBoxA(NULL, "Oderso initialized — press Insert to open the menu", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
 #endif
 
-	ExitThread(0);
+	return 0;
+	} catch (const std::exception& e) {
+#ifdef ODERSO_DEBUG_POPUPS
+		MessageBoxA(NULL, e.what(), "Oderso Debug", MB_OK | MB_ICONERROR);
+#endif
+		return 1;
+	} catch (...) {
+#ifdef ODERSO_DEBUG_POPUPS
+		MessageBoxA(NULL, "Oderso: unknown C++ exception", "Oderso Debug", MB_OK | MB_ICONERROR);
+#endif
+		return 1;
+	}
 }
 
 BOOL __stdcall DllMain(HMODULE hModule,
