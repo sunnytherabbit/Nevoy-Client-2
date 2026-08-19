@@ -184,15 +184,18 @@ private:
 	*/
 template <typename T>
 inline T SlimMem::Read(std::uintptr_t ptrAddress) const {
-	//static_assert(std::is_trivially_copyable<T>::value, "Invalid RPM/WPM type");
+	static_assert(std::is_trivially_copyable<T>::value, "Invalid RPM/WPM type");
 
-	//T val = T();
-	//if (!this->HasProcessHandle())
-	//return val;
-
-	return *reinterpret_cast<T*>(ptrAddress);
-	//ReadProcessMemory(this->m_hProc, (LPCVOID)ptrAddress, &val, sizeof(T), NULL);
-	//return val;
+	T val = T();
+#ifdef _MSC_VER
+	__try {
+		val = *reinterpret_cast<T*>(ptrAddress);
+	} __except (EXCEPTION_EXECUTE_HANDLER) {
+	}
+#else
+	val = *reinterpret_cast<T*>(ptrAddress);
+#endif
+	return val;
 }
 
 /*

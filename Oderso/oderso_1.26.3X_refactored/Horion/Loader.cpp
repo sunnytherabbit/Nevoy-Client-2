@@ -374,20 +374,26 @@ DWORD WINAPI start(LPVOID lpParam) {
 	GameData::initGameData(gameModule, &mem, (HMODULE)lpParam);
 
 	// Allow injection before the game has fully created ClientInstance.
-	// Poll for up to 30 seconds; the game continues loading while we wait.
+	// Poll for up to 60 seconds; the game continues loading while we wait.
 	{
 		int attempts = 0;
-		while (attempts < 300) {
+		while (attempts < 600) {
 			auto ci = g_Data.getClientInstance();
-			if (ci != nullptr && ci->loopbackPacketSender != nullptr)
+			if (ci != nullptr)
 				break;
 			Sleep(100);
 			g_Data.retrieveClientInstance();
 			attempts++;
 		}
-		if (g_Data.getClientInstance() == nullptr || g_Data.getClientInstance()->loopbackPacketSender == nullptr) {
+		auto ci = g_Data.getClientInstance();
 #ifdef ODERSO_DEBUG_POPUPS
-			MessageBoxA(NULL, "Oderso: ClientInstance not ready after 30s", "Oderso Debug", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
+		char diag[256];
+		sprintf_s(diag, "clientInstance: %p\nloopbackPacketSender: %p\nattempts: %d", ci, ci ? ci->loopbackPacketSender : nullptr, attempts);
+		MessageBoxA(NULL, diag, "Oderso Debug", MB_OK | MB_ICONINFORMATION | MB_SYSTEMMODAL);
+#endif
+		if (ci == nullptr) {
+#ifdef ODERSO_DEBUG_POPUPS
+			MessageBoxA(NULL, "Oderso: ClientInstance not ready after 60s", "Oderso Debug", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
 #endif
 			return 1;
 		}

@@ -24,6 +24,9 @@ TextHolder styledReturnText;
 
 void Hooks::Init() {
 	logF("Setting up Hooks...");
+#ifdef ODERSO_DEBUG_POPUPS
+	MessageBoxA(NULL, "Oderso: Hooks::Init start", "Oderso Debug", MB_OK | MB_ICONINFORMATION | MB_SYSTEMMODAL);
+#endif
 	// clang-format off
 	// Vtables
 	{
@@ -164,8 +167,10 @@ void Hooks::Init() {
 		void* autoComplete = reinterpret_cast<void*>(FindSignature("48 8B C4 55 57 41 56 48 8D 68 ?? 48 81 EC ?? ?? ?? ?? 48 C7 45 ?? FE FF FF FF 48 89 58 ?? 48 89 70 ?? 48 8B 05 ?? ?? ?? ?? 48 33 C4 48 89 45 ?? 48 8B F9"));
 		g_Hooks.PleaseAutoCompleteHook = std::make_unique<FuncHook>(autoComplete, Hooks::PleaseAutoComplete);
 
-		uintptr_t** packetSenderVtable = reinterpret_cast<uintptr_t**>(*(uintptr_t*)g_Data.getClientInstance()->loopbackPacketSender);
-		g_Hooks.LoopbackPacketSender_sendToServerHook = std::make_unique<FuncHook>(packetSenderVtable[2], Hooks::LoopbackPacketSender_sendToServer);
+		if (g_Data.getClientInstance()->loopbackPacketSender != nullptr) {
+			uintptr_t** packetSenderVtable = reinterpret_cast<uintptr_t**>(*(uintptr_t*)g_Data.getClientInstance()->loopbackPacketSender);
+			g_Hooks.LoopbackPacketSender_sendToServerHook = std::make_unique<FuncHook>(packetSenderVtable[2], Hooks::LoopbackPacketSender_sendToServer);
+		}
 
 		void* getFov = reinterpret_cast<void*>(FindSignature("40 53 48 83 EC ?? 0F 29 7C 24 ?? 44"));
 		g_Hooks.LevelRendererPlayer_getFovHook = std::make_unique<FuncHook>(getFov, Hooks::LevelRendererPlayer_getFov);
@@ -256,6 +261,9 @@ void Hooks::Init() {
 		
 		
 
+#ifdef ODERSO_DEBUG_POPUPS
+		MessageBoxA(NULL, "Oderso: Hooks::Init done", "Oderso Debug", MB_OK | MB_ICONINFORMATION | MB_SYSTEMMODAL);
+#endif
 		logF("Hooks initialized");
 	}
 
