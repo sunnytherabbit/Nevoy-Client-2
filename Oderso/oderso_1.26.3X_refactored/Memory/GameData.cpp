@@ -23,6 +23,12 @@ void GameData::retrieveClientInstance() {
 			logF("client: %llX", clientInstanceOffset);
 		}
 	}
+
+	if (clientInstanceOffset == 0x0) {
+		g_Data.clientInstance = nullptr;
+		return;
+	}
+
 	// clientInstanceOffset = 0x03CD5058;  // pointer scanned, can't find good signatures so it'll stay
 	g_Data.clientInstance = reinterpret_cast<C_ClientInstance*>(g_Data.slimMem->ReadPtr<uintptr_t*>(g_Data.gameModule->ptrBase + clientInstanceOffset, {0x0, 0x0, 0x50}));
 #ifdef _DEBUG

@@ -347,6 +347,9 @@ DWORD WINAPI start(LPVOID lpParam) {
 	Target::init(g_Data.getPtrLocalPlayer());
 
 	Hooks::Init();
+#ifdef ODERSO_DEBUG_POPUPS
+	MessageBoxA(NULL, "Oderso: Hooks::Init OK", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
+#endif
 
 	DWORD keyThreadId;
 	CreateThread(nullptr, NULL, (LPTHREAD_START_ROUTINE)keyThread, lpParam, NULL, &keyThreadId);  // Checking Keypresses
@@ -364,12 +367,21 @@ DWORD WINAPI start(LPVOID lpParam) {
 	logF("Initialized command manager (1/3)");
 	moduleMgr->initModules();
 	logF("Initialized module manager (2/3)");
+#ifdef ODERSO_DEBUG_POPUPS
+	MessageBoxA(NULL, "Oderso: module managers OK", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
+#endif
 	configMgr->init();
 	logF("Initialized config manager (3/3)");
 
 	Hooks::Enable();
+#ifdef ODERSO_DEBUG_POPUPS
+	MessageBoxA(NULL, "Oderso: Hooks::Enable OK", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
+#endif
 	TabGui::init();
 	ClickGui::init();
+#ifdef ODERSO_DEBUG_POPUPS
+	MessageBoxA(NULL, "Oderso: GUI init OK", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
+#endif
 
 	logF("Hooks enabled");
 
