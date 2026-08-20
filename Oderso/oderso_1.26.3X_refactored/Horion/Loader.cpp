@@ -30,17 +30,29 @@ static LONG WINAPI OdersoExceptionHandler(EXCEPTION_POINTERS* pExceptionInfo) {
 		hMod ? (uintptr_t)addr - (uintptr_t)hMod : 0,
 		pExceptionInfo->ExceptionRecord->ExceptionFlags);
 
-	// Always write a persistent crash log so we can diagnose even when the UI is not ready.
+	// Always write a persistent crash log next to the DLL so we can diagnose even when
+	// the UI is not ready and the process is in an app container that cannot write to C:\.
 	{
-		char logPath[MAX_PATH] = "C:\\OdersoCrash.log";
+		char logPath[MAX_PATH] = "OdersoCrash.log";
+		HMODULE hThisDll = nullptr;
+		if (GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS, (LPCSTR)OdersoExceptionHandler, &hThisDll)) {
+			if (GetModuleFileNameA(hThisDll, logPath, sizeof(logPath)) > 0) {
+				char* p = strrchr(logPath, '\\');
+				if (p != nullptr) {
+					p[1] = '\0';
+					strcat_s(logPath, "OdersoCrash.log");
+				}
+			}
+		}
+
 		DWORD written = 0;
 		HANDLE hLog = CreateFileA(logPath, FILE_APPEND_DATA, FILE_SHARE_READ, NULL, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 		if (hLog != INVALID_HANDLE_VALUE) {
 			SetFilePointer(hLog, 0, NULL, FILE_END);
 			char logMsg[1024];
-			int len = sprintf_s(logMsg, "[0x%08X] Addr=%p Module=%s ImageOffset=0x%llX Flags=0x%08X\r\n",
+			int len = sprintf_s(logMsg, "[0x%08X] Addr=%p Module=%s ImageOffset=0x%llX Flags=0x%08X LogPath=%s\r\n",
 				code, addr, modName, hMod ? (uintptr_t)addr - (uintptr_t)hMod : 0,
-				pExceptionInfo->ExceptionRecord->ExceptionFlags);
+				pExceptionInfo->ExceptionRecord->ExceptionFlags, logPath);
 			WriteFile(hLog, logMsg, (DWORD)len, &written, NULL);
 			CloseHandle(hLog);
 		}
@@ -373,7 +385,6 @@ DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
 #endif
 
 DWORD WINAPI start(LPVOID lpParam) {
-	AddVectoredExceptionHandler(1, OdersoExceptionHandler);
 	try {
 	logF("Starting up...");
 	logF("MSC v%i at %s", _MSC_VER, __TIMESTAMP__);
@@ -506,6 +517,7 @@ BOOL __stdcall DllMain(HMODULE hModule,
 					   LPVOID) {
 	switch (ul_reason_for_call) {
 	case DLL_PROCESS_ATTACH: {
+		AddVectoredExceptionHandler(1, OdersoExceptionHandler);
 		CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)start, hModule, NULL, NULL);
 		DisableThreadLibraryCalls(hModule);
 	} break;
