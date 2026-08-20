@@ -33,26 +33,31 @@ static LONG WINAPI OdersoExceptionHandler(EXCEPTION_POINTERS* pExceptionInfo) {
 	// Always write a persistent crash log next to the DLL so we can diagnose even when
 	// the UI is not ready and the process is in an app container that cannot write to C:\.
 	{
-		char logPath[MAX_PATH] = "OdersoCrash.log";
+		char logPath[4096] = "OdersoCrash.log";
 		HMODULE hThisDll = nullptr;
 		if (GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS, (LPCSTR)OdersoExceptionHandler, &hThisDll)) {
 			if (GetModuleFileNameA(hThisDll, logPath, sizeof(logPath)) > 0) {
 				char* p = strrchr(logPath, '\\');
 				if (p != nullptr) {
 					p[1] = '\0';
-					strcat_s(logPath, "OdersoCrash.log");
+					strcat_s(logPath, sizeof(logPath), "OdersoCrash.log");
 				}
 			}
 		}
+
+		char logMsg[2048];
+		int len = sprintf_s(logMsg, "[0x%08X] Addr=%p Module=%s ImageOffset=0x%llX Flags=0x%08X LogPath=%s\r\n",
+			code, addr, modName, hMod ? (uintptr_t)addr - (uintptr_t)hMod : 0,
+			pExceptionInfo->ExceptionRecord->ExceptionFlags, logPath);
+
+		// Always emit the same text to debug output so DebugView/Sysmon can capture it
+		// even if file writing is blocked by the app container.
+		OutputDebugStringA(logMsg);
 
 		DWORD written = 0;
 		HANDLE hLog = CreateFileA(logPath, FILE_APPEND_DATA, FILE_SHARE_READ, NULL, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 		if (hLog != INVALID_HANDLE_VALUE) {
 			SetFilePointer(hLog, 0, NULL, FILE_END);
-			char logMsg[1024];
-			int len = sprintf_s(logMsg, "[0x%08X] Addr=%p Module=%s ImageOffset=0x%llX Flags=0x%08X LogPath=%s\r\n",
-				code, addr, modName, hMod ? (uintptr_t)addr - (uintptr_t)hMod : 0,
-				pExceptionInfo->ExceptionRecord->ExceptionFlags, logPath);
 			WriteFile(hLog, logMsg, (DWORD)len, &written, NULL);
 			CloseHandle(hLog);
 		}
