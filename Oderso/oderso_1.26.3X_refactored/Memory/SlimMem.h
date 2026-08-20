@@ -186,15 +186,7 @@ template <typename T>
 inline T SlimMem::Read(std::uintptr_t ptrAddress) const {
 	static_assert(std::is_trivially_copyable<T>::value, "Invalid RPM/WPM type");
 
-	T val = T();
-#ifdef _MSC_VER
-	__try {
-		val = *reinterpret_cast<T*>(ptrAddress);
-	} __except (EXCEPTION_EXECUTE_HANDLER) {
-	}
-#else
-	val = *reinterpret_cast<T*>(ptrAddress);
-#endif
+	T val = *reinterpret_cast<T*>(ptrAddress);
 	return val;
 }
 

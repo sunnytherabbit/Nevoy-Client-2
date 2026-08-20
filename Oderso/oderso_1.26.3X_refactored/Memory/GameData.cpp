@@ -24,11 +24,6 @@ void GameData::retrieveClientInstance() {
 		}
 	}
 
-	if (clientInstanceOffset == 0x0) {
-		// Fall back to the last known direct pointer offset if the signature is dead.
-		clientInstanceOffset = 0x03CD5058;
-	}
-
 	// clientInstanceOffset = 0x03CD5058;  // pointer scanned, can't find good signatures so it'll stay
 	g_Data.clientInstance = reinterpret_cast<C_ClientInstance*>(g_Data.slimMem->ReadPtr<uintptr_t*>(g_Data.gameModule->ptrBase + clientInstanceOffset, {0x0, 0x0, 0x50}));
 #ifdef _DEBUG

@@ -1,71 +1,5 @@
 #include <stdexcept>
-#include <cstring>
 #include "Loader.h"
-
-// OdersoExceptionHandler is always compiled.  The message box is the last thing it does;
-// the crash log is written even if MessageBoxA cannot be displayed during early injection.
-static LONG WINAPI OdersoExceptionHandler(EXCEPTION_POINTERS* pExceptionInfo) {
-	DWORD code = pExceptionInfo->ExceptionRecord->ExceptionCode;
-	// Ignore non-fatal debug-string exceptions, breakpoints, and C++ exceptions.
-	// C++ exceptions are caught by the thread-level try/catch blocks which show the actual message.
-	if (code == 0x40010006 || code == 0x40010007 || code == 0x80000003 || code == 0x80000004 || code == 0xE06D7363)
-		return EXCEPTION_CONTINUE_SEARCH;
-
-	void* addr = pExceptionInfo->ExceptionRecord->ExceptionAddress;
-	HMODULE hMod = nullptr;
-	char modName[128] = "unknown";
-	if (GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS, (LPCSTR)addr, &hMod)) {
-		GetModuleFileNameA(hMod, modName, sizeof(modName));
-		// basename only
-		char* p = strrchr(modName, '\\');
-		if (p) p++; else p = modName;
-		memmove(modName, p, strlen(p) + 1);
-	}
-
-	char msg[512];
-	sprintf_s(msg, "Oderso crash\nCode: 0x%08X\nAddress: %p\nModule: %s\nImageOffset: 0x%llX\nFlags: 0x%08X",
-		code,
-		addr,
-		modName,
-		hMod ? (uintptr_t)addr - (uintptr_t)hMod : 0,
-		pExceptionInfo->ExceptionRecord->ExceptionFlags);
-
-	// Always write a persistent crash log next to the DLL so we can diagnose even when
-	// the UI is not ready and the process is in an app container that cannot write to C:\.
-	{
-		char logPath[4096] = "OdersoCrash.log";
-		HMODULE hThisDll = nullptr;
-		if (GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS, (LPCSTR)OdersoExceptionHandler, &hThisDll)) {
-			if (GetModuleFileNameA(hThisDll, logPath, sizeof(logPath)) > 0) {
-				char* p = strrchr(logPath, '\\');
-				if (p != nullptr) {
-					p[1] = '\0';
-					strcat_s(logPath, sizeof(logPath), "OdersoCrash.log");
-				}
-			}
-		}
-
-		char logMsg[2048];
-		int len = sprintf_s(logMsg, "[0x%08X] Addr=%p Module=%s ImageOffset=0x%llX Flags=0x%08X LogPath=%s\r\n",
-			code, addr, modName, hMod ? (uintptr_t)addr - (uintptr_t)hMod : 0,
-			pExceptionInfo->ExceptionRecord->ExceptionFlags, logPath);
-
-		// Always emit the same text to debug output so DebugView/Sysmon can capture it
-		// even if file writing is blocked by the app container.
-		OutputDebugStringA(logMsg);
-
-		DWORD written = 0;
-		HANDLE hLog = CreateFileA(logPath, FILE_APPEND_DATA, FILE_SHARE_READ, NULL, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
-		if (hLog != INVALID_HANDLE_VALUE) {
-			SetFilePointer(hLog, 0, NULL, FILE_END);
-			WriteFile(hLog, logMsg, (DWORD)len, &written, NULL);
-			CloseHandle(hLog);
-		}
-	}
-
-	MessageBoxA(NULL, msg, "Oderso Debug", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
-	return EXCEPTION_CONTINUE_SEARCH;
-}
 
 SlimUtils::SlimMem mem;
 const SlimUtils::SlimModule* gameModule;
@@ -78,7 +12,6 @@ bool isRunning = true;
 #endif
 
 DWORD WINAPI keyThread(LPVOID lpParam) {
-	try {
 	logF("Key thread started");
 
 	bool* keyMap = static_cast<bool*>(malloc(0xFF * 4 + 0x4));
@@ -129,17 +62,9 @@ DWORD WINAPI keyThread(LPVOID lpParam) {
 	Sleep(200);  // Give the threads a bit of time to exit
 
 	FreeLibraryAndExitThread(static_cast<HMODULE>(lpParam), 1);  // Uninject
-	} catch (const std::exception& e) {
-		MessageBoxA(NULL, e.what(), "Oderso keyThread exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
-		FreeLibraryAndExitThread(static_cast<HMODULE>(lpParam), 1);
-	} catch (...) {
-		MessageBoxA(NULL, "unknown exception", "Oderso keyThread exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
-		FreeLibraryAndExitThread(static_cast<HMODULE>(lpParam), 1);
-	}
 }
 
 DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
-	try {
 	logF("Injector Connection Thread started");
 
 	struct MemoryBoi {
@@ -376,13 +301,6 @@ DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
 	delete[] magicArray;
 
 	ExitThread(0);
-	} catch (const std::exception& e) {
-		MessageBoxA(NULL, e.what(), "Oderso injectorThread exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
-		ExitThread(1);
-	} catch (...) {
-		MessageBoxA(NULL, "unknown exception", "Oderso injectorThread exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
-		ExitThread(1);
-	}
 }
 
 #ifndef _MSC_VER
@@ -390,7 +308,6 @@ DWORD WINAPI injectorConnectionThread(LPVOID lpParam) {
 #endif
 
 DWORD WINAPI start(LPVOID lpParam) {
-	try {
 	logF("Starting up...");
 	logF("MSC v%i at %s", _MSC_VER, __TIMESTAMP__);
 
@@ -402,53 +319,15 @@ DWORD WINAPI start(LPVOID lpParam) {
 	DWORD procId = GetCurrentProcessId();
 	if (!mem.Open(procId, SlimUtils::ProcessAccess::Full)) {
 		logF("Failed to open process, error-code: %i", GetLastError());
-#ifdef ODERSO_DEBUG_POPUPS
-		MessageBoxA(NULL, "Oderso: mem.Open failed — check process permissions", "Oderso Debug", MB_OK | MB_ICONERROR);
-#endif
 		return 1;
 	}
 	gameModule = mem.GetModule(L"Minecraft.Windows.exe");  // Get Module for Base Address
-#ifdef ODERSO_DEBUG_POPUPS
-	if (gameModule == nullptr) {
-		MessageBoxA(NULL, "Oderso: Minecraft.Windows.exe module not found", "Oderso Debug", MB_OK | MB_ICONERROR);
-	}
-#endif
 
 	MH_Initialize();
 	GameData::initGameData(gameModule, &mem, (HMODULE)lpParam);
-
-	// Allow injection before the game has fully created ClientInstance.
-	// Poll for up to 60 seconds; the game continues loading while we wait.
-	{
-		int attempts = 0;
-		while (attempts < 600) {
-			auto ci = g_Data.getClientInstance();
-			if (ci != nullptr)
-				break;
-			Sleep(100);
-			g_Data.retrieveClientInstance();
-			attempts++;
-		}
-		auto ci = g_Data.getClientInstance();
-#ifdef ODERSO_DEBUG_POPUPS
-		char diag[256];
-		sprintf_s(diag, "clientInstance: %p\nloopbackPacketSender: %p\nattempts: %d", ci, ci ? ci->loopbackPacketSender : nullptr, attempts);
-		MessageBoxA(NULL, diag, "Oderso Debug", MB_OK | MB_ICONINFORMATION | MB_SYSTEMMODAL);
-#endif
-		if (ci == nullptr) {
-#ifdef ODERSO_DEBUG_POPUPS
-			MessageBoxA(NULL, "Oderso: ClientInstance not ready after 60s", "Oderso Debug", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
-#endif
-			return 1;
-		}
-	}
-
 	Target::init(g_Data.getPtrLocalPlayer());
 
 	Hooks::Init();
-#ifdef ODERSO_DEBUG_POPUPS
-	MessageBoxA(NULL, "Oderso: Hooks::Init OK", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
-#endif
 
 	DWORD keyThreadId;
 	CreateThread(nullptr, NULL, (LPTHREAD_START_ROUTINE)keyThread, lpParam, NULL, &keyThreadId);  // Checking Keypresses
@@ -466,21 +345,12 @@ DWORD WINAPI start(LPVOID lpParam) {
 	logF("Initialized command manager (1/3)");
 	moduleMgr->initModules();
 	logF("Initialized module manager (2/3)");
-#ifdef ODERSO_DEBUG_POPUPS
-	MessageBoxA(NULL, "Oderso: module managers OK", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
-#endif
 	configMgr->init();
 	logF("Initialized config manager (3/3)");
 
 	Hooks::Enable();
-#ifdef ODERSO_DEBUG_POPUPS
-	MessageBoxA(NULL, "Oderso: Hooks::Enable OK", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
-#endif
 	TabGui::init();
 	ClickGui::init();
-#ifdef ODERSO_DEBUG_POPUPS
-	MessageBoxA(NULL, "Oderso: GUI init OK", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
-#endif
 
 	logF("Hooks enabled");
 
@@ -499,22 +369,7 @@ DWORD WINAPI start(LPVOID lpParam) {
 
 	logF("Count thread started");
 
-#ifdef ODERSO_DEBUG_POPUPS
-	MessageBoxA(NULL, "Oderso initialized — press Insert to open the menu", "Oderso Debug", MB_OK | MB_ICONINFORMATION);
-#endif
-
-	return 0;
-	} catch (const std::exception& e) {
-#ifdef ODERSO_DEBUG_POPUPS
-		MessageBoxA(NULL, e.what(), "Oderso start() exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
-#endif
-		return 1;
-	} catch (...) {
-#ifdef ODERSO_DEBUG_POPUPS
-		MessageBoxA(NULL, "Oderso: unknown C++ exception", "Oderso start() exception", MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
-#endif
-		return 1;
-	}
+	ExitThread(0);
 }
 
 BOOL __stdcall DllMain(HMODULE hModule,
@@ -522,7 +377,6 @@ BOOL __stdcall DllMain(HMODULE hModule,
 					   LPVOID) {
 	switch (ul_reason_for_call) {
 	case DLL_PROCESS_ATTACH: {
-		AddVectoredExceptionHandler(1, OdersoExceptionHandler);
 		CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)start, hModule, NULL, NULL);
 		DisableThreadLibraryCalls(hModule);
 	} break;
